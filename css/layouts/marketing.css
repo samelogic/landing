@@ -243,7 +243,7 @@ a.pure-button-primary {
         text-align: left;
     }
         .home-menu ul {
-            float: right;
+            /*float: right;*/
         }
 
     /* We increase the height of the splash-container */
@@ -285,6 +285,8 @@ a.pure-button-primary {
 /******* Edits *******/
 .pure-menu-list{
     text-transform: uppercase;
+    font-size: .8rem;
+    opacity: 0.9;
 
 }
 .pure-menu-list a{
