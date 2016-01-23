@@ -95,7 +95,7 @@ a.pure-button-primary {
     text-align: center;
 }
 .home-menu {
-    background: #222226;
+    /*background: #222226;*/
 }
 .pure-menu.pure-menu-fixed {
     /* Fixed menus normally have a border at the bottom. */
@@ -133,7 +133,8 @@ a.pure-button-primary {
  */
 
 .splash-container {
-    background: #222226;
+    /* Rectangle 1: */
+    background-image: linear-gradient(-135deg, #3023AE 0%, #C86DD7 100%);
     z-index: 1;
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
@@ -289,8 +290,14 @@ a.pure-button-primary {
 .pure-menu-list a{
     color:#ffffff;
 }
-.white-border-button{
-    background: none;
-    border: 2px solid #ffffff;
-    border-radius: 30px;
+.calltoaction-button{
+    background: #BB3B3B;
+    border-radius: 8px;
+    font-size: 1.4em;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-family: "proxima-nova", "proxima-light", sans-serif;
+}
+.pure-menu-fixed {
+    position: absolute;
 }
