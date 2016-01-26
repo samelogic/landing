@@ -303,3 +303,10 @@ a.pure-button-primary {
 .pure-menu-fixed {
     position: absolute;
 }
+.subtext{
+    margin: -10px 0px 20px 0px;
+    line-height: 14px;
+    font-weight: 100;
+    color: #fff;
+    opacity: .8;
+}
