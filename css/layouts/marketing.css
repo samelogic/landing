@@ -35,6 +35,7 @@ label {
  */
 .l-box {
     padding: 1em;
+    text-align: center;
 }
 
 .l-box-lrg {
@@ -193,8 +194,8 @@ a.pure-button-primary {
 .content-head {
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
     margin: 2em 0 1em;
+    color: #C8C8C8;
 }
 
 /* This is a modifier class used when the content-head is inside a ribbon */
@@ -204,7 +205,8 @@ a.pure-button-primary {
 
 /* This is the class used for the content sub-headers (<h3>) */
 .content-subhead {
-    color: #1f8dd6;
+    color: #BCBCBC;
+    text-transform: uppercase;
 }
     .content-subhead i {
         margin-right: 7px;
@@ -309,4 +311,36 @@ a.pure-button-primary {
     font-weight: 100;
     color: #fff;
     opacity: .8;
+}
+.greybg{
+    background: #F7F6F5;
+}
+.locationpin{
+    height: 20px;
+    width: 20px;
+    background: #ffffff;
+    display: block;
+    float:left;
+}
+.footertop, .footbottom{
+    padding-left: 0em;
+    color: #ffffff;
+    opacity: 0.8;
+    font-weight: 100;
+    font-size: smaller;
+}
+.footertop li, .footbottom li{
+    display: inline;
+    margin: 0em 2em;
+}
+.footertop li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.footertop li a img, .footertop li img{
+    margin: 0px 5px -5px 0px;
+}
+.footbottom{
+    margin-top: 2em;
+    opacity: 0.5;
 }
