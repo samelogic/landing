@@ -40,7 +40,6 @@ label {
 
 .l-box-lrg {
     padding: 2em;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 .is-center {
@@ -348,4 +347,8 @@ a.pure-button-primary {
 .footbottom{
     margin-top: 2em;
     opacity: 0.5;
+}
+.whitelitetxt{
+    color: #ffffff;
+    font-weight: 100;
 }
