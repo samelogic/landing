@@ -322,6 +322,11 @@ a.pure-button-primary {
     display: block;
     float:left;
 }
+.orangegrdbg{
+    /* Rectangle 20: */
+    background-image: linear-gradient(-135deg, #F76B1C 0%, #FAD961 100%);
+
+}
 .footertop, .footbottom{
     padding-left: 0em;
     color: #ffffff;
@@ -331,7 +336,7 @@ a.pure-button-primary {
 }
 .footertop li, .footbottom li{
     display: inline;
-    margin: 0em 2em;
+    margin: 0em 1em;
 }
 .footertop li a{
     color: #ffffff;
