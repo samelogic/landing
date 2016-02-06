@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: 
+Allow: /samelogic.com/index.html
+Sitemap: http://www.sitemap.com/sitemap.xml
