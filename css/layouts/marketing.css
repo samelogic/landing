@@ -326,6 +326,14 @@ a.pure-button-primary {
     background-image: linear-gradient(-135deg, #F76B1C 0%, #FAD961 100%);
 
 }
+.greengrdbg{
+    /* Rectangle 20: */
+    background-image: linear-gradient(-135deg, #429321 0%, #B4EC51 100%);
+}
+.bluegrdbg{
+    /* Rectangle 20: */
+    background-image: linear-gradient(-135deg, #0085FF 0%, #8BE3FF 100%);
+}
 .footertop, .footbottom{
     padding-left: 0em;
     color: #ffffff;
