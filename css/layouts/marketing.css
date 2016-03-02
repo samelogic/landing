@@ -233,6 +233,9 @@ a.pure-button-primary {
     .product {
     display: none;
     }
+    .l-box-lrg {
+    padding: 0;
+    }
 }
 @media (min-width: 48em) {
 
