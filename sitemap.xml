@@ -7,13 +7,5 @@
     <lastmod>2016-02-06T06:13:03+00:00</lastmod>
 	<changefreq>hourly</changefreq>
 	<priority>1.00</priority>
-    <image:image>
-       <image:loc>http://samelogic.com/img/demoshot.png</image:loc>
-       <image:caption>Samelogic Emoji Feedback Demo</image:caption>
-    </image:image>
-    <image:image>
-       <image:loc>http://samelogic.com/img/Vine-Section.png</image:loc>
-       <image:caption>Samelogic Vine Feedback Demo</image:caption>
-    </image:image>
   </url>
 </urlset>

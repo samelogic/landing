@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55d27c0e-389a-4109-b603-8dcb301dc0ae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/CSAT-Heart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/CX-Graph.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Customer Experience .png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/NPS-Eye.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/users.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/layouts/marketing.css" afterPath="$PROJECT_DIR$/css/layouts/marketing.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sitemap.xml" afterPath="$PROJECT_DIR$/sitemap.xml" />
     </list>
     <ignored path="samelogic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6888889" vertical-offset="2325" max-vertical-offset="3435">
+            <state vertical-scroll-proportion="-3.75" vertical-offset="2325" max-vertical-offset="3435">
               <caret line="175" column="85" selection-start-line="175" selection-start-column="85" selection-end-line="175" selection-end-column="85" />
               <folding>
                 <element signature="n#style#0;n#h1#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -53,6 +46,16 @@
                 <element signature="n#style#0;n#p#1;n#div#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#2;n#div#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sitemap.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sitemap.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.1589404" vertical-offset="0" max-vertical-offset="755">
+              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -94,6 +97,7 @@
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/css/layouts/marketing.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/sitemap.xml" />
       </list>
     </option>
   </component>
@@ -778,7 +782,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6888889" vertical-offset="2325" max-vertical-offset="3435">
+        <state vertical-scroll-proportion="-3.75" vertical-offset="2325" max-vertical-offset="3435">
           <caret line="175" column="85" selection-start-line="175" selection-start-column="85" selection-end-line="175" selection-end-column="85" />
           <folding>
             <element signature="n#style#0;n#h1#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -795,6 +799,14 @@
             <element signature="n#style#0;n#p#1;n#div#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#2;n#div#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sitemap.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1589404" vertical-offset="0" max-vertical-offset="755">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
