@@ -196,7 +196,7 @@ a.pure-button-primary {
     font-weight: 400;
     text-transform: uppercase;
     margin: 2em 0 1em;
-    color: #C8C8C8;
+    color: #797979;
 }
 
 /* This is a modifier class used when the content-head is inside a ribbon */
@@ -205,9 +205,12 @@ a.pure-button-primary {
 }
 
 /* This is the class used for the content sub-headers (<h3>) */
-.content-subhead {
-    color: #BCBCBC;
+.content-subhead, .content-subhead-p {
+    color: #797979;
     text-transform: uppercase;
+}
+.content-subhead-p{
+    color: #7143BF;
 }
     .content-subhead i {
         margin-right: 7px;
