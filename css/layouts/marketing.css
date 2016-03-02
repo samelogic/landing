@@ -205,9 +205,14 @@ a.pure-button-primary {
 }
 
 /* This is the class used for the content sub-headers (<h3>) */
-.content-subhead, .content-subhead-p {
+.content-subhead, .content-subhead-p, .content-head-w {
     color: #797979;
     text-transform: uppercase;
+
+}
+.content-head-w{
+    color:#ffffff;
+    font-weight: 400;
 }
 .content-subhead-p{
     color: #7143BF;
@@ -349,7 +354,7 @@ a.pure-button-primary {
 }
 .bluegrdbg{
     /* Rectangle 20: */
-    background-image: linear-gradient(-135deg, #0085FF 0%, #8BE3FF 100%);
+    background-image: linear-gradient(45deg, #4285F4 0%, #5992F1 29%, #2870E7 100%);
 }
 .footertop, .footbottom{
     padding-left: 0em;
@@ -381,4 +386,12 @@ a.pure-button-primary {
     display: inline-block;
     text-transform: uppercase;
     opacity: .7;
+}
+.wrborder{
+    border: 1px solid #fff;
+    border-radius: 6px;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
 }
