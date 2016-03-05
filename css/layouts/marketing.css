@@ -320,7 +320,7 @@ a.pure-button-primary {
     border-radius: 8px;
     font-size: 1.4em;
     color: #FFFFFF;
-    font-weight: 500;
+    font-weight: 100;
     font-family: "proxima-nova", "proxima-light", sans-serif;
 }
 .pure-menu-fixed {
@@ -388,10 +388,10 @@ a.pure-button-primary {
     opacity: .7;
 }
 .wrborder{
-    border: 1px solid #fff;
+    /*border: 1px solid #fff;
     border-radius: 6px;
     width: 80%;
     text-align: center;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 20px;*/
 }
