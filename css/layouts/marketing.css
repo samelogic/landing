@@ -395,3 +395,15 @@ a.pure-button-primary {
     margin: auto;
     margin-bottom: 20px;*/
 }
+.mdpadding{
+    padding:10px;
+}
+.smtopmargin{
+    margin-top: 2em;
+}
+.mdtopmargin{
+    margin-top: 5em;
+}
+.pgbg{
+    background-image: linear-gradient(-135deg, #3023AE 0%, #C86DD7 100%);
+}
