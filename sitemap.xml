@@ -8,4 +8,16 @@
 	<changefreq>hourly</changefreq>
 	<priority>1.00</priority>
   </url>
+  <url>
+    <loc>http://www.samelogic.com/privacy</loc>
+    <lastmod>2016-03-06T06:13:03+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.00</priority>
+  </url>
+    <url>
+        <loc>http://www.samelogic.com/terms</loc>
+        <lastmod>2016-03-06T06:13:03s+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.00</priority>
+    </url>
 </urlset>
