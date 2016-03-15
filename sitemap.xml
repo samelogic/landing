@@ -4,7 +4,6 @@
   xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url> 
     <loc>http://www.samelogic.com</loc>
-    <lastmod>2016-02-06T06:13:03+00:00</lastmod>
 	<changefreq>hourly</changefreq>
 	<priority>1.00</priority>
   </url>
