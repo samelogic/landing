@@ -48,6 +48,9 @@ label {
 .is-left {
     text-align: left;
 }
+.is-right {
+    text-align: right;
+}
 
 
 /*
@@ -406,4 +409,11 @@ a.pure-button-primary {
 }
 .pgbg{
     background-image: linear-gradient(-135deg, #3023AE 0%, #C86DD7 100%);
+}
+
+.smtxt{
+    color:#7142BF;
+}
+.litetxt{
+    font-weight: 100;
 }
