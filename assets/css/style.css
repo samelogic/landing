@@ -416,6 +416,15 @@ p {
     font-weight: 400;
     text-align: center;
 }
+.left-align{
+    text-align: left;
+}
+.small-bot-margin{
+    margin-bottom: 10px;
+}
+.large-top-margin{
+   margin-top: 50px; 
+}
 
 .text-white {
     color: #ffffff;
@@ -555,6 +564,16 @@ p {
 }
 
 .navbar-fixed-top.is-scrolling{
+    background: #323a45;
+    background: rgba(50,58,69,0.95);
+    border: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.navbar-other{
+    padding-top: 25px;
+    padding-bottom: 25px;
     background: #323a45;
     background: rgba(50,58,69,0.95);
     border: 0;
