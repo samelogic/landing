@@ -16,7 +16,7 @@
 
 
   .uploading{
-      background-color: #7ED321;
+      background-color: #4990E2;
       box-shadow: 0px 0px 3px #c7c7c7;
   }
 
@@ -25,7 +25,7 @@
     float: left;
     display: block;
     -webkit-animation-name: ShineAnimation;
-    -webkit-animation-duration: 1.5s;
+    -webkit-animation-duration: 8s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: cubic-bezier(.12,.35,.73,.99);
 }
@@ -84,3 +84,8 @@
         box-shadow: 0 0 0 0 rgba(255, 101, 101, 0.1);
     }
   }
+
+  .uploaded{
+    background-color: #7ED321;
+    box-shadow: 0px 0px 3px #c7c7c7;
+}
