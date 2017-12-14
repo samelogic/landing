@@ -6,11 +6,10 @@
   "author": "Shawn Mclean <shawnrmclean@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "clean": "rimraf dist",
-    "deploy": "copy ./src/**/* dist"
+    "deploy": "cpx src/**/* dist --clean"
   },
   "devDependencies": {
-    "copy": "^0.3.1",
+    "cpx": "^1.5.0",
     "rimraf": "^2.6.2"
   }
 }
