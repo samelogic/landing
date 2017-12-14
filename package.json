@@ -1,0 +1,16 @@
+{
+  "name": "samelogic-landing",
+  "version": "1.0.0",
+  "main": "src/index.html",
+  "repository": "https://github.com/Samelogic/landing.git",
+  "author": "Shawn Mclean <shawnrmclean@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf dist",
+    "deploy": "copy ./src/**/* dist"
+  },
+  "devDependencies": {
+    "copy": "^0.3.1",
+    "rimraf": "^2.6.2"
+  }
+}
