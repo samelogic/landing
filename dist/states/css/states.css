@@ -1,0 +1,91 @@
+.tab{
+    width: 120px;
+    height: 8px;
+    float: left;
+    display: block; 
+    border-radius: 60px;
+    margin-right: 10px;
+}
+.inactive{
+    background-color: #D8D8D8;
+}
+.active{
+    background-color: #65ACFF;
+    box-shadow: 0px 0px 3px #c7c7c7;
+}
+
+
+  .uploading{
+      background-color: #4990E2;
+      box-shadow: 0px 0px 3px #c7c7c7;
+  }
+
+  .shine-me {
+    width: 120px;
+    float: left;
+    display: block;
+    -webkit-animation-name: ShineAnimation;
+    -webkit-animation-duration: 8s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: cubic-bezier(.12,.35,.73,.99);
+}
+
+@-webkit-keyframes ShineAnimation{
+    from {
+        background-repeat:no-repeat;
+        background-image:-webkit-linear-gradient(
+            top left,
+            rgba(255, 255, 255, 0.0) 0px,
+            rgba(255, 255, 255, 0.1) 17px,
+            rgba(255, 255, 255, 0.2) 34px,
+            rgba(255, 255, 255, 0.3) 51px,
+            rgba(255, 255, 255, 0.4) 68px,
+            rgba(255, 255, 255, 0.5) 85px,
+            rgba(255, 255, 255, 0.6) 119px
+        );
+        background-position:-250px -250px;
+        background-size: 120px 120px
+    }
+    to {
+        background-repeat:no-repeat;
+        background-position:320px 220px;
+    }
+}
+
+.error{
+    background-color: #FF3636;
+    box-shadow: 0 0 0 #FF3636;
+    animation: pulse 2s infinite;
+    box-shadow: 0px 1px 1px #dddddd;
+}
+
+@-webkit-keyframes error {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(255, 101, 101, 0.5);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(255, 101, 101, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 101, 101, 0);
+    }
+  }
+  @keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba(255, 101, 101, 0.4);
+      box-shadow: 0 0 0 0 rgba(255, 101, 101, 0.4);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(255, 101, 101, 0);
+        box-shadow: 0 0 0 10px rgba(255, 101, 101, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(255, 101, 101, 0.3);
+        box-shadow: 0 0 0 0 rgba(255, 101, 101, 0.1);
+    }
+  }
+
+  .uploaded{
+    background-color: #7ED321;
+    box-shadow: 0px 0px 3px #c7c7c7;
+}
