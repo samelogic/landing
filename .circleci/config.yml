@@ -41,7 +41,6 @@ jobs:
             sudo apt-get upgrade -y
             sudo apt-get install -y python-dev python-pip
             sudo pip install awscli --upgrade
-      - run: node ./config/configure-settings.js dev
       - deploy:
           name: Deploy to S3
           command: aws s3 sync dist/ s3://samelogic.com/ --delete
