@@ -44,7 +44,7 @@ jobs:
       - deploy:
           name: Deploy to S3
           command: aws s3 sync dist/ s3://samelogic.com/ --delete
-      - invalidate-cache:
+      - deploy:
           name: Invalidate CloudFront cache
           command: aws cloudfront create-invalidation --distribution-id=E2HY12PGZTG471 --paths /
 workflows:
