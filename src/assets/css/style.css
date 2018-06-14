@@ -9,40 +9,54 @@ Website: http://themedept.com
 Tags: startup landing page, app landing page, html5 template, one page, startup, saas, mvp, landing page
 */
 
-
-
 /* ------------------------------------------ */
+
 /*             TABLE OF CONTENTS
 /* ------------------------------------------ */
 
 /*   01 - General Style                          */
-/*   02 - Typography                             */
-/*   03 - Buttons & Icons                        */
-/*   04 - Header & Navigation                    */
-/*   05 - Login/Signup Modal                     */
-/*   06 - Sections Settings                      */
-/*   07 - Testimonials                           */
-/*   08 - Features Tab                           */
-/*   09 - Fast Reg, Newsletter & Signup Divider  */
-/*   10 - Charts & Showcase Section              */
-/*   11 - Pricing Tabs                           */
-/*   12 - Team Section                           */
-/*   13 - Mobile Download Section                */
-/*   14 - Footer                                 */
 
+/*   02 - Typography                             */
+
+/*   03 - Buttons & Icons                        */
+
+/*   04 - Header & Navigation                    */
+
+/*   05 - Login/Signup Modal                     */
+
+/*   06 - Sections Settings                      */
+
+/*   07 - Testimonials                           */
+
+/*   08 - Features Tab                           */
+
+/*   09 - Fast Reg, Newsletter & Signup Divider  */
+
+/*   10 - Charts & Showcase Section              */
+
+/*   11 - Pricing Tabs                           */
+
+/*   12 - Team Section                           */
+
+/*   13 - Mobile Download Section                */
+
+/*   14 - Footer                                 */
 
 /* ==========================================================================
    01. GENERAL STYLE
-========================================================================== */ 
+========================================================================== */
+
 /*------------------------------------------*/
+
 /*	 Basic Settings
 /*------------------------------------------*/
+
 body {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     color: #727272;
     font-size: 16px;
-    line-height: 28px;
+    /*line-height: 28px;*/
     font-weight: 400;
     padding: 0;
     background-color: #ffffff;
@@ -52,77 +66,94 @@ body {
     overflow: hidden;
 }
 
-section{
+section {
     position: relative;
     overflow: hidden;
 }
 
+.feature-bg {
+    background-image: url('../images/features-bg.png');
+    background-position: 60% -12%;
+    background-repeat: no-repeat;
+}
+
 /*------------------------------------------------------------------*/
+
 /*	 Internet Explorer 10 in Windows 8 and Windows Phone 8 Bug fix
 /*-----------------------------------------------------------------*/
-@-webkit-viewport { 
-	width: device-width; 
+
+@-webkit-viewport {
+    width: device-width;
 }
 
-@-moz-viewport { 
-	width: device-width; 
+@-moz-viewport {
+    width: device-width;
 }
 
-@-ms-viewport { 
-	width: device-width; 
+@-ms-viewport {
+    width: device-width;
 }
 
-@-o-viewport { 
-	width: device-width; 
+@-o-viewport {
+    width: device-width;
 }
 
-@viewport { 
-	width: device-width; 
+@viewport {
+    width: device-width;
 }
 
 /*------------------------------------------*/
+
 /*	 Link 
 /*------------------------------------------*/
+
 a {
-	-webkit-transition: all 250ms ease-in-out;
-	-moz-transition: all 250ms ease-in-out;
-	-o-transition: all 250ms ease-in-out;
-	-ms-transition: all 250ms ease-in-out;
-	transition: all 250ms ease-in-out;
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    -ms-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
 }
 
-a:hover, a:focus {
-	color: #3e3e3e;
-	text-decoration: none;
+a:hover,
+a:focus {
+    color: #3e3e3e;
+    text-decoration: none;
 }
 
 /*------------------------------------------*/
+
 /*	 Lists
 /*------------------------------------------*/
+
 ul {
-	padding-left: 0;
-	list-style: none;
+    padding-left: 0;
+    list-style: none;
 }
 
 /*------------------------------------------*/
+
 /*	 Backgrounds
 /*------------------------------------------*/
-.light-bg{
-	background-color: #fafafa;
+
+.light-bg {
+    background-color: #fafafa;
 }
 
-.dark-bg{
+.dark-bg {
     background-color: #323a45;
 }
 
-.white-bg{
+.white-bg {
     background-color: #ffffff;
 }
 
 /*------------------------------------------*/
+
 /*	 Overlay Effect
 /*------------------------------------------*/
-.overlay{
+
+.overlay {
     /* Provides cross-browser RGBa background */
     zoom: 1;
     filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#80000000', endColorstr='#80000000');
@@ -131,13 +162,16 @@ ul {
 }
 
 /* set filter as none for IE9+, because IE9+ support RGBa */
+
 :root .overlay {
     filter: none\0/IE9;
 }
 
 /*------------------------------------------*/
+
 /*   Form Settings
 /*------------------------------------------*/
+
 .form-group {
     margin-bottom: 25px;
 }
@@ -177,35 +211,61 @@ ul {
 }
 
 /*------------------------------------------*/
+
 /*   Modal Settings
 /*------------------------------------------*/
+
 .modal-content {
     text-align: center;
 }
 
 /*------------------------------------------*/
+
 /*   Notifications
 /*------------------------------------------*/
-.signup-success,.signup-failed,.lm-success,.lm-failed,.sm-success,.sm-failed,.fast-failed,.fast-success,.subscription-success,.subscription-failed,.mc-success,.mc-failed{
+
+.signup-success,
+.signup-failed,
+.lm-success,
+.lm-failed,
+.sm-success,
+.sm-failed,
+.fast-failed,
+.fast-success,
+.subscription-success,
+.subscription-failed,
+.mc-success,
+.mc-failed {
     display: none;
     margin-top: 5px;
 }
 
-.lm-success,.sm-success{
-    color:#27ae60;
+.lm-success,
+.sm-success {
+    color: #27ae60;
 }
 
-.signup-success,.signup-failed,.fast-success,.fast-failed,.subscription-success,.subscription-failed,.mc-success,.mc-failed {
-    color:#ffffff;
+.signup-success,
+.signup-failed,
+.fast-success,
+.fast-failed,
+.subscription-success,
+.subscription-failed,
+.mc-success,
+.mc-failed {
+    color: #ffffff;
 }
 
-.lm-failed,.sm-failed{
-    color:#c0392b;
+.lm-failed,
+.sm-failed {
+    color: #c0392b;
 }
 
 /*------------------------------------------*/
+
 /*	 Blockquote
 /*------------------------------------------*/
+
 blockquote {
     border: 0;
     padding: 0 20px;
@@ -224,36 +284,39 @@ blockquote:before {
 }
 
 blockquote img {
-	float: left;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	border-radius: 50%;
-	height: 75px;
-	width: 75px;
-	margin-right: 15px;
+    float: left;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    margin-right: 15px;
 }
 
 /*------------------------------------------*/
+
 /*   Wrappers & Boxes
 /*------------------------------------------*/
-.wrapper-lg{
+
+.wrapper-lg {
     padding: 120px 0;
 }
 
-.wrapper-md{
+.wrapper-md {
     padding: 80px 0;
 }
 
-.wrapper-sm{
+.wrapper-sm {
     padding: 50px 0;
 }
 
-.wrapper-xs{
+.wrapper-xs {
     padding: 20px 0;
 }
 
 /* vertical align */
-.vmiddle{
+
+.vmiddle {
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -264,9 +327,11 @@ blockquote img {
 }
 
 /*------------------------------------------*/
+
 /*   Preloader
 /*------------------------------------------*/
-.preloader{
+
+.preloader {
     position: fixed;
     top: 0;
     left: 0;
@@ -279,7 +344,7 @@ blockquote img {
     overflow: hidden !important;
 }
 
-.loader-container{
+.loader-container {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -296,42 +361,45 @@ blockquote img {
     width: 30px;
     margin-top: 10px;
     -webkit-animation: pulsate 1s ease-out;
-    -moz-animation: pulsate 1s ease-out;;
-    -webkit-animation-iteration-count:infinite;
-    -moz-animation-iteration-count:infinite;
+    -moz-animation: pulsate 1s ease-out;
+    ;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes pulsate {
     0% {
-      transform:scale(.1);
-      opacity: 0.0;
+        transform: scale(.1);
+        opacity: 0.0;
     }
     50% {
-      opacity: 1;
+        opacity: 1;
     }
     100% {
-      transform:scale(1.2);
-      opacity: 0;
+        transform: scale(1.2);
+        opacity: 0;
     }
 }
 
 @-moz-keyframes pulsate {
     0% {
-      transform:scale(.1);
-      opacity: 0.0;
+        transform: scale(.1);
+        opacity: 0.0;
     }
     50% {
-      opacity: 1;
+        opacity: 1;
     }
     100% {
-      transform:scale(1.2);
-      opacity: 0;
+        transform: scale(1.2);
+        opacity: 0;
     }
 }
 
 /*------------------------------------------*/
+
 /*   New Venobox Close Icon
 /*------------------------------------------*/
+
 .vbox-close {
     top: 5px;
     right: 8px;
@@ -341,10 +409,12 @@ blockquote img {
 }
 
 /*------------------------------------------*/
+
 /*   Text-Logo
 /*------------------------------------------*/
-.text-logo{
-    font-family: 'Raleway','Open Sans',Helvetica,Arial,sans-serif;
+
+.text-logo {
+    font-family: 'Raleway', 'Open Sans', Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 700;
     letter-spacing: 2px;
@@ -354,13 +424,16 @@ blockquote img {
     color: #ffffff;
 }
 
-
 /* ==========================================================================
    02. TYPOGRAPHY
 ========================================================================== */
-h1, h2, h3, h4 {
- 	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
- 	margin: 0 0 20px;
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*margin: 0 0 20px;*/
     color: #3e3e3e;
     letter-spacing: -1px;
 }
@@ -401,7 +474,8 @@ h5 {
     color: #3e3e3e;
 }
 
-b, strong {
+b,
+strong {
     font-weight: 400;
 }
 
@@ -409,36 +483,39 @@ p {
     margin: 0;
 }
 
-.large{
-	font-size: 18px;
+.large {
+    font-size: 18px;
     line-height: 25px;
     margin-bottom: 50px;
     font-weight: 400;
     text-align: center;
 }
-.left-align{
+
+.left-align {
     text-align: left;
 }
-.small-bot-margin{
+
+.small-bot-margin {
     margin-bottom: 10px;
 }
-.large-top-margin{
-   margin-top: 50px; 
+
+.large-top-margin {
+    margin-top: 50px;
 }
 
 .text-white {
     color: #ffffff;
 }
 
-
 /* ==========================================================================
    03. BUTTONS & ICONS
-========================================================================== */ 
+========================================================================== */
+
 .btn {
- 	font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
     font-size: 11px;
- 	line-height: 15px;
+    line-height: 15px;
     text-transform: uppercase;
     letter-spacing: 1px;
     -o-transition: all .3s ease;
@@ -450,15 +527,15 @@ p {
     border-radius: 5px;
     display: inline-block;
     padding: 14px 28px 13px 28px;
-    border:2px solid;
+    border: 2px solid;
 }
 
 .btn:focus {
- 	outline: none;
+    outline: none;
 }
 
 .btn:hover {
- 	text-decoration: none;
+    text-decoration: none;
 }
 
 .btn>i {
@@ -468,28 +545,30 @@ p {
 }
 
 .btn-box {
-    padding:20px 0;
+    padding: 20px 0;
 }
 
 /*------------------------------------------*/
+
 /*	 Buttons Color
 /*------------------------------------------*/
+
 .btn-ghost {
-	background: transparent;
-	color: #ffffff;
-	border-color: #ffffff;
+    background: transparent;
+    color: #ffffff;
+    border-color: #ffffff;
 }
 
 .btn-ghost:hover {
-	background: #ffffff;
-	color: #3e3e3e;
-	border-color: #ffffff;
+    background: #ffffff;
+    color: #3e3e3e;
+    border-color: #ffffff;
 }
 
 .btn-white {
-	background: #ffffff;
-	color: #c0392b;
-	border-color: #ffffff;
+    background: #ffffff;
+    color: #c0392b;
+    border-color: #ffffff;
 }
 
 .btn-white:hover {
@@ -499,21 +578,24 @@ p {
 }
 
 .btn-grey {
-	color: #3e3e3e;
-	background-color: transparent;
-	border-color: #7f8c8d;
+    color: #3e3e3e;
+    background-color: transparent;
+    border-color: #7f8c8d;
 }
 
 .btn-grey:hover {
-	color: #3e3e3e;
-	border-color: #3e3e3e;
-	background-color: transparent;
+    color: #3e3e3e;
+    border-color: #3e3e3e;
+    background-color: transparent;
 }
 
 /*------------------------------------------*/
+
 /*	 Icons Style
 /*------------------------------------------*/
-.icon-lg, .icon-sm {
+
+.icon-lg,
+.icon-sm {
     transition: all .2s ease;
     -webkit-transition: all .2s ease;
     -o-transition: all .2s ease;
@@ -529,18 +611,20 @@ p {
     font-size: 40px;
 }
 
-
 /* ==========================================================================
    04. HEADER & NAVIGATION
 ========================================================================== */
+
 /*------------------------------------------*/
+
 /*   Header Background Parallax Settings
 /*------------------------------------------*/
-.header{
+
+.header {
     background: url("../images/hero-placeholder.jpg") no-repeat center top fixed;
     -webkit-background-size: cover;
-    -moz-background-size:cover;
-    background-size: cover;   
+    -moz-background-size: cover;
+    background-size: cover;
 }
 
 .header .overlay {
@@ -548,9 +632,11 @@ p {
 }
 
 /*------------------------------------------*/
+
 /*   Navbar General Settings
 /*------------------------------------------*/
-.navbar{
+
+.navbar {
     -webkit-transition: all 300ms ease-in-out;
     -moz-transition: all 300ms ease-in-out;
     -o-transition: all 300ms ease-in-out;
@@ -563,25 +649,25 @@ p {
     padding-bottom: 25px;
 }
 
-.navbar-fixed-top.is-scrolling{
+.navbar-fixed-top.is-scrolling {
     background: #323a45;
-    background: rgba(50,58,69,0.95);
+    background: rgba(50, 58, 69, 0.95);
     border: 0;
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
-.navbar-other{
+.navbar-other {
     padding-top: 25px;
     padding-bottom: 25px;
     background: #323a45;
-    background: rgba(50,58,69,0.95);
+    background: rgba(50, 58, 69, 0.95);
     border: 0;
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
-.navbar-right{
+.navbar-right {
     position: relative;
     top: 5px;
     float: left;
@@ -589,15 +675,18 @@ p {
 }
 
 /* Img-Logo Fixes */
-.navbar-brand.img-logo{
-    padding:0;
+
+.navbar-brand.img-logo {
+    padding: 0;
 }
 
 /*------------------------------------------*/
+
 /*   Navbar Links Menu
 /*------------------------------------------*/
-.navbar-nav>li>a{
-    font-family: 'Raleway','Open Sans',Helvetica,Arial,sans-serif;
+
+.navbar-nav>li>a {
+    font-family: 'Raleway', 'Open Sans', Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 700;
     letter-spacing: 1px;
@@ -611,130 +700,157 @@ p {
     transition: all .5s ease;
 }
 
-.navbar-nav>li>a:hover, .navbar-nav>li>a:focus, .navbar-nav>.active>a, .navbar-nav>.active>a:hover, .navbar-nav>.active>a:focus{
+.navbar-nav>li>a:hover,
+.navbar-nav>li>a:focus,
+.navbar-nav>.active>a,
+.navbar-nav>.active>a:hover,
+.navbar-nav>.active>a:focus {
     color: #ffffff;
     background-color: transparent;
 }
 
 /*------------------------------------------*/
+
 /*   Navbar Mobile Menu
 /*------------------------------------------*/
-.navbar-toggle, .navbar-toggle:hover, .navbar-toggle:focus {
+
+.navbar-toggle,
+.navbar-toggle:hover,
+.navbar-toggle:focus {
     background-color: transparent;
 }
 
 .navbar-toggle {
     color: #ffffff;
-    padding: 0; 
+    padding: 0;
     margin-top: 13px;
     margin-bottom: 0;
-    font-size:26px;
+    font-size: 26px;
 }
 
 .navbar-collapse {
-    box-shadow:none;
-    border:0;
+    box-shadow: none;
+    border: 0;
 }
 
 /*------------------------------------------*/
+
 /*   Navbar Buttons
 /*------------------------------------------*/
+
 .navbar-nav>li>a.btn-nav {
     margin: 6px 0 10px 15px;
-    padding: 7px;  
+    padding: 7px;
 }
 
-.navbar-nav>li>a.btn-nav:hover, .navbar-nav>li>a.btn-nav:focus {
+.navbar-nav>li>a.btn-nav:hover,
+.navbar-nav>li>a.btn-nav:focus {
     background: #ffffff;
     color: #3e3e3e;
     border-color: #ffffff;
 }
 
 /*------------------------------------------*/
+
 /*   Hero-Section
 /*------------------------------------------*/
-.hero-section .btn-color:hover{
+
+.hero-section .btn-color:hover {
     border-color: #ffffff;
 }
 
-.hero-section p{
+.hero-section p {
     font-size: 21px;
     line-height: 27px;
     letter-spacing: -1px;
     margin-bottom: 35px;
 }
 
-.hero-section .btn-box{
+.hero-section .btn-box {
     padding: 0;
 }
 
-.hero-section .btn{
+.hero-section .btn {
     margin-bottom: 0;
-} 
+}
 
 /*------------------------------------------*/
+
 /*   Header Solid-Background
 /*------------------------------------------*/
+
 .solid-bg .overlay {
     background: none;
 }
 
-.solid-bg .btn-white:hover{
-    border-color:#ffffff;
-    color:#ffffff;
+.solid-bg .btn-white:hover {
+    border-color: #ffffff;
+    color: #ffffff;
 }
 
 /*------------------------------------------*/
+
 /*   Header App
 /*------------------------------------------*/
-.hero-app .hero-section{
+
+.hero-app .hero-section {
     padding-top: 20%;
 }
 
 /*------------------------------------------*/
+
 /*   Header Type
 /*------------------------------------------*/
-.type h1{
+
+.type h1 {
     line-height: 59px;
 }
 
 /*------------------------------------------*/
+
 /*   Header Video Background
 /*------------------------------------------*/
-.header.video-bg{
+
+.header.video-bg {
     background: transparent;
 }
 
 /*------------------------------------------*/
+
 /*   Header Video Background
 /*------------------------------------------*/
+
 .header.youtube-bg .overlay {
     height: 650px;
 }
 
 /*------------------------------------------*/
+
 /*   Header Slider
 /*------------------------------------------*/
-.header.slider{
-    background: none;  
+
+.header.slider {
+    background: none;
 }
 
-.header.slider .overlay{
+.header.slider .overlay {
     height: 100%;
 }
 
-.slider-text{
+.slider-text {
     display: block;
 }
 
 /*------------------------------------------*/
+
 /*   Header Dashboard
 /*------------------------------------------*/
-.header.dashboard .overlay{
-    overflow:hidden;
+
+.header.dashboard .overlay {
+    overflow: hidden;
 }
 
-.dashboard .hero-section{
+.dashboard .hero-section {
     padding-top: 25%;
 }
 
@@ -747,19 +863,18 @@ p {
     max-width: 85%;
 }
 
-
-
 /* ==========================================================================
    05. LOGIN/SIGNUP MODAL
-========================================================================== */ 
-.login .modal-dialog{
+========================================================================== */
+
+.login .modal-dialog {
     width: 400px;
     margin-top: 105px;
 }
 
-.login .modal-content{
+.login .modal-content {
     background-color: #fcfcfc;
-    border-radius:6px;
+    border-radius: 6px;
 }
 
 .login .modal-header {
@@ -768,24 +883,24 @@ p {
     border-top-right-radius: 5px;
 }
 
-.login .modal-header .close{
-    color:#3e3e3e;
-    opacity:0.7;
+.login .modal-header .close {
+    color: #3e3e3e;
+    opacity: 0.7;
 }
 
-.login .modal-header .close:hover{
-    opacity:1;
+.login .modal-header .close:hover {
+    opacity: 1;
 }
 
-.login .modal-header .close i{
-    font-weight:bold;
+.login .modal-header .close i {
+    font-weight: bold;
 }
 
-.login .modal-header .close:focus{
-    outline:none;
+.login .modal-header .close:focus {
+    outline: none;
 }
 
-.login .modal-header .modal-title{
+.login .modal-header .modal-title {
     font-weight: 400;
     font-size: 25px;
     line-height: 29px;
@@ -793,7 +908,7 @@ p {
     margin-left: 25px;
 }
 
-.login .modal-header .modal-subtitle{
+.login .modal-header .modal-subtitle {
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
@@ -802,28 +917,28 @@ p {
     margin-top: 5px;
 }
 
-.login .form-control{
+.login .form-control {
     margin: 5px auto;
 }
 
-.login .btn{
+.login .btn {
     width: 100%;
     margin: 5px 0 0;
 }
 
-.login .btn-color:hover{
+.login .btn-color:hover {
     color: #fff;
     background-color: #3e3e3e;
     border-color: #3e3e3e;
 }
 
-.login .modal-footer{
+.login .modal-footer {
     border-top: 0;
     margin-top: 0;
     padding: 10px 20px 20px;
 }
 
-.login .forgot{
+.login .forgot {
     color: #3e3e3e;
     margin-left: 0;
     overflow: hidden;
@@ -838,33 +953,114 @@ p {
     padding: 20px 50px;
 }
 
-
 /* ==========================================================================
    06. SECTIONS SECTIONS
-========================================================================== */ 
+========================================================================== */
+
 /*------------------------------------------*/
+
 /*   About - Intro Features
 /*------------------------------------------*/
+
 .intro-features {
     text-align: center;
 }
 
-.intro-features .icon-lg{
+.intro-features .icon-lg {
     margin-bottom: 20px;
 }
 
+.f-h2 {
+    font-weight: 400;
+    color: #f2f2f2;
+    text-align: left;
+}
+
+.f-p {
+    color: #f2f2f2;
+    opacity: .8;
+}
+
+.f-item {
+    text-align: left;
+    border-radius: 3px;
+    float: left;
+    display: block;
+}
+
+/*.f-item:hover{
+    box-shadow: 0px 10px 40px rgba(0,0,0,0.1);
+}*/
+
+.f-ul {
+    padding-left: 0;
+    list-style: none;
+    margin: 0 0 0px 0;
+    float: left;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.f-ul>li {
+    float: left;
+    height: 250px;
+    margin: 0 0 20px 0;
+}
+
+.f-item>img {
+    margin: 15px 0 0 0;
+    float: left;
+    display: block;
+}
+
+.f-item>h4 {
+    float: left;
+    width: 100%;
+    display: block;
+}
+
+.f-item>small {
+    float: left;
+    margin: 0 0 20px 0;
+}
+
+.f-item>.btn-box>a {
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-30px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+.ip_float{
+    transform: translatey(0px);
+    animation: float 3s ease-in-out infinite;
+}
+
+
 /*------------------------------------------*/
+
 /*   Image with Action
 /*------------------------------------------*/
-.img-with-action .btn-color:hover{
+
+.img-with-action .btn-color:hover {
     background: transparent;
 }
 
-.img-with-action .btn-box{
+.img-with-action .btn-box {
     padding-bottom: 0;
 }
 
-.img-col-bg{
+.img-col-bg {
     position: absolute;
     height: 100%;
     padding: 0;
@@ -872,7 +1068,8 @@ p {
 }
 
 /* light img overlay*/
-.img-col-bg:before{
+
+.img-col-bg:before {
     opacity: 0.2;
     position: absolute;
     content: ' ';
@@ -891,13 +1088,15 @@ p {
     background-size: cover;
 }
 
-
 /* ==========================================================================
    07. TESTIMONIALS
-========================================================================== */ 
+========================================================================== */
+
 /*------------------------------------------*/
+
 /*   Testimonial-Press Section
 /*------------------------------------------*/
+
 .testimonial-press {
     height: 600px;
 }
@@ -925,44 +1124,44 @@ p {
     opacity: 1;
 }
 
-
 /* ==========================================================================
    08. FEATURES TAB
-========================================================================== */ 
-.tab-features .features-title{
+========================================================================== */
+
+.tab-features .features-title {
     padding-top: 120px;
     text-align: center;
 }
 
-.tab-features .large{
+.tab-features .large {
     margin-bottom: 90px;
 }
 
-.tab-features .panel-container{
+.tab-features .panel-container {
     background-color: #ffffff;
 }
 
-.tab-features .etabs{
+.tab-features .etabs {
     display: table;
     text-align: center;
     margin: 0 auto;
 }
 
-.tab-features .etabs .tab{
+.tab-features .etabs .tab {
     display: table-cell;
     padding: 0 70px 50px 0;
     opacity: 0.5;
 }
 
-.tab-features .etabs .tab:last-child{
+.tab-features .etabs .tab:last-child {
     padding-right: 0;
 }
 
-.tab-features .etabs .tab.active{
+.tab-features .etabs .tab.active {
     opacity: 1;
 }
 
-.tab-features .etabs .tab.active:before{
+.tab-features .etabs .tab.active:before {
     content: '';
     position: relative;
     bottom: -141px;
@@ -980,8 +1179,8 @@ p {
 
 .etabs .icon-sm {
     display: inline-block;
-    width:55px;
-    height:auto;
+    width: 55px;
+    height: auto;
     margin-right: 10px;
     vertical-align: sub;
     color: #ffffff;
@@ -991,12 +1190,13 @@ p {
     color: #ffffff;
 }
 
-.tab-features .etabs .active h5, .tab-features .etabs .active i {
+.tab-features .etabs .active h5,
+.tab-features .etabs .active i {
     color: #ffffff;
 }
 
 .tab-features .tab-content {
-    overflow:hidden !important;
+    overflow: hidden !important;
     height: 700px;
     padding-top: 100px;
 }
@@ -1006,7 +1206,7 @@ p {
     line-height: 30px;
 }
 
-.tab-content p{
+.tab-content p {
     margin-bottom: 20px;
 }
 
@@ -1014,13 +1214,13 @@ p {
     margin-bottom: 20px;
 }
 
-.tab-icon .icon-sm{
+.tab-icon .icon-sm {
     width: 60px;
     margin-bottom: 10px;
     display: inline-block;
 }
 
-.tab-icon .large{
+.tab-icon .large {
     margin-bottom: 10px;
     display: inline-block;
     color: #3e3e3e;
@@ -1029,36 +1229,39 @@ p {
     bottom: 10px;
 }
 
-.img-device{
+.img-device {
     width: 100%;
 }
 
 /*single feature-tab fixes*/
+
 /* 2col text left with buttons, image right */
-#tab-feature-1 .btn-box{
+
+#tab-feature-1 .btn-box {
     padding: 0;
 }
 
-
 /* ==================================================================================
    09. NEWSLETTER, FAST-REGISTRATION HEADER & SIGNUP DIVIDER SECTIONS
-=================================================================================== */ 
+=================================================================================== */
+
 /* Newsletter */
-.newsletter .table{
+
+.newsletter .table {
     display: table;
     width: 100%;
     margin: 0;
 }
 
-.newsletter .table-row{
+.newsletter .table-row {
     display: table-row;
 }
 
-.newsletter .follow{
+.newsletter .follow {
     width: 120px;
 }
 
-.newsletter .getnewsletter{
+.newsletter .getnewsletter {
     width: 190px;
 }
 
@@ -1074,7 +1277,7 @@ p {
     opacity: 0.8;
 }
 
-.newsletter .social-list{
+.newsletter .social-list {
     display: block;
     margin: 0 0 0 -10px;
     list-style: none;
@@ -1085,17 +1288,17 @@ p {
     margin: 0 7px;
 }
 
-.newsletter .social-list>li a{
+.newsletter .social-list>li a {
     font-size: 50px;
     color: #fff;
     text-align: center;
 }
 
-.newsletter .social-list>li a:hover{
+.newsletter .social-list>li a:hover {
     color: #3e3e3e;
 }
 
-.newsletter .input-group .form-control{
+.newsletter .input-group .form-control {
     background: transparent;
     border-color: #ffffff;
     font-weight: 400;
@@ -1104,7 +1307,7 @@ p {
     color: #fff;
 }
 
-.newsletter .form-control:focus{
+.newsletter .form-control:focus {
     box-shadow: none;
 }
 
@@ -1120,32 +1323,35 @@ p {
     color: #ffffff;
 }
 
-.newsletter .btn{
+.newsletter .btn {
     padding: 16px 28px 15px 28px;
-    margin-right:0;
+    margin-right: 0;
 }
 
-.newsletter .btn:hover{
+.newsletter .btn:hover {
     background: #333333;
     color: #fff;
     border-color: #333333;
 }
 
-.newsletter .subscription-success, .newsletter .subscription-failed {
+.newsletter .subscription-success,
+.newsletter .subscription-failed {
     font-weight: 600;
     color: #ffffff;
 }
 
-.newsletter .subscription-success i, .newsletter .subscription-failed i{
+.newsletter .subscription-success i,
+.newsletter .subscription-failed i {
     margin-right: 5px;
 }
 
 /* Signup Divider */
-.signup-divider{
+
+.signup-divider {
     text-align: center;
 }
 
-.signup-divider h2{
+.signup-divider h2 {
     font-weight: 400;
 }
 
@@ -1175,49 +1381,53 @@ p {
     height: 54px;
 }
 
-.signup-divider canvas{
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0;
-    left:0;
-    z-index:-1;
+.signup-divider canvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
-.signup-divider .form-group,.fast-reg .form-group{
-    width:25%;
+.signup-divider .form-group,
+.fast-reg .form-group {
+    width: 25%;
     display: inline-block;
     margin-right: 15px;
     margin-bottom: 0;
 }
 
-.signup-divider .form-control,.fast-reg .form-control{
+.signup-divider .form-control,
+.fast-reg .form-control {
     background: transparent;
     border-color: #ffffff;
     font-weight: 400;
     font-size: 14px;
     height: 50px;
-    color:#fff;
+    color: #fff;
 }
 
-.signup-divider .btn{
+.signup-divider .btn {
     margin-bottom: 0;
     margin-right: 0;
     font-size: 15px;
     padding: 16px 28px 15px;
 }
 
-.fast-reg .btn{
+.fast-reg .btn {
     margin-bottom: 0;
     font-size: 13px;
     padding: 16px 28px 15px;
 }
 
-.signup-divider .btn:hover,.fast-reg .btn:hover{
+.signup-divider .btn:hover,
+.fast-reg .btn:hover {
     border-color: #ffffff;
 }
 
-.signup-divider .btn i,.fast-reg .btn i{
+.signup-divider .btn i,
+.fast-reg .btn i {
     font-size: 16px;
     margin-right: 0
 }
@@ -1238,9 +1448,9 @@ p {
     color: #fff;
 }
 
-.signup-divider .form-container{
+.signup-divider .form-container {
     background-color: #3e3e3e;
-    background-color: rgba(62,62,62,0.8);
+    background-color: rgba(62, 62, 62, 0.8);
     padding: 10px 0;
     margin: 0 auto;
     width: 70%;
@@ -1248,11 +1458,12 @@ p {
 }
 
 /* Fast-reg Fixes */
-.fast-reg .hero-section{
+
+.fast-reg .hero-section {
     text-align: center;
 }
 
-.fast-reg .form-control{
+.fast-reg .form-control {
     background: #ffffff;
     border-color: #ffffff;
     font-weight: 400;
@@ -1261,38 +1472,38 @@ p {
     color: #333;
 }
 
-
 /* ==========================================================================
    10. CHARTS SECTION
-========================================================================== */ 
-.charts p{
+========================================================================== */
+
+.charts p {
     margin-bottom: 20px;
 }
 
-.charts p.large{
+.charts p.large {
     margin-bottom: 70px;
 }
 
-.charts h4{
+.charts h4 {
     font-size: 24px;
     line-height: 30px;
 }
 
-.doughnut-box{
+.doughnut-box {
     margin-bottom: 206px;
 }
 
-.chart-box{
+.chart-box {
     margin-bottom: 80px;
 }
 
 #canvas-holder {
-    z-index:10;
-    position:absolute;
-    left:0;
+    z-index: 10;
+    position: absolute;
+    left: 0;
 }
 
-#canvas-holder .chart-text{
+#canvas-holder .chart-text {
     text-align: center;
     position: absolute;
     left: 143px;
@@ -1300,20 +1511,21 @@ p {
 }
 
 #canvas2-holder {
-    position:absolute;
-    left:370px;
-    top:50px;
-    z-index:0;
+    position: absolute;
+    left: 370px;
+    top: 50px;
+    z-index: 0;
 }
 
-#canvas2-holder .chart2-text{
+#canvas2-holder .chart2-text {
     text-align: center;
     position: absolute;
     left: 97px;
     top: 98px;
 }
 
-.chart-text, .chart2-text{
+.chart-text,
+.chart2-text {
     font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
     font-size: 21px;
@@ -1323,22 +1535,25 @@ p {
     color: #333333;
 }
 
-.chart-text span, .chart2-text span{
-    display:block;
+.chart-text span,
+.chart2-text span {
+    display: block;
     font-weight: 600;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: none;
     letter-spacing: normal;
 }
 
-.line-canvas{
-    width:100%;
+.line-canvas {
+    width: 100%;
 }
 
 /*------------------------------------------*/
+
 /*   Showcase Item with Video Button
 /*------------------------------------------*/
-.showcase .video-player{
+
+.showcase .video-player {
     position: absolute;
     top: 37%;
     left: 54%;
@@ -1346,23 +1561,23 @@ p {
     font-size: 55px;
 }
 
-.showcase .video-player:hover{
+.showcase .video-player:hover {
     opacity: 0.6;
 }
 
-
 /* ==========================================================================
    11. PRICING TABS
-========================================================================== */ 
+========================================================================== */
+
 .pricing-tab {
     padding: 50px 30px 30px;
     border-radius: 7px;
-    color:#333333;
+    color: #333333;
     text-align: center;
     position: relative;
 }
 
-.pricing-tab p.price{
+.pricing-tab p.price {
     font-size: 56px;
     letter-spacing: -2px;
     margin-bottom: 30px;
@@ -1378,9 +1593,9 @@ p {
     padding-bottom: 5px;
 }
 
-.pricing-tab .btn{
-    padding:11px 35px;
-    font-size:13px;
+.pricing-tab .btn {
+    padding: 11px 35px;
+    font-size: 13px;
 }
 
 .pricing-tab .btn:hover {
@@ -1398,7 +1613,7 @@ p {
     overflow: hidden;
 }
 
-.pricing-tab .ribbon .popular{
+.pricing-tab .ribbon .popular {
     position: relative;
     left: -8px;
     top: 18px;
@@ -1412,7 +1627,8 @@ p {
     transform: rotate(45deg) translate3d(0, 0, 0);
 }
 
-.pricing-tab .ribbon .popular:after, .pricing-tab .ribbon .popular:before{
+.pricing-tab .ribbon .popular:after,
+.pricing-tab .ribbon .popular:before {
     content: '';
     position: absolute;
     bottom: -5px;
@@ -1421,31 +1637,31 @@ p {
     border-right: 5px solid transparent;
 }
 
-.pricing-tab .ribbon .popular:before{
+.pricing-tab .ribbon .popular:before {
     left: 0;
 }
 
-.pricing-tab .ribbon .popular:after{
+.pricing-tab .ribbon .popular:after {
     right: 0;
 }
 
-.pricing-features{
+.pricing-features {
     margin-bottom: 30px;
 }
 
-.pricing-features li{
+.pricing-features li {
     padding: 3px 0;
     font-size: 16px;
     font-weight: 400;
 }
 
-.pricing-features li span{
-    display:block;
+.pricing-features li span {
+    display: block;
     font-weight: 300;
 }
 
 .pricing-more {
-    margin-top:30px;
+    margin-top: 30px;
     padding-left: 15px;
 }
 
@@ -1453,19 +1669,19 @@ p {
     color: #333333;
 }
 
-.pricing-more i{
+.pricing-more i {
     vertical-align: baseline;
 }
 
-
 /* ==========================================================================
    12. TEAM SECTION
-========================================================================== */ 
-.team h4{
+========================================================================== */
+
+.team h4 {
     margin-top: 20px;
 }
 
-.team-img{
+.team-img {
     position: relative;
     overflow: hidden;
     perspective: 300px;
@@ -1475,10 +1691,10 @@ p {
     -webkit-border-radius: 5%;
     -moz-border-radius: 5%;
     border-radius: 5%;
-    opacity:0.85;
+    opacity: 0.85;
 }
 
-.team-img .img-overlay{
+.team-img .img-overlay {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -1487,23 +1703,23 @@ p {
     bottom: 0;
     top: 0;
     opacity: 0;
-    background: rgba(27,27,27,.7);
+    background: rgba(27, 27, 27, .7);
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
 }
 
-.team-img:hover .img-overlay{
+.team-img:hover .img-overlay {
     opacity: 1;
 }
 
-.team-img:hover img{
-    -ms-transform: scale(1.5,1.5);
-    -moz-transform: scale(1.5,1.5);
-    -o-transform: scale(1.5,1.5);
-    -webkit-transform: scale(1.5,1.5);
-    transform: scale(1.5,1.5);
+.team-img:hover img {
+    -ms-transform: scale(1.5, 1.5);
+    -moz-transform: scale(1.5, 1.5);
+    -o-transform: scale(1.5, 1.5);
+    -webkit-transform: scale(1.5, 1.5);
+    transform: scale(1.5, 1.5);
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     -moz-transition: all .3s;
@@ -1516,18 +1732,18 @@ p {
     text-align: center;
 }
 
-.team-img .img-icons span{
+.team-img .img-icons span {
     display: inline-block;
     position: relative;
     top: 33%;
     margin: 0 3%;
 }
 
-.team-img .img-icons .icon-white a{
-    color:#ffffff;
+.team-img .img-icons .icon-white a {
+    color: #ffffff;
 }
 
-.team-img .img-icons span i{
+.team-img .img-icons span i {
     text-align: center;
     font-size: 60px;
     width: 60px;
@@ -1535,11 +1751,11 @@ p {
     padding: 5%;
 }
 
-
 /* ==========================================================================
    13. MOBILE DOWNLOAD SECTION
-========================================================================== */ 
-.mobile-download h3{
+========================================================================== */
+
+.mobile-download h3 {
     margin-top: 135px;
 }
 
@@ -1614,46 +1830,48 @@ p {
     margin-top: 120px;
 }
 
-.mobile-download .right-features h4{
+.mobile-download .right-features h4 {
     margin-bottom: 5px;
     margin-top: 20px;
 }
 
-.mobile-download .description{
+.mobile-download .description {
     margin-bottom: 35px;
 }
 
-
 /* ==========================================================================
    14. FOOTER
-========================================================================== */ 
-.footer, .footer a{
+========================================================================== */
+
+.footer,
+.footer a {
     color: #ced3d8;
 }
 
-.footer h5{
+.footer h5 {
     font-size: 15px;
     line-height: 23px;
 }
 
-.footer-hero, .footer-cta{
+.footer-hero,
+.footer-cta {
     font-size: 19px;
     line-height: 22px;
     margin-top: 20px;
     font-weight: 400;
 }
 
-.footer-hero strong{
+.footer-hero strong {
     font-weight: 600;
 }
 
-.footer-cta .btn{
+.footer-cta .btn {
     padding: 10px;
     margin-left: 5px;
     color: #fff;
 }
 
-.footer-cta .btn:hover{
+.footer-cta .btn:hover {
     border-color: #ffffff;
 }
 
@@ -1681,9 +1899,9 @@ p {
     font-weight: 600;
 }
 
-.footer-nav{
+.footer-nav {
     margin-top: 100px;
-    font-family: 'Raleway','Open Sans',Helvetica,Arial,sans-serif;
+    font-family: 'Raleway', 'Open Sans', Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 700;
     letter-spacing: 1px;
@@ -1697,7 +1915,7 @@ p {
     text-align: center;
 }
 
-.footer-nav li{
+.footer-nav li {
     display: inline-block;
     margin-left: 15px;
 }
@@ -1706,20 +1924,21 @@ p {
     color: #fff;
 }
 
-.footer-copy{
-    margin-top:15px;
-    font-size:13px;
+.footer-copy {
+    margin-top: 15px;
+    font-size: 13px;
     line-height: 16px;
     text-align: center;
 }
 
 /* Twitter Feed by Tweetie */
+
 .tweet {
     font-size: 16px;
     line-height: 21px;
 }
 
-.tweet ul{
+.tweet ul {
     list-style-type: circle;
 }
 
@@ -1727,11 +1946,11 @@ p {
     margin-top: 15px;
 }
 
-.tweet li span{
+.tweet li span {
     font-style: italic;
     font-size: 15px;
 }
 
-.m10-right{
+.m10-right {
     margin-right: 10px;
 }
