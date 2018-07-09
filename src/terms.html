@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
 
@@ -13,23 +14,23 @@
 
     <!-- FAVICON  -->
     <link rel="icon" href="assets/images/favicon/favicon.ico">
-    
+
     <!-- =========================
        STYLESHEETS 
     ============================== -->
-    
+
     <!-- BOOTSTRAP CSS -->
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
 
     <!-- FONT ICONS -->
     <link rel="stylesheet" href="assets/css/icons/icons.min.css">
-     
+
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700%7COpen+Sans:300,400,600,700%7CHandlee" rel="stylesheet">
-    
+
     <!-- PLUGINS STYLESHEET -->
     <link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
-    
+
     <!-- CUSTOM STYLESHEET -->
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -39,8 +40,8 @@
     <!-- COLORE STYLESHEET -->
     <!-- Change here the Main Color of the Site: Choose your favorite predefined color from assets/css/colors.css -->
     <link rel="stylesheet" href="assets/css/colors/purple.css" title="purple">
-    
-    
+
+
     <!--[if lt IE 9]>
             <script src="assets/js/plugins/html5shiv.min.js"></script>
             <script src="assets/js/plugins/respond.min.js"></script>
@@ -48,52 +49,77 @@
 
     <!-- HEAP ANALYTICS -->
     <script type="text/javascript">
-    window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
-    heap.load("100207806");
+        window.heap = window.heap || [], heap.load = function (e, t) {
+            window.heap.appid = e, window.heap.config = t = t || {};
+            var r = t.forceSSL || "https:" === document.location.protocol,
+                a = document.createElement("script");
+            a.type = "text/javascript", a.async = !0, a.src = (r ? "https:" : "http:") +
+                "//cdn.heapanalytics.com/js/heap-" + e + ".js";
+            var n = document.getElementsByTagName("script")[0];
+            n.parentNode.insertBefore(a, n);
+            for (var o = function (e) {
+                    return function () {
+                        heap.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+                    }
+                }, p = ["addEventProperties", "addUserProperties", "clearEventProperties", "identify",
+                    "removeEventProperty", "setEventProperties", "track", "unsetEventProperty"
+                ], c = 0; c < p.length; c++) heap[p[c]] = o(p[c])
+        };
+        heap.load("100207806");
     </script>
 
     <!-- GOOGLE ANALYTICS -->
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', 'UA-73020702-1', 'auto');
-    ga('send', 'pageview');
-
+        ga('create', 'UA-73020702-1', 'auto');
+        ga('send', 'pageview');
     </script>
-        
+
     <!-- Drift Messaging -->
     <script>
-    !function() {
-    var t;
-    if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0, 
-    t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-    t.factory = function(e) {
-        return function() {
-        var n;
-        return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
-        };
-    }, t.methods.forEach(function(e) {
-        t[e] = t.factory(e);
-    }), t.load = function(t) {
-        var e, n, o, i;
-        e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"), 
-        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js", 
-        n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
-    });
-    }();
-    drift.SNIPPET_VERSION = '0.3.1';
-    drift.load('2756gthz52yn');
+        ! function () {
+            var t;
+            if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void(window.console &&
+                console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
+                t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide",
+                    "off", "on"
+                ],
+                t.factory = function (e) {
+                    return function () {
+                        var n;
+                        return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+                    };
+                }, t.methods.forEach(function (e) {
+                    t[e] = t.factory(e);
+                }), t.load = function (t) {
+                    var e, n, o, i;
+                    e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
+                        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src =
+                        "https://js.driftt.com/include/" + i + "/" + t + ".js",
+                        n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+                });
+        }();
+        drift.SNIPPET_VERSION = '0.3.1';
+        drift.load('2756gthz52yn');
     </script>
-<!-- End of Async Drift Code -->
+    <!-- End of Async Drift Code -->
 
 </head>
 
 <body>
-    <div class="main-wrapper"> 
-        
+    <div class="main-wrapper">
+
 
         <!-- =========================
              HEADER
@@ -111,7 +137,7 @@
                             <div class="col-md-12">
                                 <!-- Navbar-Header -->
                                 <div class="navbar-header">
-                                    
+
                                     <!-- Mobile Menu -->
                                     <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
                                         <i class="icon icon_menu"></i>
@@ -119,318 +145,589 @@
 
                                     <!-- Text-Logo -->
                                     <a href="https://www.samelogic.com/" class="navbar-brand scrollto" title="Samelogic">
-                                        <span class="text-logo"><img class="m10-right" src="assets/images/samelogic-logo-small.png" alt="Samelogic Header Logo"/>samelogic</span>
+                                        <span class="text-logo">
+                                            <img class="m10-right" src="assets/images/samelogic-logo-small.png" alt="Samelogic Header Logo"
+                                            />samelogic</span>
                                     </a>
 
-                                </div><!-- /End Navbar-Header -->
+                                </div>
+                                <!-- /End Navbar-Header -->
 
                                 <!-- Navbar-Collapse -->
                                 <div class="navbar-collapse collapse">
-                                        <ul class="nav navbar-nav navbar-right">
-                                                <!-- Menu Items -->
-                                                <li><a href="https://www.samelogic.com/#about" title="How">How</a></li>
-                                                <li><a href="https://www.samelogic.com/features.html" title="Features">Features</a></li>
-                                                <li><a href="https://www.samelogic.com/uses.html" title="Use Cases">Use Cases</a></li>
-                                                <li><a href="https://www.samelogic.com/#pricing" title="Pricing">Pricing</a></li>
-                                                <li><a target="_blank" title="Blog" href="http://blog.samelogic.com">Blog</a></li>
-                                                <li><a href="http://developers.samelogic.com" title="" target="_blank">Developers</a></li>
-                                                <!-- Login and Signup Modal on click -->                                        
-                                                <li><a class="btn btn-nav btn-color" href="https://www.samelogic.com/signup.html">Sign Up</a></li>
-                                            </ul>
-                                    </div><!-- /End Navbar-Collapse -->
-                            </div><!-- /End Col -->
-                        </div><!-- /End Row -->
-                    </div><!-- /End Container -->
-                </nav><!-- /End Sticky Navigation -->
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <!-- Menu Items -->
+                                        <li>
+                                            <a href="https://www.samelogic.com/#about" title="How">How</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.samelogic.com/features.html" title="Features">Features</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.samelogic.com/#pricing" title="Pricing">Pricing</a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" title="Blog" href="http://blog.samelogic.com">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://developers.samelogic.com" title="" target="_blank">Developers</a>
+                                        </li>
+                                        <!-- Login and Signup Modal on click -->
+                                        <li>
+                                            <a class="btn btn-nav btn-color" href="https://www.samelogic.com/signup.html">Sign Up</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- /End Navbar-Collapse -->
+                            </div>
+                            <!-- /End Col -->
+                        </div>
+                        <!-- /End Row -->
+                    </div>
+                    <!-- /End Container -->
+                </nav>
+                <!-- /End Sticky Navigation -->
 
 
-            </div><!-- /End Background Overlay -->
+            </div>
+            <!-- /End Background Overlay -->
         </header>
         <!-- =========================
              /END HEADER
         ============================== -->
 
-        
+
         <!-- =================================
              SECTION ABOUT - ACCEPTABLE USE POLICY
         ====================================== -->
         <section class="intro-features" id="about">
             <div class="container">
                 <!-- Padding -->
-                
-                    <div class="row">
-                        <!-- Section Header Title -->
-                        <div class="col-xs-12">
-                            <h2 style="margin-top:1em;">Terms of Services Agreement</h2>
-                            <p class="large large-bot-margin left-align">Please read the following Terms of Service Agreement carefully. By accessing our sites and our services, you hereby agree to be bound by the Terms and all Terms incorporated herein by reference. It is the responsibility of you, the User, Customer, or Prospective Customer to read the terms and conditions before proceeding to use this service. If you do not expressly agree to all of the Terms and Conditions, then please DO NOT access of use our site or services. This Terms of Service Agreement is effective as of 03/21/2017.</p>
-                            <p class="large small-bot-margin left-align">Acceptance of Terms</p>
-                            <p class="large large-bot-margin left-align">TThe following Terms of Services Agreement (“TOS”) is a legally binding agreement that shall govern the relationship with our user and others which may interact or interface with Samelogic (“Samelogic, Inc.”), located in San Mateo, California, U.S.A, and our subsidiaries and affiliates, in association with the use of the Samelogic website, which includes www.samelogic.com (“Site”) and its Services, which shall be defined below.</p>
 
-                            <p class="large small-bot-margin left-align">Description of Website Services Offered</p>
-                            <p class="large small-bot-margin left-align">The Site is a survey platform which quantifies emotions and responses by engaging people with video surveys.</p>
+                <div class="row">
+                    <!-- Section Header Title -->
+                    <div class="col-xs-12">
+                        <h2 style="margin-top:1em;">Terms of Services Agreement</h2>
+                        <p class="large large-bot-margin left-align">Please read the following Terms of Service Agreement carefully. By accessing our sites and our services,
+                            you hereby agree to be bound by the Terms and all Terms incorporated herein by reference. It
+                            is the responsibility of you, the User, Customer, or Prospective Customer to read the terms and
+                            conditions before proceeding to use this service. If you do not expressly agree to all of the
+                            Terms and Conditions, then please DO NOT access of use our site or services. This Terms of Service
+                            Agreement is effective as of 03/21/2017.</p>
+                        <p class="large small-bot-margin left-align">Acceptance of Terms</p>
+                        <p class="large large-bot-margin left-align">TThe following Terms of Services Agreement (“TOS”) is a legally binding agreement that shall govern
+                            the relationship with our user and others which may interact or interface with Samelogic (“Samelogic,
+                            Inc.”), located in San Mateo, California, U.S.A, and our subsidiaries and affiliates, in association
+                            with the use of the Samelogic website, which includes www.samelogic.com (“Site”) and its Services,
+                            which shall be defined below.</p>
 
-                            <p class="large small-bot-margin left-align">Any and all visitors to our site, despite whether they are registered or not, shall be deemed as “Users” of the herein contained Services provided for the purpose of the TOS. One an individual registers for our Services, through the process of creating an account, the use shall then be considered a “member”.</p>
+                        <p class="large small-bot-margin left-align">Description of Website Services Offered</p>
+                        <p class="large small-bot-margin left-align">The Site is a survey platform which quantifies emotions and responses by engaging people with video
+                            surveys.</p>
 
-                            <p class="large large-bot-margin left-align">The user and/or member acknowledges and agrees that the Services provided and made available through our website and applications, which may include some mobile applications and that those applications may be made available on various social media networking sites, numerous platforms and downloadable programs, are the sole property of Samelogic. At its discretion, Samelogic may offer additional website Services and/or products, or update, modify or revise any current content and Services, and this Agreement shall apply to any and all additional Services and/or products and any and all updated, modified or revised Services unless otherwise stipulated. Samelogic does hereby reserve the right to can and cease offering any of the aforementioned Services and/or products. You, as the end user and/or member, acknowledge, accept and agree that Samelogic shall not be held liable for any such updates, modifications, revisions, suspension or discontinuance of any of our Services and/or products. Your continued use of the Services provided, after such posting of any updates, changes, and/or modification shall constitute your acceptance of such updates, changes and/or modification, and as such, frequent review of this Agreement and any and all applicable terms and policies should be made by you to ensure you are aware of all the terms and policies currently in effect. Should you not agree to the updated, revised or modified terms, you must stop using the provided Services.</p>
+                        <p class="large small-bot-margin left-align">Any and all visitors to our site, despite whether they are registered or not, shall be deemed as
+                            “Users” of the herein contained Services provided for the purpose of the TOS. One an individual
+                            registers for our Services, through the process of creating an account, the use shall then be
+                            considered a “member”.</p>
 
-                            <p class="large small-bot-margin left-align">Registration</p>
-                            <p class="large small-bot-margin left-align">To register and become a “member” of the Site, you must be at least 18 years of age to enter into and form a legally binding contract. In addition, you must be in good standing and not an individual that has been previously barred from receiving Samelogic’s Services under the laws of the United States or other applicable jurisdiction.</p>
-                            <p class="large small-bot-margin left-align">When registering, Samelogic my collect information such as your name, email address, birth date, gender, mailing address, occupation, industry and personal interests. You can edit your account information at any time. Once you register with Samelogic and sign in to our Services, you are not longer anonymous to us.</p>
-                            <p class="large small-bot-margin left-align">Furthermore, the registering party hereby acknowledges, understand and agrees to:
-Furnish factual, correct, current and complete information with regards to yourself as may be requested by the data registration process, and; Maintain and prompt update your registration and profile information in an effort to maintain accuracy and completeness at all times.</p>
-                            <p class="large large-bot-margin left-align">If anyone knowingly provides any information of a false, untrue inaccurate or incomplete nature, Samelogic will have sufficient ground and rights to suspend or terminate the member in violation of the aspect of the Agreement, and as such, refuse any and all current or future use of Samelogic’s Services, or any portion thereof.</p>
+                        <p class="large large-bot-margin left-align">The user and/or member acknowledges and agrees that the Services provided and made available through
+                            our website and applications, which may include some mobile applications and that those applications
+                            may be made available on various social media networking sites, numerous platforms and downloadable
+                            programs, are the sole property of Samelogic. At its discretion, Samelogic may offer additional
+                            website Services and/or products, or update, modify or revise any current content and Services,
+                            and this Agreement shall apply to any and all additional Services and/or products and any and
+                            all updated, modified or revised Services unless otherwise stipulated. Samelogic does hereby
+                            reserve the right to can and cease offering any of the aforementioned Services and/or products.
+                            You, as the end user and/or member, acknowledge, accept and agree that Samelogic shall not be
+                            held liable for any such updates, modifications, revisions, suspension or discontinuance of any
+                            of our Services and/or products. Your continued use of the Services provided, after such posting
+                            of any updates, changes, and/or modification shall constitute your acceptance of such updates,
+                            changes and/or modification, and as such, frequent review of this Agreement and any and all applicable
+                            terms and policies should be made by you to ensure you are aware of all the terms and policies
+                            currently in effect. Should you not agree to the updated, revised or modified terms, you must
+                            stop using the provided Services.</p>
 
-                            <p class="large small-bot-margin left-align">Privacy Policy</p>
-                            <p class="large large-bot-margin left-align">Every member’s registration data and other personal information are strictly protect by the Samelogic Online Privacy Policy (see the full Privacy Policy at www.samelogic.com/privacy). As a member, you herein consent to the collection and use of the information provided, including the transfer of information within the United States and/or other countries for storage, processing or use by Samelogic and/or our subsidiaries and affiliates.</p>
+                        <p class="large small-bot-margin left-align">Registration</p>
+                        <p class="large small-bot-margin left-align">To register and become a “member” of the Site, you must be at least 18 years of age to enter into
+                            and form a legally binding contract. In addition, you must be in good standing and not an individual
+                            that has been previously barred from receiving Samelogic’s Services under the laws of the United
+                            States or other applicable jurisdiction.</p>
+                        <p class="large small-bot-margin left-align">When registering, Samelogic my collect information such as your name, email address, birth date,
+                            gender, mailing address, occupation, industry and personal interests. You can edit your account
+                            information at any time. Once you register with Samelogic and sign in to our Services, you are
+                            not longer anonymous to us.</p>
+                        <p class="large small-bot-margin left-align">Furthermore, the registering party hereby acknowledges, understand and agrees to: Furnish factual,
+                            correct, current and complete information with regards to yourself as may be requested by the
+                            data registration process, and; Maintain and prompt update your registration and profile information
+                            in an effort to maintain accuracy and completeness at all times.</p>
+                        <p class="large large-bot-margin left-align">If anyone knowingly provides any information of a false, untrue inaccurate or incomplete nature,
+                            Samelogic will have sufficient ground and rights to suspend or terminate the member in violation
+                            of the aspect of the Agreement, and as such, refuse any and all current or future use of Samelogic’s
+                            Services, or any portion thereof.</p>
 
-                            <p class="large small-bot-margin left-align">Member Account, Username, Password and Security</p>
-                            <p class="large large-bot-margin left-align">When you set an account, you are the sole authorized user of your account. You shall be responsible for maintaining the secrecy and confidentiality of your password and for all activities that transpire on or within your account. It is your responsibility for any act or omission of any user(s) that access your account information that, if undertaken by you, would be deemed a violation of the TOS. It shall be your responsibility to notify Samelogic immediately if you notice any unauthorized access or use of your account or password or any other breach of security. Samelogic shall not be held responsible for any loss and/or damage arising from any failure to comply with this term and/or condition of the TOS.
-</p>
+                        <p class="large small-bot-margin left-align">Privacy Policy</p>
+                        <p class="large large-bot-margin left-align">Every member’s registration data and other personal information are strictly protect by the Samelogic
+                            Online Privacy Policy (see the full Privacy Policy at www.samelogic.com/privacy). As a member,
+                            you herein consent to the collection and use of the information provided, including the transfer
+                            of information within the United States and/or other countries for storage, processing or use
+                            by Samelogic and/or our subsidiaries and affiliates.</p>
 
-                            <p class="large small-bot-margin left-align">Conduct</p>
-                            <p class="large small-bot-margin left-align">As a user or member of the Site, you herein acknowledge, understand and agree that all information, text, software, data, photographs, video, messages, tags or any other content, whether it is publicly or privately posted and/or transmitted, is the expressed sole responsibility of the individual from whom the content originated. In short, this means that you are solely responsible for any and all content post, uploaded, emailed, transmitted or otherwise made available by way of Samelogic’s Services, and as such, we do not guarantee accuracy, integrity, or quality of such content. It is expressly understood that by the use of our Services, you may be exposed to content, including, but not limited to, any errors or omissions in any content posted, and/or any loss or damage of any kind incurred as a result of the use of any content posted, emailed, transmitted or otherwise made available by Samelogic.</p>
-                            <p class="large small-bot-margin left-align">Furthermore, you herein agree not to make use of Samelogic’s Services for the purpose of:</p>
-                            <p class="large small-bot-margin left-align">
-                                <ul class="left-align">
-                                    <li>• Uploading, posting, emailing, transmitting, or otherwise making available any content that shall be deemed unlawful, harmful, threatening, abusive, harassing, tortious, defamatory, vulgar, obscene, libelous, or invasive of another persons privacy, or which is hateful, and/or racially, ethnically, or otherwise objectionable;</li>
-                                    <li>• causing harm to minors in any manner  whatsoever;</li>
-                                    <li>• impersonating any individual, but not limited to, any Samelogic officials or partners or falsely stating otherwise misrepresenting any affiliation with an individual or entity;</li>
-                                    <li>• forging captions, headings or titles or otherwise offering any content that you personally have no right to pursuant to any law having any contractual or fiduciary relationship with;</li>
-                                    <li>• uploading, posting, emailing, transmitting or otherwise offering and such content that may infringe upon any patent, copyright, trademark, or any other proprietary or intellectual rights of any other party;</li>
-                                    <li>• uploading, posting, emailing, transmitting or otherwise offering any content that you do not personally have any right to offer pursuant to any law or in accordance with any contractual or fiduciary relationship;</li>
-                                    <li>• uploading, posting, emailing, transmitting, or otherwise offering any unsolicited or unauthorized advertising, promotional flyers, “junk mail”, “spam”, or any other form of solicitation, except in any such areas that may have been designed for such purpose;</li>
-                                    <li>• uploading, posting, emailing, transmitting, or otherwise offering any source that may contain a software virus or other computer code, any files and/or programs which have been designed to interfere, destroy and/or limit the operation of any computer software, hardware, or telecommunication equipment;</li>
-                                    <li>• disrupting the normal flow of communication, or otherwise acting manner that would negatively affect other users’ ability to participate in any real-time interactions;</li>
-                                    <li>• interfering with Samelogic’s Services, servers and/or networks that may be connected or related to our website, including, but not limited to, the use of any device software and/or routine to bypass the robot exclusion headers;</li>
-                                    <li>• intentionally or unintentionally violation any local, state, federal, national or international law, including, but not limited to, rules, guidelines, and/or regulations decreed by the U.S. Securities and Exchange Commission, in additional to any rules of any nation or other securities exchange, that would include without limitation, the New York Stock Exchange, the American Stock Exchange, or the NASDAQ, and any regulations have force of law;</li>
-                                    <li>• providing information support or resources, concealing and/or disguising the character, location, and or source to any organization delegation by the United States government as a “foreign terrorist organization” in accordance with Section 219 of the Immigration Nationality Act;</li>
-                                    <li>• “stalking” or with the intent to otherwise harass another individual; and/or;</li>
-                                    <li>• collecting or storing of any personal data relating to any other member or user in connection with the prohibited conduct and/or activities which have been set forth in the aforementioned paragraphs.</li>
-                                </ul>
-                            </p>
+                        <p class="large small-bot-margin left-align">Member Account, Username, Password and Security</p>
+                        <p class="large large-bot-margin left-align">When you set an account, you are the sole authorized user of your account. You shall be responsible
+                            for maintaining the secrecy and confidentiality of your password and for all activities that
+                            transpire on or within your account. It is your responsibility for any act or omission of any
+                            user(s) that access your account information that, if undertaken by you, would be deemed a violation
+                            of the TOS. It shall be your responsibility to notify Samelogic immediately if you notice any
+                            unauthorized access or use of your account or password or any other breach of security. Samelogic
+                            shall not be held responsible for any loss and/or damage arising from any failure to comply with
+                            this term and/or condition of the TOS.
+                        </p>
 
-                            <p class="small-top-margin left-align">
-                                Samelogic herein reserves the right to access, preserve and/or disclose member account information and/or content if it is requested to do so by law or good faith belief that any such action is deemed reasonably necessary for:
-                            </p>
-                            <p class="large small-bot-margin left-align">
+                        <p class="large small-bot-margin left-align">Conduct</p>
+                        <p class="large small-bot-margin left-align">As a user or member of the Site, you herein acknowledge, understand and agree that all information,
+                            text, software, data, photographs, video, messages, tags or any other content, whether it is
+                            publicly or privately posted and/or transmitted, is the expressed sole responsibility of the
+                            individual from whom the content originated. In short, this means that you are solely responsible
+                            for any and all content post, uploaded, emailed, transmitted or otherwise made available by way
+                            of Samelogic’s Services, and as such, we do not guarantee accuracy, integrity, or quality of
+                            such content. It is expressly understood that by the use of our Services, you may be exposed
+                            to content, including, but not limited to, any errors or omissions in any content posted, and/or
+                            any loss or damage of any kind incurred as a result of the use of any content posted, emailed,
+                            transmitted or otherwise made available by Samelogic.</p>
+                        <p class="large small-bot-margin left-align">Furthermore, you herein agree not to make use of Samelogic’s Services for the purpose of:</p>
+                        <p class="large small-bot-margin left-align">
                             <ul class="left-align">
-                                    <li>• compliance with any legal process;</li>
-                                    <li>• enforcement of the TOS;</li>
-                                    <li>• responding to any claim that therein contained is in violation of the rights of any third party;</li>
-                                    <li>• responding to requests for customer service;</li>
-                                    <li>• or protecting the rights, property or the personal safety of Samelogic, its visitors, user, and members, including the general public.</li>
+                                <li>• Uploading, posting, emailing, transmitting, or otherwise making available any content that
+                                    shall be deemed unlawful, harmful, threatening, abusive, harassing, tortious, defamatory,
+                                    vulgar, obscene, libelous, or invasive of another persons privacy, or which is hateful,
+                                    and/or racially, ethnically, or otherwise objectionable;</li>
+                                <li>• causing harm to minors in any manner whatsoever;</li>
+                                <li>• impersonating any individual, but not limited to, any Samelogic officials or partners or
+                                    falsely stating otherwise misrepresenting any affiliation with an individual or entity;</li>
+                                <li>• forging captions, headings or titles or otherwise offering any content that you personally
+                                    have no right to pursuant to any law having any contractual or fiduciary relationship
+                                    with;</li>
+                                <li>• uploading, posting, emailing, transmitting or otherwise offering and such content that
+                                    may infringe upon any patent, copyright, trademark, or any other proprietary or intellectual
+                                    rights of any other party;</li>
+                                <li>• uploading, posting, emailing, transmitting or otherwise offering any content that you do
+                                    not personally have any right to offer pursuant to any law or in accordance with any
+                                    contractual or fiduciary relationship;</li>
+                                <li>• uploading, posting, emailing, transmitting, or otherwise offering any unsolicited or unauthorized
+                                    advertising, promotional flyers, “junk mail”, “spam”, or any other form of solicitation,
+                                    except in any such areas that may have been designed for such purpose;</li>
+                                <li>• uploading, posting, emailing, transmitting, or otherwise offering any source that may contain
+                                    a software virus or other computer code, any files and/or programs which have been designed
+                                    to interfere, destroy and/or limit the operation of any computer software, hardware,
+                                    or telecommunication equipment;</li>
+                                <li>• disrupting the normal flow of communication, or otherwise acting manner that would negatively
+                                    affect other users’ ability to participate in any real-time interactions;</li>
+                                <li>• interfering with Samelogic’s Services, servers and/or networks that may be connected or
+                                    related to our website, including, but not limited to, the use of any device software
+                                    and/or routine to bypass the robot exclusion headers;</li>
+                                <li>• intentionally or unintentionally violation any local, state, federal, national or international
+                                    law, including, but not limited to, rules, guidelines, and/or regulations decreed by
+                                    the U.S. Securities and Exchange Commission, in additional to any rules of any nation
+                                    or other securities exchange, that would include without limitation, the New York Stock
+                                    Exchange, the American Stock Exchange, or the NASDAQ, and any regulations have force
+                                    of law;</li>
+                                <li>• providing information support or resources, concealing and/or disguising the character,
+                                    location, and or source to any organization delegation by the United States government
+                                    as a “foreign terrorist organization” in accordance with Section 219 of the Immigration
+                                    Nationality Act;</li>
+                                <li>• “stalking” or with the intent to otherwise harass another individual; and/or;</li>
+                                <li>• collecting or storing of any personal data relating to any other member or user in connection
+                                    with the prohibited conduct and/or activities which have been set forth in the aforementioned
+                                    paragraphs.</li>
                             </ul>
+                        </p>
+
+                        <p class="small-top-margin left-align">
+                            Samelogic herein reserves the right to access, preserve and/or disclose member account information and/or content if it is
+                            requested to do so by law or good faith belief that any such action is deemed reasonably necessary
+                            for:
+                        </p>
+                        <p class="large small-bot-margin left-align">
+                            <ul class="left-align">
+                                <li>• compliance with any legal process;</li>
+                                <li>• enforcement of the TOS;</li>
+                                <li>• responding to any claim that therein contained is in violation of the rights of any third
+                                    party;</li>
+                                <li>• responding to requests for customer service;</li>
+                                <li>• or protecting the rights, property or the personal safety of Samelogic, its visitors, user,
+                                    and members, including the general public.</li>
+                            </ul>
+                        </p>
+
+                        <p class="large small-top-margin left-align">
+                            Samelogic herein reserves the right to include the use of security components that may permit digital information or material
+                            to be protected, and that such use of information and/or material is subject to usage guidelines
+                            and regulations established by Samelogic or any other content providers supplying content services
+                            to Samelogic. You are hereby prohibited from making any attempt to override or circumvent any
+                            of the embedded usage rules in our Services. Furthermore, unauthorized reproduction, publication,
+                            distribution, or exhibition of any information or materials supplied by our Services, despite
+                            whether done in the whole or part, is expressly prohibited.
+                        </p>
+
+                        <p class="large small-bot-margin left-align">Cautions for Global Use and Export &amp; Import Compliance </p>
+                        <p class="large small-bot-margin left-align"> Due to the nature of the internet, through the use of our network, you hereby agree to comply with
+                            all local rules relating to online conduct and that which is considered acceptable Content. Uploading,
+                            posting and/or transferring of software, technology, and other technical data may be subject
+                            to the export and import laws of the United States and possibly other countries. Through the
+                            use of our network, you thus agree to comply with all applicable export and import laws, statues
+                            and regulations, including, but not limited to, the Export Administration Regulations laws (https://www.bis.doc.gov/index.php/regulations/export-administration-regulations-ear)
+                            as well as the sanctions control program of the United States (http://www.treasury.gov/resource-center/sanctions/programs/pages/programs.aspx).
+                            Furthermore, you state and pledge that you:</p>
+                        <p class="large small-bot-margin left-align">
+                            <ul class="left-align">
+                                <li>• are not on the list of prohibited individuals which may be identified on any government
+                                    export exclusion report (https://www.bis.doc.gov/index.php/policy-guidance/lists-of-parties-of-concern)
+                                    nor a member of any other government which may be part of an export-prohibited country
+                                    identified in applicable export and import laws and regulations </li>
+                                <li>• not agree to transfer any software, technology or any other technical data through the
+                                    use of our network Services to any export-prohibited country;</li>
+                                <li>• agree not to use our website network Services for any military, nuclear, missile, chemical
+                                    or biological weaponry end uses that would be a violation of the U.S. Export laws;</li>
+                                <li>• agree not to post, transfer nor upload any software, technology or any other technical
+                                    data which would be in violation of U.S. or other applicable export and/or import laws.</li>
+                            </ul>
+                        </p>
+
+                        <p class="large large-top-margin small-bot-margin left-align"> Content Placed or Made Available for Company Services</p>
+                        <p class="large small-bot-margin left-align"> Samelogic shall not lay claim to ownership of content submitted by any visitor, member, or user,
+                            not make such content available for inclusion on our website Services. Therefore, you hereby
+                            grant and allow for Samelogic the below listed worldwide, royalty-free and non-exclusive licenses,
+                            as applicable:</p>
+                        <p class="large small-top-margin left-align">The content submitted or made available for inclusion on the publicly accessible areas for Samelogic’s
+                            sites, the license provided to permit use, distribute, reproduce, modify, adapt, publicly perform
+                            and/or publicly display said Content on our network Services is for the sole purpose of providing
+                            and promoting the specific area to which this content was placed and/or made available for viewing.
+                            This license shall be available so long as you are a member of Samelogic’s sites, and shall terminate
+                            at such time when you elect to discontinue your membership.</p>
+                        <p class="large small-top-margin left-align">Photos, audio, video and/or graphics submitting or made available for inclusion on the publicly accessible
+                            are of Samelogic’s websites, the license provided to permit use, distribute, reproduce, modify,
+                            adapt, publicly perform and/or publicly display said Content on our network Services are for
+                            the sole purpose of providing and promoting the specific are in which this content was placed
+                            and/or made available for viewing. This license shall be available so long as you are a member
+                            of Samelogic’s sites and shall terminate at such time when you elect to discontinue your membership.
+                            </p>
+                        <p class="large small-top-margin left-align">For any other content submitted or made available for inclusion on the publicly accessible areas
+                            of Samelogic’s sites, the continuos, binding and completely sub-licensable license which is meant
+                            to permit use, distribute, reproduce, modify, adapt, publish, translate, publicly display said
+                            content, whether in whole or in part, and the incorporation of any Content into other works in
+                            any arrangement or medium currently used or later developed. </p>
+
+                        <p class="large large-top-margin small-top-margin left-align">Contributions to Company Website </p>
+                        <p class="large small-top-margin left-align"> Samelogic provides an area for users and members to contribute feedback to our website. When you
+                            submit ideas, documents, suggestions and/or proposals (“Contributions”) to our site, you acknowledge
+                            and agree that:</p>
+                        <p class="large small-top-margin left-align">
+                            <ul class="left-align">
+                                <li>• your contributions do not contain any type of contain any type of confidential or proprietary
+                                    information;</li>
+                            </ul>
+                        </p>
+                        <p class="large small-top-margin left-align"> Samelogic shall not be liable or under any obligation to ensure or maintain confidentiality, expressed
+                            or implied, related to Contributions.</p>
+
+                        <p class="large large-top-margin small-top-margin left-align">Indemnity</p>
+                        <p class="large small-top-margin left-align"> All users and/or members herein agree to insure and hold Samelogic, our subsidiaries, affiliates,
+                            agents, employees, officers, partners and/or licensors blameless or not liable for any claim
+                            or demand, which may include, but is not limited to, reasonable attorney fees made by any third
+                            party which may arise from any content a member or user of our site may submit, post, modify,
+                            transmit or otherwise make available through our Services, the use of Samelogic’s Services or
+                            your connection with these Services, your violations of the Terms of Service and/or your violation
+                            of any such rights of another person.</p>
+
+                        <p class="large large-top-margin small-top-margin left-align">Commercial Reuse of Services</p>
+                        <p class="large small-top-margin left-align"> The member or user herein agrees not to replicate, duplicate, copy, trade, sell, resell or exploit
+                            for any commercial reason any part, use of, or access to Samelogic’s sites. </p>
+
+                        <p class="large large-top-margin small-top-margin left-align">Use and Storage General Practices </p>
+                        <p class="large small-top-margin left-align"> You herein acknowledge that Samelogic may set up any such practices and/or limits regarding the use
+                            of our Services, without limitation of the maximum number of days that any email, message posting
+                            or any other uploaded content shah be retained by Samelogic, nor the maximum number of email
+                            messages that maybe sent and/or received by any member, the maximum volume or size of any email
+                            message that may be sent from or may be received by an account on our Service, the maximum disk
+                            space allowable that shall be allocated on Samelogic's servers on the member's behalf, and/or
+                            the maximum number of times and/or duration that any member may access our Services in a given
+                            period of time. In addition, you also agree that Samelogic has absolutely no responsibility or
+                            liability for the removal or failure to maintain storage of any messages and/or other communications
+                            or content maintained or no by our Services. You also herein acknowledge that we reserve the
+                            right to delete or remove any account that is no longer active for an extended period of time.
+                            Furthermore, Samelogic shall reserve the right to modify, alter and/or update these general practices
+                            and limits at our discretion. </p>
+
+                        <p class="large large-top-margin small-top-margin left-align">Modifications</p>
+                        <p class="large small-top-margin left-align"> Samelogic shall reserve the right at any time it may deem fit, to modify, alter and/or discontinue,
+                            whether temporarily or permanently, our service, or any part thereof, with or without prior notice.
+                            In addition, we shall not be held liable to you or to any third party for any such alteration,
+                            modification, suspension and/or discontinuation our Services, of any part thereof.</p>
+
+                        <p class="large large-top-margin small-top-margin left-align">Termination</p>
+                        <p class="large small-top-margin left-align"> As a member of www.samelogic.com, you may cancel/terminate your account, associated email address
+                            and/or access to our Services by submitting a cancelation or termination request to ‘support@samelogic.com’.</p>
+                        <p class="large small-top-margin left-align"> As a member, you agree that Samelogic may, without any prior written notice, immediately suspend,
+                            terminate, discontinue and/or limit your account, any email associated with your account, and
+                            access to any of our Services. The cause for such termination, discontinuance, suspension and/or
+                            limitation of access shall include, but is not limited to:</p>
+                        <p class="large small-bot-margin left-align">
+                            <ul class="left-align">
+                                <li>• any breach of violation of our TOS or any other incorporated agreement, regulation and/or
+                                    guideline;</li>
+                                <li>• by way of requests from law enforcement or any governmental agencies;</li>
+                                <li>• the discontinuance, alteration and/or material modification of our Services, of any part
+                                    thereof;</li>
+                                <li>• unexpected technical or security issues and/or problems;</li>
+                                <li>• any engagement by you in any fraudulent or illegal activities; and/or</li>
+                                <li>• the nonpayment of any associated fees that may be owed by you in connection with www.samelogic.com.</li>
+                            </ul>
+                        </p>
+                        <p class="large small-top-margin left-align"> Furthermore, you herein agree that any and all terminations, suspensions, discontinuances, and/or
+                            limitations of access for cause shall be made at our sole discretion and that we shall not be
+                            liable to you or any other third party with regards to the termination of your account, associated
+                            email address and/or access to any of our Services.</p>
+                        <p class="large small-top-margin left-align"> The termination of your account with www.samelogic.com shall include any and/or all of the following:
                             </p>
 
-                            <p class="large small-top-margin left-align">
-                                Samelogic herein reserves the right to include the use of security components that may permit digital information or material to be protected, and that such use of information and/or material is subject to usage guidelines and regulations established by Samelogic or any other content providers supplying content services to Samelogic. You are hereby prohibited from making any attempt to override or circumvent any of the embedded usage rules in our Services. Furthermore, unauthorized reproduction, publication, distribution, or exhibition of any information or materials supplied by our Services, despite whether done in the whole or part, is expressly prohibited.
-                            </p>
+                        <p class="large small-bot-margin left-align">
+                            <ul class="left-align">
+                                <li>• The removal of any access to all or part of the Services offered within www.samelogic.com;
+                                    </li>
+                                <li>• The deletion of your password and any and all related information, files, and any such
+                                    content that may be associated with or within your account, or any part thereof; and
+                                    </li>
+                                <li>• The barring of any further use of all or part of our Services. </li>
+                            </ul>
+                        </p>
 
-                            <p class="large small-bot-margin left-align">Cautions for Global Use and Export &amp; Import Compliance </p>
-                            <p class="large small-bot-margin left-align"> Due to the nature of the internet, through the use of our network, you hereby agree to comply with all local rules relating to online conduct and that which is considered acceptable Content. Uploading, posting and/or transferring of software, technology, and other technical data may be subject to the export and import laws of the United States and possibly other countries. Through the use of our network, you thus agree to comply with all applicable export and import laws, statues and regulations, including, but not limited to, the Export Administration Regulations laws (https://www.bis.doc.gov/index.php/regulations/export-administration-regulations-ear) as well as the sanctions control program of the United States (http://www.treasury.gov/resource-center/sanctions/programs/pages/programs.aspx). Furthermore, you state and pledge that you:</p>
-                            <p class="large small-bot-margin left-align">
-                                <ul class="left-align">
-                                    <li>• are not on the list of prohibited individuals which may be identified on any government export exclusion report (https://www.bis.doc.gov/index.php/policy-guidance/lists-of-parties-of-concern) nor a member of any other government which may be part of an export-prohibited country identified in applicable export and import laws and regulations </li>
-                                    <li>• not agree to transfer any software, technology or any other technical data through the use of our network Services to any export-prohibited country;</li>
-                                    <li>• agree not to use our website network Services for any military, nuclear, missile, chemical or biological weaponry end uses that would be a violation of the U.S. Export laws;</li>
-                                    <li>• agree not to post, transfer nor upload any software, technology or any other technical data which would be in violation of U.S. or other applicable export and/or import laws.</li>
-                                </ul>
-                            </p>
+                        <p class="large large-top-margin small-top-margin left-align">Warranty Disclaimers</p>
+                        <p class="large small-top-margin left-align"> You herein expressly acknowledge and agree that the use of Samelogic’s Services and software are
+                            at the sole risk by you. Our services and software shall be provided on an "as is" and/or "as
+                            available" basis. Samelogic and our subsidiaries, affiliates, officers, employees, agents, partners,
+                            and licensors expressly disclaim any and all warranties of any kind, whether expressed or implied,
+                            including, but not limiteds to any implied warranties of title, merchantability, fitness for
+                            a particular purpose and non-infringement.</p>
+                        <p class="large small-top-margin left-align"> Samelogic and our subsidiaries, officers, employees, agents, partners, and licensors make no such
+                            warranties that (i) Samelogic’s services or software will meet your requirements; (ii) Samelogic
+                            Services or Software shall be uninterrupted, timely, secure or error-free; (iii) that such results
+                            which may be obtained from the use of the Samelogic services or software will be accurate or
+                            reliable; (iv) quality of any products, services, any information or other material which may
+                            be purchased or obtained by you through our services or software will meet your expectations;
+                            and (v) that any such errors contained in the software shall be corrected.</p>
+                        <p class="large small-top-margin left-align"> Any information or material downloaded or otherwise obtained by way of Samelogic services or software
+                            shall be accessed at your sole discretion and sole risk and as such you shall be solely responsible
+                            for and hereby waive any and all claims and causes of action with respect to any damage to your
+                            computer and/or internet access, downloading and/or displaying, or for any loss of data that
+                            could result from the download of any such information or material.</p>
 
-                            <p class="large large-top-margin small-bot-margin left-align"> Content Placed or Made Available for Company Services</p>
-                            <p class="large small-bot-margin left-align"> Samelogic shall not lay claim to ownership of content submitted by any visitor, member, or user, not make such content available for inclusion on our website Services. Therefore, you hereby grant and allow for Samelogic the below listed worldwide, royalty-free and non-exclusive licenses, as applicable:</p>
-                            <p class="large small-top-margin left-align">The content submitted or made available for inclusion on the publicly accessible areas for Samelogic’s sites, the license provided to permit use, distribute, reproduce, modify, adapt, publicly perform and/or publicly display said Content on our network Services is for the sole purpose of providing and promoting the specific area to which this content was placed and/or made available for viewing. This license shall be available so long as you are a member of Samelogic’s sites, and shall terminate at such time when you elect to discontinue your membership.</p>
-                            <p class="large small-top-margin left-align">Photos, audio, video and/or graphics submitting or made available for inclusion on the publicly accessible are of Samelogic’s websites, the license provided to permit use, distribute, reproduce, modify, adapt, publicly perform and/or publicly display said Content on our network Services are for the sole purpose of providing and promoting the specific are in which this content was placed and/or made available for viewing. This license shall be available so long as you are a member of Samelogic’s sites and shall terminate at such time when you elect to discontinue your membership. </p>
-                            <p class="large small-top-margin left-align">For any other content submitted or made available for inclusion on the publicly accessible areas of Samelogic’s sites, the continuos, binding and completely sub-licensable license which is meant to permit use, distribute, reproduce, modify, adapt, publish, translate, publicly display said content, whether in whole or in part, and the incorporation of any Content into other works in any arrangement or medium currently used or later developed. </p>
+                        <p class="large small-top-margin left-align"> You explicitly acknowledge, understand and agree that Samelogic and our subsidiaries, affiliates,
+                            officers, employees, agents, partners and licensors shall not be liable to you for any punitive,
+                            indirect, incidental, special, consequential or exemplary damages, including, but not limited
+                            to, damages which may be related to the loss of any profits, goodwill, use, data and/or other
+                            intangible losses, even though we may have been advised of such possibility that said damages
+                            may occur and result from:</p>
+                        <p class="large small-top-margin left-align"> The use or inability to use our service;</p>
+                        <p class="large small-top-margin left-align"> The cost of procuring substitute goods and services;</p>
+                        <p class="large small-top-margin left-align"> Unauthorized access to or the alteration of your transmissions and/or data;</p>
+                        <p class="large small-top-margin left-align"> Statements or conduct of any such third party on our service;</p>
+                        <p class="large small-top-margin left-align"> And any other matter which may be related to our service.</p>
 
-                            <p class="large large-top-margin small-top-margin left-align">Contributions to Company Website </p>
-                            <p class="large small-top-margin left-align"> Samelogic provides an area for users and members to contribute feedback to our website. When you submit ideas, documents, suggestions and/or proposals (“Contributions”) to our site, you acknowledge and agree that:</p>
-                            <p class="large small-top-margin left-align">
-                                <ul class="left-align">
-                                    <li>• your contributions do not contain any type of contain any type of confidential or proprietary information;</li>
-                                </ul>
-                            </p>
-                            <p class="large small-top-margin left-align"> Samelogic shall not be liable or under any obligation to ensure or maintain confidentiality, expressed or implied, related to Contributions.</p>
+                        <p class="large large-top-margin small-top-margin left-align">Release</p>
+                        <p class="large small-top-margin left-align"> In the event you have a dispute, you agree to release Samelogic (and its officers, directors, employees,
+                            agents, parent subsidiaries, affiliates, co-branders, partners and any other third parties) from
+                            claims, demands and damages (actual and consequential) of every kind and nature, known and unknown,
+                            suspected or unsuspected, disclosed and undisclosed, arising out of or in any way connected to
+                            such dispute.</p>
 
-                            <p class="large large-top-margin small-top-margin left-align">Indemnity</p>
-                            <p class="large small-top-margin left-align"> All users and/or members herein agree to insure and hold Samelogic, our subsidiaries, affiliates, agents, employees, officers, partners and/or licensors blameless or not liable for any claim or demand, which may include, but is not limited to, reasonable attorney fees made by any third party which may arise from any content a member or user of our site may submit, post, modify, transmit or otherwise make available through our Services, the use of Samelogic’s Services or your connection with these Services, your violations of the Terms of Service and/or your violation of any such rights of another person.</p>
+                        <p class="large large-top-margin small-top-margin left-align">Special Admonition Related to Financial Matters</p>
+                        <p class="large small-top-margin left-align"> Should you intend to create or to join any service, receive or request any such news, messages, alerts
+                            or other information from our Services concerning companies, stock quotes, investments or securities,
+                            please review the above Sections Warranty Disclaimers and Limitations of Liability again. In
+                            addition, for this particular type of information, the phrase "Let the investor beware" is appropriate.
+                            Samelogic's content is provided primarily for informational purposes, and no content that shall
+                            be provided or included in our Services is intended for trading or investing purposes. Samelogic
+                            and our licensors shall not be responsible or liable for the accuracy, usefulness or availability
+                            of any information transmitted and/or made available by way of our Services, and shall not be
+                            responsible or liable for any trading and/or investment decisions based on any such information.</p>
 
-                            <p class="large large-top-margin small-top-margin left-align">Commercial Reuse of Services</p>
-                            <p class="large small-top-margin left-align"> The member or user herein agrees not to replicate, duplicate, copy, trade, sell, resell or exploit for any commercial reason any part, use of, or access to Samelogic’s sites. </p>
+                        <p class="large large-top-margin small-top-margin left-align">Exclusion and Limitation</p>
+                        <p class="large small-top-margin left-align"> There are some jurisdictions which do not allow the exclusion of certain warranties or the limitation
+                            of exclusion of liability for incidental or consequential damages. Therefore, some of the above
+                            limitations of sections warranty disclaimers and limitation of liability may not apply to you.</p>
 
-                            <p class="large large-top-margin small-top-margin left-align">Use and Storage General Practices </p>
-                            <p class="large small-top-margin left-align"> You herein acknowledge that Samelogic may set up any such practices and/or limits regarding the use of our Services, without limitation of the maximum number of days that any email, message posting or any other uploaded content shah be retained by Samelogic, nor the maximum number of email messages that maybe sent and/or received by any member, the maximum volume or size of any email message that may be sent from or may be received by an account on our Service, the maximum disk space allowable that shall be allocated on Samelogic's servers on the member's behalf, and/or the maximum number of times and/or duration that any member may access our Services in a given period of time. In addition, you also agree that Samelogic has absolutely no responsibility or liability for the removal or failure to maintain storage of any messages and/or other communications or content maintained or no by our Services. You also herein acknowledge that we reserve the right to delete or remove any account that is no longer active for an extended period of time. Furthermore, Samelogic shall reserve the right to modify, alter and/or update these general practices and limits at our discretion.  </p>
+                        <p class="large large-top-margin small-top-margin left-align">Third Party Beneficiaries</p>
+                        <p class="large small-top-margin left-align"> You herein acknowledge, understand and agree, unless otherwise expressly provided in this TOS, that
+                            there shall be no third-party beneficiaries to this agreement.</p>
 
-                            <p class="large large-top-margin small-top-margin left-align">Modifications</p>
-                            <p class="large small-top-margin left-align"> Samelogic shall reserve the right at any time it may deem fit, to modify, alter and/or discontinue, whether temporarily or permanently, our service, or any part thereof, with or without prior notice. In addition, we shall not be held liable to you or to any third party for any such alteration, modification, suspension and/or discontinuation our Services, of any part thereof.</p>
+                        <p class="large large-top-margin small-top-margin left-align">Notice</p>
+                        <p class="large small-top-margin left-align"> Samelogic may furnish you with notices, including those with regards to any changes to the TOS, including
+                            but not limited to email, regular mail, MMS or SMS, text messaging, postings on our website Services,
+                            or other reasonable means currently known or any which may be herein after developed. Any such
+                            notices may not be received if you violate any aspects of the TOS by accessing our Services in
+                            an unauthorized manner. Your acceptance of this TOS constitutes your agreement that you are deemed
+                            to have received any and all notices that would have been delivered had you accessed our Services
+                            in an authorized manner.</p>
 
-                            <p class="large large-top-margin small-top-margin left-align">Termination</p>
-                            <p class="large small-top-margin left-align"> As a member of www.samelogic.com, you may cancel/terminate your account, associated email address and/or access to our Services by submitting a cancelation or termination request to ‘support@samelogic.com’.</p>
-                            <p class="large small-top-margin left-align"> As a member, you agree that Samelogic may, without any prior written notice, immediately suspend, terminate, discontinue and/or limit your account, any email associated with your account, and access to any of our Services. The cause for such termination, discontinuance, suspension and/or limitation of access shall include, but is not limited to:</p>
-                            <p class="large small-bot-margin left-align">
-                                <ul class="left-align">
-                                    <li>• any breach of violation of our TOS or any other incorporated agreement, regulation and/or guideline;</li>
-                                    <li>• by way of requests from law enforcement or any governmental agencies;</li>
-                                    <li>• the discontinuance, alteration and/or material modification of our Services, of any part thereof;</li>
-                                    <li>• unexpected technical or security issues and/or problems;</li>
-                                    <li>• any engagement by you in any fraudulent or illegal activities; and/or</li>
-                                    <li>• the nonpayment of any associated fees that may be owed by you in connection with www.samelogic.com.</li>
-                                </ul>
-                            </p>
-                            <p class="large small-top-margin left-align"> Furthermore, you herein agree that any and all terminations, suspensions, discontinuances, and/or limitations of access for cause shall be made at our sole discretion and that we shall not be liable to you or any other third party with regards to the termination of your account, associated email address and/or access to any of our Services.</p>
-                            <p class="large small-top-margin left-align"> The termination of your account with www.samelogic.com shall include any and/or all of the following: </p>
-                            
-                            <p class="large small-bot-margin left-align">
-                                <ul class="left-align">
-                                    <li>• The removal of any access to all or part of the Services offered within www.samelogic.com; </li>
-                                    <li>• The deletion of your password and any and all related information, files, and any such content that may be associated with or within your account, or any part thereof; and </li>
-                                    <li>• The barring of any further use of all or part of our Services. </li>
-                                </ul>
-                            </p>
+                        <p class="large large-top-margin small-top-margin left-align">Trademark Information</p>
+                        <p class="large small-top-margin left-align"> You herein acknowledge, understand and agree that all of the Samelogic trademarks, copyright, trade
+                            name, service marks, and other Samelogic logos and any brand features, and/or product and service
+                            names are trademarks and as such, are and shall remain the property of Samelogic. You herein
+                            agree not to display and/or use in any manner the Samelogic logo or marks without obtaining Samelogic's
+                            prior written consent.</p>
 
-                            <p class="large large-top-margin small-top-margin left-align">Warranty Disclaimers</p>
-                            <p class="large small-top-margin left-align"> You herein expressly acknowledge and agree that the use of Samelogic’s Services and software are at the sole risk by you. Our services and software shall be provided on an "as is" and/or "as available" basis. Samelogic and our subsidiaries, affiliates, officers, employees, agents, partners, and licensors expressly disclaim any and all warranties of any kind, whether expressed or implied, including, but not limiteds to any implied warranties of title, merchantability, fitness for a particular purpose and non-infringement.</p>
-                            <p class="large small-top-margin left-align"> Samelogic and our subsidiaries, officers, employees, agents, partners, and licensors make no such warranties that (i) Samelogic’s services or software will meet your requirements; (ii) Samelogic Services or Software shall be uninterrupted, timely, secure or error-free; (iii) that such results which may be obtained from the use of the Samelogic services or software will be accurate or reliable; (iv) quality of any products, services, any information or other material which may be purchased or obtained by you through our services or software will meet your expectations; and (v) that any such errors contained in the software shall be corrected.</p>
-                            <p class="large small-top-margin left-align"> Any information or material downloaded or otherwise obtained by way of Samelogic services or software shall be accessed at your sole discretion and sole risk and as such you shall be solely responsible for and hereby waive any and all claims and causes of action with respect to any damage to your computer and/or internet access, downloading and/or displaying, or for any loss of data that could result from the download of any such information or material.</p>
+                        <p class="large large-top-margin small-top-margin left-align">Copyright or Intellectual Property Infringement Claims Notice &amp; Procedures</p>
+                        <p class="large small-top-margin left-align"> Samelogic will always respect the intellectual property of others, and we ask that all of our users
+                            do the same. With regards to appropriate circumstances and at its sole discretion, Samelogic
+                            may disable and/or terminate the accounts of any user who violates our TOS and/or infringes the
+                            rights of others. If you feel that your work has been duplicated in such a way that would constitute
+                            copyright infringement; or if you believe your intellectual property rights have been otherwise
+                            violated, you should provide to us the following information:</p>
+                        <p class="large small-top-margin left-align"> The electronic or the physical signature of the individual that is authorized on behalf of the owner
+                            of the copyright or other intellectual property interest;</p>
+                        <p class="large small-top-margin left-align"> A description of the copyrighted work or other intellectual property that you believe has been infringed
+                            upon;</p>
+                        <p class="large small-top-margin left-align"> A description of the location of the site which you allege has been infringing upon your work;</p>
+                        <p class="large small-top-margin left-align"> Your physical address, telephone number, and email address;</p>
+                        <p class="large small-top-margin left-align">
+                            <ul class="left-align">
+                                <li>• A statement, in which you state that the alleged and disputed use of your work is not authorized
+                                    by the copyright owner, its agents or the law;</li>
+                                <li>• And finally, a statement, made under penalty of perjury, that the aforementioned information
+                                    in your notice is truthful and accurate, and that you are the copyright or intellectual
+                                    property owner, representative or agent authorized to act on the copyright or intellectual
+                                    property owner's behalf.</li>
+                            </ul>
+                        </p>
 
-                            <p class="large small-top-margin left-align"> You explicitly acknowledge, understand and agree that Samelogic and our subsidiaries, affiliates, officers, employees, agents, partners and licensors shall not be liable to you for any punitive, indirect, incidental, special, consequential or exemplary damages, including, but not limited to, damages which may be related to the loss of any profits, goodwill, use, data and/or other intangible losses, even though we may have been advised of such possibility that said damages may occur and result from:</p>
-                            <p class="large small-top-margin left-align"> The use or inability to use our service;</p>
-                            <p class="large small-top-margin left-align"> The cost of procuring substitute goods and services;</p>
-                            <p class="large small-top-margin left-align"> Unauthorized access to or the alteration of your transmissions and/or data;</p>
-                            <p class="large small-top-margin left-align"> Statements or conduct of any such third party on our service;</p>
-                            <p class="large small-top-margin left-align"> And any other matter which may be related to our service.</p>
+                        <p class="large large-top-margin small-top-margin left-align">General Information</p>
+                        <p class="large large-top-margin small-top-margin left-align">ENTIRE AGREEMENT</p>
+                        <p class="large small-top-margin left-align"> This TOS constitutes the entire agreement between you and Samelogic and shall govern the use of our
+                            Services, superseding any prior version of this TOS between you and us with respect to Samelogic
+                            Services. You may also be subject to additional terms and conditions that may apply when you
+                            use or purchase certain other Samelogic Services, affiliate Services, third-party content or
+                            third-party software.</p>
 
-                            <p class="large large-top-margin small-top-margin left-align">Release</p>
-                            <p class="large small-top-margin left-align"> In the event you have a dispute, you agree to release Samelogic (and its officers, directors, employees, agents, parent subsidiaries, affiliates, co-branders, partners and any other third parties) from claims, demands and damages (actual and consequential) of every kind and nature, known and unknown, suspected or unsuspected, disclosed and undisclosed, arising out of or in any way connected to such dispute.</p>
+                        <p class="large large-top-margin small-top-margin left-align">CHOICE OF LAW AND FORUM</p>
+                        <p class="large small-top-margin left-align"> It is at the mutual agreement of both you and Samelogic with regard to the TOS that the relationship
+                            between the parties shall be governed by the laws of the state of California without regard to
+                            its conflict of law provisions and that any and all claims, causes of action and/or disputes,
+                            arising out of or relating to the TOS, or the relationship between you and Samelogic, shall be
+                            filed within the courts having jurisdiction within the County of Los Angeles, California or the
+                            U.S. District Court located in said state. You and Samelogic agree to submit to the jurisdiction
+                            of the courts as previously mentioned, and agree to waive any and all objections to the exercise
+                            of jurisdiction over the parties by such courts and to venue in such courts.</p>
 
-                            <p class="large large-top-margin small-top-margin left-align">Special Admonition Related to Financial Matters</p>
-                            <p class="large small-top-margin left-align"> Should you intend to create or to join any service, receive or request any such news, messages, alerts or other information from our Services concerning companies, stock quotes, investments or securities, please review the above Sections Warranty Disclaimers and Limitations of Liability again. In addition, for this particular type of information, the phrase "Let the investor beware" is appropriate. Samelogic's content is provided primarily for informational purposes, and no content that shall be provided or included in our Services is intended for trading or investing purposes. Samelogic and our licensors shall not be responsible or liable for the accuracy, usefulness or availability of any information transmitted and/or made available by way of our Services, and shall not be responsible or liable for any trading and/or investment decisions based on any such information.</p>
+                        <p class="large large-top-margin small-top-margin left-align">WAIVER AND SEVERABILITY OF TERMS</p>
+                        <p class="large small-top-margin left-align"> At any time, should Samelogic fail to exercise or enforce any right or provision of the TOS, such
+                            failure shall not constitute a waiver of such right or provision. If any provision of this TOS
+                            is found by a court of competent jurisdiction to be invalid, the parties nevertheless agree that
+                            the court should endeavor to give effect to the parties' intentions as reflected in the provision,
+                            and the other provisions of the TOS remain in full force and effect.</p>
 
-                            <p class="large large-top-margin small-top-margin left-align">Exclusion and Limitation</p>
-                            <p class="large small-top-margin left-align"> There are some jurisdictions which do not allow the exclusion of certain warranties or the limitation of exclusion of liability for incidental or consequential damages. Therefore, some of the above limitations of sections warranty disclaimers and limitation of liability may not apply to you.</p>
+                        <p class="large large-top-margin small-top-margin left-align">STATUTE OF LIMITATIONS</p>
+                        <p class="large small-bot-margin left-align"> You acknowledge, understand and agree that regardless of any statute or law to the contrary, any
+                            claim or action arising out of or related to the use of our Services or the TOS must be filed
+                            within 1 year(s) after said claim or cause of action arose or shall be forever barred.</p>
 
-                            <p class="large large-top-margin small-top-margin left-align">Third Party Beneficiaries</p>
-                            <p class="large small-top-margin left-align"> You herein acknowledge, understand and agree, unless otherwise expressly provided in this TOS, that there shall be no third-party beneficiaries to this agreement.</p>
-
-                            <p class="large large-top-margin small-top-margin left-align">Notice</p>
-                            <p class="large small-top-margin left-align"> Samelogic may furnish you with notices, including those with regards to any changes to the TOS, including but not limited to email, regular mail, MMS or SMS, text messaging, postings on our website Services, or other reasonable means currently known or any which may be herein after developed. Any such notices may not be received if you violate any aspects of the TOS by accessing our Services in an unauthorized manner. Your acceptance of this TOS constitutes your agreement that you are deemed to have received any and all notices that would have been delivered had you accessed our Services in an authorized manner.</p>
-
-                            <p class="large large-top-margin small-top-margin left-align">Trademark Information</p>
-                            <p class="large small-top-margin left-align"> You herein acknowledge, understand and agree that all of the Samelogic trademarks, copyright, trade name, service marks, and other Samelogic logos and any brand features, and/or product and service names are trademarks and as such, are and shall remain the property of Samelogic. You herein agree not to display and/or use in any manner the Samelogic logo or marks without obtaining Samelogic's prior written consent.</p>
-
-                            <p class="large large-top-margin small-top-margin left-align">Copyright or Intellectual Property Infringement Claims Notice &amp; Procedures</p>
-                            <p class="large small-top-margin left-align"> Samelogic will always respect the intellectual property of others, and we ask that all of our users do the same. With regards to appropriate circumstances and at its sole discretion, Samelogic may disable and/or terminate the accounts of any user who violates our TOS and/or infringes the rights of others. If you feel that your work has been duplicated in such a way that would constitute copyright infringement; or if you believe your intellectual property rights have been otherwise violated, you should provide to us the following information:</p>
-                            <p class="large small-top-margin left-align"> The electronic or the physical signature of the individual that is authorized on behalf of the owner of the copyright or other intellectual property interest;</p>
-                            <p class="large small-top-margin left-align"> A description of the copyrighted work or other intellectual property that you believe has been infringed upon;</p>
-                            <p class="large small-top-margin left-align"> A description of the location of the site which you allege has been infringing upon your work;</p>
-                            <p class="large small-top-margin left-align"> Your physical address, telephone number, and email address;</p>
-                            <p class="large small-top-margin left-align">
-                                <ul class="left-align">
-                                    <li>• A statement, in which you state that the alleged and disputed use of your work is not authorized by the copyright owner, its agents or the law;</li>
-                                    <li>• And finally, a statement, made under penalty of perjury, that the aforementioned information in your notice is truthful and accurate, and that you are the copyright or intellectual property owner, representative or agent authorized to act on the copyright or intellectual property owner's behalf.</li>
-                                </ul>
-                            </p>
-
-                            <p class="large large-top-margin small-top-margin left-align">General Information</p>
-                            <p class="large large-top-margin small-top-margin left-align">ENTIRE AGREEMENT</p>
-                            <p class="large small-top-margin left-align"> This TOS constitutes the entire agreement between you and Samelogic and shall govern the use of our Services, superseding any prior version of this TOS between you and us with respect to Samelogic Services. You may also be subject to additional terms and conditions that may apply when you use or purchase certain other Samelogic Services, affiliate Services, third-party content or third-party software.</p>
-
-                            <p class="large large-top-margin small-top-margin left-align">CHOICE OF LAW AND FORUM</p>
-                            <p class="large small-top-margin left-align"> It is at the mutual agreement of both you and Samelogic with regard to the TOS that the relationship between the parties shall be governed by the laws of the state of California without regard to its conflict of law provisions and that any and all claims, causes of action and/or disputes, arising out of or relating to the TOS, or the relationship between you and Samelogic, shall be filed within the courts having jurisdiction within the County of Los Angeles, California or the U.S. District Court located in said state. You and Samelogic agree to submit to the jurisdiction of the courts as previously mentioned, and agree to waive any and all objections to the exercise of jurisdiction over the parties by such courts and to venue in such courts.</p>
-
-                            <p class="large large-top-margin small-top-margin left-align">WAIVER AND SEVERABILITY OF TERMS</p>
-                            <p class="large small-top-margin left-align"> At any time, should Samelogic fail to exercise or enforce any right or provision of the TOS, such failure shall not constitute a waiver of such right or provision. If any provision of this TOS is found by a court of competent jurisdiction to be invalid, the parties nevertheless agree that the court should endeavor to give effect to the parties' intentions as reflected in the provision, and the other provisions of the TOS remain in full force and effect.</p>
-
-                            <p class="large large-top-margin small-top-margin left-align">STATUTE OF LIMITATIONS</p>
-                            <p class="large small-bot-margin left-align"> You acknowledge, understand and agree that regardless of any statute or law to the contrary, any claim or action arising out of or related to the use of our Services or the TOS must be filed within 1 year(s) after said claim or cause of action arose or shall be forever barred.</p>
-
-                            <p class="large large-top-margin small-top-margin left-align">Violations</p>
-                            <p class="large small-top-margin left-align"> Please report any and all violations of this TOS to Samelogic via email at ‘hi@samelogic.com’.</p>
-                        </div>
+                        <p class="large large-top-margin small-top-margin left-align">Violations</p>
+                        <p class="large small-top-margin left-align"> Please report any and all violations of this TOS to Samelogic via email at ‘hi@samelogic.com’.</p>
                     </div>
-                    
-                </div><!-- /End Wrapper -->
-            </div><!-- /End Container -->
-        </section>
-        <!-- =============================
+                </div>
+
+            </div>
+            <!-- /End Wrapper -->
+    </div>
+    <!-- /End Container -->
+    </section>
+    <!-- =============================
              /END ACCEPTABLE USE POLICY
         ============================== -->
-      
 
 
-        
-        <!-- ==================================================
+
+
+    <!-- ==================================================
             NEWSLETTER AND SOCIAL DIVIDER
         ======================================================= -->
-        <section class="newsletter color-bg" id="newsletter">
-            <div class="container">
-                <div class="wrapper-sm">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <!-- =========================
+    <section class="newsletter color-bg" id="newsletter">
+        <div class="container">
+            <div class="wrapper-sm">
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- =========================
                                 Social Icons
                             ============================== -->
+                        <div class="table">
+                            <div class="table-row">
+                                <div class="table-cell follow">
+                                    <h5 class="table-title">Follow Us</h5>
+                                </div>
+                                <div class="table-cell">
+                                    <ul class="social-list">
+                                        <li>
+                                            <a target="_blank" href="https://fb.com/Samelogic">
+                                                <i class="icon icon-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="https://twitter.com/SamelogicAI">
+                                                <i class="icon icon-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="https://www.linkedin.com/company/samelogic">
+                                                <i class="icon icon-linkedin"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- /End Table-Cell -->
+                            </div>
+                            <!-- /End Table-Row -->
+                        </div>
+                        <!-- /End Table -->
+                    </div>
+                    <!-- /End Col -->
+
+                    <div class="col-md-6">
+                        <!-- =========================
+                                MAILCHIMP SUBSCRIPTION FORM 
+                            ============================== -->
+                        <form class="mailchimp-subscribe" role="form">
                             <div class="table">
                                 <div class="table-row">
-                                    <div class="table-cell follow">
-                                        <h5 class="table-title">Follow Us</h5>
+                                    <div class="table-cell getnewsletter">
+                                        <h5 class="table-title">Get the Newsletter</h5>
                                     </div>
                                     <div class="table-cell">
-                                        <ul class="social-list">
-                                            <li>
-                                                <a target="_blank" href="https://fb.com/Samelogic">
-                                                    <i class="icon icon-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a target="_blank" href="https://twitter.com/SamelogicAI">
-                                                    <i class="icon icon-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a target="_blank" href="https://www.linkedin.com/company/samelogic">
-                                                    <i class="icon icon-linkedin"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div><!-- /End Table-Cell -->
-                                </div><!-- /End Table-Row -->
-                            </div><!-- /End Table -->
-                        </div><!-- /End Col -->
-
-                        <div class="col-md-6">
-                            <!-- =========================
-                                MAILCHIMP SUBSCRIPTION FORM 
-                            ============================== -->            
-                            <form class="mailchimp-subscribe" role="form">
-                                <div class="table">
-                                    <div class="table-row">
-                                        <div class="table-cell getnewsletter">
-                                            <h5 class="table-title">Get the Newsletter</h5>
+                                        <div class="input-group text-white">
+                                            <!-- Input Form -->
+                                            <input type="email" id="subscriber-email" name="email" placeholder="Your email address" class="form-control">
+                                            <!-- Submit Button -->
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-white">Subscribe</button>
+                                            </span>
                                         </div>
-                                        <div class="table-cell">
-                                            <div class="input-group text-white">
-                                                <!-- Input Form -->
-                                                <input type="email" id="subscriber-email" name="email" placeholder="Your email address" class="form-control">
-                                                <!-- Submit Button -->
-                                                <span class="input-group-btn">
-                                                    <button class="btn btn-white">Subscribe</button>
-                                                </span>
-                                            </div><!-- /End Input Group -->
-                                        </div><!-- /End Table-Cell -->
-                                    </div><!-- /End Table-Row -->
-                                </div><!-- /End Table -->
-                                <div class="col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2">
-                                    <!-- Notifications --> 
-                                    <p class="mc-success"></p>
-                                    <p class="mc-failed"></p>
+                                        <!-- /End Input Group -->
+                                    </div>
+                                    <!-- /End Table-Cell -->
                                 </div>
-                            </form><!-- /End Mailchimp Subscribe Form -->
-                                      
-                            <!-- =========================
+                                <!-- /End Table-Row -->
+                            </div>
+                            <!-- /End Table -->
+                            <div class="col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2">
+                                <!-- Notifications -->
+                                <p class="mc-success"></p>
+                                <p class="mc-failed"></p>
+                            </div>
+                        </form>
+                        <!-- /End Mailchimp Subscribe Form -->
+
+                        <!-- =========================
                                 LOCAL SUBSCRIPTION FORM 
                             ============================== -->
-                            <!-- ALTERNATE USE: SAVE YOUR SUBSCRIBE LIST IN .TXT
+                        <!-- ALTERNATE USE: SAVE YOUR SUBSCRIBE LIST IN .TXT
 
                             <form id="subscribe" role="form">
                                 <div class="table">
@@ -455,103 +752,121 @@ Furnish factual, correct, current and complete information with regards to yours
                             </form>
                             -->
 
-                        </div><!-- /End Col -->
-                    </div><!-- /End Row -->
-                </div><!-- End Wrapper -->
-            </div><!-- /End Container -->
-        </section>
-        <!-- =============================
+                    </div>
+                    <!-- /End Col -->
+                </div>
+                <!-- /End Row -->
+            </div>
+            <!-- End Wrapper -->
+        </div>
+        <!-- /End Container -->
+    </section>
+    <!-- =============================
              /END NEWSLETTER SECTION 
         ============================== -->
-        
-        
-        <!-- ==================================================
+
+
+    <!-- ==================================================
             FOOTER
         ======================================================= -->
-        <footer class="footer dark-bg" id="footer">
-            <div class="container">
-                <div class="wrapper-lg">
+    <footer class="footer dark-bg" id="footer">
+        <div class="container">
+            <div class="wrapper-lg">
+                <div class="row">
+                    <!-- Footer Left Col -->
+                    <div class="col-md-5">
+                        <!-- Logo -->
+                        <a href="#top" class="scrollto" title="Samelogic">
+                            <span class="text-logo">Samelogic</span>
+                        </a>
+                        <p class="footer-hero">Become
+                            <strong>Emotionally Intelligent</strong> today.
+                            <br> Take your Customer Experience Management to the next level.</p>
+                        <p class="footer-cta">What are you waiting for?
+                            <a href="#top" class="btn btn-color">Learn More</a>
+                        </p>
+                    </div>
+                    <!-- Footer Contact Col -->
+                    <div class="col-md-3">
+                        <h5 class="text-white">Our Contact</h5>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="icon icon_mail"></i>
+                            </div>
+                            <div class="contact-content">
+                                <a href="mailto:grow@samelogic.com">grow@samelogic.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="icon icon_pin"></i>
+                            </div>
+                            <div class="contact-content">
+                                San Mateo
+                                <br> CA 94401, USA
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="icon icon_phone"></i>
+                            </div>
+                            <div class="contact-content">
+                                1-650-235-6537
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer Right Col: Twitter Feed -->
+                    <div class="col-md-4">
+                        <h5 class="text-white">Recent Tweets</h5>
+                        <div class="tweet">
+
+                        </div>
+                    </div>
+
+                    <!-- Footer Menu and Copy -->
                     <div class="row">
-                        <!-- Footer Left Col -->
-                        <div class="col-md-5">
-                                <!-- Logo -->
-                                <a href="#top" class="scrollto" title="Samelogic">
-                                    <span class="text-logo">Samelogic</span>
+                        <div class="col-md-12">
+                            <ul class="footer-nav">
+                                <li>
+                                    <a href="#">About</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" title="Blog" href="http://blog.samelogic.com">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="http://developers.samelogic.com">Developers</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.samelogic.com/terms">Terms</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy</a>
+                                </li>
+                            </ul>
+                            <p class="footer-copy">Samelogic, Inc. &copy; 2018
+                                <br>
+                                <img src="assets/images/samelogic-logo-footer.png" alt="Samelogic Footer Logo" />
+                                <br>
+                                <br>
+                                <a href="https://heapanalytics.com/?utm_source=badge">
+                                    <img style="width:108px;height:41px" src="https://heapanalytics.com/img/badgeLight.png" alt="Heap | Mobile and Web Analytics"
+                                    />
                                 </a>
-                                <p class="footer-hero">Become <strong>Emotionally Intelligent</strong> today.<br>
-                                Take your Customer Experience Management to the next level.</p>
-                                <p class="footer-cta">What are you waiting for?
-                                    <a href="#top" class="btn btn-color">Learn More</a>
-                                </p> 
-                        </div>
-                        <!-- Footer Contact Col -->
-                        <div class="col-md-3">
-                            <h5 class="text-white">Our Contact</h5>
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="icon icon_mail"></i>
-                                </div>
-                                <div class="contact-content">
-                                    <a href="mailto:grow@samelogic.com">grow@samelogic.com</a>
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="icon icon_pin"></i>
-                                </div>
-                                <div class="contact-content">
-                                    San Mateo<br>
-                                    CA 94401, USA
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="icon icon_phone"></i>
-                                </div>
-                                <div class="contact-content">
-                                    1-650-235-6537
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Footer Right Col: Twitter Feed -->
-                        <div class="col-md-4">
-                                <h5 class="text-white">Recent Tweets</h5>
-                                <div class="tweet">
-                                    
-                                </div>
-                        </div>
+                            </p>
 
-                        <!-- Footer Menu and Copy -->
-                        <div class="row">
-                            <div class="col-md-12">
-                                <ul class="footer-nav">
-                                    <li>
-                                        <a href="#">About</a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" title="Blog" href="http://blog.samelogic.com">Blog</a>
-                                    </li>
-                                    <li>
-                                        <a href="http://developers.samelogic.com">Developers</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.samelogic.com/terms">Terms</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Privacy</a>
-                                    </li>
-                                </ul>
-                                <p class="footer-copy">Samelogic, Inc. &copy; 2018 <br> <img src="assets/images/samelogic-logo-footer.png" alt="Samelogic Footer Logo"/> <br><br> <a href="https://heapanalytics.com/?utm_source=badge"><img style="width:108px;height:41px" src="https://heapanalytics.com/img/badgeLight.png" alt="Heap | Mobile and Web Analytics" /></a></p>
-                                
-                            </div>
                         </div>
-                        
-                    </div><!-- End Row -->
-                </div><!-- /End Wrapper -->
-            </div><!-- /End Container -->
-        </footer>
+                    </div>
 
-    </div><!-- /End Main Wrapper -->
+                </div>
+                <!-- End Row -->
+            </div>
+            <!-- /End Wrapper -->
+        </div>
+        <!-- /End Container -->
+    </footer>
+
+    </div>
+    <!-- /End Main Wrapper -->
 
 
     <!-- =========================
@@ -566,7 +881,8 @@ Furnish factual, correct, current and complete information with regards to yours
     <!-- Custom Script -->
     <script src="assets/js/custom.js"></script>
 
-    
+
 
 </body>
+
 </html>
