@@ -1029,22 +1029,21 @@ p {
 }
 
 @keyframes float {
-	0% {
-		transform: translatey(0px);
-	}
-	50% {
-		transform: translatey(-30px);
-	}
-	100% {
-		transform: translatey(0px);
-	}
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-30px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
 }
 
-.ip_float{
+.ip_float {
     transform: translatey(0px);
     animation: float 3s ease-in-out infinite;
 }
-
 
 /*------------------------------------------*/
 
@@ -1670,6 +1669,16 @@ p {
 
 .pricing-more i {
     vertical-align: baseline;
+}
+
+.pricing-info {
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.pricing-h-color{
+    color: #8e44ad;
 }
 
 /* ==========================================================================
