@@ -1677,8 +1677,40 @@ p {
     padding: 20px;
 }
 
-.pricing-h-color{
+.pricing-h-color {
     color: #8e44ad;
+}
+
+.green-border {
+    border: 2px solid #7ED321;
+}
+
+.purple-border {
+    border: 2px solid #8e44ad;
+}
+
+.blue-border {
+    border: 2px solid #4A90E2;
+}
+
+.green-text {
+    color: #7ED321
+}
+
+.purple-text {
+    color: #8e44ad
+}
+
+.blue-text {
+    color: #4A90E2;
+}
+
+.green-bg {
+    background: #EDFFD9;
+}
+
+.f-l {
+    float: left;
 }
 
 /* ==========================================================================
