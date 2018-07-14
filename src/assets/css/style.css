@@ -1721,8 +1721,9 @@ p {
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     font-size: 20px;
-    margin: 10px 0 40px 0;
+    margin: 100px 0 100px 0;
     color: #9f9f9f;
+    background: url("../images/pricing/quotes.png") no-repeat;
 }
 
 /* ==========================================================================
