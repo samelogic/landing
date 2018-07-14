@@ -1683,14 +1683,20 @@ p {
 
 .green-border {
     border: 2px solid #7ED321;
+    background-color: #7ED321;
+    color: #ffffff;
 }
 
 .purple-border {
     border: 2px solid #8e44ad;
+    background-color: #8e44ad;
+    color: #ffffff;
 }
 
 .blue-border {
     border: 2px solid #4A90E2;
+    background-color: #4A90E2;
+    color: #ffffff;
 }
 
 .green-text {
