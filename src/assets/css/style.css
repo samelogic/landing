@@ -1713,13 +1713,16 @@ p {
     float: left;
 }
 
-.t-c{
+.t-c {
     text-align: center;
 }
 
-.quotes{
+.quotes {
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
+    font-size: 20px;
+    margin: 10px 0 40px 0;
+    color: #9f9f9f;
 }
 
 /* ==========================================================================
