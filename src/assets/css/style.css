@@ -1713,6 +1713,15 @@ p {
     float: left;
 }
 
+.t-c{
+    text-align: center;
+}
+
+.quotes{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
 /* ==========================================================================
    12. TEAM SECTION
 ========================================================================== */
