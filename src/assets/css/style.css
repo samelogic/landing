@@ -1699,10 +1699,19 @@ p {
     color: #ffffff;
 }
 
+.orange-border{
+    border: 2px solid #F76B1C;
+    background-color: #F76B1C;
+    color: #ffffff;
+}
+
 .green-text {
     color: #7ED321
 }
 
+.orange-text{
+    color: #F76B1C;
+}
 .purple-text {
     color: #8e44ad
 }
@@ -1715,6 +1724,9 @@ p {
     background: #EDFFD9;
 }
 
+.orange-bg{
+    background: #F76B1C;
+}
 .f-l {
     float: left;
 }
