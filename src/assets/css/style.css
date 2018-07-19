@@ -1683,20 +1683,35 @@ p {
 
 .green-border {
     border: 2px solid #7ED321;
+    background-color: #7ED321;
+    color: #ffffff;
 }
 
 .purple-border {
     border: 2px solid #8e44ad;
+    background-color: #8e44ad;
+    color: #ffffff;
 }
 
 .blue-border {
     border: 2px solid #4A90E2;
+    background-color: #4A90E2;
+    color: #ffffff;
+}
+
+.orange-border{
+    border: 2px solid #F76B1C;
+    background-color: #F76B1C;
+    color: #ffffff;
 }
 
 .green-text {
     color: #7ED321
 }
 
+.orange-text{
+    color: #F76B1C;
+}
 .purple-text {
     color: #8e44ad
 }
@@ -1709,8 +1724,29 @@ p {
     background: #EDFFD9;
 }
 
+.orange-bg{
+    background: #F76B1C;
+}
 .f-l {
     float: left;
+}
+
+.t-c {
+    text-align: center;
+}
+
+.quotes {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 20px;
+    margin: 20px 0 20px 0;
+    color: #9f9f9f;
+    background: url("../images/pricing/quotes.png") no-repeat center;
+    padding: 65px 0;
+}
+
+.b-b-grey{
+    border-bottom: 1px solid #e9e9e9;
 }
 
 /* ==========================================================================
