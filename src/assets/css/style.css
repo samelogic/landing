@@ -1756,7 +1756,7 @@ p {
 .try-now-bg{
     background-image: url('../images/purple-gradient-bg.png');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center top;
 }
 
 /* ==========================================================================
