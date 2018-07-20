@@ -1778,6 +1778,18 @@ p {
         width: 80%;
     }
 }
+
+.try-btn {
+    width: 53.5%;
+    height: 60px;
+    margin-left: 15px;
+    border: none;
+    background: #8E44AD;
+    color: #ffffff;
+    font-size: 15px;
+    margin-top: 25px;
+}
+
 /* ==========================================================================
    12. TEAM SECTION
 ========================================================================== */
