@@ -1699,7 +1699,7 @@ p {
     color: #ffffff;
 }
 
-.orange-border{
+.orange-border {
     border: 2px solid #F76B1C;
     background-color: #F76B1C;
     color: #ffffff;
@@ -1709,9 +1709,10 @@ p {
     color: #7ED321
 }
 
-.orange-text{
+.orange-text {
     color: #F76B1C;
 }
+
 .purple-text {
     color: #8e44ad
 }
@@ -1724,9 +1725,10 @@ p {
     background: #EDFFD9;
 }
 
-.orange-bg{
+.orange-bg {
     background: #F76B1C;
 }
+
 .f-l {
     float: left;
 }
@@ -1745,7 +1747,7 @@ p {
     padding: 65px 0;
 }
 
-.b-b-grey{
+.b-b-grey {
     border-bottom: 1px solid #e9e9e9;
 }
 
@@ -1753,10 +1755,20 @@ p {
     TRY NOW
 ========================================================================== */
 
-.try-now-bg{
+.try-now-bg {
     background-image: url('../images/purple-gradient-bg.png');
     background-repeat: no-repeat;
     background-position: center top;
+}
+
+.t-n-form {
+    border: 3px solid #B0A5DB;
+    background: #ffffff;
+    padding: 15px;
+    height: 55px;
+    font-size: inherit;
+    font-weight: lighter;
+    margin: 25px 0;
 }
 
 /* ==========================================================================
