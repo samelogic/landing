@@ -132,7 +132,8 @@
                 <!-- Padding -->
                 <div class="row">
                     <div class="col-md-12">
-                        <img src="assets/images/samelogic-logo-783x202-white-transparent.png" alt="Samelogic White Transparent Logo " style="margin-top: 20px;"/>
+                        <img src="assets/images/samelogic-logo-783x202-white-transparent.png" alt="Samelogic White Transparent Logo " style="margin-top: 20px;"
+                        />
                     </div>
                     <div class="col-md-12">
                         <h3 style="color: #fff;font-weight: initial;margin-bottom: 10px;">
@@ -158,14 +159,15 @@
                                     <input type="email" class="t-n-form" id="email" name='email' placeholder="Work Email Address" required>
                                 </div>
                                 <div class="col-md-12">
-                                        <button type="submit" class="btn btn-primary try-btn">Try Demo</button>
+                                    <button type="submit" class="btn btn-primary try-btn" id="btnSubmit"> Try Demo </button>
                                 </div>
                             </div>
                         </form>
                         <div class="col-md-12">
-                                <p style="color: #ffffff;font-weight: lighter;font-size: 12px;opacity: .7;">
-                                        By clicking this button, you agree to our <a href="https://www.samelogic.com/terms.html" target="_blank" style="color: #B0A5DB;"> Terms of Service</a> 
-                                </p>
+                            <p style="color: #ffffff;font-weight: lighter;font-size: 12px;opacity: .7;">
+                                By clicking this button, you agree to our
+                                <a href="https://www.samelogic.com/terms.html" target="_blank" style="color: #B0A5DB;"> Terms of Service</a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -419,7 +421,7 @@
     <script src="assets/js/custom.js"></script>
 
     <!-- Sign up form -->
-    <script>
+    <!--<script>
         $(function () {
             var options = {
                 url: 'https://hooks.zapier.com/hooks/catch/3524006/wjgkyd/',
@@ -434,9 +436,36 @@
             };
             $('#sign-up-form').ajaxForm(options);
         });
+    </script>-->
+
+
+    <script type="text/javascript">
+        $(document).ready(function (e) {
+            $('#btnSubmit').click(function () {
+                var email = $('#email').val();
+                var reg =
+                    /^([\w-\.]+@(?!gmail.com)(?!yahoo.com)(?!hotmail.com)(?!yahoo.co.in)(?!aol.com)(?!abc.com)(?!xyz.com)(?!pqr.com)(?!rediffmail.com)(?!live.com)(?!outlook.com)(?!me.com)(?!msn.com)(?!ymail.com)([\w-]+\.)+[\w-]{2,4})?$/;
+                if (reg.test(email)) {
+                        var options = {
+                            url: 'https://hooks.zapier.com/hooks/catch/3524006/wjgkyd/',
+                            type: 'post',
+                            dataType: 'json',
+                            success: function () {
+                                var email = $('#email').val();
+                                heap.identify(email, 'email');
+                                window.location.href =
+                                    'https://demo.samelogic.com/admin/public/login?autoLogin=true';
+                            }
+                        };
+                        $('#sign-up-form').ajaxForm(options);
+                    return 0;
+                } else {
+                    alert('Please Enter Business Email Address');
+                    return false;
+                }
+            });
+        });
     </script>
-
-
 
 </body>
 
