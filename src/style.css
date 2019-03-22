@@ -1595,6 +1595,9 @@ border-radius: 6px;
     background: #7ED321;
     float: left;
   }
+  .signup-btn[disabled]{
+    background: #9f9f9f;
+  }
   .signup-btn>img{
       margin-right: 6px;
   }
