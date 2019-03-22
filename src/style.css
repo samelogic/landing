@@ -1588,3 +1588,14 @@ border-radius: 6px;
     width: 60%;
     box-shadow: 0px 0px 2px #333;
   }
+
+  .signup-btn{
+    border-radius: 6px;
+    border: none;
+    padding: 9px 12px;
+    background: #7ED321;
+    float: left;
+  }
+  .signup-btn>img{
+      margin-right: 6px;
+  }
