@@ -1502,7 +1502,7 @@ a:active {
 .light-text, .light-text-colored{font-size: 24px;
 font-weight: 100;
 font-style: initial;
-float: left;
+display: inline-block;
 margin-right: 6px;}
 
 .loop-text{
@@ -1537,7 +1537,6 @@ margin-right: 6px;}
   .loop-text {
     position: relative;
     height: 40px;
-    overflow: hidden;
   }
   .loop-text p {
     position: absolute;
@@ -1551,7 +1550,7 @@ margin-right: 6px;}
 
   .howto{
     list-style-type: none;
-    float: left;
+    display: inline-block;
     padding: 0px;
   }
   .howto>li{
