@@ -4,13 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="author" content="Samelogic, Inc.">
-    <meta name="description" content="A simple way to collect video and audio feedback.">
+    <meta name="description" content="Try Samelogic now and see how it will help to make your feedback better.">
     <meta name="keywords"
         content="video feedback, audio feedback, net promoter score calculation, what is a good nps score, nps score, exceptional customer service example, customer feedback, client feedback, why is customer feedback important, customer surveys, grit top 50, confirmit, online focus group, insights now, behavior research company, ugc video platform, system 1 and system 2 decision making, digital marketing">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title -->
-    <title>Samelogic | Video and Audio Feedback</title>
+    <title>Samelogic | Sign Up</title>
     <!-- Place favicon.ico in the root directory -->
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
@@ -31,11 +31,7 @@
     <![endif]-->
 </head>
 
-<body data-spy="scroll" data-target=".mainmenu-area">
-    <!-- Preloader-content -->
-    <div class="preloader">
-        <span><i class="lnr lnr-camera-video"></i></span>
-    </div>
+<body data-spy="scroll" data-target=".mainmenu-area" onload="disableSubmit()">
     <!-- MainMenu-Area -->
     <nav class="mainmenu-area" data-spy="affix" data-offset-top="200">
         <div class="container-fluid">
@@ -68,46 +64,48 @@
                     <figure class="mobile-image wow fadeInUp" data-wow-delay="0.2s">
                         <div>
                             <div class="slide">
-                                <img src="images/iphone-1.png" alt="Start Video Feedback"/>
+                                <img src="images/iphone-1.png" alt="Start Video Feedback" />
                             </div>
                             <div class="slide">
-                                <img src="images/iphone-2.png" alt="Record Video Feedback"/>
+                                <img src="images/iphone-2.png" alt="Record Video Feedback" />
                             </div>
                             <div class="slide">
-                                <img src="images/iphone-3.png" alt="Submit Video Feedback"/>
+                                <img src="images/iphone-3.png" alt="Submit Video Feedback" />
                             </div>
                         </div>
                     </figure>
                 </div>
                 <div class="col-xs-12 col-md-7">
-                    <div class="space-80 hidden-xs"></div>
-                    <h2 class="wow fadeInUp no-margin" data-wow-delay="0.4s">Video Based Feedback</h2>
-                    <div class="desc wow fadeInUp no-margin" data-wow-delay="0.6s">
-                        <h3>made for Humans</h3>
-                    </div>
-                    <div class="space-20"></div>
-                    <div class="fadeInUp wow" data-wow-delay="0.6s">
-                        <p class="light-text">A very simple way to</p>
-                        <div class="loop-text">
-                            <p class="light-text-colored">collect video feedback</p>
-                            <p class="light-text-colored">run a quick focus group</p>
-                            <p class="light-text-colored">understand how people feel</p>
+
+
+                    <form id='sign-up-form' role='form'>
+                        <div class="space-80 hidden-xs"></div>
+                        <h3>Test</h3>
+                        <p>test</p>
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3" style="padding-left: 0px;">
+                                <input type="text" class="t-n-form" id="firstName" name='firstName'
+                                    placeholder="First Name" required>
+                            </div>
+                            <div class="col-md-12 mb-3" style="padding-left: 0px;">
+                                <input type="text" class="t-n-form" id="lastName" name='lastName'
+                                    placeholder="Last Name" required>
+                            </div>
+                            <div class="col-md-12" style="padding-left: 0px;">
+                                <input type="email" class="t-n-form" id="email" name='email' placeholder="Email Address"
+                                    required>
+                            </div>
+                            <div style="color: #ffffff;font-weight: lighter;font-size: 12px;opacity: .7;">
+                                <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)" > Do you agree to our
+                                <a href="https://www.samelogic.com/terms.html" target="_blank" style="color: #B0A5DB;">
+                                    Terms & Conditions?</a>
+                            </div>
+                            <div class="col-md-12" style="padding-left: 0px;">
+                                <button type="submit" class="btn btn-primary try-btn" id="btnSubmit">Start Collecting Feedback!</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="space-20"></div>
-                    <ul class="fadeInUp wow howto" data-wow-delay="0.6s">
-                        <li>1. Record your question, create a feedback link and share it with anybody</li>
-                        <li>2. Respondents answer with video or voicenote telling their story</li>
-                        <li>3. You get deep, emotional and actionable feedback and insights</li>
-                    </ul>
-                    <div class="space-20"></div>
-                    <div class="wrapper fadeInUp wow" data-wow-delay="0.8s" style="margin-bottom:10pc;">
-                        <a href="signup.html"
-                            class="fancy-button pop-onhover emoji-button label hoverme btn" data-fun="2"><span>
-                                <img src="images/happy-emoji-single.png" alt="We'll make you happy :D">
-                                <p>I want this</p>
-                            </span></a>
-                    </div>
+                        <div class="space-80 hidden-xs"></div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -135,27 +133,46 @@
     <script src="js/scrollUp.min.js"></script>
     <script src="js/magnific-popup.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha384-FzT3vTVGXqf7wRfy8k4BiyzvbNfeYjK+frTVqZeNDFl8woCbF0CYG6g2fMEFFo/i"
+        crossorigin="anonymous"></script>
     <!--Main-active-JS-->
     <script src="js/main.js"></script>
-    <script>
-        //Looping Text
-        let texts = document.querySelectorAll(".loop-text p");
 
-        let prev = null;
-        let animate = (curr, currIndex) => {
-            let index = (currIndex + 1) % texts.length;
-            setTimeout(() => {
-                if (prev) {
-                    prev.className = "";
+    <!--Form Validation-->
+    <script>       
+        $(function () {
+            var options = {
+                url: 'https://hooks.zapier.com/hooks/catch/3524006/wjgkyd/',
+                type: 'post',
+                dataType: 'json',
+                success: function () {
+                    var email = $('#email').val();
+                    heap.identify(email, 'email');
+                    window.location.href =
+                        'https://demo.samelogic.com/admin/public/login?autoLogin=true';
                 }
-                curr.className = "show";
-                prev = curr;
-                animate(texts[index], index);
-            }, 3000);
-        };
+            };
+            $('#sign-up-form').ajaxForm(options);
+        }); 
+    </script>
+    <script>
+    function disableSubmit() {
+            document.getElementById("btnSubmit").disabled = true;
+        }
 
-        animate(texts[0], 0);
+        function activateButton(element) {
 
+            if (element.checked) {
+                document.getElementById("btnSubmit").disabled = false;
+            } else {
+                document.getElementById("btnSubmit").disabled = true;
+            }
+
+        }
+    </script>
+    <!--Form Validation End-->
+
+    <script>
         //Slideshow
         const first = document.querySelector('.slide');
         console.log(first);
