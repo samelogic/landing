@@ -29,6 +29,32 @@
         <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- Cookie Acceptance-->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    <script>
+        window.addEventListener("load", function () {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "rgb(142, 68, 173)",
+                        "text": "#ffcdfd"
+                    },
+                    "button": {
+                        "background": "#f8a8ff",
+                        "text": "#3f0045"
+                    }
+                },
+                "position": "bottom-left",
+                "content": {
+                    "message": "This website uses cookies to ensure you get the best experience"
+                }
+            })
+        });
+    </script>
+    <!-- End Cookie Acceptance -->
 </head>
 
 <body data-spy="scroll" data-target=".mainmenu-area">
@@ -80,24 +106,24 @@
                     </figure>
                 </div>
                 <div class="col-xs-12 col-md-7">
-                    
-                        <div class="space-80 hidden-xs"></div>
-                        <h2 class="wow fadeInUp no-margin" data-wow-delay="0.4s">Video Based Feedback</h2>
-                        <div class="desc wow fadeInUp no-margin" data-wow-delay="0.6s">
-                            <h3>made for Humans</h3>
-                        </div>
-                   
+
+                    <div class="space-80 hidden-xs"></div>
+                    <h2 class="wow fadeInUp no-margin" data-wow-delay="0.4s">Video Based Feedback</h2>
+                    <div class="desc wow fadeInUp no-margin" data-wow-delay="0.6s">
+                        <h3>made for Humans</h3>
+                    </div>
+
                     <div class="space-20"></div>
-                    
-                        <div class="fadeInUp wow" data-wow-delay="0.6s">
-                            <div class="light-text">A very simple way to</div></br>
-                            <div class="loop-text" style="word-wrap: break-word;">
-                                <p class="light-text-colored">collect video feedback</p>
-                                <p class="light-text-colored">run a quick focus group</p>
-                                <p class="light-text-colored">understand how people feel</p>
-                            </div>
+
+                    <div class="fadeInUp wow" data-wow-delay="0.6s">
+                        <div class="light-text">A very simple way to</div></br>
+                        <div class="loop-text" style="word-wrap: break-word;">
+                            <p class="light-text-colored">collect video feedback</p>
+                            <p class="light-text-colored">run a quick focus group</p>
+                            <p class="light-text-colored">understand how people feel</p>
                         </div>
-                    
+                    </div>
+
                     <div class="space-20"></div>
                     <ul class="fadeInUp wow howto" data-wow-delay="0.6s">
                         <li>1. Record your question, create a feedback link and share it with anybody</li>
@@ -257,6 +283,8 @@
         drift.load('2756gthz52yn');
     </script>
     <!-- End of Async Drift Code -->
+
+
 </body>
 
 </html>
