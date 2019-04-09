@@ -2,7 +2,7 @@ workflow "Build and deploy on push" {
   on = "push"
   resolves = [
     "NPM Build",
-    "Terraform Plan",
+    "Terraform Apply"
   ]
 }
 
