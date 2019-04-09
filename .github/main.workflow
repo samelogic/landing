@@ -19,7 +19,11 @@ action "NPM Build" {
 
 action "Terraform Init" {
   uses = "hashicorp/terraform-github-actions/init@v0.2.0"
-  secrets = ["GITHUB_TOKEN"]
+  secrets = [
+    "GITHUB_TOKEN",
+    "AWS_ACCESS_KEY_ID",
+    "AWS_SECRET_ACCESS_KEY",
+  ]
   env = {
     TF_ACTION_WORKING_DIR = "./terraform"
   }
