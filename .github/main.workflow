@@ -41,7 +41,7 @@ action "Terraform Plan" {
   env = {
     TF_ACTION_WORKING_DIR = "./terraform"
     # If you're using Terraform workspaces, set this to the workspace name.
-    TF_ACTION_WORKSPACE = "default"
+    TF_ACTION_WORKSPACE = "production"
   }
 }
 
