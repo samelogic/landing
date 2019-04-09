@@ -29,18 +29,26 @@ action "Terraform Init" {
   }
 }
 
-action "Terraform Validate" {
-  uses = "hashicorp/terraform-github-actions/validate@v0.2.0"
-  needs = "Terraform Init"
-  secrets = ["GITHUB_TOKEN"]
+action "Terraform Plan" {
+  uses = "hashicorp/terraform-github-actions/plan@v0.2.0"
+  needs = "Terraform Init"  
+  args = ["-out", "tfplan", "-var", "deploy_iam_role=arn:aws:iam::232825056036:role/LandingPageDeployAssumeRole"]
+  secrets = [
+    "GITHUB_TOKEN",
+    "AWS_ACCESS_KEY_ID",
+    "AWS_SECRET_ACCESS_KEY",
+  ]
   env = {
     TF_ACTION_WORKING_DIR = "./terraform"
+    # If you're using Terraform workspaces, set this to the workspace name.
+    TF_ACTION_WORKSPACE = "default"
   }
 }
 
-action "Terraform Plan" {
-  uses = "hashicorp/terraform-github-actions/plan@v0.2.0"
-  needs = "Terraform Validate"
+action "Terraform Apply" {
+  uses = "./.github/terraform-apply"
+  needs = "Terraform Plan"  
+  args = ["-input", "false", "tfplan"]
   secrets = [
     "GITHUB_TOKEN",
     "AWS_ACCESS_KEY_ID",
