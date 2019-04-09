@@ -24,4 +24,8 @@ EOF
     index_document = "index.html"
     error_document = "error.html"
   }
+
+  tags {
+    SERVICE = "${var.service_name}"
+  }
 }
