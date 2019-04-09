@@ -26,6 +26,7 @@ action "Terraform Init" {
   ]
   env = {
     TF_ACTION_WORKING_DIR = "./terraform"
+    TF_ACTION_WORKSPACE = "production"
   }
   args = ["-input", "false"]
 }
