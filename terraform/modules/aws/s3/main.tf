@@ -1,4 +1,4 @@
-esource "aws_s3_bucket" "website" {
+resource "aws_s3_bucket" "website" {
   bucket = "${var.service_name}"
   acl    = "public-read"
 
