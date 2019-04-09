@@ -1,1 +1,1 @@
-variable "service_name" {}
+variable "bucket_site" {}

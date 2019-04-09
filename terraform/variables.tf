@@ -5,5 +5,9 @@ variable "aws_region" {
 variable "deploy_iam_role" {}
 
 variable "service_name" {
+  default = "landing-page"
+}
+
+variable "bucket_site" {
   default = "www.samelogic.com"
 }
