@@ -27,7 +27,7 @@ action "Terraform Init" {
   env = {
     TF_ACTION_WORKING_DIR = "./terraform"
   }
-  args = "[\"-input\", \"false\"]"
+  args = ["-input", "false"]
 }
 
 action "Terraform Plan" {
