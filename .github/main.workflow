@@ -2,7 +2,7 @@ workflow "Build and deploy on push" {
   on = "push"
   resolves = [
     "NPM Build",
-    "Terraform Apply"
+    "Terraform Apply",
   ]
 }
 
@@ -31,7 +31,7 @@ action "Terraform Init" {
 
 action "Terraform Plan" {
   uses = "hashicorp/terraform-github-actions/plan@v0.2.0"
-  needs = "Terraform Init"  
+  needs = "Terraform Init"
   args = ["-out", "tfplan", "-var", "deploy_iam_role=arn:aws:iam::232825056036:role/LandingPageDeployAssumeRole"]
   secrets = [
     "GITHUB_TOKEN",
@@ -47,7 +47,7 @@ action "Terraform Plan" {
 
 action "Terraform Apply" {
   uses = "./.github/terraform-apply"
-  needs = "Terraform Plan"  
+  needs = "Terraform Plan"
   args = ["-input", "false", "tfplan"]
   secrets = [
     "GITHUB_TOKEN",
@@ -56,7 +56,8 @@ action "Terraform Apply" {
   ]
   env = {
     TF_ACTION_WORKING_DIR = "./terraform"
+    TF_ACTION_WORKSPACE = "production"
+
     # If you're using Terraform workspaces, set this to the workspace name.
-    TF_ACTION_WORKSPACE = "default"
   }
 }
