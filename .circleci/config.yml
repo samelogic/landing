@@ -6,9 +6,8 @@ references:
       - image: circleci/node:latest
     working_directory: ~/samelogic-landing
 
-  workspace_root: &workspace_root
-    ~/samelogic-landing
-    
+  workspace_root: &workspace_root ~/samelogic-landing
+
   attach_workspace: &attach_workspace
     attach_workspace:
       at: *workspace_root
@@ -18,12 +17,11 @@ jobs:
     <<: *container_config
     steps:
       - checkout
-      - run: yarn
-      - run: yarn deploy
+      - run: npm install
+      - run: yarn run build
       - save_cache:
-          key: sl-landing-{{ checksum "yarn.lock" }}
+          key: sl-landing-{{ checksum "package-lock.json" }}
           paths:
-            - ~/.yarn-cache
             - ./node_modules
       - persist_to_workspace:
           root: *workspace_root
@@ -35,12 +33,12 @@ jobs:
       - checkout
       - *attach_workspace
       - restore_cache:
-          key: sl-landing-{{ checksum "yarn.lock" }}
+          key: sl-landing-{{ checksum "package-lock.json" }}
       - run: |
-            sudo apt-get update
-            sudo apt-get upgrade -y
-            sudo apt-get install -y python-dev python-pip
-            sudo pip install awscli --upgrade
+          sudo apt-get update
+          sudo apt-get upgrade -y
+          sudo apt-get install -y python-dev python-pip
+          sudo pip install awscli --upgrade
       - deploy:
           name: Deploy to S3
           command: aws s3 sync dist/ s3://www.samelogic.com/ --delete
