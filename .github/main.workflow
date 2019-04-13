@@ -25,7 +25,7 @@ action "Terraform Init" {
     "AWS_SECRET_ACCESS_KEY",
   ]
   env = {
-    TF_ACTION_WORKSPACE = "production"
+    TF_ACTION_WORKSPACE = "prod"
     TF_ACTION_WORKING_DIR = "terraform"
   }
 }
@@ -40,7 +40,7 @@ action "Terraform Plan" {
     "AWS_SECRET_ACCESS_KEY",
   ]
   env = {
-    TF_ACTION_WORKSPACE = "production"
+    TF_ACTION_WORKSPACE = "prod"
     TF_ACTION_WORKING_DIR = "terraform"
   }
 }
@@ -56,6 +56,6 @@ action "Terraform Apply" {
   ]
   env = {
     TF_ACTION_WORKING_DIR = "terraform"
-    TF_ACTION_WORKSPACE = "production"
+    TF_ACTION_WORKSPACE = "prod"
   }
 }
