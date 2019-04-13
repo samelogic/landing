@@ -28,7 +28,6 @@ action "Terraform Init" {
     TF_ACTION_WORKSPACE = "production"
     TF_ACTION_WORKING_DIR = "terraform"
   }
-  args = ["-input", "false"]
 }
 
 action "Terraform Plan" {
