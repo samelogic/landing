@@ -55,7 +55,7 @@ action "Terraform Apply" {
     "AWS_SECRET_ACCESS_KEY",
   ]
   env = {
-    TF_ACTION_WORKING_DIR = "./terraform"
+    TF_ACTION_WORKING_DIR = "terraform"
     TF_ACTION_WORKSPACE = "production"
   }
 }
