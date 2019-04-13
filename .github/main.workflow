@@ -33,7 +33,7 @@ action "Terraform Init" {
 action "Terraform Plan" {
   uses = "hashicorp/terraform-github-actions/plan@v0.2.0"
   needs = "Terraform Init"
-  args = ["-out", "tfplan", "-var", "deploy_iam_role=arn:aws:iam::232825056036:role/LandingPageDeployAssumeRole"]
+  args = "-out tfplan -var deploy_iam_role=arn:aws:iam::232825056036:role/LandingPageDeployAssumeRole"
   secrets = [
     "GITHUB_TOKEN",
     "AWS_ACCESS_KEY_ID",
