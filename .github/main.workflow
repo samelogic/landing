@@ -25,7 +25,6 @@ action "Terraform Init" {
     "AWS_SECRET_ACCESS_KEY",
   ]
   env = {
-    TF_ACTION_WORKSPACE = "prod"
     TF_ACTION_WORKING_DIR = "terraform"
   }
 }
