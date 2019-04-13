@@ -41,6 +41,7 @@ action "Terraform Plan" {
     TF_ACTION_WORKSPACE = "prod"
     TF_ACTION_WORKING_DIR = "terraform"
   }
+  args = "-out tfplan -var deploy_iam_role=arn:aws:iam::232825056036:role/LandingPageDeployAssumeRole"
 }
 
 action "Terraform Apply" {
