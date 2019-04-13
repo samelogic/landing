@@ -48,7 +48,7 @@ action "Terraform Plan" {
 action "Terraform Apply" {
   uses = "./.github/terraform-apply"
   needs = "Terraform Plan"
-  args = ["-input", "false", "tfplan"]
+  args = "tfplan"
   secrets = [
     "GITHUB_TOKEN",
     "AWS_ACCESS_KEY_ID",
