@@ -25,38 +25,37 @@ action "Terraform Init" {
     "AWS_SECRET_ACCESS_KEY",
   ]
   env = {
-    TF_ACTION_WORKING_DIR = "./terraform"
-    TF_ACTION_WORKSPACE = "production"
+    TF_ACTION_WORKING_DIR = "terraform"
   }
-  args = ["-input", "false"]
 }
 
 action "Terraform Plan" {
   uses = "hashicorp/terraform-github-actions/plan@v0.2.0"
   needs = "Terraform Init"
-  args = ["-out", "tfplan", "-var", "deploy_iam_role=arn:aws:iam::232825056036:role/LandingPageDeployAssumeRole"]
   secrets = [
     "GITHUB_TOKEN",
     "AWS_ACCESS_KEY_ID",
     "AWS_SECRET_ACCESS_KEY",
   ]
   env = {
-    TF_ACTION_WORKING_DIR = "./terraform"
-    TF_ACTION_WORKSPACE = "production"
+    TF_ACTION_WORKSPACE = "prod"
+    TF_ACTION_WORKING_DIR = "terraform"
+    TF_ACTION_COMMENT = "false"
   }
+  args = "-out tfplan -var deploy_iam_role=arn:aws:iam::232825056036:role/LandingPageDeployAssumeRole"
 }
 
 action "Terraform Apply" {
   uses = "./.github/terraform-apply"
   needs = "Terraform Plan"
-  args = ["-input", "false", "tfplan"]
+  args = "tfplan"
   secrets = [
     "GITHUB_TOKEN",
     "AWS_ACCESS_KEY_ID",
     "AWS_SECRET_ACCESS_KEY",
   ]
   env = {
-    TF_ACTION_WORKING_DIR = "./terraform"
-    TF_ACTION_WORKSPACE = "production"
+    TF_ACTION_WORKING_DIR = "terraform"
+    TF_ACTION_WORKSPACE = "prod"
   }
 }
