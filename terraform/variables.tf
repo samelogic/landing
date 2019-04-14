@@ -9,5 +9,5 @@ variable "service_name" {
 }
 
 variable "bucket_site" {
-  default = "www.samelogic.com"
+  default = "samelogic.com"
 }
