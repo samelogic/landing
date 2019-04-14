@@ -46,7 +46,7 @@ action "Terraform Plan" {
 }
 
 action "Terraform Apply" {
-  uses = "hharnisc/terraform-github-actions-apply@v0.0.3-beta-02"
+  uses = "./.github/terraform-apply"
   needs = "Terraform Plan"
   secrets = [
     "GITHUB_TOKEN",
