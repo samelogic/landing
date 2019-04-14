@@ -42,13 +42,12 @@ action "Terraform Plan" {
     TF_ACTION_WORKING_DIR = "terraform"
     TF_ACTION_COMMENT = "false"
   }
-  args = "-out tfplan -var deploy_iam_role=arn:aws:iam::232825056036:role/LandingPageDeployAssumeRole"
+  args = "-var deploy_iam_role=arn:aws:iam::232825056036:role/LandingPageDeployAssumeRole"
 }
 
 action "Terraform Apply" {
   uses = "hharnisc/terraform-github-actions-apply@v0.0.3-beta-02"
   needs = "Terraform Plan"
-  args = "tfplan"
   secrets = [
     "GITHUB_TOKEN",
     "AWS_ACCESS_KEY_ID",
