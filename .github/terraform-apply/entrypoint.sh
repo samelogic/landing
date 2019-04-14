@@ -24,8 +24,6 @@ set -e
 
 cd "${TF_ACTION_WORKING_DIR:-.}"
 
-ls
-
 WORKSPACE=${TF_ACTION_WORKSPACE:-default}
 terraform workspace select "$WORKSPACE"
 
