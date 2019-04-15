@@ -13,7 +13,7 @@ action "NPM Install" {
 
 action "NPM Build" {
   uses = "actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680"
-  needs = ["NPM Install"]
+  needs = [ "NPM Install" ]
   runs = "npm run build"
 }
 
@@ -65,10 +65,10 @@ action "Terraform Apply" {
 
 action "Copy Files to S3" {
   uses = "./.github/aws"
-  needs = ["Terraform Apply"]
-  secrets = ["AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY"]
+  needs = [ "Terraform Apply" ]
+  secrets = [ "AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY" ]
   env = {
     ROLE_ARN = "arn:aws:iam::232825056036:role/LandingPageDeployAssumeRole"
   }
-  args = "sync dist/ s3://samelogic.com/ --delete"
+  args = "s3 sync dist/ s3://samelogic.com/ --delete"
 }
