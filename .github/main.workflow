@@ -2,7 +2,7 @@ workflow "Build and deploy on push" {
   on = "push"
   resolves = [
     "NPM Build",
-    "Terraform Apply",
+    "Copy Files to S3",
   ]
 }
 
@@ -47,7 +47,10 @@ action "Terraform Plan" {
 
 action "Terraform Apply" {
   uses = "./.github/terraform-apply"
-  needs = "Terraform Plan"
+  needs = [
+    "Terraform Plan",
+    "NPM Build",
+  ]
   secrets = [
     "GITHUB_TOKEN",
     "AWS_ACCESS_KEY_ID",
@@ -58,4 +61,14 @@ action "Terraform Apply" {
     TF_ACTION_WORKSPACE = "prod"
     TF_ACTION_COMMENT = "false"
   }
+}
+
+action "Copy Files to S3" {
+  uses = "./.github/aws"
+  needs = ["Terraform Apply"]
+  secrets = ["AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY"]
+  env = {
+    ROLE_ARN = "arn:aws:iam::232825056036:role/LandingPageDeployAssumeRole"
+  }
+  args = "sync dist/ s3://samelogic.com/ --delete"
 }
