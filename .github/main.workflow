@@ -2,7 +2,7 @@ workflow "Build and deploy on push" {
   on = "push"
   resolves = [
     "NPM Build",
-    "Terraform Apply",
+    "Copy Files to S3",
   ]
 }
 
@@ -13,7 +13,7 @@ action "NPM Install" {
 
 action "NPM Build" {
   uses = "actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680"
-  needs = ["NPM Install"]
+  needs = [ "NPM Install" ]
   runs = "npm run build"
 }
 
@@ -42,13 +42,15 @@ action "Terraform Plan" {
     TF_ACTION_WORKING_DIR = "terraform"
     TF_ACTION_COMMENT = "false"
   }
-  args = "-out tfplan -var deploy_iam_role=arn:aws:iam::232825056036:role/LandingPageDeployAssumeRole"
+  args = "-out prod.tfplan -var deploy_iam_role=arn:aws:iam::232825056036:role/LandingPageDeployAssumeRole"
 }
 
 action "Terraform Apply" {
   uses = "./.github/terraform-apply"
-  needs = "Terraform Plan"
-  args = "tfplan"
+  needs = [
+    "Terraform Plan",
+    "NPM Build",
+  ]
   secrets = [
     "GITHUB_TOKEN",
     "AWS_ACCESS_KEY_ID",
@@ -57,5 +59,16 @@ action "Terraform Apply" {
   env = {
     TF_ACTION_WORKING_DIR = "terraform"
     TF_ACTION_WORKSPACE = "prod"
+    TF_ACTION_COMMENT = "false"
   }
+}
+
+action "Copy Files to S3" {
+  uses = "./.github/aws"
+  needs = [ "Terraform Apply" ]
+  secrets = [ "AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY" ]
+  env = {
+    ROLE_ARN = "arn:aws:iam::232825056036:role/LandingPageDeployAssumeRole"
+  }
+  args = "s3 sync dist/ s3://samelogic.com/ --delete"
 }
