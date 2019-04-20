@@ -46,7 +46,7 @@ action "Terraform Plan" {
 }
 
 action "Terraform Apply" {
-  uses = "./.github/terraform-apply"
+  uses = "samelogic/github-actions/terraform-apply@v1.0"
   needs = [
     "Terraform Plan",
     "NPM Build",
@@ -64,7 +64,7 @@ action "Terraform Apply" {
 }
 
 action "Copy Files to S3" {
-  uses = "./.github/aws"
+  uses = "samelogic/github-actions/aws@v1.0"
   needs = [ "Terraform Apply" ]
   secrets = [ "AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY" ]
   env = {
