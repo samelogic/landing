@@ -12,6 +12,7 @@ variable "bucket_site" {
   default = "samelogic.com"
 }
 
+// Default prod hosted zone id.
 variable "hosted_zone_id" {
   default = "Z2EOQAX8P26CF"
 }
