@@ -85,11 +85,6 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
   tags {
     SERVICE = "${var.service_name}"
   }
-  # viewer_certificate {
-  #   acm_certificate_arn      = "	arn:aws:acm:us-east-1:232825056036:certificate/79862da6-c711-4dbf-ab14-0d23b199aaee"
-  #   minimum_protocol_version = "TLSv1.1_2016"
-  #   ssl_support_method       = "sni-only"
-  # }
   viewer_certificate {
     cloudfront_default_certificate = true
   }
