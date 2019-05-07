@@ -13,7 +13,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
   comment             = "AWS Landing Page CDN"
   default_root_object = "index.html"
 
-  //aliases = ["samelogic.com", "www.samelogic.com"]
+  aliases = ["samelogic.com", "www.samelogic.com"]
 
   default_cache_behavior {
     allowed_methods  = ["DELETE", "GET", "HEAD", "OPTIONS", "PATCH", "POST", "PUT"]
