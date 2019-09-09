@@ -23,7 +23,6 @@
   "workspaces": [
     "packages/common",
     "packages/landing",
-    "packages/blog",
     "packages/reusecore"
   ],
   "scripts": {
@@ -33,9 +32,6 @@
     "landing-dev": "yarn workspace landing run dev",
     "landing-build": "yarn workspace landing run build",
     "landing-serve": "yarn workspace landing run serve",
-    "blog-dev": "yarn workspace blog run dev",
-    "blog-build": "yarn workspace blog run build",
-    "blog-serve": "yarn workspace blog run serve",
     "prebuild-public": "rimraf \"dist/functions/**\" && rimraf \"dist/public\"",
     "prefirebase-serve": "yarn run build-public && yarn run build-funcs && yarn workspace next-landing run build && yarn run copy-deps && yarn run install-deps",
     "firebase-serve": "cross-env NODE_ENV=production firebase serve",
