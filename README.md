@@ -1,3 +1,11 @@
+## Landing
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3715c793-544d-4b76-bc6b-44c71c876f32/deploy-status)](https://app.netlify.com/sites/hungry-kare-cb6e50/deploys)
+
+## Blog
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3719a5ca-313b-4267-8781-91e90d1b89fd/deploy-status)](https://app.netlify.com/sites/flamboyant-lalande-e61897/deploys)
+
 # Installation
 
 After downloading the file from Themeforest, You will find SuperProps.zip file. Then unzip the SuperProps.zip and run the following commands on SuperProps folder to get started with the project.
