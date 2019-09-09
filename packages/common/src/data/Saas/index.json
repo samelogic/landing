@@ -245,6 +245,11 @@
       "label": "FAQ",
       "path": "#faq_section",
       "offset": "70"
+    },
+    {
+      "label": "Blog",
+      "path": "/blog",
+      "offset": "70"
     }
   ],
   "MONTHLY_PRICING_TABLE": [
