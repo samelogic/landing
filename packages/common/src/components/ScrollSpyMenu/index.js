@@ -26,7 +26,7 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
   // Close drawer when click on menu item
   const toggleDrawer = () => {
     dispatch({
-      type: 'TOGGLE',
+      type: 'TOGGLE'
     });
   };
 
@@ -94,12 +94,12 @@ ScrollSpyMenu.propTypes = {
   /**
    * Function to be executed when the active item has been updated [optional].
    */
-  onUpdate: PropTypes.func,
+  onUpdate: PropTypes.func
 };
 
 ScrollSpyMenu.defaultProps = {
   componentTag: 'ul',
-  currentClassName: 'is-current',
+  currentClassName: 'is-current'
 };
 
 export default ScrollSpyMenu;

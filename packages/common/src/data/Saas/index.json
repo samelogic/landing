@@ -248,6 +248,7 @@
     },
     {
       "label": "Blog",
+      "staticLink": true,
       "path": "/blog",
       "offset": "70"
     }
