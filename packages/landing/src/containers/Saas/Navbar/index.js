@@ -12,7 +12,7 @@ import ScrollSpyMenu from 'common/src/components/ScrollSpyMenu';
 
 import LogoImage from 'common/src/assets/image/saas/logo.png';
 
-const Navbar = ({ navbarStyle, logoStyle, row, menuWrapper }) => {
+const Navbar = ({ navbarStyle, logoStyle, row, menuWrapper, path }) => {
   const Data = useStaticQuery(graphql`
     query {
       saasJson {
@@ -50,6 +50,7 @@ const Navbar = ({ navbarStyle, logoStyle, row, menuWrapper }) => {
               className="main_menu"
               menuItems={Data.saasJson.MENU_ITEMS}
               offset={-70}
+              path={path}
             />
             <Drawer
               width="420px"
@@ -63,6 +64,7 @@ const Navbar = ({ navbarStyle, logoStyle, row, menuWrapper }) => {
                 menuItems={Data.saasJson.MENU_ITEMS}
                 drawerClose={true}
                 offset={-100}
+                path={path}
               />
             </Drawer>
           </Box>
@@ -77,7 +79,8 @@ Navbar.propTypes = {
   logoStyle: PropTypes.object,
   button: PropTypes.object,
   row: PropTypes.object,
-  menuWrapper: PropTypes.object
+  menuWrapper: PropTypes.object,
+  path: PropTypes.string
 };
 
 Navbar.defaultProps = {

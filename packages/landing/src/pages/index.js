@@ -19,7 +19,7 @@ import PartnerSection from '../containers/Saas/PartnerSection';
 import { DrawerProvider } from 'common/src/contexts/DrawerContext';
 import SEO from '../components/seo';
 
-export default () => {
+export default ({ path }) => {
   return (
     <ThemeProvider theme={saasTheme}>
       <Fragment>
@@ -29,7 +29,7 @@ export default () => {
         <ContentWrapper>
           <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
             <DrawerProvider>
-              <Navbar />
+              <Navbar path={path} />
             </DrawerProvider>
           </Sticky>
           <BannerSection />
