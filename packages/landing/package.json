@@ -1,9 +1,9 @@
 {
   "name": "landing",
   "private": true,
-  "description": "React Next Landing with Gatsby Static site generator.",
+  "description": "Samelogic landing page built with gatsby.",
   "version": "3.2.0",
-  "author": "RedQ Team",
+  "author": "Samelogic",
   "dependencies": {
     "@glidejs/glide": "^3.3.0",
     "@redq/reuse-modal": "^1.1.9",
