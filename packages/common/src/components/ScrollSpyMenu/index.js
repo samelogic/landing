@@ -32,11 +32,9 @@ const ScrollSpyMenu = ({
   // Close drawer when click on menu item
   const toggleDrawer = () => {
     dispatch({
-      type: 'TOGGLE'
+      type: 'TOGGLE',
     });
   };
-
-  const useStaticLinks = path !== '/';
 
   return (
     <Scrollspy
@@ -47,8 +45,8 @@ const ScrollSpyMenu = ({
     >
       {menuItems.map((menu, index) => (
         <li key={`menu-item-${index}`}>
-          {menu.staticLink || useStaticLinks ? (
-            <a href={(useStaticLinks ? '/' : '') + menu.path}>{menu.label}</a>
+          {menu.staticLink || menu.root !== path ? (
+            <a href={menu.root + menu.path}>{menu.label}</a>
           ) : (
             <>
               {drawerClose ? (
@@ -107,12 +105,12 @@ ScrollSpyMenu.propTypes = {
   /**
    * Current path
    */
-  path: PropTypes.string
+  path: PropTypes.string,
 };
 
 ScrollSpyMenu.defaultProps = {
   componentTag: 'ul',
-  currentClassName: 'is-current'
+  currentClassName: 'is-current',
 };
 
 export default ScrollSpyMenu;

@@ -19,6 +19,7 @@ const Navbar = ({ navbarStyle, logoStyle, row, menuWrapper, path }) => {
         MENU_ITEMS {
           label
           path
+          root
           staticLink
           offset
         }
@@ -31,7 +32,7 @@ const Navbar = ({ navbarStyle, logoStyle, row, menuWrapper, path }) => {
   // Toggle drawer
   const toggleHandler = () => {
     dispatch({
-      type: 'TOGGLE'
+      type: 'TOGGLE',
     });
   };
 
@@ -80,14 +81,14 @@ Navbar.propTypes = {
   button: PropTypes.object,
   row: PropTypes.object,
   menuWrapper: PropTypes.object,
-  path: PropTypes.string
+  path: PropTypes.string,
 };
 
 Navbar.defaultProps = {
   navbarStyle: {
     className: 'hosting_navbar',
     minHeight: '70px',
-    display: 'block'
+    display: 'block',
   },
   row: {
     flexBox: true,
@@ -96,13 +97,13 @@ Navbar.defaultProps = {
       'space-between',
       'space-between',
       'space-between',
-      'flex-start'
+      'flex-start',
     ],
-    width: '100%'
+    width: '100%',
   },
   logoStyle: {
     maxWidth: '130px',
-    mr: [0, 0, 0, '166px']
+    mr: [0, 0, 0, '166px'],
   },
   button: {
     type: 'button',
@@ -114,12 +115,12 @@ Navbar.defaultProps = {
     pr: '15px',
     colors: 'primaryWithBg',
     minHeight: 'auto',
-    height: `${1}`
+    height: `${1}`,
   },
   menuWrapper: {
     flexBox: true,
-    alignItems: 'center'
-  }
+    alignItems: 'center',
+  },
 };
 
 export default Navbar;
