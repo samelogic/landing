@@ -15,8 +15,19 @@ const Posts: React.FunctionComponent<PostsProps> = props => {
             id
             title
             slug
+            description {
+              description
+            }
             content {
               content
+              childMarkdownRemark {
+                excerpt(pruneLength: 300)
+              }
+            }
+            heroImage {
+              sizes(maxWidth: 1170, maxHeight: 690, resizingBehavior: SCALE) {
+                ...GatsbyContentfulSizes_withWebp
+              }
             }
             tags
             updatedAt
@@ -38,9 +49,12 @@ const Posts: React.FunctionComponent<PostsProps> = props => {
           <PostCard
             key={node.slug}
             title={title}
-            image={null}
+            image={node.heroImage == null ? null : node.heroImage.sizes}
             url={`/blog/${node.slug}`}
-            description={node.description}
+            description={
+              (node.description && node.description.description) ||
+              node.content.childMarkdownRemark.excerpt
+            }
             date={node.updatedAt}
             tags={node.tags}
           />

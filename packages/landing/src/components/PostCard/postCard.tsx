@@ -49,11 +49,7 @@ const PostCard: React.FunctionComponent<PostCardProps> = ({
       {image == null ? null : (
         <PostPreview className="post_preview">
           <Link to={url}>
-            {imageType === 'fluid' ? (
-              <Img fluid={image} alt="post preview" />
-            ) : (
-              <Img fixed={image} alt="post preview" />
-            )}
+            <Img sizes={image} alt="post preview" />
           </Link>
         </PostPreview>
       )}
