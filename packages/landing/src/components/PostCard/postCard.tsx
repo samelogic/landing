@@ -1,7 +1,8 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import _ from "lodash"
-import Img from "gatsby-image"
+import * as React from 'react';
+import { Link } from 'gatsby';
+import _ from 'lodash';
+import moment from 'moment';
+import Img from 'gatsby-image';
 import {
   PostCardWrapper,
   PostPreview,
@@ -10,18 +11,18 @@ import {
   PostTitle,
   Excerpt,
   PostContent,
-  PostTags,
-} from "./postCard.style"
+  PostTags
+} from './postCard.style';
 
 interface PostCardProps {
-  image?: any
-  title: string
-  description?: string
-  url: string
-  date?: string
-  tags?: []
-  className?: string
-  imageType?: "fixed" | "fluid"
+  image?: any;
+  title: string;
+  description?: string;
+  url: string;
+  date?: string;
+  tags?: [];
+  className?: string;
+  imageType?: 'fixed' | 'fluid';
 }
 
 const PostCard: React.FunctionComponent<PostCardProps> = ({
@@ -36,19 +37,19 @@ const PostCard: React.FunctionComponent<PostCardProps> = ({
   ...props
 }) => {
   // Add all classs to an array
-  const addAllClasses = ["post_card"]
+  const addAllClasses = ['post_card'];
 
   // className prop checking
   if (className) {
-    addAllClasses.push(className)
+    addAllClasses.push(className);
   }
 
   return (
-    <PostCardWrapper className={addAllClasses.join(" ")} {...props}>
+    <PostCardWrapper className={addAllClasses.join(' ')} {...props}>
       {image == null ? null : (
         <PostPreview className="post_preview">
           <Link to={url}>
-            {imageType === "fluid" ? (
+            {imageType === 'fluid' ? (
               <Img fluid={image} alt="post preview" />
             ) : (
               <Img fixed={image} alt="post preview" />
@@ -59,12 +60,10 @@ const PostCard: React.FunctionComponent<PostCardProps> = ({
 
       <PostDetails className="post_details">
         {date && (
-          <PostDate
-            dangerouslySetInnerHTML={{
-              __html: date,
-            }}
-            className="post_date"
-          />
+          <PostDate className="post_date">
+            {moment(date).format('DD')}
+            <span>{moment(date).format('MMMM')}</span>
+          </PostDate>
         )}
 
         <PostContent className="post_content">
@@ -74,7 +73,7 @@ const PostCard: React.FunctionComponent<PostCardProps> = ({
           {description && (
             <Excerpt
               dangerouslySetInnerHTML={{
-                __html: description,
+                __html: description
               }}
               className="excerpt"
             />
@@ -92,11 +91,11 @@ const PostCard: React.FunctionComponent<PostCardProps> = ({
         </PostContent>
       </PostDetails>
     </PostCardWrapper>
-  )
-}
+  );
+};
 
 PostCard.defaultProps = {
-  imageType: "fluid",
-}
+  imageType: 'fluid'
+};
 
-export default PostCard
+export default PostCard;

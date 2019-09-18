@@ -1,93 +1,63 @@
-import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import PostCard from "../../../components/PostCard/postCard"
-import Pagination from "../../../components/Pagination/pagination"
-import BlogPostsWrapper from "./style"
+import * as React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import PostCard from '../../../components/PostCard/postCard';
+import Pagination from '../../../components/Pagination/pagination';
+import BlogPostsWrapper from './style';
 
-type PostsProps = {}
+type PostsProps = {};
 
 const Posts: React.FunctionComponent<PostsProps> = props => {
   const Data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-      allSitePage(filter: { path: { eq: "/page/1" } }) {
-        nodes {
-          context {
-            numPages
-            currentPage
-          }
-        }
-      }
-      allMarkdownRemark(
-        sort: { fields: [frontmatter___date], order: DESC }
-        limit: 4
-      ) {
-        totalCount
+    query BlogPostsPageQuery {
+      allContentfulPost(limit: 1000) {
         edges {
           node {
-            excerpt(pruneLength: 300)
-            fields {
-              slug
+            id
+            title
+            slug
+            content {
+              content
             }
-            frontmatter {
-              date(formatString: "DD [<span>] MMM [</span>]")
-              title
-              description
-              tags
-              cover {
-                childImageSharp {
-                  fluid(maxWidth: 1170, maxHeight: 690, quality: 90) {
-                    ...GatsbyImageSharpFluid_withWebp_tracedSVG
-                  }
-                }
-              }
-            }
+            tags
+            updatedAt
           }
         }
       }
     }
-  `)
+  `);
 
-  const Posts = Data.allMarkdownRemark.edges
-  const TotalPage = Data.allSitePage.nodes[0].context.numPages
-  const CurrentPage = Data.allSitePage.nodes[0].context.currentPage
+  const Posts = Data.allContentfulPost.edges;
+  // const TotalPage = Data.allSitePage.nodes[0].context.numPages;
+  // const CurrentPage = Data.allSitePage.nodes[0].context.currentPage;
 
   return (
     <BlogPostsWrapper>
       {Posts.map(({ node }: any) => {
-        const title = node.frontmatter.title || node.fields.slug
+        const title = node.title || node.slug;
         return (
           <PostCard
-            key={node.fields.slug}
+            key={node.slug}
             title={title}
-            image={
-              node.frontmatter.cover == null
-                ? null
-                : node.frontmatter.cover.childImageSharp.fluid
-            }
-            url={node.fields.slug}
-            description={node.frontmatter.description || node.excerpt}
-            date={node.frontmatter.date}
-            tags={node.frontmatter.tags}
+            image={null}
+            url={`/blog/${node.slug}`}
+            description={node.description}
+            date={node.updatedAt}
+            tags={node.tags}
           />
-        )
+        );
       })}
 
-      {TotalPage >> 1 ? (
+      {/* {TotalPage >> 1 ? (
         <Pagination
           nextLink="/page/2"
           currentPage={CurrentPage}
           totalPage={TotalPage}
         />
       ) : (
-        ""
-      )}
+        ''
+      )} */}
     </BlogPostsWrapper>
-  )
-}
+  );
+};
 
-export default Posts
+export default Posts;
