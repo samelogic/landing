@@ -16,7 +16,7 @@ import BannerObject2 from 'common/src/assets/image/saas/banner/Landing-Demo.svg'
 const BannerSection = ({ row, col, title, btnStyle, description }) => {
   const ButtonGroup = () => (
     <Fragment>
-      <Button title="SIGNUP" {...btnStyle} />
+      <Button title="SIGN UP" {...btnStyle} />
     </Fragment>
   );
   return (
