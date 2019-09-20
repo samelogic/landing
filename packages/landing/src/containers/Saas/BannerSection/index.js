@@ -43,10 +43,6 @@ const BannerSection = ({
       <Container>
         <Box className="row" {...row}>
           <Box className="col" {...col}>
-            <DiscountLabel>
-              <Text content="25% Discount" {...discountAmount} />
-              <Text content="on every first project " {...discountText} />
-            </DiscountLabel>
             <FeatureBlock
               title={
                 <Heading
