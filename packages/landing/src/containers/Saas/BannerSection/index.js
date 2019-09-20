@@ -8,13 +8,10 @@ import Button from 'reusecore/src/elements/Button';
 import FeatureBlock from 'common/src/components/FeatureBlock';
 import Container from 'common/src/components/UI/Container';
 import Particles from '../Particle';
-import BannerWrapper, {
-  DiscountLabel,
-  BannerObject,
-} from './bannerSection.style';
+import BannerWrapper, { BannerObject } from './bannerSection.style';
 
 import BannerObject1 from 'common/src/assets/image/saas/banner/bannerObject1.png';
-import BannerObject2 from 'common/src/assets/image/saas/banner/bannerObject2.png';
+import BannerObject2 from 'common/src/assets/image/saas/banner/Landing-Demo.svg';
 
 const BannerSection = ({
   row,
@@ -22,13 +19,11 @@ const BannerSection = ({
   title,
   btnStyle,
   description,
-  discountText,
-  discountAmount,
   outlineBtnStyle,
 }) => {
   const ButtonGroup = () => (
     <Fragment>
-      <Button title="FREE TRAIL" {...btnStyle} />
+      <Button title="FREE TRIAL" {...btnStyle} />
       <Button
         className="outlined"
         title="EXPLORE MORE"
@@ -67,7 +62,7 @@ const BannerSection = ({
         <div className="objectWrapper">
           <Image src={BannerObject1} alt="BannerObject1" />
           <div className="dashboardWrapper">
-            <Image src={BannerObject2} alt="BannerObject2" />
+            <Image src={BannerObject2} alt="Samelogic In-App Surveys" />
           </div>
         </div>
       </BannerObject>
