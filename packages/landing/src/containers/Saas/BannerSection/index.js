@@ -41,13 +41,13 @@ const BannerSection = ({
             <FeatureBlock
               title={
                 <Heading
-                  content="Product Feedback that 10x More Actionable"
+                  content="Product Feedback, 10x More Actionable"
                   {...title}
                 />
               }
               description={
                 <Text
-                  content="Add in-app surveys to ANY element in your website to exactly how your users feel."
+                  content="Add in-app surveys to ANY element in your website to exactly what your users are doing and how it impacts usage metrics."
                   {...description}
                 />
               }
