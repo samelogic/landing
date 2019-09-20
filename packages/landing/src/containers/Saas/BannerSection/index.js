@@ -41,15 +41,13 @@ const BannerSection = ({
             <FeatureBlock
               title={
                 <Heading
-                  content="Ultimate Platform
-                    to monitor your best
-                    workflow."
+                  content="Product Feedback that 10x More Actionable"
                   {...title}
                 />
               }
               description={
                 <Text
-                  content="We help to create SaaS product that are innovative, differentiated with a superb User Experience, fully accessible through mobile devices. SaaS products are changing the world ."
+                  content="Add in-app surveys to ANY element in your website to exactly how your users feel."
                   {...description}
                 />
               }
