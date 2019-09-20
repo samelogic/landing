@@ -13,23 +13,10 @@ import BannerWrapper, { BannerObject } from './bannerSection.style';
 import BannerObject1 from 'common/src/assets/image/saas/banner/bannerObject1.png';
 import BannerObject2 from 'common/src/assets/image/saas/banner/Landing-Demo.svg';
 
-const BannerSection = ({
-  row,
-  col,
-  title,
-  btnStyle,
-  description,
-  outlineBtnStyle,
-}) => {
+const BannerSection = ({ row, col, title, btnStyle, description }) => {
   const ButtonGroup = () => (
     <Fragment>
-      <Button title="FREE TRIAL" {...btnStyle} />
-      <Button
-        className="outlined"
-        title="EXPLORE MORE"
-        variant="outlined"
-        {...outlineBtnStyle}
-      />
+      <Button title="SIGNUP" {...btnStyle} />
     </Fragment>
   );
   return (
