@@ -13,7 +13,14 @@ import BannerWrapper, { BannerObject } from './bannerSection.style';
 import BannerObject1 from 'common/src/assets/image/saas/banner/bannerObject1.png';
 import BannerObject2 from 'common/src/assets/image/saas/banner/Landing-Demo.svg';
 
-const BannerSection = ({ row, col, title, btnStyle, description }) => {
+const BannerSection = ({
+  row,
+  col,
+  title,
+  btnStyle,
+  description,
+  imageWrapper,
+}) => {
   const ButtonGroup = () => (
     <Fragment>
       <Button title="SIGN UP" {...btnStyle} />
@@ -46,9 +53,9 @@ const BannerSection = ({ row, col, title, btnStyle, description }) => {
       <BannerObject>
         <div className="objectWrapper">
           <Image src={BannerObject1} alt="BannerObject1" />
-          <div className="dashboardWrapper">
-            <Image src={BannerObject2} alt="Samelogic In-App Surveys" />
-          </div>
+          <Box {...imageWrapper} className="dashboardWrapper">
+            <Image src={BannerObject2} alt="Demo" />
+          </Box>
         </div>
       </BannerObject>
     </BannerWrapper>
