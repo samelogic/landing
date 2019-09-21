@@ -453,7 +453,7 @@ import logo from 'common/src/assets/image/interior/logo.svg';
 
 export const footerData = {
   logo: logo,
-  mail: 'hello@redq.io',
+  mail: 'hello@samelogic.com',
   phone: '123-456-7890',
   socialLinks: [
     {

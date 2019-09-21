@@ -113,7 +113,7 @@ const ProcessSection = ({
               <Text content="Start Your Project ?" {...buttonLabelStyle} />
               <ButtonWrapper>
                 <Button
-                  title="hello@redq.io"
+                  title="hello@samelogic.com"
                   className="portfolio_button"
                   {...buttonStyle}
                 />

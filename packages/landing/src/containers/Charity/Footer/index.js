@@ -51,10 +51,10 @@ const Footer = ({ row, col, colOne, colTwo }) => {
             <Text className="text" content="US: +361-541-4241" />
             <a
               aria-label="go to mail"
-              href="mailto:hello@redq.io"
+              href="mailto:hello@samelogic.com"
               className="mail"
             >
-              hello@redq.io
+              hello@samelogic.com
             </a>
             <SelectWrapper>
               <select aria-label="language switcher">
