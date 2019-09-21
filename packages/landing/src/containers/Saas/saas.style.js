@@ -140,7 +140,6 @@ export const ContentWrapper = styled.div`
     transition: 0.35s ease-in-out;
     padding: 30px 0;
     .main_menu {
-      margin-right: 40px;
       li {
         display: inline-block;
         padding-left: 13px;
