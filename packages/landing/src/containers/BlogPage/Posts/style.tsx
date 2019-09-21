@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 const BlogPostsWrapper = styled.div`
   margin: 0 auto;
@@ -26,7 +26,7 @@ const BlogPostsWrapper = styled.div`
     padding: 80px 45px 0 45px;
   }
   @media (max-width: 575px) {
-    padding: 60px 25px 0 25px;
+    padding: 80px 25px 0 25px;
   }
-`
-export default BlogPostsWrapper
+`;
+export default BlogPostsWrapper;
