@@ -47,6 +47,7 @@ const SectionObject = styled.div`
       position: absolute;
       top: 4vw;
       left: 0;
+      width: 100%;
     }
   }
 `;
