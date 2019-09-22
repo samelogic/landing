@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import BlogPage from '../containers/BlogPage';
 import SEO from '../components/seo';
 import Layout from '../components/layout';
