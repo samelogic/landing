@@ -37,7 +37,7 @@ const BannerSection = ({
             <FeatureBlock
               title={
                 <Heading
-                  content="Product Feedback, 10x More Actionable"
+                  content="Agile Experiments for your SaaS Products"
                   {...title}
                 />
               }
