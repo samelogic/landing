@@ -14,7 +14,7 @@ import Layout from '../components/layout';
 
 export default ({ path }) => {
   return (
-    <Layout>
+    <Layout path={path}>
       <SEO title="Samelogic | Agile experiments in your SaaS products" />
 
       <BannerSection />

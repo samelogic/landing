@@ -3,9 +3,9 @@ import BlogPage from '../containers/BlogPage';
 import SEO from '../components/seo';
 import Layout from '../components/layout';
 
-export default () => {
+export default ({ path }) => {
   return (
-    <Layout>
+    <Layout path={path}>
       <SEO title="Samelogic Blog" />
       <BlogPage />
     </Layout>
