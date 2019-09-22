@@ -223,12 +223,6 @@
       "offset": "70"
     },
     {
-      "label": "Service",
-      "path": "#service_section",
-      "root": "/",
-      "offset": "70"
-    },
-    {
       "label": "Feature",
       "path": "#feature_section",
       "root": "/",
@@ -237,12 +231,6 @@
     {
       "label": "Pricing",
       "path": "#pricing_section",
-      "root": "/",
-      "offset": "70"
-    },
-    {
-      "label": "Testimonial",
-      "path": "#testimonial_section",
       "root": "/",
       "offset": "70"
     },

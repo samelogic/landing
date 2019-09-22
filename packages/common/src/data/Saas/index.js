@@ -249,11 +249,6 @@ export const MENU_ITEMS = [
     offset: '70',
   },
   {
-    label: 'Service',
-    path: '#service_section',
-    offset: '70',
-  },
-  {
     label: 'Feature',
     path: '#feature_section',
     offset: '70',
@@ -261,11 +256,6 @@ export const MENU_ITEMS = [
   {
     label: 'Pricing',
     path: '#pricing_section',
-    offset: '70',
-  },
-  {
-    label: 'Testimonial',
-    path: '#testimonial_section',
     offset: '70',
   },
   {
