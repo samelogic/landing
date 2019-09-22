@@ -11,7 +11,9 @@ import Particles from '../Particle';
 import BannerWrapper, { BannerObject } from './bannerSection.style';
 
 import BannerObject1 from 'common/src/assets/image/saas/banner/bannerObject1.png';
-import BannerObject2 from 'common/src/assets/image/saas/banner/Landing-Demo.svg';
+import BannerObject2, {
+  ReactComponent as Svgdemo,
+} from 'common/src/assets/image/saas/banner/Landing-Demo.svg';
 
 const BannerSection = ({
   row,
@@ -54,7 +56,8 @@ const BannerSection = ({
         <div className="objectWrapper">
           <Image src={BannerObject1} alt="BannerObject1" />
           <Box {...imageWrapper} className="dashboardWrapper">
-            <Image src={BannerObject2} alt="Demo" />
+            <img src={BannerObject2} alt="Demo" />
+            <Svgdemo />
           </Box>
         </div>
       </BannerObject>
