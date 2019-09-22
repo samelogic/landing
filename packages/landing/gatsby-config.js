@@ -13,6 +13,7 @@ module.exports = {
         accessToken: `xDoouTi1b_kYU2beViDWyTr3qFN0A0Rb0Kjv3s6LvHA`,
       },
     },
+    'gatsby-plugin-svgr',
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
