@@ -31,7 +31,7 @@ import {
   BlogPostComment
 } from './templates.style';
 
-const BlogPostTemplate = ({ data }) => {
+const BlogPostTemplate = ({ data, path }) => {
   const {
     title,
     description,
@@ -49,7 +49,7 @@ const BlogPostTemplate = ({ data }) => {
     config: { identifier: slug, title }
   };
   return (
-    <Layout>
+    <Layout path={path}>
       <SEO
         title={title}
         description={

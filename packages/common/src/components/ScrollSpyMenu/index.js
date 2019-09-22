@@ -36,6 +36,8 @@ const ScrollSpyMenu = ({
     });
   };
 
+  const log = menu => console.log(menu);
+
   return (
     <Scrollspy
       items={scrollItems}
@@ -46,7 +48,16 @@ const ScrollSpyMenu = ({
       {menuItems.map((menu, index) => (
         <li key={`menu-item-${index}`}>
           {menu.staticLink || menu.root !== path ? (
-            <a href={menu.root + menu.path}>{menu.label}</a>
+            (log(menu),
+            (
+              <a
+                href={menu.root + menu.path}
+                root-path={menu.root + menu.path}
+                path-only={menu.path}
+              >
+                {menu.label}
+              </a>
+            ))
           ) : (
             <>
               {drawerClose ? (
