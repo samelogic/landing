@@ -43,7 +43,7 @@ const BannerSection = ({
               }
               description={
                 <Text
-                  content="Add in-app surveys to ANY element in your website to exactly what your users are doing and how it impacts usage metrics."
+                  content="Product feedback thats 10x better for you and your team. Harness the power of Quantitative and Qualitative feedback with minimally intrusive in-app surveys to understand your users. It's like Heap Analytics but without wasting time guessing what all the metrics mean."
                   {...description}
                 />
               }
