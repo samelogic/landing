@@ -18,6 +18,9 @@ const ScrollSpyMenu = ({
 
   // convert menu path to scrollspy items
   menuItems.forEach(item => {
+    if (item.staticLink || item.root !== path) {
+      console.log(item);
+    }
     scrollItems.push(item.path.slice(1));
   });
 
