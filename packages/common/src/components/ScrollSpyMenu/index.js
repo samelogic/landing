@@ -69,7 +69,7 @@ const ScrollSpyMenu = ({
                   {menu.label}
                 </AnchorLink>
               ) : (
-                <AnchorLink href={menu.path} offset={menu.offset}>
+                <AnchorLink href="#test" offset={menu.offset}>
                   {menu.label}
                 </AnchorLink>
               )}
