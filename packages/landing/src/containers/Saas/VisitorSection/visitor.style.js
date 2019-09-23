@@ -44,10 +44,10 @@ const SectionObject = styled.div`
     margin-right: auto;
     position: relative;
     .dashboardWrapper {
+      width: 100%;
       position: absolute;
       top: 4vw;
       left: 0;
-      width: 100%;
     }
   }
 `;
