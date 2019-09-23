@@ -79,6 +79,7 @@ const BannerObject = styled.div`
       position: absolute;
       top: 0;
       right: 0;
+      width: 100%;
       .chatObject {
         position: absolute;
         top: 20px;
