@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const BodyWrapper = styled.section`
   padding-top: 110px;
-
+  padding-bottom: 50px;
   position: relative;
   overflow: hidden;
   @media (max-width: 990px) {
