@@ -218,13 +218,15 @@
   "MENU_ITEMS": [
     {
       "label": "Home",
-      "path": "#banner_section",
+      "staticLink": true,
+      "path": "/#banner_section",
       "root": "",
       "offset": "70"
     },
     {
       "label": "Pricing",
-      "path": "#pricing_section",
+      "staticLink": true,
+      "path": "/#pricing_section",
       "root": "",
       "offset": "70"
     },
