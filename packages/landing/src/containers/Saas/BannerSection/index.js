@@ -25,7 +25,7 @@ const BannerSection = ({
 }) => {
   const ButtonGroup = () => (
     <Fragment>
-      <Button title="SIGN UP" {...btnStyle} />
+      <Button title="GET STARTED" {...btnStyle} />
     </Fragment>
   );
   return (
