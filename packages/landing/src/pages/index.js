@@ -18,7 +18,6 @@ export default ({ path }) => {
       <SEO title="Samelogic | Agile experiments in your SaaS products" />
 
       <BannerSection />
-      <VisitorSection />
       <ServiceSection />
       <PricingSection />
       <TestimonialSection />
