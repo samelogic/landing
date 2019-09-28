@@ -7,8 +7,8 @@ import FaqSection from '../containers/Saas/FaqSection';
 import PricingSection from '../containers/Saas/PricingSection';
 import TrialSection from '../containers/Saas/TrialSection';
 import TimelineSection from '../containers/Saas/TimelineSection';
-import TestimonialSection from '../containers/Saas/TestimonialSection';
-import PartnerSection from '../containers/Saas/PartnerSection';
+//import TestimonialSection from '../containers/Saas/TestimonialSection';
+//import PartnerSection from '../containers/Saas/PartnerSection';
 import SEO from '../components/seo';
 import Layout from '../components/layout';
 
@@ -19,7 +19,6 @@ export default ({ path }) => {
 
       <BannerSection />
       <PricingSection />
-      <PartnerSection />
       <TimelineSection />
       <FaqSection />
       <TrialSection />
