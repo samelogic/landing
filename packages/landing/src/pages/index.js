@@ -1,8 +1,8 @@
 import React from 'react';
 import BannerSection from '../containers/Saas/BannerSection';
-import FeatureSection from '../containers/Saas/FeatureSection';
-import VisitorSection from '../containers/Saas/VisitorSection';
-import ServiceSection from '../containers/Saas/ServiceSection';
+//import FeatureSection from '../containers/Saas/FeatureSection';
+//import VisitorSection from '../containers/Saas/VisitorSection';
+//import ServiceSection from '../containers/Saas/ServiceSection';
 import FaqSection from '../containers/Saas/FaqSection';
 import PricingSection from '../containers/Saas/PricingSection';
 import TrialSection from '../containers/Saas/TrialSection';
@@ -19,7 +19,6 @@ export default ({ path }) => {
 
       <BannerSection />
       <PricingSection />
-      <TestimonialSection />
       <PartnerSection />
       <TimelineSection />
       <FaqSection />
