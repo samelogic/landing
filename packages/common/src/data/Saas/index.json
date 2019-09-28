@@ -225,7 +225,7 @@
     {
       "label": "Pricing",
       "path": "#pricing_section",
-      "root": "/",
+      "root": "",
       "offset": "70"
     },
     {
