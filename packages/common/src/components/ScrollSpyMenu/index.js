@@ -18,6 +18,9 @@ const ScrollSpyMenu = ({
 
   // convert menu path to scrollspy items
   menuItems.forEach(item => {
+    if (item.staticLink || item.root !== path) {
+      console.log(item);
+    }
     scrollItems.push(item.path.slice(1));
   });
 
@@ -48,16 +51,7 @@ const ScrollSpyMenu = ({
       {menuItems.map((menu, index) => (
         <li key={`menu-item-${index}`}>
           {menu.staticLink || menu.root !== path ? (
-            (log(menu),
-            (
-              <a
-                href={menu.root + menu.path}
-                root-path={menu.root + menu.path}
-                path-only={menu.path}
-              >
-                {menu.label}
-              </a>
-            ))
+            (log(menu), <a href={menu.root + menu.path}>{menu.label}</a>)
           ) : (
             <>
               {drawerClose ? (
@@ -69,7 +63,7 @@ const ScrollSpyMenu = ({
                   {menu.label}
                 </AnchorLink>
               ) : (
-                <AnchorLink href={menu.path} offset={menu.offset}>
+                <AnchorLink href="#test" offset={menu.offset}>
                   {menu.label}
                 </AnchorLink>
               )}
