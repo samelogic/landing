@@ -223,12 +223,6 @@
       "offset": "70"
     },
     {
-      "label": "Feature",
-      "path": "#feature_section",
-      "root": "/",
-      "offset": "70"
-    },
-    {
       "label": "Pricing",
       "path": "#pricing_section",
       "root": "/",
