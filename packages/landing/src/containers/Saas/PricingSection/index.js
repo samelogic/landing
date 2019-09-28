@@ -237,7 +237,7 @@ PricingSection.defaultProps = {
     mb: ['50px', '75px'],
   },
   secText: {
-    content: 'PRICING PLAN',
+    content: 'PRICING',
     as: 'span',
     display: 'block',
     textAlign: 'center',

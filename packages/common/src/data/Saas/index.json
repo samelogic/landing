@@ -248,21 +248,21 @@
   "MONTHLY_PRICING_TABLE": [
     {
       "freePlan": true,
-      "name": "Basic Account",
-      "description": "For Small teams or group who need to build website ",
-      "price": "$0",
-      "priceLabel": "Only for first month",
-      "buttonLabel": "CREATE FREE ACCOUNT",
-      "url": "#",
+      "name": "For Product Managers",
+      "description": "For Small teams",
+      "price": "$350",
+      "priceLabel": "Monthly",
+      "buttonLabel": "GET STARTED",
+      "url": "/#banner_section",
       "listItems": [
         {
-          "content": "Drag & Drop Builder"
+          "content": "Minimal Feedback Surveys"
         },
         {
-          "content": "1,000s of Templates Ready"
+          "content": "Daily or Weekly Reports"
         },
         {
-          "content": "Blog Tools"
+          "content": "Support"
         },
         {
           "content": "eCommerce Store "
