@@ -2,16 +2,13 @@ import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import Scrollspy from 'react-scrollspy';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { globalHistory } from '@reach/router';
 
 import { DrawerContext } from '../../contexts/DrawerContext';
 
-const ScrollSpyMenu = ({
-  className,
-  menuItems,
-  drawerClose,
-  path,
-  ...props
-}) => {
+const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
+  console.log(globalHistory.location);
+  const path = globalHistory.location.pathname;
   const { dispatch } = useContext(DrawerContext);
   // empty array for scrollspy items
   const scrollItems = [];
@@ -19,9 +16,8 @@ const ScrollSpyMenu = ({
   // convert menu path to scrollspy items
   menuItems.forEach(item => {
     if (item.staticLink || item.root !== path) {
-      console.log(item);
+      scrollItems.push(item.path.slice(1));
     }
-    scrollItems.push(item.path.slice(1));
   });
 
   // Add all classs to an array
@@ -38,9 +34,6 @@ const ScrollSpyMenu = ({
       type: 'TOGGLE',
     });
   };
-
-  const log = menu => console.log(menu);
-
   return (
     <Scrollspy
       items={scrollItems}
@@ -51,7 +44,7 @@ const ScrollSpyMenu = ({
       {menuItems.map((menu, index) => (
         <li key={`menu-item-${index}`}>
           {menu.staticLink || menu.root !== path ? (
-            (log(menu), <a href={menu.root + menu.path}>{menu.label}</a>)
+            <a href={menu.root + menu.path}>{menu.label}</a>
           ) : (
             <>
               {drawerClose ? (
@@ -63,7 +56,7 @@ const ScrollSpyMenu = ({
                   {menu.label}
                 </AnchorLink>
               ) : (
-                <AnchorLink href="#test" offset={menu.offset}>
+                <AnchorLink href={menu.path} offset={menu.offset}>
                   {menu.label}
                 </AnchorLink>
               )}
@@ -108,9 +101,9 @@ ScrollSpyMenu.propTypes = {
   onUpdate: PropTypes.func,
 
   /**
-   * Current path
+   * Current location
    */
-  path: PropTypes.string,
+  location: PropTypes.string,
 };
 
 ScrollSpyMenu.defaultProps = {
