@@ -219,7 +219,7 @@
     {
       "label": "Home",
       "path": "#banner_section",
-      "root": "/",
+      "root": "",
       "offset": "70"
     },
     {
@@ -231,7 +231,7 @@
     {
       "label": "FAQ",
       "path": "#faq_section",
-      "root": "/",
+      "root": "",
       "offset": "70"
     },
     {
