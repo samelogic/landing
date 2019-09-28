@@ -230,7 +230,8 @@
     },
     {
       "label": "FAQ",
-      "path": "#faq_section",
+      "staticLink": true,
+      "path": "/#faq_section",
       "root": "",
       "offset": "70"
     },
