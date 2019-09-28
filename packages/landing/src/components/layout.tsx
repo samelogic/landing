@@ -9,7 +9,7 @@ import Footer from '../containers/Saas/Footer';
 import { DrawerProvider } from 'common/src/contexts/DrawerContext';
 import SEO from '../components/seo';
 
-export default ({ children, path }) => {
+export default ({ children }) => {
   return (
     <ThemeProvider theme={saasTheme}>
       <Fragment>
@@ -19,7 +19,7 @@ export default ({ children, path }) => {
         <ContentWrapper>
           <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
             <DrawerProvider>
-              <Navbar path={path} />
+              <Navbar />
             </DrawerProvider>
           </Sticky>
           {children}
