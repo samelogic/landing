@@ -20,6 +20,14 @@ module.exports = {
         minify: false, // Breaks styles if not set to false
       },
     },
+    //Heap Analytics
+    {
+      resolve: 'gatsby-plugin-heap',
+      options: {
+        appId: '100207806',
+        enableOnDevMode: false, // if 'false', heap will be fired on NODE_ENV=production only
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
