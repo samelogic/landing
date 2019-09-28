@@ -19,7 +19,6 @@ export default ({ path }) => {
 
       <BannerSection />
       <PricingSection />
-      <TimelineSection />
       <FaqSection />
       <TrialSection />
     </Layout>
