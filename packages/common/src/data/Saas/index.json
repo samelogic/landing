@@ -43,10 +43,6 @@
       "menuItems": [
         {
           "url": "#",
-          "text": "Support Center"
-        },
-        {
-          "url": "#",
           "text": "Customer Support"
         },
         {
@@ -56,20 +52,12 @@
         {
           "url": "#",
           "text": "Copyright"
-        },
-        {
-          "url": "#",
-          "text": "Popular Campaign"
         }
       ]
     },
     {
       "title": "Our Information",
       "menuItems": [
-        {
-          "url": "#",
-          "text": "Return Policy"
-        },
         {
           "url": "#",
           "text": "Privacy Policy"
@@ -81,23 +69,15 @@
         {
           "url": "#",
           "text": "Site Map"
-        },
-        {
-          "url": "#",
-          "text": "Store Hours"
         }
       ]
     },
     {
-      "title": "My Account",
+      "title": "Press & Engagements",
       "menuItems": [
         {
           "url": "#",
           "text": "Press inquiries"
-        },
-        {
-          "url": "#",
-          "text": "Social media directories"
         },
         {
           "url": "#",
@@ -110,27 +90,6 @@
         {
           "url": "#",
           "text": "Speaker requests"
-        }
-      ]
-    },
-    {
-      "title": "Policy",
-      "menuItems": [
-        {
-          "url": "#",
-          "text": "Application security"
-        },
-        {
-          "url": "#",
-          "text": "Software principles"
-        },
-        {
-          "url": "#",
-          "text": "Unwanted software policy"
-        },
-        {
-          "url": "#",
-          "text": "Responsible supply chain"
         }
       ]
     }
