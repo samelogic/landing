@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Samelogic`,
-    description: `Product feedback thats 10x better for you and your team. It's like Heap Analytics without wasting time guessing what all the metrics mean.`,
+    description: `Turn your product into a live interactive canvas for customer feedback. It's like Heap Analytics without wasting time guessing what all the metrics mean.`,
     author: `@samelogicAI`,
   },
   plugins: [
