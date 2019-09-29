@@ -43,7 +43,7 @@ const BannerSection = ({
               }
               description={
                 <Text
-                  content="A NO-CODE product feedback solution thats 10x better for you and your team. Harness the power of Quantitative and Qualitative feedback with minimally intrusive in-app surveys to understand your users. It's like Heap Analytics without wasting time guessing what all the metrics mean."
+                  content="A NO-CODE product feedback solution thats 10x better for you and your team. It's like Heap Analytics without wasting time guessing what all the metrics mean. Harness the power of qual and quant feedback with minimally intrusive in-app surveys to understand your users. "
                   {...description}
                 />
               }
