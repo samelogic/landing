@@ -44,8 +44,8 @@ const Footer = ({
               title="Hosting"
               logoStyle={logoStyle}
             />
-            <Text content="hello@samelogic.com" {...textStyle} />
-            <Text content="+479-443-9334" {...textStyle} />
+            <Text content="hi@samelogic.com" {...textStyle} />
+            <Text content="+650-235-6537" {...textStyle} />
           </Box>
           {/* End of footer logo column */}
           <Box {...colTwo}>
