@@ -3,28 +3,18 @@
     {
       "id": 1,
       "expend": true,
-      "title": "How to contact with Customer Service?",
-      "description": "Our Customer Experience Team is available 7 days a week and we offer 2 ways to get in contact.Email and Chat . We try to reply quickly, so you need not to wait too long for a response!. "
+      "title": "How do I contact Customer Service",
+      "description": "If you should ever have any questions or problems using Samelogic feel free to reach out to any one of our team members. Amanda (amanda@samelogic.com), Dwayne (dwayne@samelogic.com) or Shawn (shawn@samelogic.com). You can also call us at +1 (650) 235 6537."
     },
     {
       "id": 2,
-      "title": "App installation failed, how to update system information?",
-      "description": "Please read the documentation carefully . We also have some online  video tutorials regarding this issue . If the problem remains, Please Open a ticket in the support forum . "
+      "title": "Does this work for mobile apps?",
+      "description": "We have plans to make this available on iOS and Android in the near future. For now, it only works on websites. Please speak with Dwayne (dwayne@samelogic.com) if this is something you urgently need."
     },
     {
       "id": 3,
-      "title": "Website reponse taking time, how to improve?",
-      "description": "At first, Please check your internet connection . We also have some online  video tutorials regarding this issue . If the problem remains, Please Open a ticket in the support forum ."
-    },
-    {
-      "id": 4,
-      "title": "New update fixed all bug and issues?",
-      "description": "We are giving the update of this theme continuously . You will receive an email Notification when we push an update. Always try to be updated with us ."
-    },
-    {
-      "id": 4,
-      "title": "New update fixed all bug and issues?",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      "title": "What tools do you integrate with?",
+      "description": "We are open to integrating with which ever product you need. Please reach out to Shawn (shawn@samelogic.com) to let us know what tools you want us to integrate with."
     }
   ],
   "Features": [
