@@ -237,7 +237,7 @@ PricingSection.defaultProps = {
     mb: ['50px', '75px'],
   },
   secText: {
-    content: 'PRICING PLAN',
+    content: 'PRICING',
     as: 'span',
     display: 'block',
     textAlign: 'center',
@@ -248,7 +248,7 @@ PricingSection.defaultProps = {
     mb: '10px',
   },
   secHeading: {
-    content: 'What’s our monthly pricing subscription',
+    content: 'What’s our monthly subscription fee',
     textAlign: 'center',
     fontSize: ['20px', '24px'],
     fontWeight: '500',
