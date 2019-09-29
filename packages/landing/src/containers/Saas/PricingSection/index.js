@@ -248,7 +248,7 @@ PricingSection.defaultProps = {
     mb: '10px',
   },
   secHeading: {
-    content: 'What’s our monthly subscription fee',
+    content: 'What’s our monthly subscription fee?',
     textAlign: 'center',
     fontSize: ['20px', '24px'],
     fontWeight: '500',
