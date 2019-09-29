@@ -256,19 +256,13 @@
       "url": "#",
       "listItems": [
         {
-          "content": "Drag & Drop Builder"
+          "content": "Turn your product into a live interactive canvas for customer feedback"
         },
         {
-          "content": "1,000s of Templates Ready"
+          "content": "Easily understand user behaviour with a combination of qual + quant"
         },
         {
-          "content": "Blog Tools"
-        },
-        {
-          "content": "eCommerce Store "
-        },
-        {
-          "content": "30+ Webmaster Tools"
+          "content": "No dependence on engineers to build out custom features for feedback"
         }
       ]
     }
@@ -276,27 +270,21 @@
   "YEARLY_PRICING_TABLE": [
     {
       "freePlan": true,
-      "name": "Basic Account",
-      "description": "For a single client or team who need to build website ",
+      "name": "Standard Product Feedback",
+      "description": "Finally understand how to improve signups, product stickiness and retention with meaningful, actionable feedback.",
       "price": "$300",
-      "priceLabel": "Only for first month",
+      "priceLabel": "Per month",
       "buttonLabel": "GET STARTED",
       "url": "#",
       "listItems": [
         {
-          "content": "Drag & Drop Builder"
+          "content": "Turn your product into a live interactive canvas for customer feedback"
         },
         {
-          "content": "1,000s of Templates Ready"
+          "content": "Easily understand user behaviour with a combination of qual + quant"
         },
         {
-          "content": "Blog Tools"
-        },
-        {
-          "content": "eCommerce Store "
-        },
-        {
-          "content": "30+ Webmaster Tools"
+          "content": "No dependence on engineers to build out custom features for feedback"
         }
       ]
     }
