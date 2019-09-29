@@ -121,7 +121,7 @@ FaqSection.defaultProps = {
   },
   // section title default style
   sectionTitle: {
-    content: 'Want to ask something about us ?',
+    content: 'Learn more about us and what we do',
     textAlign: 'center',
     fontSize: ['20px', '24px'],
     fontWeight: '400',
@@ -151,7 +151,7 @@ FaqSection.defaultProps = {
     justifyContent: 'center',
   },
   button: {
-    title: 'EXPLORE FORUM',
+    title: 'GET STARTED',
     type: 'button',
     fontSize: `${2}`,
     fontWeight: '600',
