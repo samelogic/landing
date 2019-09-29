@@ -28,6 +28,13 @@ module.exports = {
         enableOnDevMode: false, // if 'false', heap will be fired on NODE_ENV=production only
       },
     },
+    //Drift Chat Widget
+    {
+      resolve: 'gatsby-plugin-drift',
+      options: {
+        appId: '2756gthz52yn',
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
