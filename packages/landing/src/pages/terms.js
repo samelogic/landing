@@ -6,7 +6,7 @@ import Layout from '../components/layout';
 export default () => {
   return (
     <Layout>
-      <SEO title="Samelogic | Agile experiments in your SaaS products" />
+      <SEO title="Samelogic | Terms of Service" />
       <TermsPage />
     </Layout>
   );
