@@ -7,6 +7,9 @@ import Paper from "@material-ui/core/Paper";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
+    root: {
+      zIndex: 100
+    },
     paper: {
       padding: theme.spacing(3, 2),
       margin: theme.spacing(0.5)
@@ -33,16 +36,16 @@ const Survey: React.FunctionComponent<SurveyProps> = ({
   const classes = useStyles();
 
   return (
-    <Popper id={id} open={open} anchorEl={anchorEl} placement={placement} transition>
+    <Popper id={id} open={open} anchorEl={anchorEl} placement={placement} className={classes.root} transition>
       {({ TransitionProps }) => (
         <ClickAwayListener onClickAway={handleClickAway}>
-          <Fade {...TransitionProps} timeout={350}>
-            <Paper className={classes.paper}>
-              <div>Are you a product manager?</div>
-              <button>Yes</button>
-              <button>No</button>
-            </Paper>
-          </Fade>
+            <Fade {...TransitionProps} timeout={350}>
+              <Paper className={classes.paper}>
+                <div>Are you a product manager?</div>
+                <button>Yes</button>
+                <button>No</button>
+              </Paper>
+            </Fade>
         </ClickAwayListener>
       )}
     </Popper>

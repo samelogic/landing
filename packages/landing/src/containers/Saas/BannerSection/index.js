@@ -57,7 +57,7 @@ const BannerSection = ({
                 />
               }
               button={
-                <>
+                <div>
                   <Button
                     title="GET STARTED"
                     aria-describedby={id}
@@ -65,7 +65,7 @@ const BannerSection = ({
                     {...btnStyle}
                   />
                   <Survey id={id} open={open} anchorEl={anchorEl} handleClickAway={handleClickAway} placement="right" />
-                </>
+                </div>
               }
             />
           </Box>
