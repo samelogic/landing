@@ -9,6 +9,7 @@ import FeatureBlock from 'common/src/components/FeatureBlock';
 import Container from 'common/src/components/UI/Container';
 import Particles from '../Particle';
 import BannerWrapper, { BannerObject } from './bannerSection.style';
+import Survey from '../../../components/Survey/Survey';
 
 import BannerObject1 from 'common/src/assets/image/saas/banner/bannerObject1.png';
 import BannerObject2, {
@@ -23,9 +24,24 @@ const BannerSection = ({
   description,
   imageWrapper,
 }) => {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClick = event => {
+    setAnchorEl(anchorEl ? null : event.currentTarget);
+  };
+
+  const open = Boolean(anchorEl);
+  const id = open ? 'simple-popper' : undefined;
+
   const ButtonGroup = () => (
     <Fragment>
-      <Button title="GET STARTED" {...btnStyle} />
+      <Button
+        title="GET STARTED"
+        aria-describedby={id}
+        onClick={handleClick}
+        {...btnStyle}
+      />
+      <Survey id={id} open={open} anchorEl={anchorEl} />
     </Fragment>
   );
   return (
