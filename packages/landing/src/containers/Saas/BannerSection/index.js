@@ -10,7 +10,6 @@ import Container from 'common/src/components/UI/Container';
 import Particles from '../Particle';
 import BannerWrapper, { BannerObject } from './bannerSection.style';
 import Survey from '../../../components/Survey/Survey';
-import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import { makeStyles, createStyles } from '@material-ui/core/styles';
 
 import BannerObject1 from 'common/src/assets/image/saas/banner/bannerObject1.png';
@@ -67,17 +66,15 @@ const BannerSection = ({
                 />
               }
               button={
-                <ClickAwayListener onClickAway={handleClickAway}>
-                  <div className={classes.wrapper}>
-                    <Button
-                      title="GET STARTED"
-                      aria-describedby={id}
-                      onClick={handleClick}
-                      {...btnStyle}
-                    />
-                    <Survey id={id} open={open} anchorEl={anchorEl} placement="right" />
-                  </div>
-                </ClickAwayListener>
+                <>
+                  <Button
+                    title="GET STARTED"
+                    aria-describedby={id}
+                    onClick={handleClick}
+                    {...btnStyle}
+                  />
+                  <Survey id={id} open={open} anchorEl={anchorEl} handleClickAway={handleClickAway} placement="right" />
+                </>
               }
             />
           </Box>
