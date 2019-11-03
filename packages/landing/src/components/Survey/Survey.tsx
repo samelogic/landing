@@ -2,15 +2,14 @@ import * as React from 'react';
 import Popper, { PopperPlacementType } from '@material-ui/core/Popper';
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
+import Fade from "@material-ui/core/Fade";
+import Paper from "@material-ui/core/Paper";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     paper: {
-      border: '1px solid',
-      padding: theme.spacing(1),
-      margin: theme.spacing(0.5),
-      backgroundColor: theme.palette.background.paper
-    }
+      padding: theme.spacing(3, 2),
+    },
   })
 );
 
@@ -33,14 +32,18 @@ const Survey: React.FunctionComponent<SurveyProps> = ({
   const classes = useStyles();
 
   return (
-    <Popper id={id} open={open} anchorEl={anchorEl} placement={placement}>
-      <ClickAwayListener onClickAway={handleClickAway}>
-        <div className={classes.paper}>
-          <div>The content of the Popper.</div>
-          <button>Yes</button>
-          <button>No</button>
-        </div>
-      </ClickAwayListener>
+    <Popper id={id} open={open} anchorEl={anchorEl} placement={placement} transition>
+      {({ TransitionProps }) => (
+        <ClickAwayListener onClickAway={handleClickAway}>
+          <Fade {...TransitionProps} timeout={350}>
+            <Paper className={classes.paper}>
+              <div>Are you a product manager?</div>
+              <button>Yes</button>
+              <button>No</button>
+            </Paper>
+          </Fade>
+        </ClickAwayListener>
+      )}
     </Popper>
   );
 };
