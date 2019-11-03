@@ -10,7 +10,6 @@ import Container from 'common/src/components/UI/Container';
 import Particles from '../Particle';
 import BannerWrapper, { BannerObject } from './bannerSection.style';
 import Survey from '../../../components/Survey/Survey';
-import { makeStyles, createStyles } from '@material-ui/core/styles';
 
 import BannerObject1 from 'common/src/assets/image/saas/banner/bannerObject1.png';
 import BannerObject2, {
