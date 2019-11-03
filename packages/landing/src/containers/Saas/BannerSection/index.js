@@ -17,13 +17,6 @@ import BannerObject2, {
   ReactComponent as Svgdemo,
 } from 'common/src/assets/image/saas/banner/Landing-Demo.svg';
 
-const useStyles = makeStyles((theme) =>
-  createStyles({
-    wrapper: {
-      position: 'relative',
-    }
-  }),
-);
 
 const BannerSection = ({
   row,
@@ -33,7 +26,6 @@ const BannerSection = ({
   description,
   imageWrapper,
 }) => {
-  const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const handleClick = event => {
