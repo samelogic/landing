@@ -4,6 +4,7 @@ import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import Fade from "@material-ui/core/Fade";
 import Paper from "@material-ui/core/Paper";
+import SurveyForm from './SurveyForm'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -41,9 +42,7 @@ const Survey: React.FunctionComponent<SurveyProps> = ({
         <ClickAwayListener onClickAway={handleClickAway}>
             <Fade {...TransitionProps} timeout={350}>
               <Paper className={classes.paper}>
-                <div>Are you a product manager?</div>
-                <button>Yes</button>
-                <button>No</button>
+                <SurveyForm />
               </Paper>
             </Fade>
         </ClickAwayListener>
