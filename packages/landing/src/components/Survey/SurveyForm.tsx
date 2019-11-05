@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useFormik } from 'formik';
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
+import axios from 'axios';
+//import request from 'request-promise-native';
 import ToggleInput from './ToggleInput';
 
 const useStyles = makeStyles((theme: Theme) => createStyles({}));
@@ -19,8 +21,19 @@ const SurveyForm: React.FunctionComponent<SurveyFormProps> = ({ ...props }) => {
       isPM: false,
       email: ''
     },
-    onSubmit: values => {
-      alert(JSON.stringify(values, null, 2));
+    onSubmit: async (values, { setSubmitting }) => {
+      setSubmitting(true);
+      try {
+        const resp = await axios.post(
+          'https://wh.automate.io/webhook/5dbf65b3cc8ec65400a5fc64',
+          values,
+          {}
+        );
+        console.log(resp);
+      } catch (err) {
+        console.error(err);
+      }
+      setSubmitting(false);
     }
   });
 
@@ -51,7 +64,9 @@ const SurveyForm: React.FunctionComponent<SurveyFormProps> = ({ ...props }) => {
             onChange={formik.handleChange}
             value={formik.values.email}
           />
-          <button type="submit">Submit</button>
+          <button type="submit" disabled={formik.isSubmitting}>
+            Submit
+          </button>
         </>
       ) : null}
     </form>
