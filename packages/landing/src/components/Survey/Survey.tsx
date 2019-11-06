@@ -50,7 +50,7 @@ const Survey: React.FunctionComponent<SurveyProps> = ({
         <ClickAwayListener onClickAway={handleClickAway}>
           <Fade {...TransitionProps} timeout={350}>
             <Paper className={classes.paper}>
-              <SurveyForm />
+              <SurveyForm onSubmitted={handleClickAway} />
             </Paper>
           </Fade>
         </ClickAwayListener>

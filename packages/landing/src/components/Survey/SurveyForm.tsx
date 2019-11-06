@@ -10,9 +10,14 @@ import ToggleInput from './ToggleInput';
 
 const useStyles = makeStyles((theme: Theme) => createStyles({}));
 
-type SurveyFormProps = {};
+type SurveyFormProps = {
+  onSubmitted: (event: React.MouseEvent<Document>) => void;
+};
 
-const SurveyForm: React.FunctionComponent<SurveyFormProps> = ({ ...props }) => {
+const SurveyForm: React.FunctionComponent<SurveyFormProps> = ({
+  onSubmitted,
+  ...props
+}) => {
   const [isPmSet, setPM] = useState(false);
 
   // Notice that we have to initialize ALL of fields with values. These
@@ -46,7 +51,7 @@ const SurveyForm: React.FunctionComponent<SurveyFormProps> = ({ ...props }) => {
           values,
           {}
         );
-        console.log(resp);
+        onSubmitted();
       } catch (err) {
         console.error(err);
       }
