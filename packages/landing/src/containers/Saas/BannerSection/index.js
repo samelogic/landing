@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import Box from 'reusecore/src/elements/Box';
 import Text from 'reusecore/src/elements/Text';
@@ -9,11 +9,13 @@ import FeatureBlock from 'common/src/components/FeatureBlock';
 import Container from 'common/src/components/UI/Container';
 import Particles from '../Particle';
 import BannerWrapper, { BannerObject } from './bannerSection.style';
+import Survey from '../../../components/Survey/Survey';
 
 import BannerObject1 from 'common/src/assets/image/saas/banner/bannerObject1.png';
 import BannerObject2, {
   ReactComponent as Svgdemo,
 } from 'common/src/assets/image/saas/banner/Landing-Demo.svg';
+
 
 const BannerSection = ({
   row,
@@ -23,11 +25,18 @@ const BannerSection = ({
   description,
   imageWrapper,
 }) => {
-  const ButtonGroup = () => (
-    <Fragment>
-      <Button title="GET STARTED" {...btnStyle} />
-    </Fragment>
-  );
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClick = event => {
+    setAnchorEl(anchorEl ? null : event.currentTarget);
+  };
+  const handleClickAway = () => {
+    setAnchorEl(null)
+  }
+
+  const open = Boolean(anchorEl);
+  const id = open ? 'simple-popper' : undefined;
+
   return (
     <BannerWrapper id="banner_section">
       <Particles />
@@ -47,7 +56,17 @@ const BannerSection = ({
                   {...description}
                 />
               }
-              button={<ButtonGroup />}
+              button={
+                <div>
+                  <Button
+                    title="GET STARTED"
+                    aria-describedby={id}
+                    onClick={handleClick}
+                    {...btnStyle}
+                  />
+                  <Survey id={id} open={open} anchorEl={anchorEl} handleClickAway={handleClickAway} placement="right" />
+                </div>
+              }
             />
           </Box>
         </Box>
