@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useFormik } from 'formik';
+import { useFormik, FormikValues, FormikErrors } from 'formik';
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import axios from 'axios';
 import Grid from '@material-ui/core/Grid';
@@ -23,6 +23,20 @@ const SurveyForm: React.FunctionComponent<SurveyFormProps> = ({ ...props }) => {
     initialValues: {
       isPM: false,
       email: ''
+    },
+    validate: (values: FormikValues) => {
+      //const errors: FormikErrors = {};
+      const errors: FormikErrors<any> = {};
+
+      if (!values.email) {
+        errors.email = 'Required';
+      } else if (
+        !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)
+      ) {
+        errors.email = 'Invalid email address';
+      }
+
+      return errors;
     },
     onSubmit: async (values, { setSubmitting }) => {
       setSubmitting(true);
@@ -77,6 +91,7 @@ const SurveyForm: React.FunctionComponent<SurveyFormProps> = ({ ...props }) => {
                 onChange={formik.handleChange}
                 value={formik.values.email}
                 fullWidth
+                error={formik.touched.email && formik.errors.email}
               />
             </Grid>
             <Grid container item xs={12}>
