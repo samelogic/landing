@@ -6,6 +6,9 @@ import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles(theme => ({
   toggleContainer: {
     margin: theme.spacing(2, 0)
+  },
+  button: {
+    maxWidth: 100
   }
 }));
 
@@ -28,10 +31,18 @@ const ToggleInput: React.FunctionComponent<ToggleInputProps> = ({
       onChange={onChange}
       aria-label="text alignment"
     >
-      <ToggleButton value="true" aria-label="Is Product Manager">
+      <ToggleButton
+        value="true"
+        aria-label="Is Product Manager"
+        className={classes.button}
+      >
         Yes
       </ToggleButton>
-      <ToggleButton value="false" aria-label="Not a Product Manager">
+      <ToggleButton
+        value="false"
+        aria-label="Not a Product Manager"
+        className={classes.button}
+      >
         No
       </ToggleButton>
     </ToggleButtonGroup>

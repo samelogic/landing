@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { useFormik } from 'formik';
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import axios from 'axios';
+import Grid from '@material-ui/core/Grid';
+import Button from '@material-ui/core/Button';
+import TextField from '@material-ui/core/TextField';
 //import request from 'request-promise-native';
 import ToggleInput from './ToggleInput';
 
@@ -52,23 +55,43 @@ const SurveyForm: React.FunctionComponent<SurveyFormProps> = ({ ...props }) => {
 
   return (
     <form onSubmit={formik.handleSubmit}>
-      <label htmlFor="isPM">Are you a Product Manager?</label>
-      <ToggleInput value={formik.values.isPM} onChange={handleToggleChange} />
-      {isPmSet ? (
-        <>
-          <label htmlFor="email">Whats your email?</label>
-          <input
-            id="email"
-            name="email"
-            type="text"
-            onChange={formik.handleChange}
-            value={formik.values.email}
+      <Grid container spacing={1}>
+        <Grid item xs={12}>
+          <label htmlFor="isPM">Are you a Product Manager?</label>
+        </Grid>
+        <Grid item xs={12} justify="center">
+          <ToggleInput
+            value={formik.values.isPM}
+            onChange={handleToggleChange}
           />
-          <button type="submit" disabled={formik.isSubmitting}>
-            Submit
-          </button>
-        </>
-      ) : null}
+        </Grid>
+        {isPmSet ? (
+          <>
+            <Grid item xs={12}>
+              <TextField
+                id="email"
+                name="email"
+                label="What is your email?"
+                margin="normal"
+                variant="outlined"
+                onChange={formik.handleChange}
+                value={formik.values.email}
+                fullWidth
+              />
+            </Grid>
+            <Grid container item xs={12}>
+              <Button
+                variant="contained"
+                color="primary"
+                type="submit"
+                disabled={formik.isSubmitting}
+              >
+                Submit
+              </Button>
+            </Grid>
+          </>
+        ) : null}
+      </Grid>
     </form>
   );
 };
