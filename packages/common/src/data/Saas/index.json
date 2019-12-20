@@ -123,7 +123,7 @@
       "id": 5,
       "icon": "flaticon-creative",
       "title": "UX Planning",
-      "description": "We provide the best UI/UX Design by following the latest trends of the market  ."
+      "description": "We provide the best UI/UX Design by following the latest trends of the market."
     },
     {
       "id": 6,
@@ -199,27 +199,7 @@
       "freePlan": true,
       "name": "Standard Product Feedback",
       "description": "Finally understand how to increase product stickiness and retention with meaningful, actionable feedback.",
-      "price": "$159",
-      "priceLabel": "Per month",
-      "buttonLabel": "GET STARTED",
-      "url": "#",
-      "listItems": [
-        {
-          "content": "Turn your product into a live interactive canvas for customer feedback"
-        },
-        {
-          "content": "Easily understand user behaviour with a combination of qual + quant"
-        },
-        {
-          "content": "No dependence on engineers to build out custom features for feedback"
-        }
-      ]
-    },
-    {
-      "freePlan": true,
-      "name": "Standard Product Feedback",
-      "description": "Finally understand how to increase product stickiness and retention with meaningful, actionable feedback.",
-      "price": "$159",
+      "price": "$0",
       "priceLabel": "Per month",
       "buttonLabel": "GET STARTED",
       "url": "#",
@@ -241,7 +221,7 @@
       "freePlan": true,
       "name": "Standard Product Feedback",
       "description": "Finally understand how to increase product stickiness and retention with meaningful, actionable feedback.",
-      "price": "$139",
+      "price": "$0",
       "priceLabel": "Per month",
       "buttonLabel": "GET STARTED",
       "url": "#",
