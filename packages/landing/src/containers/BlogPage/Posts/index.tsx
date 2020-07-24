@@ -25,7 +25,7 @@ const Posts: React.FunctionComponent<PostsProps> = props => {
               }
             }
             heroImage {
-              sizes(maxWidth: 1170, maxHeight: 690, resizingBehavior: SCALE) {
+              sizes(quality: 90, maxWidth: 1170, maxHeight: 690, resizingBehavior: SCALE) {
                 ...GatsbyContentfulSizes_withWebp
               }
             }

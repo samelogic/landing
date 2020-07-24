@@ -3,10 +3,10 @@ import { graphql, Link } from 'gatsby';
 import _ from 'lodash';
 import urljoin from 'url-join';
 import { DiscussionEmbed } from 'disqus-react';
-import Layout from '../components/layout';
-import SEO from '../components/seo';
-import PostCard from '../components/PostCard/postCard';
-import PostDetails from '../components/PostDetails/postDetails';
+import Layout from '../../components/layout';
+import SEO from '../../components/seo';
+import PostCard from '../../components/PostCard/postCard';
+import PostDetails from '../../components/PostDetails/postDetails';
 import {
   FacebookShareButton,
   TwitterShareButton,
@@ -29,7 +29,7 @@ import {
   PostShare,
   PostTags,
   BlogPostComment
-} from './templates.style';
+} from './BlogPost.style';
 
 const BlogPostTemplate = ({ data, path }) => {
   const {
@@ -129,27 +129,32 @@ const BlogPostTemplate = ({ data, path }) => {
 
 export default BlogPostTemplate;
 export const pageQuery = graphql`
-  query($slug: String!) {
-    contentfulPost(slug: { eq: $slug }) {
-      title
-      description {
-        description
-      }
-      slug
-      createdAt(formatString: "MMMM Do, YYYY")
-      content {
-        childMarkdownRemark {
-          html
-          excerpt(pruneLength: 300)
-        }
-      }
-      heroImage {
-        sizes(maxWidth: 350, maxHeight: 196, resizingBehavior: SCALE) {
-          ...GatsbyContentfulSizes_withWebp
-        }
-      }
-      tags
-      updatedAt
-    }
-  }
-`;
+         query($slug: String!) {
+           contentfulPost(slug: { eq: $slug }) {
+             title
+             description {
+               description
+             }
+             slug
+             content {
+               childMarkdownRemark {
+                 html
+                 excerpt(pruneLength: 300)
+               }
+             }
+             heroImage {
+               sizes(
+                 quality: 90
+                 maxWidth: 1170
+                 maxHeight: 690
+                 resizingBehavior: SCALE
+               ) {
+                 ...GatsbyContentfulSizes_withWebp
+               }
+             }
+             tags
+             createdAt(formatString: "MMMM Do, YYYY")
+             updatedAt(formatString: "MMMM Do, YYYY")
+           }
+         }
+       `;
