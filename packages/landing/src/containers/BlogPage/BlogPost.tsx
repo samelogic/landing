@@ -136,7 +136,6 @@ export const pageQuery = graphql`
                description
              }
              slug
-             createdAt(formatString: "MMMM Do, YYYY")
              content {
                childMarkdownRemark {
                  html
@@ -154,7 +153,8 @@ export const pageQuery = graphql`
                }
              }
              tags
-             updatedAt
+             createdAt(formatString: "MMMM Do, YYYY")
+             updatedAt(formatString: "MMMM Do, YYYY")
            }
          }
        `;
