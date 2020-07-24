@@ -15,20 +15,6 @@ yarn start
 
 GatsbyJs server will start in `localhost:8000`
 
-Available routes are below
-
-```
-/app
-/saas
-/saasmodern
-/saasclassic
-/hosting
-/portfolio
-/ride
-/crypto
-/charity
-/interior
-```
 
 # Folder Structure
 
