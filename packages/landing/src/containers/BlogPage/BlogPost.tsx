@@ -66,15 +66,15 @@ const BlogPostTemplate = ({ data, path }) => {
         />
 
         <BlogPostFooter>
-          {/* {post.frontmatter.tags == null ? null : (
+          {tags == null ? null : (
             <PostTags className="post_tags">
-              {post.frontmatter.tags.map((tag: string, index: number) => (
+              {tags.map((tag: string, index: number) => (
                 <Link key={index} to={`/tags/${_.kebabCase(tag)}/`}>
                   {`#${tag}`}
                 </Link>
               ))}
             </PostTags>
-          )} */}
+          )}
           <PostShare>
             <span>Share This:</span>
             <FacebookShareButton url={shareUrl} quote={description}>
