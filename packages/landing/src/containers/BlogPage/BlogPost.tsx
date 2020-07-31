@@ -42,7 +42,7 @@ const BlogPostTemplate = ({ data, path }) => {
     updatedAt
   } = data.contentfulPost;
   const siteUrl = data.site.siteMetadata.siteUrl;
-  const shareUrl = urljoin(siteUrl, slug);
+  const shareUrl = urljoin(siteUrl, 'blog', slug);
 
   const disqusConfig = {
     shortname: process.env.DISQUS_NAME,
@@ -66,15 +66,15 @@ const BlogPostTemplate = ({ data, path }) => {
         />
 
         <BlogPostFooter>
-          {/* {post.frontmatter.tags == null ? null : (
+          {tags == null ? null : (
             <PostTags className="post_tags">
-              {post.frontmatter.tags.map((tag: string, index: number) => (
+              {tags.map((tag: string, index: number) => (
                 <Link key={index} to={`/tags/${_.kebabCase(tag)}/`}>
                   {`#${tag}`}
                 </Link>
               ))}
             </PostTags>
-          )} */}
+          )}
           <PostShare>
             <span>Share This:</span>
             <FacebookShareButton url={shareUrl} quote={description}>
@@ -91,9 +91,9 @@ const BlogPostTemplate = ({ data, path }) => {
             </RedditShareButton>
           </PostShare>
         </BlogPostFooter>
-        <BlogPostComment>
+        {/* <BlogPostComment>
           <DiscussionEmbed {...disqusConfig} />
-        </BlogPostComment>
+        </BlogPostComment> */}
       </BlogPostDetailsWrapper>
 
       {/* {edges.length !== 0 && (
