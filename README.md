@@ -1,8 +1,18 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3715c793-544d-4b76-bc6b-44c71c876f32/deploy-status)](https://app.netlify.com/sites/hungry-kare-cb6e50/deploys)
 
+# Description
+
+This repository handles the samelogic.com landing page. This includes every path on the top level samelogic.com domain such as /blogs.
+
+Its powered by gatsby and hosted on netlify. The blog is hosted on contentful.
+
+Theming is 2 fold:
+
+* Landing page by React Next Landing ([Saas Theme](https://superprops-gatsby.now.sh/saas/))
+* Blog pages by StoryHub ([Personal Theme](https://storyhub-personal.redq.now.sh/))
+
 # Installation
 
-After downloading the file from Themeforest, You will find SuperProps.zip file. Then unzip the SuperProps.zip and run the following commands on SuperProps folder to get started with the project.
 
 ```
 yarn
@@ -27,7 +37,7 @@ GatsbyJs server will start in `localhost:8000`
 		/data
 		/theme
 	/functions
-	/landing-gatsby [Gatsby version of the project]
+	/landing
 ```
 
 # Stack We Have Used
@@ -90,25 +100,6 @@ If you run `yarn gatsby-serve` then the build version the the project will start
 
 # Deployment Support
 
-## now.sh
-
-### GatsbyJs
-
-We have given now.sh deployment by default. For hosting the project in now.sh first you have to rename `gatsby-landing.now.json` to `now.json`.
-
-You can change the name according to your project in now.json file like:
-
-```
-{
-	"name": "your_project_name"
-}
-```
-
-Now run below command after building the project.
-
-```
-now
-```
 
 ## Netlify
 

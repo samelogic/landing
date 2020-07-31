@@ -3,6 +3,7 @@ module.exports = {
     title: `Samelogic`,
     description: `Turn your product into a live interactive canvas for customer feedback. It's like Heap Analytics without wasting time guessing what all the metrics mean.`,
     author: `@samelogicAI`,
+    siteUrl: `https://samelogic.com`,
   },
   plugins: [
     `gatsby-plugin-typescript`,
@@ -13,7 +14,7 @@ module.exports = {
         accessToken: `xDoouTi1b_kYU2beViDWyTr3qFN0A0Rb0Kjv3s6LvHA`,
       },
     },
-    'gatsby-plugin-svgr',
+    "gatsby-plugin-svgr",
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
@@ -22,17 +23,17 @@ module.exports = {
     },
     //Heap Analytics
     {
-      resolve: 'gatsby-plugin-heap',
+      resolve: "gatsby-plugin-heap",
       options: {
-        appId: '100207806',
+        appId: "100207806",
         enableOnDevMode: false, // if 'false', heap will be fired on NODE_ENV=production only
       },
     },
     //Drift Chat Widget
     {
-      resolve: 'gatsby-plugin-drift',
+      resolve: "gatsby-plugin-drift",
       options: {
-        appId: '2756gthz52yn',
+        appId: "2756gthz52yn",
       },
     },
     `gatsby-plugin-react-helmet`,

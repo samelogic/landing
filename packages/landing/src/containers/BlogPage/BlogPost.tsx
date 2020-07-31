@@ -41,8 +41,8 @@ const BlogPostTemplate = ({ data, path }) => {
     tags,
     updatedAt
   } = data.contentfulPost;
-  //const siteUrl = props.data.site.siteMetadata.siteUrl;
-  //const shareUrl = urljoin(siteUrl, slug);
+  const siteUrl = data.site.siteMetadata.siteUrl;
+  const shareUrl = urljoin(siteUrl, slug);
 
   const disqusConfig = {
     shortname: process.env.DISQUS_NAME,
@@ -65,8 +65,8 @@ const BlogPostTemplate = ({ data, path }) => {
           description={content.childMarkdownRemark.html}
         />
 
-        {/* <BlogPostFooter>
-          {post.frontmatter.tags == null ? null : (
+        <BlogPostFooter>
+          {/* {post.frontmatter.tags == null ? null : (
             <PostTags className="post_tags">
               {post.frontmatter.tags.map((tag: string, index: number) => (
                 <Link key={index} to={`/tags/${_.kebabCase(tag)}/`}>
@@ -74,24 +74,18 @@ const BlogPostTemplate = ({ data, path }) => {
                 </Link>
               ))}
             </PostTags>
-          )}
+          )} */}
           <PostShare>
             <span>Share This:</span>
-            <FacebookShareButton url={shareUrl} quote={post.excerpt}>
+            <FacebookShareButton url={shareUrl} quote={description}>
               <IoLogoFacebook />
             </FacebookShareButton>
             <TwitterShareButton url={shareUrl} title={title}>
               <IoLogoTwitter />
             </TwitterShareButton>
-            <PinterestShareButton
-              url={shareUrl}
-              media={urljoin(siteUrl, post.frontmatter.cover.publicURL)}
-            >
-              <IoLogoPinterest />
-            </PinterestShareButton>
             <RedditShareButton
               url={shareUrl}
-              title={`${post.frontmatter.title}`}
+              title={`${title}`}
             >
               <IoLogoReddit />
             </RedditShareButton>
@@ -99,7 +93,7 @@ const BlogPostTemplate = ({ data, path }) => {
         </BlogPostFooter>
         <BlogPostComment>
           <DiscussionEmbed {...disqusConfig} />
-        </BlogPostComment> */}
+        </BlogPostComment>
       </BlogPostDetailsWrapper>
 
       {/* {edges.length !== 0 && (
@@ -130,6 +124,11 @@ const BlogPostTemplate = ({ data, path }) => {
 export default BlogPostTemplate;
 export const pageQuery = graphql`
          query($slug: String!) {
+           site {
+             siteMetadata {
+               siteUrl
+             }
+           }
            contentfulPost(slug: { eq: $slug }) {
              title
              description {
