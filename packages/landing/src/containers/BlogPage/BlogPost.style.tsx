@@ -1,5 +1,37 @@
-import styled from 'styled-components';
-import { themeGet } from 'styled-system';
+import styled from "styled-components";
+import { themeGet } from "styled-system";
+
+export const BlogPostsWrapper = styled.div`
+  margin: 0 auto;
+  padding-top: 120px;
+  position: relative;
+
+  @media (min-width: 990px) {
+    width: 900px;
+  }
+  @media (min-width: 1200px) {
+    width: 1050px;
+  }
+  @media (min-width: 1400px) {
+    width: 1170px;
+  }
+  @media (max-width: 990px) {
+    padding: 80px 45px 0 45px;
+  }
+  @media (max-width: 575px) {
+    padding: 60px 25px 0 25px;
+  }
+
+  .post_card {
+    margin-bottom: 120px;
+    @media (max-width: 990px) {
+      margin-bottom: 90px;
+    }
+    @media (max-width: 575px) {
+      margin-bottom: 60px;
+    }
+  }
+`;
 
 export const RelatedPostWrapper = styled.div`
   margin: 0 auto;
@@ -21,16 +53,16 @@ export const RelatedPostWrapper = styled.div`
 `;
 
 export const RelatedPostTitle = styled.h2`
-  color: ${themeGet('colors.textColor', '#292929')};
+  color: ${themeGet("colors.textColor", "#292929")};
   font-size: 16px;
   font-weight: 500;
-  font-family: ${themeGet('fontFamily.0', "'Fira Sans',sans-serif")};
+  font-family: ${themeGet("fontFamily.0", "'Fira Sans',sans-serif")};
   letter-spacing: 0.17em;
   position: relative;
   margin-bottom: 30px;
 
   &:after {
-    content: '';
+    content: "";
     width: 68px;
     height: 1px;
     background: #292929;
@@ -163,7 +195,7 @@ export const TagPageHeading = styled.div`
   }
 
   &:after {
-    content: '';
+    content: "";
     display: block;
     width: 90px;
     height: 1px;
@@ -175,7 +207,7 @@ export const TagPageHeading = styled.div`
 export const TagName = styled.h1`
   font-size: 30px;
   font-weight: 700;
-  color: ${themeGet('colors.primary', '#D10068')};
+  color: ${themeGet("colors.primary", "#D10068")};
   margin-bottom: 8px;
   @media (max-width: 990px) {
     font-size: 26px;
@@ -219,14 +251,14 @@ export const PostShare = styled.div`
     margin-left: 25px;
     font-size: 22px;
     outline: 0;
-    color: ${themeGet('colors.textColor', '#292929')};
+    color: ${themeGet("colors.textColor", "#292929")};
     transition: 0.15s ease-in-out;
     @media (max-width: 767px) {
       font-size: 18px;
       margin-left: 20px;
     }
     &:hover {
-      color: ${themeGet('colors.primary', '#D10068')};
+      color: ${themeGet("colors.primary", "#D10068")};
     }
     svg {
       display: block;
@@ -265,7 +297,7 @@ export const PostTags = styled.div`
     margin-right: 30px;
     font-size: 14px;
     font-weight: 400;
-    color: ${themeGet('primary', '#D10068')};
+    color: ${themeGet("primary", "#D10068")};
     @media (max-width: 990px) {
       font-size: 13px;
       margin-right: 25px;
