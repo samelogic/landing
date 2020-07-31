@@ -42,7 +42,7 @@ const BlogPostTemplate = ({ data, path }) => {
     updatedAt
   } = data.contentfulPost;
   const siteUrl = data.site.siteMetadata.siteUrl;
-  const shareUrl = urljoin(siteUrl, slug);
+  const shareUrl = urljoin(siteUrl, 'blog', slug);
 
   const disqusConfig = {
     shortname: process.env.DISQUS_NAME,
@@ -91,9 +91,9 @@ const BlogPostTemplate = ({ data, path }) => {
             </RedditShareButton>
           </PostShare>
         </BlogPostFooter>
-        <BlogPostComment>
+        {/* <BlogPostComment>
           <DiscussionEmbed {...disqusConfig} />
-        </BlogPostComment>
+        </BlogPostComment> */}
       </BlogPostDetailsWrapper>
 
       {/* {edges.length !== 0 && (
