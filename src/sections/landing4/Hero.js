@@ -60,23 +60,21 @@ const Hero = () => {
               >
                 <Box py={[null, null, null, 5]} pr={5} pt={[4, null]}>
                   <Title variant="hero" color="light">
-                    Get your next <br className="d-none d-sm-block" />
-                    landing page.
+                    Build exactly what <br className="d-none d-sm-block" />
+                    your users need.
                   </Title>
                   <Text mb={4} color="light" opacity={0.7}>
-                    Create custom landing pages with Omega that convert more
-                    visitors than any website. With lots of unique blocks, you
-                    can easily build a page without coding.
+                  Attach timed micro-surveys to elements within your website to understand exactly what your users need.
                   </Text>
                   <div className="d-flex flex-column align-items-start pt-3">
-                    <Button mb={2}>Start 14 Days Free Trial</Button>
+                    <Button mb={2}>Join Beta</Button>
                     <Text
                       variant="small"
                       fontSize={"14px"}
                       color="light"
                       opacity={0.7}
                     >
-                      No credit card required
+                      Join our exclusive product community 
                     </Text>
                   </div>
                 </Box>
