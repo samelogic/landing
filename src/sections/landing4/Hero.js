@@ -7,6 +7,7 @@ import { Title, Button, Section, Box, Text } from "../../components/Core";
 
 import { device } from "../../utils";
 import imgHeroTab from "../../assets/image/png/l5-hero-image.png";
+import Animated from "../../assets/image/svg/Animated.svg";
 
 const SectionStyled = styled(Section)`
   background-image: ${({ theme }) => `radial-gradient(
@@ -22,8 +23,8 @@ const ImgRight = styled(Box)`
   @media ${device.md} {
     position: absolute;
     top: 0;
-    max-width: 100%;
-    min-width: 100%;
+    max-width: 65%;
+    min-width: 65%;
     right: 0;
     left: auto;
     transform: translateX(25%);
@@ -40,15 +41,14 @@ const Hero = () => {
           <Row className="justify-content-center align-items-center position-relative">
             <Col md="5" className="order-md-2 position-static">
               <ImgRight>
-                <img
-                  src={imgHeroTab}
-                  alt=""
-                  className="img-fluid"
-                  data-aos="fade-left"
-                  data-aos-duration="750"
-                  data-aos-delay="1000"
-                  data-aos-once="true"
-                />
+              <img src={Animated}
+              alt=""
+              className="img-fluid"
+              data-aos="fade-left"
+              data-aos-duration="750"
+              data-aos-delay="1000"
+              data-aos-once="true"
+              />
               </ImgRight>
             </Col>
             <Col md="7" className="order-md-1">
