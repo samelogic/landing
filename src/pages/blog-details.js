@@ -55,3 +55,26 @@ const BlogDetails = () => {
   );
 };
 export default BlogDetails;
+
+export const pageQuery = graphql`
+  query BlogPostBySlug($slug: String!) {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    contentfulPost(slug: { eq: $slug }) {
+      title
+      heroImage {
+        fluid(maxWidth: 1180, background: "rgb:000000") {
+          ...GatsbyContentfulFluid_tracedSVG
+        }
+      }
+      content {
+        childMarkdownRemark {
+          html
+        }
+      }
+    }
+  }
+`
