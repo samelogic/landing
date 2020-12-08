@@ -9,7 +9,8 @@ import PostDetails from "../sections/blog/PostDetails";
 import Comments from "../sections/blog/Comments";
 import Sidebar from "../sections/blog/Sidebar";
 
-const BlogDetails = () => {
+const BlogDetails = ({data}) => {
+  const post = data.contentfulPost;
   return (
     <>
       <PageWrapper footerDark>
@@ -19,8 +20,7 @@ const BlogDetails = () => {
             <Row className="justify-content-center text-center">
               <Col lg="12">
                 <Title variant="hero">
-                  How To Blow Through Capital{" "}
-                  <br className="d-none d-lg-block" /> At An Incredible Rate
+                  {post.title}
                 </Title>
                 <Box className="d-flex justify-content-center">
                   <Text mr={3}>
@@ -40,16 +40,16 @@ const BlogDetails = () => {
         <Section className="pb-0">
           <Container>
             <Row>
-              <Col lg="8" className="mb-5">
-                <PostDetails />
+              <Col lg="12" className="mb-5">
+                <PostDetails post={post} />
               </Col>
-              <Col lg="4" className="">
+              {/* <Col lg="4" className="">
                 <Sidebar />
-              </Col>
+              </Col> */}
             </Row>
           </Container>
         </Section>
-        <Comments />
+        {/* <Comments /> */}
       </PageWrapper>
     </>
   );
@@ -75,6 +75,7 @@ export const pageQuery = graphql`
           html
         }
       }
+      tags
     }
   }
 `
