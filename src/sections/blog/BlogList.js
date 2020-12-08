@@ -19,6 +19,7 @@ const BlogList = ({posts}) => (
               img={post.heroImage.fluid.src}
               preTitle="Nov 14, 2020"
               title={post.title}
+              href={"/blog/"+post.slug}
               readMore
             >
               <span
