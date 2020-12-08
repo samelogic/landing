@@ -5,8 +5,17 @@ import PageWrapper from "../components/PageWrapper";
 import { Section, Title, Text } from "../components/Core";
 
 import BlogList from "../sections/blog/BlogList";
+import { graphql } from 'gatsby'
+import get from "lodash";
 
-const BlogRegular = () => {
+const BlogRegular = ({data}) => {
+  const siteTitle = get(data, 'site.siteMetadata.title')
+  const posts = data.allContentfulPost.edges.map(({node}) => node);
+
+  console.log(data);
+  console.log("posts found: "+posts.length)
+  console.log(posts);
+
   return (
     <>
       <PageWrapper footerDark>
@@ -24,9 +33,39 @@ const BlogRegular = () => {
             </Row>
           </Container>
         </Section>
-        <BlogList />
+        <BlogList posts={posts} />
       </PageWrapper>
     </>
   );
 };
 export default BlogRegular;
+
+export const pageQuery = graphql`
+  query BlogIndexQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allContentfulPost {
+      edges {
+        node {
+          title
+          slug
+          tags
+          heroImage {
+            fluid(maxWidth: 350, maxHeight: 196, resizingBehavior: SCALE) {
+              ...GatsbyContentfulFluid_tracedSVG
+            }
+          }
+          description {
+            childMarkdownRemark {
+              html
+            }
+          }
+        }
+      }
+    }
+  }
+`
+
