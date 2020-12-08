@@ -12,8 +12,6 @@ const BlogRegular = ({data}) => {
   const siteTitle = get(data, 'site.siteMetadata.title')
   const posts = data.allContentfulPost.edges.map(({node}) => node);
 
-  console.log(data);
-  console.log("posts found: "+posts.length)
   console.log(posts);
 
   return (
@@ -53,6 +51,7 @@ export const pageQuery = graphql`
           title
           slug
           tags
+          createdAt(formatString: "MMMM Do, YYYY")
           heroImage {
             fluid(maxWidth: 350, maxHeight: 196, resizingBehavior: SCALE) {
               ...GatsbyContentfulFluid_tracedSVG

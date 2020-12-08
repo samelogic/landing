@@ -17,7 +17,7 @@ const BlogList = ({posts}) => (
             <Col lg="4" key={post.slug} className="mb-5">
               <PostCard
               img={post.heroImage.fluid.src}
-              preTitle="Nov 14, 2020"
+              preTitle={post.createdAt}
               title={post.title}
               href={"/blog/"+post.slug}
               readMore
