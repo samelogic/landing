@@ -24,14 +24,14 @@ const BlogDetails = ({data}) => {
                 </Title>
                 <Box className="d-flex justify-content-center">
                   <Text mr={3}>
-                    <Link to="/">Jan 14, 2020 </Link>
+                    <Link to="/">{post.createdAt}</Link>
                   </Text>
-                  <Text mr={3}>
+                  {/* <Text mr={3}>
                     <Link to="/">Technology</Link>
                   </Text>
                   <Text>
                     <Link to="/">David Jones</Link>
-                  </Text>
+                  </Text> */}
                 </Box>
               </Col>
             </Row>
@@ -65,6 +65,7 @@ export const pageQuery = graphql`
     }
     contentfulPost(slug: { eq: $slug }) {
       title
+      createdAt(formatString: "MMMM Do, YYYY")
       heroImage {
         fluid(maxWidth: 1180, background: "rgb:000000") {
           ...GatsbyContentfulFluid_tracedSVG

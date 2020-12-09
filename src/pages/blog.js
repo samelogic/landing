@@ -12,8 +12,6 @@ const BlogRegular = ({data}) => {
   const siteTitle = get(data, 'site.siteMetadata.title')
   const posts = data.allContentfulPost.edges.map(({node}) => node);
 
-  console.log(data);
-  console.log("posts found: "+posts.length)
   console.log(posts);
 
   return (
@@ -24,10 +22,9 @@ const BlogRegular = ({data}) => {
           <Container>
             <Row className="justify-content-center text-center">
               <Col lg="8">
-                <Title variant="hero">Blog Regular</Title>
+                <Title variant="hero">The Samelogic Blog</Title>
                 <Text>
-                  Create custom landing pages with Omega that converts more
-                  visitors than any website.
+                Tips and stories to help you on the path of becoming a better product leader.
                 </Text>
               </Col>
             </Row>
@@ -53,6 +50,7 @@ export const pageQuery = graphql`
           title
           slug
           tags
+          createdAt(formatString: "MMMM Do, YYYY")
           heroImage {
             fluid(maxWidth: 350, maxHeight: 196, resizingBehavior: SCALE) {
               ...GatsbyContentfulFluid_tracedSVG
