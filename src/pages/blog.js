@@ -22,10 +22,9 @@ const BlogRegular = ({data}) => {
           <Container>
             <Row className="justify-content-center text-center">
               <Col lg="8">
-                <Title variant="hero">Blog Regular</Title>
+                <Title variant="hero">The Samelogic Blog</Title>
                 <Text>
-                  Create custom landing pages with Omega that converts more
-                  visitors than any website.
+                Tips and stories to help you on the path of becoming a better product leader.
                 </Text>
               </Col>
             </Row>
