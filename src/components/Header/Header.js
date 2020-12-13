@@ -364,7 +364,7 @@ const Header = ({ isDark = false }) => {
                   height: 45px !important;
                 `}
               >
-                Join Beta
+                Try It!
               </Button>
             </div>
             <ToggleButton

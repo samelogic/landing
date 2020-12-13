@@ -67,7 +67,7 @@ const Hero = () => {
                   Attach timed micro-surveys to elements within your website to understand exactly what your users need.
                   </Text>
                   <div className="d-flex flex-column align-items-start pt-3">
-                    <Button mb={2}>Join Beta</Button>
+                    <Button mb={2}>Try It!</Button>
                     <Text
                       variant="small"
                       fontSize={"14px"}
