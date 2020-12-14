@@ -19,7 +19,6 @@ const SectionStyled = styled(Section)`
 
 const ImgRight = styled(Box)`
   position: relative;
-  left: -100px;
   @media ${device.md} {
     position: absolute;
     top: 0;
@@ -60,14 +59,13 @@ const Hero = () => {
               >
                 <Box py={[null, null, null, 5]} pr={5} pt={[4, null]}>
                   <Title variant="hero" color="light">
-                    Build exactly what <br className="d-none d-sm-block" />
-                    your users need.
+                    Build exactly what your users need.
                   </Title>
                   <Text mb={4} color="light" opacity={0.7}>
                   Attach timed micro-surveys to elements within your website to understand exactly what your users need.
                   </Text>
                   <div className="d-flex flex-column align-items-start pt-3">
-                    <Button mb={2}>Try It!</Button>
+                    <Button mb={2}>Try it!</Button>
                     <Text
                       variant="small"
                       fontSize={"14px"}
