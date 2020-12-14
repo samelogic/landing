@@ -356,6 +356,7 @@ const Header = ({ isDark = false }) => {
               </div>
             </div>
             <div className="header-btns ml-auto ml-lg-0 d-none d-md-block">
+            <a href="https://app.samelogic.com">
               <Button
                 size="sm"
                 css={`
@@ -366,6 +367,7 @@ const Header = ({ isDark = false }) => {
               >
                 Try it!
               </Button>
+              </a>
             </div>
             <ToggleButton
               className={`navbar-toggler btn-close-off-canvas ml-3 ${
