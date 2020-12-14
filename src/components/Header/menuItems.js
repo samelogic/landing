@@ -1,29 +1,29 @@
 export const menuItems = [
-  {
-    name: "#",
-    label: "About",
-    isExternal: false,
-  },
-  {
-    name: "#",
-    label: "Features",
-    isExternal: false,
-  },
-  {
-    name: "#",
-    label: "Use Cases",
-    isExternal: false,
-  },
+  // {
+  //   name: "#",
+  //   label: "About",
+  //   isExternal: false,
+  // },
+  // {
+  //   name: "#",
+  //   label: "Features",
+  //   isExternal: false,
+  // }, 
+  // {
+  //   name: "#",
+  //   label: "Use Cases",
+  //   isExternal: false,
+  // },
   {
     name: "http://www.samelogic.com/blog",
     label: "Blog",
     isExternal: true,
   },
-  {
-    name: "#",
-    label: "Docs",
-    isExternal: false,
-  },
+  // {
+  //   name: "#",
+  //   label: "Docs",
+  //   isExternal: false,
+  // },
   // {
   //   name: "demos",
   //   label: "Demos",
