@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>roadmap-explainer</title>
+    <defs>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#32C5FF" offset="0%"></stop>
+            <stop stop-color="#B620E0" offset="51.2583893%"></stop>
+            <stop stop-color="#F7B500" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="roadmap-explainer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="map-24px" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <path d="M38.8622014,0.166433411 L38.5084115,0.232769013 L26.7006743,4.80992557 L13.4335539,0.166433411 L0.962460638,4.36768822 C0.498111422,4.52247129 0.166433411,4.92048491 0.166433411,5.42905786 L0.166433411,38.8622014 C0.166433411,39.4813337 0.652894494,39.9677948 1.27202678,39.9677948 L1.62581666,39.9014592 L13.4335539,35.3243026 L26.7006743,39.9677948 L39.1717675,35.76654 C39.6361168,35.6117569 39.9677948,35.2137433 39.9677948,34.7051703 L39.9677948,1.27202678 C39.9677948,0.652894494 39.4813337,0.166433411 38.8622014,0.166433411 Z M26.7006743,35.5454213 L13.4335539,30.8798173 L13.4335539,4.5888069 L26.7006743,9.25441092 L26.7006743,35.5454213 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

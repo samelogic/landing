@@ -5,9 +5,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Title, Section, Box, Text } from "../../components/Core";
 import { device } from "../../utils";
 
-import iconLayout from "../../assets/image/png/icon-layout.png";
-import iconLayers from "../../assets/image/png/icon-layers.png";
-import iconResponsive from "../../assets/image/png/icon-responsive.png";
+import iconLayout from "../../assets/image/svg/attach-explainer.svg";
+import iconLayers from "../../assets/image/svg/feedback-explainer.svg";
+import iconResponsive from "../../assets/image/svg/roadmap-explainer.svg";
 
 const SectionStyled = styled(Section)`
   padding-top: 47px;
@@ -40,21 +40,24 @@ const Feature = () => (
       <Container>
         <Row className="justify-content-center">
           <Col lg="4" className="mb-5 mb-lg-4">
-            <FeatureCard title="Multiple Modern Layouts" iconImage={iconLayout}>
-              With lots of unique blocks, you can easily build a page without
-              coding. Build your next landing page quickly.
+            <FeatureCard title="Attach Survey to UI" iconImage={iconLayout}>
+              When Micro-Surveys are attached to UI
+              elements it elicts contextual feedback
+              based on related task.
             </FeatureCard>
           </Col>
           <Col lg="4" className="mb-5 mb-lg-4">
-            <FeatureCard title="Built with Bootstrap 4" iconImage={iconLayers}>
-              With lots of unique blocks, you can easily build a page without
-              coding. Build your next landing page quickly.
+            <FeatureCard title="Detailed Feedback" iconImage={iconLayers}>
+              As feedback is based on the exact task
+              at hand, it is given in extreme detail, which
+              enables you and your team to be agile.
             </FeatureCard>
           </Col>
           <Col lg="4" className="mb-5 mb-lg-4">
-            <FeatureCard title="Fully Responsive" iconImage={iconResponsive}>
-              With lots of unique blocks, you can easily build a page without
-              coding. Build your next landing page quickly.
+            <FeatureCard title="Optimize Roadmap" iconImage={iconResponsive}>
+              With contextual, detailed feedback, optimizing
+              your product roadmap because an easy and fun
+              activity, as it should be!
             </FeatureCard>
           </Col>
         </Row>
