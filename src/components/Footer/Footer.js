@@ -127,11 +127,11 @@ const Footer = ({ isDark = true }) => {
                             How it works
                           </a>
                         </li>
-                        <li>
+                        {/* <li>
                           <a href="/#" target="_blank">
                             F.A.Q
                           </a>
-                        </li>
+                        </li> */}
                       </UlStyled>
                     </div>
                   </Col>
@@ -149,11 +149,11 @@ const Footer = ({ isDark = true }) => {
                             Blog
                           </a>
                         </li>
-                        <li>
+                        {/* <li>
                           <a href="/#" target="_blank">
                             Tech stories
                           </a>
-                        </li>
+                        </li> */}
                       </UlStyled>
                     </div>
                   </Col>
@@ -171,16 +171,16 @@ const Footer = ({ isDark = true }) => {
                             Career
                           </a>
                         </li>
-                        <li>
+                        {/* <li>
                           <a href="/#" target="_blank">
                             Freelancers
                           </a>
-                        </li>
-                        <li>
+                        </li> */}
+                        {/* <li>
                           <a href="/#" target="_blank">
                             Trainee
                           </a>
-                        </li>
+                        </li> */}
                       </UlStyled>
                     </div>
                   </Col>

@@ -21,7 +21,7 @@ if (!spaceId || !accessToken) {
 
 module.exports = {
   siteMetadata: {
-    title: `Omega Gatsby`,
+    title: `Samelogic | Product Experiments with Micro-Surveys`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -33,6 +33,13 @@ module.exports = {
     {
       resolve: 'gatsby-source-contentful',
       options: contentfulConfig,
+    },
+    {
+      resolve: 'gatsby-plugin-heap',
+      options: {
+        appId: '100207806',
+        enableOnDevMode: false // if 'false', heap will be fired on NODE_ENV=production only
+      },
     },
   ],
 };

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>feedback-explainer</title>
+    <defs>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#32C5FF" offset="0%"></stop>
+            <stop stop-color="#B620E0" offset="51.2583893%"></stop>
+            <stop stop-color="#F7B500" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="feedback-explainer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M35.9666667,-0.0333333333 L3.96666667,-0.0333333333 C1.76666667,-0.0333333333 -0.0133333333,1.76666667 -0.0133333333,3.96666667 L-0.0333333333,39.9666667 L7.96666667,31.9666667 L35.9666667,31.9666667 C38.1666667,31.9666667 39.9666667,30.1666667 39.9666667,27.9666667 L39.9666667,3.96666667 C39.9666667,1.76666667 38.1666667,-0.0333333333 35.9666667,-0.0333333333 Z M21.9666667,23.9666667 L17.9666667,23.9666667 L17.9666667,19.9666667 L21.9666667,19.9666667 L21.9666667,23.9666667 Z M21.9666667,15.9666667 L17.9666667,15.9666667 L17.9666667,7.96666667 L21.9666667,7.96666667 L21.9666667,15.9666667 Z" id="Shape" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+    </g>
+</svg>

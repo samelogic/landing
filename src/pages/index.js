@@ -16,7 +16,7 @@ const LandingPage4 = () => {
     <>
       <PageWrapper headerDark footerDark>
         <Hero />
-        {/* <Feature /> */}
+         <Feature /> 
         {/* <Clients />
         <Content1 />
         <Content2 />

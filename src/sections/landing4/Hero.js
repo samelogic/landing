@@ -19,7 +19,6 @@ const SectionStyled = styled(Section)`
 
 const ImgRight = styled(Box)`
   position: relative;
-  left: -100px;
   @media ${device.md} {
     position: absolute;
     top: 0;
@@ -41,14 +40,14 @@ const Hero = () => {
           <Row className="justify-content-center align-items-center position-relative">
             <Col md="5" className="order-md-2 position-static">
               <ImgRight>
-              <img src={Animated}
-              alt=""
-              className="img-fluid"
-              data-aos="fade-left"
-              data-aos-duration="750"
-              data-aos-delay="1000"
-              data-aos-once="true"
-              />
+                <img src={Animated}
+                  alt=""
+                  className="img-fluid"
+                  data-aos="fade-left"
+                  data-aos-duration="750"
+                  data-aos-delay="1000"
+                  data-aos-once="true"
+                />
               </ImgRight>
             </Col>
             <Col md="7" className="order-md-1">
@@ -60,21 +59,24 @@ const Hero = () => {
               >
                 <Box py={[null, null, null, 5]} pr={5} pt={[4, null]}>
                   <Title variant="hero" color="light">
-                    Build exactly what <br className="d-none d-sm-block" />
-                    your users need.
+                    Build exactly what your users need.
                   </Title>
                   <Text mb={4} color="light" opacity={0.7}>
-                  Attach timed micro-surveys to elements within your website to understand exactly what your users need.
+                    Attach timed micro-surveys to elements within your website to understand exactly what your users need.
                   </Text>
                   <div className="d-flex flex-column align-items-start pt-3">
-                    <Button mb={2}>Join Beta</Button>
+                  
+                      <a href="https://app.samelogic.com">
+                      <Button mb={2} >Try it!</Button>
+                      </a>
+                     
                     <Text
                       variant="small"
                       fontSize={"14px"}
                       color="light"
                       opacity={0.7}
                     >
-                      Join our exclusive product community 
+                      Join our exclusive product community
                     </Text>
                   </div>
                 </Box>
