@@ -364,14 +364,14 @@ const Header = ({ isDark = false }) => {
                   height: 45px !important;
                 `}
               >
-                Try It!
+                Try it!
               </Button>
             </div>
             <ToggleButton
               className={`navbar-toggler btn-close-off-canvas ml-3 ${
                 gContext.visibleOffCanvas ? "collapsed" : ""
               }`}
-              type="button"
+              type="button" 
               data-toggle="collapse"
               data-target="#mobile-menu"
               aria-controls="mobile-menu"
