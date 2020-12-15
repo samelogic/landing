@@ -49,7 +49,6 @@ export const pageQuery = graphql`
         node {
           title
           slug
-          tags
           createdAt(formatString: "MMMM Do, YYYY")
           heroImage {
             fluid(maxWidth: 350, maxHeight: 196, resizingBehavior: SCALE) {

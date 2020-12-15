@@ -46,7 +46,7 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "start": "yarn develop",
+    "start": "GATSBY_GRAPHQL_IDE=playground yarn develop",
     "build": "gatsby clean && gatsby build",
     "clean": "gatsby clean",
     "develop": "gatsby develop",
