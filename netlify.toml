@@ -5,6 +5,6 @@ publish = "public/"
 
 [[redirects]]
 force = true
-from = "/blog/*"
+from = "/docs/*"
 status = 200
 to = "https://docs.samelogic.com/:splat"
