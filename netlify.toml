@@ -1,0 +1,10 @@
+[build]
+# Default build command.
+command = "yarn build"
+publish = "public/"
+
+[[redirects]]
+force = true
+from = "/blog/*"
+status = 200
+to = "https://docs.samelogic.com/:splat"
