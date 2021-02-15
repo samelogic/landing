@@ -19,6 +19,11 @@ if (!spaceId || !accessToken) {
   )
 }
 
+const devHeapAppId = '2289581087'
+const buildHeapAppId = process.env.CONTEXT === 'production' ? process.env.HEAP_APPID_PROD : process.env.HEAP_APPID_PREVIEW
+const heapAppId = process.env.NODE_ENV !== 'production' ? devHeapAppId : buildHeapAppId
+  
+
 module.exports = {
   siteMetadata: {
     title: `Samelogic | Product Experiments with Micro-Surveys`,
@@ -37,8 +42,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-heap',
       options: {
-        appId: '100207806',
-        enableOnDevMode: false // if 'false', heap will be fired on NODE_ENV=production only
+        appId: heapAppId,
+        enableOnDevMode: true
       },
     },
   ],
