@@ -41,7 +41,7 @@ const Feature = () => (
         <Row className="justify-content-center">
           <Col lg="4" className="mb-5 mb-lg-4">
             <FeatureCard title="Attach Survey to UI" iconImage={iconLayout}>
-              When Micro-Surveys are attached to UI
+              When Microsurveys are attached to UI
               elements it elicts contextual feedback
               based on related task.
             </FeatureCard>

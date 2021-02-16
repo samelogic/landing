@@ -62,12 +62,12 @@ const Hero = () => {
                     Build exactly what your users need.
                   </Title>
                   <Text mb={4} color="light" opacity={0.7}>
-                    Attach timed micro-surveys to elements within your website to understand exactly what your users need.
+                    Attach a microsurvey to any element within your website to understand exactly what your users need.
                   </Text>
                   <div className="d-flex flex-column align-items-start pt-3">
                   
                       <a href="https://app.samelogic.com">
-                      <Button mb={2} >Try it!</Button>
+                      <Button mb={2} >Create Microsurvey</Button>
                       </a>
                      
                     <Text
@@ -76,7 +76,7 @@ const Hero = () => {
                       color="light"
                       opacity={0.7}
                     >
-                      Join our exclusive product community
+                      Try out our pre-beta microsurvey creator!
                     </Text>
                   </div>
                 </Box>
