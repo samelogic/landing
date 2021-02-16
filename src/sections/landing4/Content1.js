@@ -93,11 +93,11 @@ const Content1 = () => (
                 data-aos="fade-left"
                 data-aos-duration="750"
                 data-aos-once="true"
-                css={`
-                  box-shadow: ${({ theme }) =>
-                    `0 12px 84px ${theme.colors.shadow}`};
-                  border-radius: 10px;
-                `}
+                // css={`
+                //   box-shadow: ${({ theme }) =>
+                //     `0 12px 84px ${theme.colors.shadow}`};
+                //   border-radius: 10px;
+                // `}
               />
             </ImgContainer>
           </Col>
@@ -109,21 +109,18 @@ const Content1 = () => (
             >
               <div>
                 <Title>
-                  Make beautiful{" "}
+                  Test Ideas {" "}
                   <br className="d-none d-sm-block d-md-none d-lg-block" />{" "}
-                  landing pages easily.
+                  with Ease.
                 </Title>
                 <Text mb={4}>
-                  Create custom landing pages with Omega that converts more
-                  visitors than any website. With lots of unique blocks, you can
-                  easily build a page without coding.
+                  Attaching a Microsurvey to a “Painted Door” experiment or an already existing feature makes you really know how interested users are in your proposed or existing offerings.
                 </Text>
 
                 <ULStyled>
-                  <li>50+ HTML Elements</li>
-                  <li>6 Month Support</li>
-                  <li>Bootstrap 4 Framework</li>
-                  <li>Lifetime Updates</li>
+                  <li>Test Proposed Features</li>
+                  <li>Test Exisiting Features</li>
+                  <li>Test Proposed Designs</li>
                 </ULStyled>
               </div>
             </div>

@@ -16,11 +16,11 @@ const LandingPage4 = () => {
     <>
       <PageWrapper headerDark footerDark>
         <Hero />
-         <Feature /> 
-        {/* <Clients />
+        <Feature />
         <Content1 />
         <Content2 />
-        <Testimonial />
+        {/* <Testimonial />
+        <Clients />
         <Fact />
         <Pricing />
         <Faq />
