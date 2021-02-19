@@ -358,6 +358,7 @@ const Header = ({ isDark = false }) => {
             <div className="header-btns ml-auto ml-lg-0 d-none d-md-block">
             <a href="https://app.samelogic.com">
               <Button
+                id="header-cta"
                 size="sm"
                 css={`
                   font-size: 16px !important;

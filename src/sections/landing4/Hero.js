@@ -67,7 +67,7 @@ const Hero = () => {
                   <div className="d-flex flex-column align-items-start pt-3">
                   
                       <a href="https://app.samelogic.com">
-                      <Button mb={2} >Create Microsurvey</Button>
+                      <Button id="hero-cta" mb={2} >Create Microsurvey</Button>
                       </a>
                      
                     <Text
