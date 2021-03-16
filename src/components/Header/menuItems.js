@@ -19,11 +19,11 @@ export const menuItems = [
     label: "Blog",
     isExternal: true,
   },
-  // {
-  //   name: "#",
-  //   label: "Docs",
-  //   isExternal: false,
-  // },
+   {
+    name: "http://www.samelogic.com/docs",
+    label: "Documentation",
+    isExternal: true,
+  },
   // {
   //   name: "demos",
   //   label: "Demos",
