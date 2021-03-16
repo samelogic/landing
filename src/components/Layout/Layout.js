@@ -123,7 +123,7 @@ const Layout = ({ children, pageContext }) => {
       >
         <GlobalStyle />
         <Helmet>
-          <title>Samelogic | Product Experiments with Micro-Surveys</title>
+          <title>Samelogic | Product Experiments with Microsurveys</title>
           <link rel="icon" type="image/png" href={imgFavicon} />
         </Helmet>
         <Loader id="loading" className={visibleLoader ? "" : "inActive"}>
@@ -149,7 +149,7 @@ const Layout = ({ children, pageContext }) => {
       >
         <GlobalStyle />
         <Helmet>
-          <title>Samelogic | Product Experiments with Micro-Surveys</title>
+          <title>Samelogic | Product Experiments with Microsurveys</title>
           <link rel="icon" type="image/png" href={imgFavicon} />
         </Helmet>
         <Loader id="loading" className={visibleLoader ? "" : "inActive"}>
