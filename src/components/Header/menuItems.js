@@ -15,11 +15,16 @@ export const menuItems = [
   //   isExternal: false,
   // },
   {
+    name: "about",
+    label: "Our Mission",
+    isExternal: false,
+  },
+  {
     name: "http://www.samelogic.com/blog",
     label: "Blog",
     isExternal: true,
   },
-   {
+  {
     name: "http://www.samelogic.com/docs",
     label: "Documentation",
     isExternal: true,
