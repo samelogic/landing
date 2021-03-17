@@ -11,8 +11,8 @@ const About = () => {
     <>
       <PageWrapper>
         <Hero title="Our Mission">
-          Create custom landing pages with Omega that converts more visitors
-          than any website.
+          We're building tools that anyone can run product feedback experiments to make 
+          the discovery and creation process fun, emotional and insightful.
         </Hero>
         <Content />
         <Team />

@@ -16,6 +16,7 @@ const CardImage = styled.div`
   max-height: 160px;
   overflow: hidden;
   border-radius: 500px;
+  border: 1px solid #eeeeee;
   display: inline-flex;
   align-items: center;
   margin-bottom: 29px;
@@ -54,8 +55,7 @@ const Team = () => (
             <div className="">
               <Title>Meet the team</Title>
               <Text>
-                Create custom landing pages with Omega that converts more
-                visitors than any website.{" "}
+                We're passionate about solving this problem. Want to chat with any of us? Reach us at firstname@samelogic.com 😊{" "}
               </Text>
             </div>
           </Col>
