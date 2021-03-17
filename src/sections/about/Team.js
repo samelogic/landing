@@ -55,7 +55,7 @@ const Team = () => (
             <div className="">
               <Title>Meet the team</Title>
               <Text>
-                We're passionate about solving this problem. Want to chat with any of us? Reach us at firstname@samelogic.com 😊{" "}
+                We're passionate about solving this problem. Want to chat with any of us? Reach us at firstname@samelogic.com 😊
               </Text>
             </div>
           </Col>
