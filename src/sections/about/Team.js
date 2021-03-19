@@ -4,10 +4,10 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import { Title, Section, Box, Text } from "../../components/Core";
 
-import imgU1 from "../../assets/image/png/dwayne.png";
-import imgU2 from "../../assets/image/png/shawn.png";
-import imgU3 from "../../assets/image/png/nic.png";
-import imgU4 from "../../assets/image/png/steven.png";
+import imgU1 from "../../assets/image/jpeg/dwayne.jpg";
+import imgU2 from "../../assets/image/jpeg/shawn.jpg";
+import imgU3 from "../../assets/image/jpeg/nic.jpg";
+import imgU4 from "../../assets/image/jpeg/steven.jpg";
 
 const CardImage = styled.div`
   max-width: 160px;
