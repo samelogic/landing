@@ -4,10 +4,10 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import { Title, Section, Box, Text } from "../../components/Core";
 
-import imgU1 from "../../assets/image/svg/dwayne.svg";
-import imgU2 from "../../assets/image/svg/shawn.svg";
-import imgU3 from "../../assets/image/svg/nic.svg";
-import imgU4 from "../../assets/image/svg/steven.svg";
+import imgU1 from "../../assets/image/svg/Dwayne.svg";
+import imgU2 from "../../assets/image/svg/Shawn.svg";
+import imgU3 from "../../assets/image/svg/Nic.svg";
+import imgU4 from "../../assets/image/svg/Steven.svg";
 
 const CardImage = styled.div`
   max-width: 160px;
@@ -74,16 +74,6 @@ const Team = () => (
           <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-4">
             <TeamCard userImg={imgU3} title="Nicolas Brown">
               Founding Software Engineer
-            </TeamCard>
-          </Col>
-          <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-4">
-            <TeamCard userImg={imgU4} title="Steven Samuels">
-              Junior Marketing Manager
-            </TeamCard>
-          </Col>
-          <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-4">
-            <TeamCard userImg={imgU4} title="Steven Samuels">
-              Junior Marketing Manager
             </TeamCard>
           </Col>
           <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-4">
