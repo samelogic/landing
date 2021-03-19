@@ -15,15 +15,20 @@ export const menuItems = [
   //   isExternal: false,
   // },
   {
+    name: "about",
+    label: "Our Mission",
+    isExternal: false,
+  },
+  {
     name: "http://www.samelogic.com/blog",
     label: "Blog",
     isExternal: true,
   },
-  // {
-  //   name: "#",
-  //   label: "Docs",
-  //   isExternal: false,
-  // },
+  {
+    name: "http://www.samelogic.com/docs",
+    label: "Documentation",
+    isExternal: true,
+  },
   // {
   //   name: "demos",
   //   label: "Demos",

@@ -100,11 +100,6 @@ const Footer = ({ isDark = true }) => {
                             Our story
                           </a>
                         </li>
-                        <li>
-                          <a href="/#" target="_blank">
-                            Team Members
-                          </a>
-                        </li>
                       </UlStyled>
                     </div>
                   </Col>

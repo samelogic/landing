@@ -21,16 +21,15 @@ const Content = () => (
         <Row className="justify-content-center pb-4">
           <Col lg="6">
             <Title variant="hero">
-              Our mission is to make your life easier.
+              Less time guessing, more time building.
             </Title>
           </Col>
           <Col lg="6" className="pl-lg-5">
             <Text>
-              Create custom landing pages with Omega that converts more visitors
-              than any website. With lots of unique blocks, you can easily build
-              a page without coding. Create custom landing pages with Omega that
-              converts more visitors than any website. With lots of unique
-              blocks, you can easily build a page without coding.
+              Product discovery is hard. There are so many steps involved to validate if a simple idea just works. 
+              With our microsurveys, you can quickly gather the insights needed to build exactly what your users need. 
+              Spend less time guessing and invest time in building the right product by contextually understanding users' needs.
+
             </Text>
           </Col>
         </Row>

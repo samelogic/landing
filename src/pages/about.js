@@ -10,9 +10,9 @@ const About = () => {
   return (
     <>
       <PageWrapper>
-        <Hero title="About us">
-          Create custom landing pages with Omega that converts more visitors
-          than any website.
+        <Hero title="Our Mission">
+          We're building tools that anyone can run product feedback experiments to make 
+          the discovery and creation process fun, emotional and insightful.
         </Hero>
         <Content />
         <Team />

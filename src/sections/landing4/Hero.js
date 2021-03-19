@@ -59,15 +59,15 @@ const Hero = () => {
               >
                 <Box py={[null, null, null, 5]} pr={5} pt={[4, null]}>
                   <Title variant="hero" color="light">
-                    Build exactly what your users need.
+                    Get feedback on any actions users perform.
                   </Title>
                   <Text mb={4} color="light" opacity={0.7}>
-                    Attach a microsurvey to any element within your website to understand exactly what your users need.
+                    Attach a microsurvey to any element within your website to contextually understand your users.
                   </Text>
                   <div className="d-flex flex-column align-items-start pt-3">
                   
                       <a href="https://app.samelogic.com">
-                      <Button id="hero-cta" mb={2} >Create Microsurvey</Button>
+                      <Button mb={2} >Get Started &nbsp;🎉</Button>
                       </a>
                      
                     <Text
