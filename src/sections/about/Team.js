@@ -4,10 +4,10 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import { Title, Section, Box, Text } from "../../components/Core";
 
-import imgU1 from "../../assets/image/jpeg/dwayne.jpg";
-import imgU2 from "../../assets/image/jpeg/shawn.jpg";
-import imgU3 from "../../assets/image/jpeg/nic.jpg";
-import imgU4 from "../../assets/image/jpeg/steven.jpg";
+import imgU1 from "../../assets/image/svg/dwayne.svg";
+import imgU2 from "../../assets/image/svg/shawn.svg";
+import imgU3 from "../../assets/image/svg/nic.svg";
+import imgU4 from "../../assets/image/svg/steven.svg";
 
 const CardImage = styled.div`
   max-width: 160px;
@@ -55,7 +55,7 @@ const Team = () => (
             <div className="">
               <Title>Meet the team</Title>
               <Text>
-                We're passionate about solving this problem. Want to chat with any of us? Reach us at firstname@samelogic.com 😊
+                We're passionate about solving this problem. Want to chat with any of us? Reach us at firstname@samelogic.com 😊{" "}
               </Text>
             </div>
           </Col>
@@ -74,6 +74,16 @@ const Team = () => (
           <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-4">
             <TeamCard userImg={imgU3} title="Nicolas Brown">
               Founding Software Engineer
+            </TeamCard>
+          </Col>
+          <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-4">
+            <TeamCard userImg={imgU4} title="Steven Samuels">
+              Junior Marketing Manager
+            </TeamCard>
+          </Col>
+          <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-4">
+            <TeamCard userImg={imgU4} title="Steven Samuels">
+              Junior Marketing Manager
             </TeamCard>
           </Col>
           <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-4">
