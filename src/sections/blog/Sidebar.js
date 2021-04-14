@@ -20,7 +20,7 @@ const Sidebar = () => {
           <InputSearch />
         </form>
       </CardSidebar>
-      <CardSidebar>
+      {/* <CardSidebar>
         <TitleSidebar>Recent Posts</TitleSidebar>
         <Block>
           <TitlePost>
@@ -82,7 +82,7 @@ const Sidebar = () => {
             Education
           </CatListItem>
         </CatList>
-      </CardSidebar>
+      </CardSidebar> */}
     </>
   );
 };

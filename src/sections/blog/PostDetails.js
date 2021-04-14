@@ -89,7 +89,7 @@ const PostDetails = ({post}) => (
     {/* <!-- Blog section --> */}
     <Post>
       <div>
-        <img src={post.heroImage.fluid.src} alt="" />
+        <img className="pb-6" style={{borderRadius: "10px"}} src={post.heroImage.fluid.src} alt="" />
       </div>
       <div
         dangerouslySetInnerHTML={{

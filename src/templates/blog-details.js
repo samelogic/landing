@@ -14,7 +14,7 @@ const BlogDetails = ({data}) => {
   return (
     <>
       <PageWrapper footerDark>
-        <Section className="pb-0">
+        <Section className="pb-4">
           <div className="pt-5"></div>
           <Container>
             <Row className="justify-content-center text-center">
@@ -37,15 +37,15 @@ const BlogDetails = ({data}) => {
             </Row>
           </Container>
         </Section>
-        <Section className="pb-0">
+        <Section className="pb-8 pt-2">
           <Container>
             <Row>
-              <Col lg="12" className="mb-5">
+              <Col lg="8" className="mb-5">
                 <PostDetails post={post} />
               </Col>
-              {/* <Col lg="4" className="">
+              <Col lg="4" className="">
                 <Sidebar />
-              </Col> */}
+              </Col>
             </Row>
           </Container>
         </Section>
