@@ -27,6 +27,11 @@ const heapAppId = process.env.NODE_ENV !== 'production' ? devHeapAppId : buildHe
 module.exports = {
   siteMetadata: {
     title: `Samelogic | Product Experiments with Microsurveys`,
+    description: ``,
+    siteUrl: `https://samelogic.com/`,
+    social: {
+      twitter: `samelogicai`,
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
