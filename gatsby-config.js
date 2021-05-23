@@ -27,7 +27,7 @@ const heapAppId = process.env.NODE_ENV !== 'production' ? devHeapAppId : buildHe
 module.exports = {
   siteMetadata: {
     title: `Samelogic | Product Experiments with Microsurveys`,
-    description: ``,
+    description: `Attach a microsurvey to any element within your website to contextually understand your users.`,
     siteUrl: `https://samelogic.com/`,
     social: {
       twitter: `samelogicai`,
