@@ -8,11 +8,20 @@ import { Section, Title, Text, Box } from "../components/Core";
 import PostDetails from "../sections/blog/PostDetails";
 import Comments from "../sections/blog/Comments";
 import Sidebar from "../sections/blog/Sidebar";
+import Seo from "../components/SEO";
 
 const BlogDetails = ({data}) => {
   const post = data.contentfulPost;
   return (
     <>
+    <Seo title={post.title} description={post.description.description} twitterCard="summary_large_image" meta={[{
+           name: `twitter:image`,
+           content: "https:"+post.heroImage.file.url,
+         },
+         {
+          name: `og:image`,
+          content: "https:"+post.heroImage.file.url,
+        }]} />
       <PageWrapper footerDark>
         <Section className="pb-4">
           <div className="pt-5"></div>
@@ -70,6 +79,12 @@ export const pageQuery = graphql`
         fluid(maxWidth: 1180, background: "rgb:000000") {
           ...GatsbyContentfulFluid_tracedSVG
         }
+        file {
+          url
+        }
+      }
+      description {
+        description
       }
       content {
         childMarkdownRemark {

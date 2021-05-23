@@ -15,7 +15,7 @@
  import { Helmet } from "react-helmet"
  import { useStaticQuery, graphql } from "gatsby"
  
- const Seo = ({ description, lang, meta, title }) => {
+ const Seo = ({ description, lang, meta, title, twitterCard }) => {
    const { site } = useStaticQuery(
      graphql`
        query {
@@ -61,7 +61,7 @@
          },
          {
            name: `twitter:card`,
-           content: `summary`,
+           content: twitterCard,
          },
          {
            name: `twitter:creator`,
@@ -84,6 +84,7 @@
    lang: `en`,
    meta: [],
    description: ``,
+   twitterCard: `summary`,
  }
  
  Seo.propTypes = {
@@ -91,6 +92,7 @@
    lang: PropTypes.string,
    meta: PropTypes.arrayOf(PropTypes.object),
    title: PropTypes.string.isRequired,
+   twitterCard: PropTypes.string.isRequired,
  }
  
  export default Seo
