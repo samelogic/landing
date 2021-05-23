@@ -8,6 +8,8 @@ import BlogList from "../sections/blog/BlogList";
 import { graphql } from 'gatsby'
 import get from "lodash";
 
+import Seo from "../components/SEO";
+
 const BlogRegular = ({data}) => {
   const siteTitle = get(data, 'site.siteMetadata.title')
   const posts = data.allContentfulPost.edges.map(({node}) => node);
@@ -16,6 +18,7 @@ const BlogRegular = ({data}) => {
 
   return (
     <>
+    <Seo title={"Samelogic Blog"} description={"Tips and stories to help you on the path of becoming a better product leader."} />
       <PageWrapper footerDark>
         <Section className="pb-0">
           <div className="pt-5"></div>
