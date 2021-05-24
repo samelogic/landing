@@ -8,3 +8,9 @@ force = true
 from = "/docs/*"
 status = 200
 to = "https://docs.samelogic.com/:splat"
+
+[context.production.environment]
+  NODE_VERSION = "14.0.0"
+
+[context.deploy-preview.environment]
+  NODE_VERSION = "14.0.0"

@@ -27,6 +27,11 @@ const heapAppId = process.env.NODE_ENV !== 'production' ? devHeapAppId : buildHe
 module.exports = {
   siteMetadata: {
     title: `Samelogic | Product Experiments with Microsurveys`,
+    description: `Attach a microsurvey to any element within your website to contextually understand your users.`,
+    siteUrl: `https://samelogic.com/`,
+    social: {
+      twitter: `samelogicai`,
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -35,6 +40,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
+    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-contentful',
       options: contentfulConfig,
