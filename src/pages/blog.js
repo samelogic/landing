@@ -9,6 +9,7 @@ import { graphql } from 'gatsby'
 import get from "lodash";
 
 import Seo from "../components/SEO";
+import SocialImage from "../assets/image/png/blog-social-share.png";
 
 const BlogRegular = ({data}) => {
   const siteTitle = get(data, 'site.siteMetadata.title')
@@ -18,7 +19,16 @@ const BlogRegular = ({data}) => {
 
   return (
     <>
-    <Seo title={"Samelogic Blog"} description={"Tips and stories to help you on the path of becoming a better product leader."} />
+    <Seo title={"Samelogic Blog"} 
+          description={"Tips and stories to help you on the path of becoming a better product leader."}
+          twitterCard="summary_large_image" meta={[{
+            name: `twitter:image`,
+            content: SocialImage,
+          },
+          {
+           name: `og:image`,
+           content: SocialImage,
+         }]} />
       <PageWrapper footerDark>
         <Section className="pb-0">
           <div className="pt-5"></div>
