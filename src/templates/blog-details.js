@@ -14,7 +14,7 @@ const BlogDetails = ({data}) => {
   const post = data.contentfulPost;
   return (
     <>
-    <Seo title={post.title} description={post.description.description} twitterCard="summary_large_image" meta={[{
+    <Seo title={post.title+" | The Samelogic Blog"} description={post.description.description} twitterCard="summary_large_image" meta={[{
            name: `twitter:image`,
            content: "https:"+post.heroImage.file.url,
          },
