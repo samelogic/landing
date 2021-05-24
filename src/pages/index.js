@@ -10,10 +10,12 @@ import Pricing from "../sections/landing4/Pricing";
 import Faq from "../sections/landing4/Faq";
 import CTA from "../sections/landing4/CTA";
 import PageWrapper from "../components/PageWrapper";
+import Seo from "../components/SEO";
 
 const LandingPage4 = () => {
   return (
     <>
+      <Seo />
       <PageWrapper headerDark footerDark>
         <Hero />
         {/* <Feature /> */}
