@@ -2,6 +2,15 @@ require("dotenv").config({
   path: `.env`,
 });
 
+//#region Google Tag Manager Configurations
+const gtmConfig = {
+  id: process.env.GTM_ID,
+  includeInDevelopment: false,
+};
+
+//#endregion
+
+//#region Contentful Configuration
 const contentfulConfig = {
   spaceId: process.env.CONTENTFUL_SPACE_ID,
   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
@@ -18,7 +27,7 @@ if (!spaceId || !accessToken) {
     "Contentful spaceId and the access token need to be provided."
   );
 }
-
+//#endregion
 const devHeapAppId = "2289581087";
 const buildHeapAppId =
   process.env.CONTEXT === "production"
@@ -51,6 +60,10 @@ module.exports = {
     {
       resolve: "gatsby-source-contentful",
       options: contentfulConfig,
+    },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: gtmConfig,
     },
     {
       resolve: "gatsby-plugin-heap",
