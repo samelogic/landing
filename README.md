@@ -7,11 +7,11 @@
 Install:
 
 ```sh
-yarn
+npm i
 ```
 
 Running locally:
 
 ```sh
-yarn start
+npm run start
 ```
