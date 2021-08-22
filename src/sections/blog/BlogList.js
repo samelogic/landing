@@ -6,31 +6,34 @@ import { Section, Box } from "../../components/Core";
 import PostCard from "../../components/PostCard";
 import Pagination, { PageItem } from "../../components/Pagination";
 
-const BlogList = ({posts}) => (
+const BlogList = ({ posts }) => (
   <>
     {/* <!-- Blog section --> */}
     <Section className="position-relative">
       <Container>
         <Row className="align-items-center justify-content-center">
-            {posts.map((post) => {
-              return ( 
-            <Col lg="4" key={post.slug} className="mb-5">
-              <PostCard
-              img={post.heroImage.fluid.src}
-              preTitle={post.createdAt}
-              title={post.title}
-              href={"/blog/"+post.slug}
-              readMore
-            >
-              <span
-              dangerouslySetInnerHTML={{
-                __html:post.description.childMarkdownRemark.html
-              }}
-              />
-            </PostCard>
-          </Col>
-              )
-            })}
+          {posts.map((post) => {
+            return (
+              <Col lg="4" key={post.slug} className="mb-5">
+                <PostCard
+                  img={post.heroImage.fluid.src}
+                  preTitle={post.createdAt}
+                  title={post.title}
+                  href={"/blog/" + post.slug}
+                  readMore
+                >
+                  {/* <span
+                    dangerouslySetInnerHTML={{
+                      __html: post.description.childMarkdownRemark.excerpt,
+                    }}
+                  /> */}
+                  <span>
+                    <p>{post.description.description}</p>
+                  </span>
+                </PostCard>
+              </Col>
+            );
+          })}
         </Row>
         {/* <Box className="d-flex justify-content-center" mt={4}>
           <Pagination>

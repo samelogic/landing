@@ -109,17 +109,19 @@ const Content1 = () => (
             >
               <div>
                 <Title>
-                  Test Ideas {" "}
-                  <br className="d-none d-sm-block d-md-none d-lg-block" />{" "}
-                  with Ease.
+                  Test Ideas{" "}
+                  <br className="d-none d-sm-block d-md-none d-lg-block" /> with
+                  Ease.
                 </Title>
                 <Text mb={4}>
-                  Attaching a Microsurvey to a “Painted Door” experiment or an already existing feature makes you really know how interested users are in your proposed or existing offerings.
+                  Attaching a Microsurvey to a “Painted Door” experiment or an
+                  already existing feature makes you really know how interested
+                  users are in your proposed or existing offerings.
                 </Text>
 
                 <ULStyled>
                   <li>Test Proposed Features</li>
-                  <li>Test Exisiting Features</li>
+                  <li>Test Existing Features</li>
                   <li>Test Proposed Designs</li>
                 </ULStyled>
               </div>

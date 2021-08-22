@@ -8,7 +8,7 @@ export const menuItems = [
   //   name: "#",
   //   label: "Features",
   //   isExternal: false,
-  // }, 
+  // },
   // {
   //   name: "#",
   //   label: "Use Cases",
@@ -20,12 +20,12 @@ export const menuItems = [
     isExternal: false,
   },
   {
-    name: "http://www.samelogic.com/blog",
+    name: "blog",
     label: "Blog",
-    isExternal: true,
+    isExternal: false,
   },
   {
-    name: "http://www.samelogic.com/docs",
+    name: "docs",
     label: "Documentation",
     isExternal: true,
   },
