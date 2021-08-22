@@ -1,6 +1,7 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
 import { Container, Row, Col } from "react-bootstrap";
+import { get } from "lodash";
 
 import PageWrapper from "../components/PageWrapper";
 import { Section, Title, Text, Box } from "../components/Core";
@@ -11,6 +12,7 @@ import Sidebar from "../sections/blog/Sidebar";
 import Seo from "../components/SEO";
 
 const BlogDetails = ({ data }) => {
+  const siteTitle = get(data, "site.siteMetadata.blog.title");
   const post = data.contentfulPost;
   return (
     <>
@@ -75,6 +77,9 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        blog {
+          title
+        }
       }
     }
     contentfulPost(slug: { eq: $slug }) {
