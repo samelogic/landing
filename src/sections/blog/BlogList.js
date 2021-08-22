@@ -24,7 +24,7 @@ const BlogList = ({ posts }) => (
                 >
                   <span
                     dangerouslySetInnerHTML={{
-                      __html: `<b>Test</b>`,
+                      __html: post.description.childMarkdownRemark.html,
                     }}
                   />
                 </PostCard>
