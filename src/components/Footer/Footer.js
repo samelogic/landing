@@ -87,18 +87,17 @@ const Footer = ({ isDark = true }) => {
                         variant="card"
                         color={isDark ? "light" : "dark"}
                       >
-                        About
+                        Product
                       </TitleStyled>
                       <UlStyled color={isDark ? "lightShade" : "darkShade"}>
                         <li>
-                          <a href="/#" target="_blank">
-                            Our mission
-                          </a>
+                          <a href="/about">Microsurveys</a>
                         </li>
                         <li>
-                          <a href="/#" target="_blank">
-                            Our story
-                          </a>
+                          <a href="/about">Painted Doors</a>
+                        </li>
+                        <li>
+                          <a href="/about">Integrations</a>
                         </li>
                       </UlStyled>
                     </div>
@@ -113,20 +112,8 @@ const Footer = ({ isDark = true }) => {
                       </TitleStyled>
                       <UlStyled color={isDark ? "lightShade" : "darkShade"}>
                         <li>
-                          <a href="/#" target="_blank">
-                            Tutorials
-                          </a>
+                          <a href="/docs">Documentation</a>
                         </li>
-                        <li>
-                          <a href="/#" target="_blank">
-                            How it works
-                          </a>
-                        </li>
-                        {/* <li>
-                          <a href="/#" target="_blank">
-                            F.A.Q
-                          </a>
-                        </li> */}
                       </UlStyled>
                     </div>
                   </Col>
@@ -140,9 +127,7 @@ const Footer = ({ isDark = true }) => {
                       </TitleStyled>
                       <UlStyled color={isDark ? "lightShade" : "darkShade"}>
                         <li>
-                          <a href="/#" target="_blank">
-                            Blog
-                          </a>
+                          <a href="/blog">Blog</a>
                         </li>
                         {/* <li>
                           <a href="/#" target="_blank">
@@ -158,13 +143,14 @@ const Footer = ({ isDark = true }) => {
                         variant="card"
                         color={isDark ? "light" : "dark"}
                       >
-                        Hire
+                        Company
                       </TitleStyled>
                       <UlStyled color={isDark ? "lightShade" : "darkShade"}>
                         <li>
-                          <a href="/#" target="_blank">
-                            Career
-                          </a>
+                          <a href="/about">About</a>
+                        </li>
+                        <li>
+                          <a href="/about">Careers</a>
                         </li>
                         {/* <li>
                           <a href="/#" target="_blank">
@@ -196,12 +182,18 @@ const Footer = ({ isDark = true }) => {
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.linkedin.com/company/samelogic/" target="_blank">
+                    <a
+                      href="https://www.linkedin.com/company/samelogic/"
+                      target="_blank"
+                    >
                       <i className="icon icon-logo-linkedin"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/Samelogic" target="_blank">
+                    <a
+                      href="https://www.instagram.com/Samelogic"
+                      target="_blank"
+                    >
                       <i className="icon icon-logo-instagram"></i>
                     </a>
                   </li>
