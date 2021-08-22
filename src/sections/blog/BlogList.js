@@ -22,11 +22,14 @@ const BlogList = ({ posts }) => (
                   href={"/blog/" + post.slug}
                   readMore
                 >
-                  <span
+                  {/* <span
                     dangerouslySetInnerHTML={{
-                      __html: post.description.childMarkdownRemark.html,
+                      __html: post.description.childMarkdownRemark.excerpt,
                     }}
-                  />
+                  /> */}
+                  <span>
+                    <p>{post.description.description}</p>
+                  </span>
                 </PostCard>
               </Col>
             );

@@ -77,6 +77,7 @@ export const pageQuery = graphql`
             }
           }
           description {
+            description
             childMarkdownRemark {
               html
             }
