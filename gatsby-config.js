@@ -35,6 +35,9 @@ module.exports = {
     social: {
       twitter: `samelogicai`,
     },
+    blog: {
+      title: `Samelogic Blog`,
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

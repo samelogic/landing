@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+import { graphql, Link } from "gatsby";
 import { Container, Row, Col } from "react-bootstrap";
 
 import PageWrapper from "../components/PageWrapper";
@@ -10,27 +10,32 @@ import Comments from "../sections/blog/Comments";
 import Sidebar from "../sections/blog/Sidebar";
 import Seo from "../components/SEO";
 
-const BlogDetails = ({data}) => {
+const BlogDetails = ({ data }) => {
   const post = data.contentfulPost;
   return (
     <>
-    <Seo title={post.title+" | The Samelogic Blog"} description={post.description.description} twitterCard="summary_large_image" meta={[{
-           name: `twitter:image`,
-           content: "https:"+post.heroImage.file.url,
-         },
-         {
-          name: `og:image`,
-          content: "https:"+post.heroImage.file.url,
-        }]} />
+      <Seo
+        title={post.title + " | The Samelogic Blog"}
+        description={post.description.description}
+        twitterCard="summary_large_image"
+        meta={[
+          {
+            name: `twitter:image`,
+            content: "https:" + post.heroImage.file.url,
+          },
+          {
+            name: `og:image`,
+            content: "https:" + post.heroImage.file.url,
+          },
+        ]}
+      />
       <PageWrapper footerDark>
         <Section className="pb-4">
           <div className="pt-5"></div>
           <Container>
             <Row className="justify-content-center text-center">
               <Col lg="12">
-                <Title variant="hero">
-                  {post.title}
-                </Title>
+                <Title variant="hero">{post.title}</Title>
                 <Box className="d-flex justify-content-center">
                   <Text mr={3}>
                     <Link to="/">{post.createdAt}</Link>
@@ -93,4 +98,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

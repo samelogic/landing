@@ -1,4 +1,5 @@
 import React from "react";
+import { graphql } from "gatsby";
 import Hero from "../sections/landing4/Hero";
 import Feature from "../sections/landing4/Feature";
 import Clients from "../sections/landing4/Clients";
@@ -13,18 +14,23 @@ import PageWrapper from "../components/PageWrapper";
 import Seo from "../components/SEO";
 import SocialImage from "../assets/image/png/home-social-share.png";
 
-const LandingPage4 = ({data}) => {
+const LandingPage4 = ({ data }) => {
   return (
     <>
-      <Seo title={data.site.siteMetadata.title} description={data.site.siteMetadata.description} 
-        twitterCard="summary_large_image" meta={[{
-          name: `twitter:image`,
-          content: SocialImage,
-        },
-        {
-        name: `og:image`,
-        content: SocialImage,
-      }]}
+      <Seo
+        title={data.site.siteMetadata.title}
+        description={data.site.siteMetadata.description}
+        twitterCard="summary_large_image"
+        meta={[
+          {
+            name: `twitter:image`,
+            content: SocialImage,
+          },
+          {
+            name: `og:image`,
+            content: SocialImage,
+          },
+        ]}
       />
       <PageWrapper headerDark footerDark>
         <Hero />
@@ -52,4 +58,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
