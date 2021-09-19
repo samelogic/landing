@@ -1087,28 +1087,224 @@ personal information. If You are a resident of California, You have the
 following rights:
                   </Text>
                   <List>
-                    <li></li>
-                    <li></li>
+                    <li>The right to notice. You have the right to be notified which categories of
+    Personal Data are being collected and the purposes for which the Personal
+    Data is being used.</li>
+                    <li>The right to request. Under CCPA, You have the right to request that We
+    disclose information to You about Our collection, use, sale, disclosure
+    for business purposes and share of personal information. Once We receive
+    and confirm Your request, We will disclose to You:</li>
+                    <ul>
+                      <li>The categories of personal information We collected about You</li>
+                      <li>The categories of sources for the personal information We collected
+      about You</li>
+                      <li>Our business or commercial purpose for collecting or selling that
+      personal information</li>
+                      <li>The categories of third parties with whom We share that personal
+      information</li>
+                      <li>The specific pieces of personal information We collected about You</li>
+                      <li>If we sold Your personal information or disclosed Your personal
+      information for a business purpose, We will disclose to You:</li>
+                      <ul>
+                        <li>The categories of personal information categories sold</li>
+                        <li>The categories of personal information categories disclosed</li>
+                      </ul>
+                    </ul>
+                    <li>The right to say no to the sale of Personal Data (opt-out). You have the
+    right to direct Us to not sell Your personal information. To submit an
+    opt-out request please contact Us.</li>
+                    <li>The right to delete Personal Data. You have the right to request the
+    deletion of Your Personal Data, subject to certain exceptions. Once We
+    receive and confirm Your request, We will delete (and direct Our Service
+    Providers to delete) Your personal information from our records, unless an
+    exception applies. We may deny Your deletion request if retaining the
+    information is necessary for Us or Our Service Providers to:</li>
+                      <ul>
+                        <li>Complete the transaction for which We collected the personal
+      information, provide a good or service that You requested, take actions
+      reasonably anticipated within the context of our ongoing business
+      relationship with You, or otherwise perform our contract with You.</li>
+                        <li>Detect security incidents, protect against malicious, deceptive,
+      fraudulent, or illegal activity, or prosecute those responsible for such
+      activities.</li>
+                        <li>Debug products to identify and repair errors that impair existing
+      intended functionality.</li>
+                        <li>Exercise free speech, ensure the right of another consumer to exercise
+      their free speech rights, or exercise another right provided for by law.</li>
+                        <li>Comply with the California Electronic Communications Privacy Act (Cal.
+      Penal Code § 1546 et. seq.).</li>
+                        <li>Engage in public or peer-reviewed scientific, historical, or statistical
+      research in the public interest that adheres to all other applicable
+      ethics and privacy laws, when the information's deletion may likely
+      render impossible or seriously impair the research's achievement, if You
+      previously provided informed consent.</li>
+                        <li>Enable solely internal uses that are reasonably aligned with consumer
+      expectations based on Your relationship with Us.</li>
+                        <li>Comply with a legal obligation.</li>
+                        <li>Make other internal and lawful uses of that information that are
+      compatible with the context in which You provided it.</li>
+                      </ul>
+                    <li>The right not to be discriminated against. You have the right not to be
+    discriminated against for exercising any of Your consumer's rights,
+    including by:</li>
+                  <ul>
+                    <li>Denying goods or services to You</li>
+                    <li>Charging different prices or rates for goods or services, including the
+      use of discounts or other benefits or imposing penalties</li>
+                    <li>Providing a different level or quality of goods or services to You</li>
+                    <li>Suggesting that You will receive a different price or rate for goods or
+      services or a different level or quality of goods or services</li>
+                  </ul>
                   </List>
 
+                  <Title variant="card" fontSize="2rem" mb="30px">
+                  Exercising Your CCPA Data Protection Rights 
+                  </Title>
+                  <Text variant="small" mb="10px">
+                  In order to exercise any of Your rights under the CCPA, and if You are a
+California resident, You can contact Us:
+                  </Text>
+                  <List>
+                    <li>By email: hi@samelogic.com</li>
+                    <li>By visiting this page on our website: https://samelogic.com/privacy</li>
+                  </List>
+
+                  <Text variant="small" mb="10px">
+                  Only You, or a person registered with the California Secretary of State that
+You authorize to act on Your behalf, may make a verifiable request related to
+Your personal information.
+                  </Text>
+                  <Text variant="small" mb="10px">
+                  Your request to Us must:
+                  </Text>
+                  <List>
+                    <li>Provide sufficient information that allows Us to reasonably verify You are
+    the person about whom We collected personal information or an authorized
+    representative</li>
+                    <li>Describe Your request with sufficient detail that allows Us to properly
+    understand, evaluate, and respond to it
+</li>
+                  </List>
+
+                  <Text variant="small" mb="10px">
+                  We cannot respond to Your request or provide You with the required information
+if We cannot:
+                  </Text>
+                  <List>
+                    <li>Verify Your identity or authority to make the request</li>
+                    <li>And confirm that the personal information relates to You</li>
+                  </List>
+
+                  <Text variant="small" mb="10px">
+                  We will disclose and deliver the required information free of charge within 45
+days of receiving Your verifiable request. The time period to provide the
+required information may be extended once by an additional 45 days when
+reasonable necessary and with prior notice.
+                  </Text>
+                  <Text variant="small" mb="10px">
+                  Any disclosures We provide will only cover the 12-month period preceding the
+verifiable request's receipt.
+                  </Text>
+                  <Text variant="small" mb="10px">
+                  For data portability requests, We will select a format to provide Your
+personal information that is readily useable and should allow You to transmit
+the information from one entity to another entity without hindrance.
+                  </Text>
+
+                  <Title variant="card" fontSize="2rem" mb="30px">
+                  Do Not Sell My Personal Information    
+                  </Title>
+                  <Text variant="small" mb="10px">
+                  You have the right to opt-out of the sale of Your personal information. Once
+We receive and confirm a verifiable consumer request from You, we will stop
+selling Your personal information. To exercise Your right to opt-out, please
+contact Us.
+                  </Text>
+                  <Text variant="small" mb="10px">
+                  The Service Providers we partner with (for example, our analytics or
+advertising partners) may use technology on the Service that sells personal
+information as defined by the CCPA law. If you wish to opt out of the use of
+Your personal information for interest-based advertising purposes and these
+potential sales as defined under CCPA law, you may do so by following the
+instructions below.
+                  </Text>
+                  <Text variant="small" mb="10px">
+                  Please note that any opt out is specific to the browser You use. You may need
+to opt out on every browser that You use.
+                  </Text>
+
+                  <Title variant="card" fontSize="2rem" mb="30px">
+                  Website    
+                  </Title>
+                  <Text variant="small" mb="10px">
+                  You can opt out of receiving ads that are personalized as served by our
+Service Providers by following our instructions presented on the Service:
+                  </Text>
+                  <List>
+                    <li>The NAI's opt-out platform: http://www.networkadvertising.org/choices/</li>
+                    <li>The EDAA's opt-out platform http://www.youronlinechoices.com/</li>
+                    <li>The DAA's opt-out platform:
+    [http://optout.aboutads.info/?c=2&lang=EN](http://optout.aboutads.info/?c=2&lang=EN)</li>
+                  </List>
+                  <Text variant="small" mb="10px">
+                  The opt out will place a cookie on Your computer that is unique to the browser
+You use to opt out. If you change browsers or delete the cookies saved by your
+browser, You will need to opt out again.
+                  </Text>
+
+                  <Title variant="card" fontSize="2rem" mb="30px">
+                  Mobile Devices     
+                  </Title>
+                  <Text variant="small" mb="10px">
+                  Your mobile device may give You the ability to opt out of the use of
+information about the apps You use in order to serve You ads that are targeted
+to Your interests:
+                  </Text>
+                  <List>
+                    <li>"Opt out of Interest-Based Ads" or "Opt out of Ads Personalization" on
+    Android devices</li>
+                    <li>"Limit Ad Tracking" on iOS devices</li>
+                  </List>
+                  <Text variant="small" mb="10px">
+                  You can also stop the collection of location information from Your mobile
+device by changing the preferences on Your mobile device.
+                  </Text>
+                </Box>
+
+                <Box mt={["40px", null, "50px"]}>
+                  <Title variant="card" fontSize="2rem" mb="30px">
+                  Links to Other Websites 
+                  </Title>
+                  <Text variant="small" mb="10px">
+                  Our Service may contain links to other websites that are not operated by Us.
+If You click on a third party link, You will be directed to that third party's
+site. We strongly advise You to review the Privacy Policy of every site You
+visit.
+                  </Text>
+                  <Text variant="small" mb="10px">
+                  We have no control over and assume no responsibility for the content, privacy
+policies or practices of any third party sites or services.
+                  </Text>
                 </Box>
                 
 
                 <Box mt={["40px", null, "50px"]}>
                   <Title variant="card" fontSize="2rem" mb="30px">
-                    Changes to These Terms of Service
+                  Changes to this Privacy Policy 
                   </Title>
                   <Text variant="small" mb="10px">
-                    We reserve the right, at Our sole discretion, to modify or replace these Terms
-                    at any time. If a revision is material, We will make reasonable efforts to
-                    provide at least 30 days' notice before any new terms taking effect. What
-                    constitutes a material change will be determined at Our sole discretion.
+                  We may update Our Privacy Policy from time to time. We will notify You of any
+changes by posting the new Privacy Policy on this page.
                   </Text>
                   <Text variant="small" mb="10px">
-                    By continuing to access or use Our Service after those revisions become
-                    effective, You agree to be bound by the revised terms. If You do not agree to
-                    the new terms, in whole or in part, please stop using the website and the
-                    Service.
+                  We will let You know via email and/or a prominent notice on Our Service, prior
+to the change becoming effective and update the "Last updated" date at the top
+of this Privacy Policy.
+                  </Text>
+                  <Text variant="small" mb="10px">
+                  You are advised to review this Privacy Policy periodically for any changes.
+Changes to this Privacy Policy are effective when they are posted on this
+page.
                   </Text>
                 </Box>
 
