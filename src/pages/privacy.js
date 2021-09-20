@@ -270,7 +270,7 @@ Our Service. The technologies We use may include:
     by the same browser settings as those used for Browser Cookies. For more
     information on how You can delete Flash Cookies, please read "Where can I
     change the settings for disabling, or deleting local shared objects?"
-    available at <a>https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html#main_Where_can_I_change_the_settings_for_disabling__or_deleting_local_shared_objects_</a>
+    available at https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html#main_Where_can_I_change_the_settings_for_disabling__or_deleting_local_shared_objects_
                     </li>
                     <li>
                     Web Beacons. Certain sections of our Service and our emails may contain
@@ -287,19 +287,19 @@ Our Service. The technologies We use may include:
                   Cookies can be "Persistent" or "Session" Cookies. Persistent Cookies remain on
 Your personal computer or mobile device when You go offline, while Session
 Cookies are deleted as soon as You close Your web browser. You can learn more
-about cookies here: [All About Cookies by
-TermsFeed](https://www.termsfeed.com/blog/cookies/).
+about cookies here: <a href="https://www.termsfeed.com/blog/cookies/">All About Cookies by
+TermsFeed</a>.
                   </Text>
                   <Text variant="small" mb="10px">
                   We use both Session and Persistent Cookies for the purposes set out below:
                   </Text>
                   <List>
                     <li>
-                    Necessary / Essential Cookies
+                    Necessary / Essential Cookies<br/><br/>
 
-                    Type: Session Cookies
+                    Type: Session Cookies<br/><br/>
 
-                    Administered by: Us
+                    Administered by: Us<br/><br/>
 
                     Purpose: These Cookies are essential to provide You with services
                     available through the Website and to enable You to use some of its
@@ -309,21 +309,21 @@ TermsFeed](https://www.termsfeed.com/blog/cookies/).
                     those services.
                     </li>
                     <li>
-                    Cookies Policy / Notice Acceptance Cookies
+                    Cookies Policy / Notice Acceptance Cookies<br/><br/>
 
-                    Type: Persistent Cookies
+                    Type: Persistent Cookies<br/><br/>
 
-                    Administered by: Us
+                    Administered by: Us<br/><br/>
 
                     Purpose: These Cookies identify if users have accepted the use of cookies
                     on the Website.
                     </li>
                     <li>
-                    Functionality Cookies
+                    Functionality Cookies<br/><br/>
 
-                    Type: Persistent Cookies
+                    Type: Persistent Cookies<br/><br/>
 
-                    Administered by: Us
+                    Administered by: Us<br/><br/>
 
                     Purpose: These Cookies allow us to remember choices You make when You use
                     the Website, such as remembering your login details or language
@@ -332,11 +332,11 @@ TermsFeed](https://www.termsfeed.com/blog/cookies/).
                     every time You use the Website.
                     </li>
                     <li>
-                    Tracking and Performance Cookies
+                    Tracking and Performance Cookies<br/><br/>
 
-                    Type: Persistent Cookies
+                    Type: Persistent Cookies<br/><br/>
 
-                    Administered by: Third-Parties
+                    Administered by: Third-Parties<br/><br/>
 
                     Purpose: These Cookies are used to track information about traffic to the
                     Website and how users use the Website. The information gathered via these
@@ -519,7 +519,7 @@ Personal Data may be transferred. We will provide notice before Your Personal
 Data is transferred and becomes subject to a different Privacy Policy.
                   </Text>
 
-                  <Title variant="card" fontSize="2rem" mb="30px">
+                  <Title variant="card" fontSize="2rem" mb="30px" mt="20px">
                   Law enforcement 
                   </Title>
                   <Text variant="small" mb="10px">
@@ -528,7 +528,7 @@ Personal Data if required to do so by law or in response to valid requests by
 public authorities (e.g. a court or a government agency).
                   </Text>
                   
-                  <Title variant="card" fontSize="2rem" mb="30px">
+                  <Title variant="card" fontSize="2rem" mb="30px"  mt="20px">
                   Other legal requirements   
                   </Title>
                   <Text variant="small" mb="10px">
@@ -543,7 +543,7 @@ action is necessary to:
                     <li>Protect against legal liability</li>
                   </List>
 
-                  <Title variant="card" fontSize="2rem" mb="30px">
+                  <Title variant="card" fontSize="2rem" mb="30px"  mt="20px">
                   Security of Your Personal Data 
                   </Title>
                   <Text variant="small" mb="10px">
@@ -572,98 +572,94 @@ about Your activity on Our Service in accordance with their Privacy Policies.
 Service.
                   </Text>
                   <List>
-                    <li>Google Analytics
+                    <li>Google Analytics<br/><br/>
 
 Google Analytics is a web analytics service offered by Google that tracks
 and reports website traffic. Google uses the data collected to track and
 monitor the use of our Service. This data is shared with other Google
 services. Google may use the collected data to contextualize and
-personalize the ads of its own advertising network.
+personalize the ads of its own advertising network.<br/><br/>
 
 You can opt-out of having made your activity on the Service available to
 Google Analytics by installing the Google Analytics opt-out browser add-
 on. The add-on prevents the Google Analytics JavaScript (ga.js,
 analytics.js and dc.js) from sharing information with Google Analytics
-about visits activity.
+about visits activity.<br/><br/>
 
 For more information on the privacy practices of Google, please visit the
 Google Privacy & Terms web page: https://policies.google.com/privacy</li>
                     <li>Firebase
 
-Firebase is an analytics service provided by Google Inc.
+Firebase is an analytics service provided by Google Inc.<br/><br/>
 
 You may opt-out of certain Firebase features through your mobile device
 settings, such as your device advertising settings or by following the
 instructions provided by Google in their Privacy Policy:
-https://policies.google.com/privacy
+https://policies.google.com/privacy<br/><br/>
 
 We also encourage you to review the Google's policy for safeguarding your
-data: https://support.google.com/analytics/answer/6004245
+data: https://support.google.com/analytics/answer/6004245<br/><br/>
 
 For more information on what type of information Firebase collects, please
 visit the How Google uses data when you use our partners' sites or apps
 webpage: https://policies.google.com/technologies/partner-sites</li>
-                    <li>Matomo
+                    <li>Matomo<br/><br/>
 
 Matomo is a web analytics service. You can visit their Privacy Policy page
 here: https://matomo.org/privacy-policy</li>
-                    <li>Clicky
+                    <li>Clicky<br/><br/>
 
 Clicky is a web analytics service. Read the Privacy Policy for Clicky
 here: https://clicky.com/terms</li>
-                    <li>Statcounter
+                    <li>Statcounter<br/><br/>
 
 Statcounter is a web traffic analysis tool. You can read the Privacy
 Policy for Statcounter here: https://statcounter.com/about/legal</li>
-                    <li>Flurry Analytics
+                    <li>Flurry Analytics<br/><br/>
 
-Flurry Analytics service is provided by Yahoo! Inc.
+Flurry Analytics service is provided by Yahoo! Inc.<br/><br/>
 
 You can opt-out from Flurry Analytics service to prevent Flurry Analytics
 from using and sharing your information by visiting the Flurry's Opt-out
-page: https://developer.yahoo.com/flurry/end-user-opt-out/
+page: https://developer.yahoo.com/flurry/end-user-opt-out/<br/><br/>
 
 For more information on the privacy practices and policies of Yahoo!,
 please visit their Privacy Policy page:
 https://policies.yahoo.com/xa/en/yahoo/privacy/index.htm</li>
-                    <li>Mixpanel
+                    <li>Mixpanel<br/><br/>
 
-Mixpanel is provided by Mixpanel Inc.
+Mixpanel is provided by Mixpanel Inc.<br/><br/>
 
 You can prevent Mixpanel from using your information for analytics
 purposes by opting-out. To opt-out of Mixpanel service, please visit this
-page: https://mixpanel.com/optout/
+page: https://mixpanel.com/optout/<br/><br/>
 
 For more information on what type of information Mixpanel collects, please
 visit the Terms of Use page of Mixpanel: https://mixpanel.com/terms/</li>
-                    <li>Unity Analytics
+                    <li>Unity Analytics<br/><br/>
 
-Unity Analytics is provided by Unity Technologies.
+Unity Analytics is provided by Unity Technologies.<br/><br/>
 
 Unity Analytics collects, stores, uses, processes, and transfers personal
 information to provide, operate, and improve Unity Technologies services,
 including personalized advertising services. For more information on what
 type of information Unity Technologies collects, please visit their
-Privacy Policy page: https://unity3d.com/legal/privacy-policy
+Privacy Policy page: https://unity3d.com/legal/privacy-policy<br/><br/>
 
 You can prevent Unity Analytics from using your information by opting-out.
 To opt-out of Unity Analytics, please visit this page:
-https://unity3d.com/legal/privacy-policy
+https://unity3d.com/legal/privacy-policy<br/><br/>
 
 You may opt-out of all personalized advertising by enabling privacy
 features on Your mobile device such as Limit Ad Tracking (iOS) and Opt Out
 of Ads Personalization (Android). See Your mobile device Help system for
 more information.</li>
-                    <li>Heap Analytics
+                    <li>Heap Analytics<br/><br/>
 
 Their Privacy Policy can be viewed at https://heapanalytics.com/</li>
-                    <li>Ahefs
+                    <li>Ahefs<br/><br/>
 
 Their Privacy Policy can be viewed at https://ahrefs.com/</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
                   </List>
 
                   <Title variant="card" fontSize="2rem" mb="30px">
@@ -680,23 +676,23 @@ or by contacting Us.
                   We may use Email Marketing Service Providers to manage and send emails to You.
                   </Text>
                   <List>
-                    <li>Mailchimp
+                    <li>Mailchimp<br/><br/>
 
 Mailchimp is an email marketing sending service provided by The Rocket
-Science Group LLC.
+Science Group LLC.<br/><br/>
 
 For more information on the privacy practices of Mailchimp, please visit
 their Privacy policy: https://mailchimp.com/legal/privacy/</li>
-                    <li>AWeber
+                    <li>AWeber<br/><br/>
 
 AWeber is an email marketing sending service provided by AWeber
-Communications.
+Communications.<br/><br/>
 
 For more information on the privacy practices of AWeber, please visit
 their Privacy policy: https://www.aweber.com/privacy.htm</li>
-                    <li>GetResponse
+                    <li>GetResponse<br/><br/>
 
-GetResponse is an email marketing sending service provided by GetResponse.
+GetResponse is an email marketing sending service provided by GetResponse.<br/><br/>
 
 For more information on the privacy practices of GetResponse, please visit
 their Privacy policy: https://www.getresponse.com/legal/privacy.html</li>
@@ -720,62 +716,62 @@ Mastercard, American Express and Discover. PCI-DSS requirements help ensure
 the secure handling of payment information.
                   </Text>
                   <List>
-                    <li>Apple Store In-App Payments
+                    <li>Apple Store In-App Payments<br/><br/>
 
 Their Privacy Policy can be viewed at
 https://www.apple.com/legal/privacy/en-ww/</li>
-                    <li>Google Play In-App Payments
+                    <li>Google Play In-App Payments<br/><br/>
 
 Their Privacy Policy can be viewed at
 https://www.google.com/policies/privacy/</li>
-                    <li> Stripe
+                    <li> Stripe<br/><br/>
 
 Their Privacy Policy can be viewed at https://stripe.com/us/privacy</li>
-                    <li>WePay
+                    <li>WePay<br/><br/>
 
 Their Privacy Policy can be viewed at https://go.wepay.com/privacy-policy</li>
-                    <li>WorldPay
+                    <li>WorldPay<br/><br/>
 
 Their Privacy Policy can be viewed at https://www.worldpay.com/en-gb/privacy-policy</li>
-                    <li>PayPal
+                    <li>PayPal<br/><br/>
 
 Their Privacy Policy can be viewed at
 https://www.paypal.com/webapps/mpp/ua/privacy-full</li>
-                    <li>Braintree
+                    <li>Braintree<br/><br/>
 
 Their Privacy Policy can be viewed at
 https://www.braintreepayments.com/legal/braintree-privacy-policy</li>
-                    <li>FastSpring
+                    <li>FastSpring<br/><br/>
 
 Their Privacy Policy can be viewed at http://fastspring.com/privacy/</li>
-                    <li>2Checkout
+                    <li>2Checkout<br/><br/>
 
 Their Privacy Policy can be viewed at
 https://www.2checkout.com/policies/privacy-policy</li>
-                    <li>Sage Pay
+                    <li>Sage Pay<br/><br/>
 
 Their Privacy Policy can be viewed at https://www.sagepay.co.uk/policies</li>
-                    <li>Square
+                    <li>Square<br/><br/>
 
 Their Privacy Policy can be viewed at https://squareup.com/legal/privacy-no-account</li>
-                    <li>Go Cardless
+                    <li>Go Cardless<br/><br/>
 
 Their Privacy Policy can be viewed at https://gocardless.com/en-eu/legal/privacy/</li>
-                    <li>Elavon
+                    <li>Elavon<br/><br/>
 
 Their Privacy Policy can be viewed at https://www.elavon.com/privacy-pledge.html</li>
-                    <li>Verifone
+                    <li>Verifone<br/><br/>
 
 Their Privacy Policy can be viewed at
 https://www.verifone.com/en/us/legal</li>
-                    <li>Moneris
+                    <li>Moneris<br/><br/>
 
 Their Privacy Policy can be viewed at https://www.moneris.com/en/Privacy-Policy</li>
-                    <li>WeChat
+                    <li>WeChat<br/><br/>
 
 Their Privacy Policy can be viewed at
 https://www.wechat.com/en/privacy_policy.html</li>
-                    <li>Alipay
+                    <li>Alipay<br/><br/>
 
 Their Privacy Policy can be viewed at
 https://render.alipay.com/p/f/agreementpages/alipayglobalprivacypolicy.html</li>
@@ -798,7 +794,7 @@ information contained in Our Privacy Policy and it applies solely to all
 visitors, users, and others who reside in the State of California.
                   </Text>
 
-                  <Title variant="card" fontSize="2rem" mb="30px">
+                  <Title variant="card" fontSize="2rem" mb="30px" mt="20px">
                   Categories of Personal Information Collected 
                   </Title>
                   <Text variant="small" mb="10px">
@@ -981,7 +977,7 @@ incompatible purposes We will update this Privacy Policy.
                   </Text>
 
 
-                  <Title variant="card" fontSize="2rem" mb="30px">
+                  <Title variant="card" fontSize="2rem" mb="30px" mt="30px">
                   Disclosure of Personal Information for Business Purposes or Commercial
 Purposes 
                   </Title>
@@ -1011,7 +1007,7 @@ recipient to both keep that personal information confidential and not use it
 for any purpose except performing the contract.
                   </Text>
 
-                  <Title variant="card" fontSize="2rem" mb="30px">
+                  <Title variant="card" fontSize="2rem" mb="30px" mt="30px">
                   Sale of Personal Information 
                   </Title>
                   <Text variant="small" mb="10px">
@@ -1078,7 +1074,7 @@ provided Us with personal information, please contact Us with sufficient
 detail to enable Us to delete that information.
                   </Text>
 
-                  <Title variant="card" fontSize="2rem" mb="30px">
+                  <Title variant="card" fontSize="2rem" mb="30px" mt="20px">
                   Your Rights under the CCPA   
                   </Title>
                   <Text variant="small" mb="10px">
@@ -1233,7 +1229,7 @@ instructions below.
 to opt out on every browser that You use.
                   </Text>
 
-                  <Title variant="card" fontSize="2rem" mb="30px">
+                  <Title variant="card" fontSize="2rem" mb="30px" mt="20px">
                   Website    
                   </Title>
                   <Text variant="small" mb="10px">
@@ -1244,7 +1240,7 @@ Service Providers by following our instructions presented on the Service:
                     <li>The NAI's opt-out platform: http://www.networkadvertising.org/choices/</li>
                     <li>The EDAA's opt-out platform http://www.youronlinechoices.com/</li>
                     <li>The DAA's opt-out platform:
-    [http://optout.aboutads.info/?c=2&lang=EN](http://optout.aboutads.info/?c=2&lang=EN)</li>
+    http://optout.aboutads.info/?c=2&lang=EN</li>
                   </List>
                   <Text variant="small" mb="10px">
                   The opt out will place a cookie on Your computer that is unique to the browser
@@ -1252,7 +1248,7 @@ You use to opt out. If you change browsers or delete the cookies saved by your
 browser, You will need to opt out again.
                   </Text>
 
-                  <Title variant="card" fontSize="2rem" mb="30px">
+                  <Title variant="card" fontSize="2rem" mb="30px" mt="20px">
                   Mobile Devices     
                   </Title>
                   <Text variant="small" mb="10px">
