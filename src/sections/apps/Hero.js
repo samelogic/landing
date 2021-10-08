@@ -122,11 +122,12 @@ const Hero = ({ name, introduction, categories }) => {
                   <Title variant="hero">{name}</Title>
                   <Text mb={4}>{introduction}</Text>
                   <div className="d-flex flex-column align-items-start">
-                    <Button mb={3}>Get Started</Button>
+                    <a href="https://app.samelogic.com">
+                      <Button mb={3}>Get Started</Button>
+                    </a>
                     <a
-                      href="https://app.samelogic.com"
+                      href="https://samelogic.com/docs/steps/microsurveys"
                       className="text-decoration-none"
-                      onClick={openVideoModal}
                     >
                       <Box color="secondary">
                         <i className="icon icon-triangle-right-17-2"></i> View
