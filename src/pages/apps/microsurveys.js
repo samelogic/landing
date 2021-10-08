@@ -13,7 +13,29 @@ const APP_DATA = {
   introduction:
     "Microsurveys are powerful but short in-app product surveys to collect contextual feedback, such as user flows and features.",
   heroImage: "",
-  features: [""],
+  // icon: react-icons name. See https://react-icons.github.io/react-icons
+  features: [
+    {
+      icon: "arrows-alt",
+      text: "Position anywhere",
+    },
+    {
+      icon: "question",
+      text: "3+ question types",
+    },
+    {
+      icon: "palette",
+      text: "Configure appearance",
+    },
+    {
+      icon: "code-branch",
+      text: "Question logic",
+    },
+    {
+      icon: "smile-beam",
+      text: "CSAT, CES, NPS",
+    },
+  ],
   categories: ["surveys", "analytics"],
   testimonials: [
     {
@@ -34,7 +56,7 @@ const IndexPage = () => {
       <PageWrapper footerDark>
         <Hero {...APP_DATA} />
         {/* <Clients /> */}
-        <Feature />
+        <Feature {...APP_DATA} />
         <Content1 />
         <Content2 />
         <Testimonial />

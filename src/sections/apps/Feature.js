@@ -1,12 +1,20 @@
 import React from "react";
 import styled from "styled-components";
-import { rgba } from "polished";
+import { rgba, saturate, lighten } from "polished";
 import { Container, Row, Col } from "react-bootstrap";
 
 import { Title, Button, Section, Box, Text } from "../../components/Core";
 
 import imgL1FeatureOval from "../../assets/image/png/l1-feature-oval.png";
 import imgL1FeatureCurve from "../../assets/image/svg/l1-curve-feature.svg";
+
+const SectionStyled = styled(Section)`
+  background-image: ${({ theme }) => `radial-gradient(
+    circle 961px at 49.94% 0%,
+    ${lighten(0.114, saturate(0.0911, theme.colors.ash))} 0%,
+    ${theme.colors.ash} 100%
+  );`};
+`;
 
 const ShapeTopRight = styled(Box)`
   position: absolute;
@@ -24,16 +32,32 @@ const ShapeBottmRight = styled(Box)`
   }
 `;
 
-const FeatureCard = ({
+const ContentCard = ({
   color = "primary",
+  className,
   iconName,
   title,
   children,
   ...rest
 }) => (
-  <Box bg="light" py="25px" px="30px" borderRadius={10} mb={4} {...rest}>
+  <Box
+    bg="light"
+    border="1px solid"
+    borderColor="border"
+    p="20px"
+    borderRadius={10}
+    className={`d-flex align-items-center ${className}`}
+    {...rest}
+    css={`
+      transition: all 0.3s ease-out;
+      &:hover {
+        box-shadow: ${({ theme }) => `0 52px 54px ${theme.colors.shadow};`};
+      }
+    `}
+  >
     <Box
-      size={69}
+      size={55}
+      minWidth={55}
       borderRadius="50%"
       color={color}
       fontSize="28px"
@@ -42,31 +66,21 @@ const FeatureCard = ({
         background-color: ${({ theme, color }) =>
           rgba(theme.colors[color], 0.1)};
       `}
+      mr={3}
     >
-      <i className={`icon ${iconName}`}></i>
+      <i className={`fas fa-${iconName}`}></i>
     </Box>
-    <div>
-      <Text
-        color="heading"
-        as="h3"
-        fontSize={4}
-        fontWeight={500}
-        letterSpacing={-0.75}
-        my={3}
-      >
-        {title}
-      </Text>
-      <Text fontSize={2} lineHeight={1.75}>
-        {children}
-      </Text>
-    </div>
+
+    <Title variant="card" mb={0}>
+      {title}
+    </Title>
   </Box>
 );
 
-const Feature = () => (
+const Feature = ({ features }) => (
   <>
     {/* <!-- Feature section --> */}
-    <Section bg="secondary" className="position-relative">
+    <SectionStyled className="position-relative">
       <ShapeTopRight
         data-aos="fade-left"
         data-aos-duration="750"
@@ -78,66 +92,35 @@ const Feature = () => (
         <img src={imgL1FeatureCurve} alt="" className="img-fluid" />
       </ShapeBottmRight>
       <Container>
-        <Row className="align-items-center">
-          <Col lg="6" className="pl-lg-5 order-lg-2">
-            <div className="feature-content section-title">
-              <Title color="light">Build a perfect landing page.</Title>
-              <Text color="light" opacity={0.7} mb={4}>
-                Create custom landing pages with Omega that converts more
-                visitors than any website. With lots of unique blocks, you can
-                easily build a page without coding.
-              </Text>
-
-              <Button variant="outline">Check all features</Button>
-            </div>
-          </Col>
-          <Col lg="6" className="order-lg-1 mt-5 mt-lg-0">
-            <Row>
-              <Col md="6">
-                <FeatureCard
-                  color="primary"
-                  iconName="icon-layout-11"
-                  title="Multiple Layouts"
-                >
-                  With lots of unique blocks, you can easily build a page
-                  without coding.
-                </FeatureCard>
-              </Col>
-              <Col md="6">
-                <FeatureCard
-                  color="warning"
-                  iconName="icon-sidebar-2"
-                  title="Fully Responsive"
-                >
-                  With lots of unique blocks, you can easily build a page
-                  without coding.
-                </FeatureCard>
-              </Col>
-              <Col md="6">
-                <FeatureCard
-                  color="secondary"
-                  iconName="icon-bookmark-2-2"
-                  title="Well Documented"
-                >
-                  With lots of unique blocks, you can easily build a page
-                  without coding.
-                </FeatureCard>
-              </Col>
-              <Col md="6">
-                <FeatureCard
-                  color="ash"
-                  iconName="icon-chat-45-2"
-                  title="Great Support"
-                >
-                  With lots of unique blocks, you can easily build a page
-                  without coding.
-                </FeatureCard>
-              </Col>
-            </Row>
+        <Row className="justify-content-center">
+          <Col lg="9">
+            <Box className="text-center" mb={[4, 5]}>
+              <Title color="light">Features</Title>
+            </Box>
           </Col>
         </Row>
+        <Row className="justify-content-center">
+          {features &&
+            features.map((feature, i) => (
+              <Col
+                lg="4"
+                md="6"
+                className="mb-4"
+                data-aos="zoom-in"
+                data-aos-duration="750"
+                data-aos-once="true"
+                data-aos-delay="50"
+              >
+                <ContentCard
+                  title={feature.text}
+                  color="primary"
+                  iconName={feature.icon}
+                />
+              </Col>
+            ))}
+        </Row>
       </Container>
-    </Section>
+    </SectionStyled>
   </>
 );
 
