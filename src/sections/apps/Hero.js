@@ -113,11 +113,12 @@ const Hero = ({ name, introduction, categories }) => {
                 data-aos-delay="500"
               >
                 <Box py={[null, null, null, 5]} pr={5} pt={[4, null]}>
-                  {categories.map((category, i) => (
-                    <BadgeStyled key={i} bg="secondary">
-                      {category}
-                    </BadgeStyled>
-                  ))}
+                  {categories &&
+                    categories.map((category, i) => (
+                      <BadgeStyled key={i} bg="secondary">
+                        {category}
+                      </BadgeStyled>
+                    ))}
                   <Title variant="hero">{name}</Title>
                   <Text mb={4}>{introduction}</Text>
                   <div className="d-flex flex-column align-items-start">
