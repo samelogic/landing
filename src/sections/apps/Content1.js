@@ -53,7 +53,9 @@ const Content1 = ({ description }) => (
                   dangerouslySetInnerHTML={{ __html: description.body }}
                 />
 
-                <Button mt={3}>Get Started</Button>
+                <a href="https://app.samelogic.com">
+                  <Button mt={3}>Get Started</Button>
+                </a>
               </Box>
             </div>
           </Col>

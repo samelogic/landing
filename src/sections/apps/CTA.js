@@ -46,23 +46,16 @@ const CTA = () => (
             <Box mb={5} className="text-center">
               <Title color="light">Get started</Title>
               <Text color="light" opacity={0.7}>
-                Create custom landing pages with Omega that converts more
-                visitors than any website. With lots of unique blocks, you can
-                easily build a page without coding.
+                Samelogic makes it easy to use this and many other apps together
+                to build and run complex experiments.
               </Text>
             </Box>
-            <form>
-              <Box mb={3}>
-                <Input type="text" placeholder="Your name" />
-              </Box>
-              <Box mb={3}>
-                <Input type="email" placeholder="Your email" />
-              </Box>
 
+            <a href="https://app.samelogic.com">
               <Button width="100%" type="submit" borderRadius={10}>
                 Get Started
               </Button>
-            </form>
+            </a>
           </Col>
         </Row>
       </Container>
