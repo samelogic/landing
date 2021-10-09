@@ -22,7 +22,7 @@ const ShapeCard = styled(Box)`
   }
 `;
 
-const Content1 = () => (
+const Content1 = ({ description }) => (
   <>
     {/* <!-- Content section 1 --> */}
     <Section>
@@ -38,41 +38,6 @@ const Content1 = () => (
               >
                 <img src={imgContentMobile} alt="" className="img-fluid" />
               </div>
-
-              <ShapeCard
-                bg="warning"
-                p="18px"
-                borderRadius={8}
-                className="d-flex align-items-start"
-                data-aos="fade-right"
-                data-aos-duration="750"
-                data-aos-once="true"
-                data-aos-delay="500"
-              >
-                <Box
-                  width="30px"
-                  minWidth="30px"
-                  height="30px"
-                  minHeight="30px"
-                  bg="secondary"
-                  color="light"
-                  borderRadius="50%"
-                  className="d-flex align-items-center justify-content-center"
-                  mr={3}
-                  mt={2}
-                >
-                  <i className="fas fa-bell"></i>
-                </Box>
-
-                <Box pr="40px">
-                  <Text fontSize={1} lineHeight="24px" opacity={0.7} mb={0}>
-                    Next meeting on 30 mins
-                  </Text>
-                  <Title variant="card" fontWeight={300} mb={0}>
-                    Project Discussion with John
-                  </Title>
-                </Box>
-              </ShapeCard>
             </div>
           </Col>
           <Col lg="6" className="order-lg-1 mt-5 mt-lg-0">
@@ -82,12 +47,11 @@ const Content1 = () => (
               data-aos-once="true"
             >
               <Box>
-                <Title>Save time on development.</Title>
-                <Text mb={4}>
-                  Create custom landing pages with Omega that converts more
-                  visitors than any website. With lots of unique blocks, you can
-                  easily build a page without coding.
-                </Text>
+                <Title>{description.title}</Title>
+                <Text
+                  mb={4}
+                  dangerouslySetInnerHTML={{ __html: description.body }}
+                />
 
                 <Button mt={3}>Get Started</Button>
               </Box>

@@ -13,7 +13,7 @@ const APP_DATA = {
   introduction:
     "Microsurveys are powerful but short in-app product surveys to collect contextual feedback, such as user flows and features.",
   heroImage: "",
-  // icon: react-icons name. See https://react-icons.github.io/react-icons
+  // icon: https://fontawesome.com/v5.15/icons?d=gallery&p=2&q=smile&m=free
   features: [
     {
       icon: "arrows-alt",
@@ -44,6 +44,16 @@ const APP_DATA = {
       statement: "",
     },
   ],
+  description: {
+    title: "Addtional Description",
+    body: `
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Quis imperdiet massa tincidunt nunc. Dolor morbi non arcu risus quis varius quam. Eu volutpat odio facilisis mauris sit.
+    <br/> <br/>
+    Ultrices gravida dictum fusce ut placerat. Auctor elit sed vulputate mi sit amet. Eget est lorem ipsum dolor sit amet. Eget dolor morbi non arcu risus. Senectus et netus et malesuada. Morbi leo urna molestie at elementum eu facilisis sed. Quis risus sed vulputate odio ut enim blandit volutpat maecenas. Quisque id diam vel quam elementum pulvinar etiam. Mattis rhoncus urna neque viverra justo. Amet dictum sit amet justo donec enim diam. Bibendum neque egestas congue quisque. Nec feugiat nisl pretium fusce id.
+    `,
+    image: "",
+  },
   publisher: {
     name: "Samelogic Inc.",
     logo: "",
@@ -57,9 +67,9 @@ const IndexPage = () => {
         <Hero {...APP_DATA} />
         {/* <Clients /> */}
         <Feature {...APP_DATA} />
-        <Content1 />
-        <Content2 />
-        <Testimonial />
+        <Content1 {...APP_DATA} />
+        {/* <Content2 />
+        <Testimonial /> */}
         <CTA />
       </PageWrapper>
     </>
