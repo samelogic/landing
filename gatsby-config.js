@@ -28,13 +28,6 @@ if (!spaceId || !accessToken) {
   );
 }
 //#endregion
-const devHeapAppId = "2289581087";
-const buildHeapAppId =
-  process.env.CONTEXT === "production"
-    ? process.env.HEAP_APPID_PROD
-    : process.env.HEAP_APPID_PREVIEW;
-const heapAppId =
-  process.env.NODE_ENV !== "production" ? devHeapAppId : buildHeapAppId;
 
 module.exports = {
   siteMetadata: {
@@ -64,13 +57,6 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-tagmanager",
       options: gtmConfig,
-    },
-    {
-      resolve: "gatsby-plugin-heap",
-      options: {
-        appId: heapAppId,
-        enableOnDevMode: true,
-      },
     },
   ],
 };
