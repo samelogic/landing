@@ -25,7 +25,7 @@ export const menuItems = [
     isExternal: false,
   },
   {
-    name: "docs",
+    name: "/docs",
     label: "Documentation",
     isExternal: true,
   },
