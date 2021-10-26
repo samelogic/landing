@@ -65,7 +65,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    allContentfulPost {
+    allContentfulPost(sort: { order: DESC, fields: [createdAt] }) {
       edges {
         node {
           title
