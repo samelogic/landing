@@ -32,7 +32,7 @@ if (!spaceId || !accessToken) {
 module.exports = {
   siteMetadata: {
     title: `Samelogic | Product Experiments with Painted Doors`,
-    description: `Attach a microsurvey to any element within your website to contextually understand your users.`,
+    description: `Embed Painted Door Experiments within your products to get feedback from your actual users to measure outcomes.`,
     siteUrl: `https://samelogic.com/`,
     social: {
       twitter: `samelogicai`,
