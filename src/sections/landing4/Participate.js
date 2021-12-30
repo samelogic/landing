@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import styled from "styled-components";
+import { rgba } from "polished";
 
 import { Title, Section, Box, Text } from "../../components/Core";
 import { device } from "../../utils";
@@ -45,7 +46,55 @@ const ImgStyled = styled.img`
   }
 `;
 
+const ULStyled = styled.ul`
+  list-style: none;
+  margin: 0;
+  padding-top: 15px;
+  padding-left: 0;
 
+  @media ${device.sm} {
+    padding-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media ${device.lg} {
+    justify-content: space-between;
+  }
+
+  li {
+    &:nth-child(odd) {
+      @media ${device.sm} {
+        margin-right: 40px;
+      }
+    }
+    color: #19191b;
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing: -0.66px;
+    line-height: 50px;
+    display: flex;
+    margin-bottom: 5px;
+
+    &:before {
+      content: "\f00c";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      display: inline-block;
+      font-size: 13px;
+      width: 30px;
+      height: 30px;
+      background-color: ${({ theme }) => rgba(theme.colors.secondary, 0.1)};
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 500px;
+      color: ${({ theme }) => theme.colors.secondary};
+      position: relative;
+      top: 9px;
+      margin-right: 13px;
+    }
+  }
+`;
 
 const Content2 = () => (
   <>
@@ -66,28 +115,17 @@ const Content2 = () => (
           </Col>
           <Col lg="6" md="9">
             <Box className="pt-5 pt-lg-0">
-              <Title>
-              Plan Confidently,{" "}
-                <br className="d-none d-sm-block d-md-none d-xl-block" /> No Assumptions.
-              </Title>
-              <Text>
-              Get the insights you need to create a product roadmap and build features from the people who are using your product, while they are using your product. 
-              </Text>
-              
+              <Title>Decide Which Users Can Participate.</Title>
+
               <Box mt={4} pt={3}>
-                <ContentCard
-                  title="Build What Users Need"
-                  iconImage={icon3dModel}
-                  mb={4}
-                >
-                  Get feedback at scale from core users within your product.
-                </ContentCard>
-                <ContentCard
-                  title="Optimize Product Roadmap"
-                  iconImage={iconLayout}
-                >
-                  Make planning a breeze with contextual feedback from your users, so you know exactly what you should be building.
-                </ContentCard>
+                <ULStyled>
+                  <li>Segment users based on how you see fit.</li>
+                  <li>Allow users to enroll themselves in the experiment.</li>
+                  <li>
+                    Confidently display your Painted Door to the correct sample
+                    population.
+                  </li>
+                </ULStyled>
               </Box>
             </Box>
           </Col>

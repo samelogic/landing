@@ -40,7 +40,8 @@ const Hero = () => {
           <Row className="justify-content-center align-items-center position-relative">
             <Col md="5" className="order-md-2 position-static">
               <ImgRight>
-                <img src={Animated}
+                <img
+                  src={Animated}
                   alt=""
                   className="img-fluid"
                   data-aos="fade-left"
@@ -59,24 +60,24 @@ const Hero = () => {
               >
                 <Box py={[null, null, null, 5]} pr={5} pt={[4, null]}>
                   <Title variant="hero" color="light">
-                    Get feedback on any actions users perform.
+                    Painted Door Experiments Without The Hassle!
                   </Title>
                   <Text mb={4} color="light" opacity={0.7}>
-                    Attach a microsurvey to any element within your website to contextually understand your users.
+                    Get the feedback you need to launch a successful new product
+                    or feature with <b>Painted Door Experiments.</b> 
                   </Text>
                   <div className="d-flex flex-column align-items-start pt-3">
-                  
-                      <a href="https://app.samelogic.com">
-                      <Button mb={2} >Get Started &nbsp;🎉</Button>
-                      </a>
-                     
+                    <a href="https://app.samelogic.com">
+                      <Button mb={2}>Get Started &nbsp;</Button>
+                    </a>
+
                     <Text
                       variant="small"
                       fontSize={"14px"}
                       color="light"
                       opacity={0.7}
                     >
-                      Try out our pre-beta microsurvey creator!
+                      Join our Early Access program
                     </Text>
                   </div>
                 </Box>
