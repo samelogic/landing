@@ -7,7 +7,7 @@ import { rgba } from "polished";
 import { Title, Section, Box, Text } from "../../components/Core";
 import { device, breakpoints } from "../../utils";
 
-import imgCustomer1 from "../../assets/image/jpeg/testimonial-image.jpg";
+import imgCustomer1 from "../../assets/image/testimonial-yash.png";
 import imgCustomer2 from "../../assets/image/jpeg/testimonial-image-2.jpg";
 import imgQuote from "../../assets/image/png/quote-shape.png";
 
@@ -173,12 +173,13 @@ const Testimonial = () => {
       <Section bg="#F7F7FB" pb={["50px!important"]}>
         <Container>
           <Row className="justify-content-center mb-4">
-            <Col lg="6" md="9">
+            <Col lg="12" md="12">
               <div className="text-center">
-                <Title>Customers love us</Title>
+                <Title>
+                  The #1 Way to Validate Your Idea Without Building Anything
+                </Title>
                 <Text>
-                  Create custom landing pages with Omega that converts more
-                  visitors than any website.
+                  The fastest way to figure out what works for your users.
                 </Text>
               </div>
             </Col>
@@ -196,18 +197,18 @@ const Testimonial = () => {
                         <img src={imgQuote} alt="" className="img-fluid" />
                       </SliderQuoteShape>
                       <Text color="dark" my={2}>
-                        OMG! I cannot believe that I have got a brand new
-                        landing page after getting Omega. It was super easy to
-                        edit and publish.
+                        If we had Samelogic in the early days of building
+                        Pinterest, we would have gotten to where we needed to be
+                        a lot <b>faster</b>.
                       </Text>
                       <Title variant="card" mb={0} mt={3}>
-                        Jonathan Taylor
+                        Yash Nelapati
                       </Title>
-                      <Text variant="small">CEO at Creativex</Text>
+                      <Text variant="small">Founding Engineer @ Pinterest</Text>
                     </SliderText>
                   </SliderCard>
                 </SliderItem>
-                <SliderItem>
+                {/* <SliderItem>
                   <SliderCard>
                     <SliderImgContainer>
                       <img src={imgCustomer2} alt="" />
@@ -227,7 +228,7 @@ const Testimonial = () => {
                       <Text variant="small">Designer at Creativex</Text>
                     </SliderText>
                   </SliderCard>
-                </SliderItem>
+                </SliderItem> */}
               </SliderStyled>
             </Col>
           </Row>

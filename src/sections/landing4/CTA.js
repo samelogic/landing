@@ -11,20 +11,19 @@ const CTA = () => (
         <Row className="justify-content-center">
           <Col md="8" lg="7">
             <Box className="text-center">
-              <Title color="light">Build Fast, Launch Faster</Title>
+              <Title color="light">Get Evidence, Build Confidently</Title>
               <Text mb={4} color="light" opacity={0.7}>
-                Create custom landing pages with Omega that converts more
-                visitors than any website.
+                The better way to figure out what works for your users.
               </Text>
               <div className="d-flex flex-column align-items-center pt-3">
-                <Button mb={2}>Start 14 Days Free Trial</Button>
+                <Button mb={2}>Get Started</Button>
                 <Text
                   variant="small"
                   fontSize={"14px"}
                   color="light"
                   opacity={0.7}
                 >
-                  No credit card required
+                  Join our Early Access program
                 </Text>
               </div>
             </Box>

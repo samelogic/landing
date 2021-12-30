@@ -108,21 +108,19 @@ const Content1 = () => (
               data-aos-once="true"
             >
               <div>
-                <Title>
-                  Test Ideas{" "}
-                  <br className="d-none d-sm-block d-md-none d-lg-block" /> with
-                  Ease.
-                </Title>
-                <Text mb={4}>
-                  Attaching a Microsurvey to a “Painted Door” experiment or an
-                  already existing feature makes you really know how interested
-                  users are in your proposed or existing offerings.
-                </Text>
+                <Title>Add Interactive Mockups to Your Website</Title>
+                <Text mb={4}></Text>
 
                 <ULStyled>
-                  <li>Test Proposed Features</li>
-                  <li>Test Existing Features</li>
-                  <li>Test Proposed Designs</li>
+                  <li>
+                    Upload images of your mockups and position them within your
+                    website.
+                  </li>
+                  <li>
+                    Choose a template that best mimics how your idea should
+                    look.
+                  </li>
+                  <li>Customize any of our templates with your own markup.</li>
                 </ULStyled>
               </div>
             </div>

@@ -94,7 +94,7 @@ const Layout = ({ children, pageContext }) => {
   useEffect(() => {
     window.addEventListener(
       "popstate",
-      function(event) {
+      function (event) {
         // The popstate event is fired each time when the current history entry changes.
         gContext.closeAbout();
         gContext.closeContact();
@@ -104,7 +104,7 @@ const Layout = ({ children, pageContext }) => {
     );
     window.addEventListener(
       "pushState",
-      function(event) {
+      function (event) {
         // The pushstate event is fired each time when the current history entry changes.
         gContext.closeAbout();
         gContext.closeContact();
@@ -123,7 +123,7 @@ const Layout = ({ children, pageContext }) => {
       >
         <GlobalStyle />
         <Helmet>
-          <title>Samelogic | Product Experiments with Microsurveys</title>
+          <title>Samelogic | Product Experiments with Painted Doors</title>
           <link rel="icon" type="image/png" href={imgFavicon} />
         </Helmet>
         <Loader id="loading" className={visibleLoader ? "" : "inActive"}>
@@ -149,7 +149,7 @@ const Layout = ({ children, pageContext }) => {
       >
         <GlobalStyle />
         <Helmet>
-          <title>Samelogic | Product Experiments with Microsurveys</title>
+          <title>Samelogic | Product Experiments with Painted Doors</title>
           <link rel="icon" type="image/png" href={imgFavicon} />
         </Helmet>
         <Loader id="loading" className={visibleLoader ? "" : "inActive"}>

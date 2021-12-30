@@ -3,8 +3,11 @@ import { graphql } from "gatsby";
 import Hero from "../sections/landing4/Hero";
 import Feature from "../sections/landing4/Feature";
 import Clients from "../sections/landing4/Clients";
-import Content1 from "../sections/landing4/Content1";
-import Content2 from "../sections/landing4/Content2";
+import Mockups from "../sections/landing4/Mockups";
+import TestIdeas from "../sections/landing4/TestIdeas";
+import Feedback from "../sections/landing4/Feedback";
+import Science from "../sections/landing4/Science";
+import Participate from "../sections/landing4/Participate";
 import Testimonial from "../sections/landing4/Testimonial";
 import Fact from "../sections/landing4/Fact";
 import Pricing from "../sections/landing4/Pricing";
@@ -35,14 +38,17 @@ const LandingPage4 = ({ data }) => {
       <PageWrapper headerDark footerDark>
         <Hero />
         {/* <Feature /> */}
-        <Content1 />
-        <Content2 />
-        {/* <Testimonial />
-        <Clients />
+        <Participate />
+        <TestIdeas />
+        <Science />
+        <Mockups />
+        <Feedback />
+        <Testimonial />
+        {/* <Clients /> */}
         <Fact />
-        <Pricing />
+        {/* <Pricing /> */}
         <Faq />
-        <CTA /> */}
+        <CTA />
       </PageWrapper>
     </>
   );

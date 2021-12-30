@@ -116,7 +116,7 @@ meaning regardless of whether they appear singular or plural.
                     the duration of a page visit).
                     </li>
                     <li>
-                    Website refers to Samelogic, accessible from <a href="">Samelogic | Product Experiments with Microsurveys</a>
+                    Website refers to Samelogic, accessible from <a href="">Samelogic | Product Experiments with Painted Doors</a>
                     </li>
                     <li>
                     You means the individual accessing or using the Service or the company,

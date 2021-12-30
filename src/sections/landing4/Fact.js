@@ -23,23 +23,24 @@ const Fact = () => (
         <Row className="text-center">
           <Col md="4" className="mb-5">
             <Box>
-              <Title color="secondary">1M+</Title>
+              <Title color="secondary">10 mins</Title>
+              <Text>Time it takes to implement and launch a Painted Door.</Text>
+            </Box>
+          </Col>
+          <Col md="4" className="mb-5">
+            <Box>
+              <Title color="secondary">91%</Title>
               <Text>
-                Customers visit Omega every month to get their service done.
+                Product People said they built the right things when using
+                Painted Doors.
               </Text>
             </Box>
           </Col>
           <Col md="4" className="mb-5">
             <Box>
-              <Title color="secondary">92%</Title>
-              <Text>Satisfaction rate comes from our awesome customers.</Text>
-            </Box>
-          </Col>
-          <Col md="4" className="mb-5">
-            <Box>
-              <Title color="secondary">4.9/5.0</Title>
+              <Title color="secondary">$</Title>
               <Text>
-                Average customer ratings we have got all over internet.
+                Know what to build, quickly. Save a ton for your budget.
               </Text>
             </Box>
           </Col>

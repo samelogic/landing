@@ -45,8 +45,6 @@ const ImgStyled = styled.img`
   }
 `;
 
-
-
 const Content2 = () => (
   <>
     {/* <!-- Content section 2 --> */}
@@ -66,27 +64,30 @@ const Content2 = () => (
           </Col>
           <Col lg="6" md="9">
             <Box className="pt-5 pt-lg-0">
-              <Title>
-              Plan Confidently,{" "}
-                <br className="d-none d-sm-block d-md-none d-xl-block" /> No Assumptions.
-              </Title>
+              <Title>Build your Product with The Scientific Method.</Title>
               <Text>
-              Get the insights you need to create a product roadmap and build features from the people who are using your product, while they are using your product. 
+                The Scientific Method is the only method of measuring cause and
+                effect. This is known as an Experiment, which tests that your
+                change will cause a predictable effect on the user's outcome.
               </Text>
-              
+
               <Box mt={4} pt={3}>
                 <ContentCard
-                  title="Build What Users Need"
+                  title="Research Methods"
                   iconImage={icon3dModel}
                   mb={4}
                 >
-                  Get feedback at scale from core users within your product.
+                  Qualitative Research Methods are low certainty while
+                  Experimental methods are extremely high certainty. We combine
+                  them both.
                 </ContentCard>
                 <ContentCard
-                  title="Optimize Product Roadmap"
+                  title="Evidenced-Based Decisions"
                   iconImage={iconLayout}
                 >
-                  Make planning a breeze with contextual feedback from your users, so you know exactly what you should be building.
+                  Using the highest level of evidence is critical in Product
+                  Development to prevent making costly decisions, such as
+                  building the wrong feature.
                 </ContentCard>
               </Box>
             </Box>
