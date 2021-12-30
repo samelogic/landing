@@ -39,6 +39,10 @@ const FaqTitle = styled(Title)`
   line-height: 2rem;
 `;
 
+const LinkStyle = styled.a`
+  color: white !important;
+`;
+
 const Faq = () => (
   <>
     {/* <!-- Faq section --> */}
@@ -48,11 +52,12 @@ const Faq = () => (
           <Col lg="6" className="mb-5">
             <FaqCard>
               <div>
-                <FaqTitle>Can I use Omega for my clients?</FaqTitle>
+                <FaqTitle>What Are Painted Doors?</FaqTitle>
                 <Text variant="small" color="light" opacity={0.7}>
-                  Absolutely. The Envato Theme license allows you to build a
-                  websites for personal use or for a client. User Omega for your
-                  clients.
+                  Painted doors are non-functional but visual features that are
+                  placed in products to measure interest such as conversion
+                  rates and feedback. We provide the infrastructure to quickly
+                  do this.
                 </Text>
               </div>
             </FaqCard>
@@ -60,11 +65,11 @@ const Faq = () => (
           <Col lg="6" className="mb-5">
             <FaqCard>
               <div>
-                <FaqTitle>Do I get free updates?</FaqTitle>
+                <FaqTitle>Why Painted Doors?</FaqTitle>
                 <Text variant="small" color="light" opacity={0.7}>
-                  Yes. We update all of our themes regularly, plus are
-                  constantly adding new components, pages, and features to our
-                  themes. Purchase once and get lifetime updates.
+                  Only 10% of Product Teams are using Painted Doors as they’re
+                  difficult to implement. We exist to make this an order of
+                  magnitude easier for every Product Team who wants to use them.
                 </Text>
               </div>
             </FaqCard>
@@ -72,11 +77,15 @@ const Faq = () => (
           <Col lg="6" className="mb-5">
             <FaqCard>
               <div>
-                <FaqTitle>Does it work with WordPress?</FaqTitle>
+                <FaqTitle>What can Painted Doors be used to Test?</FaqTitle>
                 <Text variant="small" color="light" opacity={0.7}>
-                  Create custom landing pages with Omega that converts more
-                  visitors than any website. With lots of unique blocks, you can
-                  easily build a page without any design or custom coding.
+                  Painted Doors are perfect for testing almost any mockup idea
+                  you have with your real users. Do you have a specific Use Case
+                  that you’d need a template for?{" "}
+                  <LinkStyle href="mailto:dwayne@samelogic.com?subject=I need a Painted Door Template">
+                    <b>Let’s Chat</b>
+                  </LinkStyle>
+                  .
                 </Text>
               </div>
             </FaqCard>
@@ -84,11 +93,13 @@ const Faq = () => (
           <Col lg="6" className="mb-5">
             <FaqCard>
               <div>
-                <FaqTitle>Will you provide support?</FaqTitle>
+                <FaqTitle>
+                  How do We Remove User Frustration from this process?
+                </FaqTitle>
                 <Text variant="small" color="light" opacity={0.7}>
-                  With lots of unique blocks, you can easily build a page
-                  without any design or custom coding. with Omega that converts
-                  more visitors than any website.
+                  We allow users to enroll themselves into the experiment and
+                  inform them of a possible time the experiment will go live but
+                  won’t say exactly when.
                 </Text>
               </div>
             </FaqCard>
