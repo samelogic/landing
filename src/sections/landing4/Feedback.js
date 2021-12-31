@@ -1,48 +1,26 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
 import styled from "styled-components";
-
-import { Title, Section, Box, Text } from "../../components/Core";
-import { device } from "../../utils";
 import { rgba } from "polished";
+import { Container, Row, Col } from "react-bootstrap";
 
-import imgMobile from "../../assets/image/png/productroadmap.png";
-import icon3dModel from "../../assets/image/png/icon-3d-model.png";
-import iconLayout from "../../assets/image/png/icon-layot-25.png";
+import { Title, Section, Text } from "../../components/Core";
+import { device } from "../../utils";
+import imgContent from "../../assets/image/png/l5-content-image.png";
 
-const ContentCard = ({ iconImage, title, className, children, ...rest }) => (
-  <Box
-    {...rest}
-    className={`d-flex align-items-start justify-content-start ${className}`}
-  >
-    <Box mr={4}>
-      <img src={iconImage} alt="" />
-    </Box>
-    <Box>
-      <Title variant="card" fontSize="24px" mb={3}>
-        {title}
-      </Title>
-      <Text variant="small">{children}</Text>
-    </Box>
-  </Box>
-);
-
-const ImgStyled = styled.img`
-  // transform: rotate(10deg);
-  // box-shadow: ${({ theme }) => `0 52px 54px ${theme.colors.shadow}`};
-  border-radius: 0px;
-  max-width: 70%;
-  @media ${device.sm} {
-    max-width: 50%;
-  }
-  @media ${device.md} {
-    max-width: 33%;
-  }
+const ImgContainer = styled.div`
+  margin-top: 50px;
   @media ${device.lg} {
-    max-width: 100%;
+    margin-top: 0px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(55%, -50%);
   }
   @media ${device.xl} {
-    margin-left: -100px;
+    transform: translate(40%, -50%);
+  }
+  @media (min-width: 1400px) {
+    transform: translate(15%, -50%);
   }
 `;
 
@@ -96,41 +74,54 @@ const ULStyled = styled.ul`
   }
 `;
 
-const Content2 = () => (
+const Content1 = () => (
   <>
-    {/* <!-- Content section 2 --> */}
-    <Section>
+    {/* <!-- Content section 1 --> */}
+    <Section
+      bg="#F7F7FB"
+      className="position-relative"
+      py={["50px", null, "130px", null, "230px"]}
+    >
       <Container>
         <Row className="align-items-center">
-          <Col lg="6" className="mb-4 mb-lg-0">
+          <Col lg="6" className=" position-static order-lg-2">
+            <ImgContainer className=" pl-lg-5">
+              <img
+                src={imgContent}
+                alt=""
+                className="img-fluid"
+                data-aos="fade-left"
+                data-aos-duration="750"
+                data-aos-once="true"
+                // css={`
+                //   box-shadow: ${({ theme }) =>
+                //     `0 12px 84px ${theme.colors.shadow}`};
+                //   border-radius: 10px;
+                // `}
+              />
+            </ImgContainer>
+          </Col>
+          <Col lg="6" className="order-lg-1 mt-5 mt-lg-0">
             <div
-              className="pl-5"
               data-aos="fade-right"
               data-aos-duration="750"
-              data-aos-delay="200"
               data-aos-once="true"
             >
-              <ImgStyled src={imgMobile} alt="" className="img-fluid" />
-            </div>
-          </Col>
-          <Col lg="6" md="9">
-            <Box className="pt-5 pt-lg-0">
-              <Title>Seamless Feedback Collection</Title>
-              <Text>
-                Get the insights you need to create a product roadmap and build
-                features from the people who are using your product, while they
-                are using your product.
-              </Text>
+              <div>
+                <Title>Seamless Feedback Collection</Title>
+                <Text>
+                  Pairing up an Experiment with Contextual Qualitative Feedback
+                  helps get you the insights you need to investigate your
+                  hypothesis further.
+                </Text>
 
-              <ULStyled>
-                <li>
-                  Collect feedback using Microsurveys without users leaving your
-                  website.
-                </li>
-                <li>Choose from a wide range of question types.</li>
-                <li>Pipe feedback to any platform you use via Zapier.</li>
-              </ULStyled>
-            </Box>
+                <ULStyled>
+                  <li>Collect feedback without users leaving your website.</li>
+                  <li>Choose from a wide range of question types.</li>
+                  <li>Pipe feedback to any platform you use via Zapier.</li>
+                </ULStyled>
+              </div>
+            </div>
           </Col>
         </Row>
       </Container>
@@ -138,4 +129,4 @@ const Content2 = () => (
   </>
 );
 
-export default Content2;
+export default Content1;

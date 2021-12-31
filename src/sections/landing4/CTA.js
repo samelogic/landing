@@ -16,7 +16,14 @@ const CTA = () => (
                 The better way to figure out what works for your users.
               </Text>
               <div className="d-flex flex-column align-items-center pt-3">
-                <Button mb={2}>Get Started</Button>
+                <Button mb={2}>
+                  <a
+                    style={{ color: "white !important" }}
+                    href="https://app.samelogic.com"
+                  >
+                    Get Started
+                  </a>
+                </Button>
                 <Text
                   variant="small"
                   fontSize={"14px"}

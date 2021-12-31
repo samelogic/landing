@@ -38,10 +38,10 @@ const LandingPage4 = ({ data }) => {
       <PageWrapper headerDark footerDark>
         <Hero />
         {/* <Feature /> */}
+        <Mockups />
         <Participate />
         <TestIdeas />
         <Science />
-        <Mockups />
         <Feedback />
         <Testimonial />
         {/* <Clients /> */}
