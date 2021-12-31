@@ -117,16 +117,13 @@ const Content2 = () => (
             <Box className="pt-5 pt-lg-0">
               <Title>Seamless Feedback Collection</Title>
               <Text>
-                Get the insights you need to create a product roadmap and build
-                features from the people who are using your product, while they
-                are using your product.
+                Pairing up an Experiment with Contextual Qualitative Feedback
+                helps get you the insights you need to investigate your idea
+                hypothesis further.
               </Text>
 
               <ULStyled>
-                <li>
-                  Collect feedback using Microsurveys without users leaving your
-                  website.
-                </li>
+                <li>Collect feedback without users leaving your website.</li>
                 <li>Choose from a wide range of question types.</li>
                 <li>Pipe feedback to any platform you use via Zapier.</li>
               </ULStyled>

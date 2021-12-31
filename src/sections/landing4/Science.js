@@ -64,7 +64,7 @@ const Content2 = () => (
           </Col>
           <Col lg="6" md="9">
             <Box className="pt-5 pt-lg-0">
-              <Title>Build your Product with The Scientific Method.</Title>
+              <Title>Build Better Products with The Scientific Method.</Title>
               <Text>
                 The Scientific Method is the only method of measuring cause and
                 effect. This is known as an Experiment, which tests that your
@@ -77,9 +77,9 @@ const Content2 = () => (
                   iconImage={icon3dModel}
                   mb={4}
                 >
-                  Qualitative Research Methods are low certainty while
-                  Experimental methods are extremely high certainty. We combine
-                  them both.
+                  Qualitative Research Methods tell us why with low certainty
+                  while experimental methods tell us if we should, with high
+                  certainty. We combine them both.
                 </ContentCard>
                 <ContentCard
                   title="Evidenced-Based Decisions"
