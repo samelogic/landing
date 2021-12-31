@@ -108,7 +108,7 @@ const Content1 = () => (
               data-aos-once="true"
             >
               <div>
-                <Title>Add Interactive Mockups to Your Website</Title>
+                <Title>Test Interactive Mockups in Your Website</Title>
                 <Text mb={4}></Text>
 
                 <ULStyled>

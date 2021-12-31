@@ -77,12 +77,12 @@ const Content2 = () => (
                   iconImage={icon3dModel}
                   mb={4}
                 >
-                  Qualitative Research Methods tell us why with low certainty
-                  while experimental methods tell us if we should, with high
-                  certainty. We combine them both.
+                  Qualitative Research Methods tell us <b>why</b> with low
+                  certainty while experimental methods tell us <b>if</b> we
+                  should, with high certainty. We combine them both.
                 </ContentCard>
                 <ContentCard
-                  title="Evidenced-Based Decisions"
+                  title="Evidenced-Based Development"
                   iconImage={iconLayout}
                 >
                   Using the highest level of evidence is critical in Product
