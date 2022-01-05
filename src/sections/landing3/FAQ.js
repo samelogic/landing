@@ -1,10 +1,10 @@
-import React from "react";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Title, Section, Box, Text } from "../../components/Core";
+import { Title, Section, Box, Text } from '../../components/Core'
 
-const SectionStyled = styled(Section)``;
+const SectionStyled = styled(Section)``
 
 const FaqCard = ({ title, children, ...rest }) => (
   <Box {...rest}>
@@ -15,7 +15,7 @@ const FaqCard = ({ title, children, ...rest }) => (
       {children}
     </Text>
   </Box>
-);
+)
 
 const FAQ = () => (
   <>
@@ -81,7 +81,7 @@ const FAQ = () => (
           <Col lg="12" className="">
             <Box className="text-center" pt={5}>
               <Text variant="small" color="lightShade">
-                Didn’t find your answer?{" "}
+                Didn’t find your answer?{' '}
                 <a
                   href="/"
                   target="_blank"
@@ -98,6 +98,6 @@ const FAQ = () => (
       </Container>
     </SectionStyled>
   </>
-);
+)
 
-export default FAQ;
+export default FAQ

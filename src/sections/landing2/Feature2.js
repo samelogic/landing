@@ -1,11 +1,11 @@
-import React from "react";
-import { rgba } from "polished";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import { rgba } from 'polished'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Title, Section, Box } from "../../components/Core";
+import { Title, Section, Box } from '../../components/Core'
 
 const ContentCard = ({
-  color = "primary",
+  color = 'primary',
   className,
   iconName,
   title,
@@ -47,7 +47,7 @@ const ContentCard = ({
       {title}
     </Title>
   </Box>
-);
+)
 
 const Feature2 = () => (
   <>
@@ -193,6 +193,6 @@ const Feature2 = () => (
       </Container>
     </Section>
   </>
-);
+)
 
-export default Feature2;
+export default Feature2

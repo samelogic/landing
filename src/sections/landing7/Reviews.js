@@ -1,15 +1,15 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Title, Section, Box, Text } from "../../components/Core";
+import { Title, Section, Box, Text } from '../../components/Core'
 
-import imgB1 from "../../assets/image/png/testimonial-brand-logo-1.png";
-import imgB2 from "../../assets/image/png/testimonial-brand-logo-2.png";
-import imgB3 from "../../assets/image/png/testimonial-brand-3.png";
+import imgB1 from '../../assets/image/png/testimonial-brand-logo-1.png'
+import imgB2 from '../../assets/image/png/testimonial-brand-logo-2.png'
+import imgB3 from '../../assets/image/png/testimonial-brand-3.png'
 
-import imgR1 from "../../assets/image/jpeg/l8-testimonial-user-image-1.jpg";
-import imgR2 from "../../assets/image/jpeg/l8-testimonial-user-image-2.jpg";
-import imgR3 from "../../assets/image/jpeg/l8-testimonial-user-image-3.jpg";
+import imgR1 from '../../assets/image/jpeg/l8-testimonial-user-image-1.jpg'
+import imgR2 from '../../assets/image/jpeg/l8-testimonial-user-image-2.jpg'
+import imgR3 from '../../assets/image/jpeg/l8-testimonial-user-image-3.jpg'
 
 const ContentCard = ({
   className,
@@ -21,7 +21,7 @@ const ContentCard = ({
   ...rest
 }) => (
   <Box
-    minHeight={["320px", null, `400px`]}
+    minHeight={['320px', null, `400px`]}
     borderColor="border"
     borderRadius={10}
     className={`d-flex flex-column ${className}`}
@@ -58,7 +58,7 @@ const ContentCard = ({
       </Box>
     </Box>
   </Box>
-);
+)
 
 const Reviews = () => {
   return (
@@ -104,7 +104,7 @@ const Reviews = () => {
         </Container>
       </Section>
     </>
-  );
-};
+  )
+}
 
-export default Reviews;
+export default Reviews

@@ -1,20 +1,20 @@
-import React from "react";
-import styled from "styled-components";
-import { Container } from "react-bootstrap";
+import React from 'react'
+import styled from 'styled-components'
+import { Container } from 'react-bootstrap'
 
-import { Box, Text } from "../../components/Core";
-import { device } from "../../utils";
+import { Box, Text } from '../../components/Core'
+import { device } from '../../utils'
 
-import imgL1Brand1 from "../../assets/image/png/l1-brand1.png";
-import imgL1Brand2 from "../../assets/image/png/l1-brand2.png";
-import imgL1Brand3 from "../../assets/image/png/l1-brand3.png";
-import imgL1Brand4 from "../../assets/image/png/l1-brand4.png";
-import imgL1Brand5 from "../../assets/image/png/l1-brand5.png";
+import imgL1Brand1 from '../../assets/image/png/l1-brand1.png'
+import imgL1Brand2 from '../../assets/image/png/l1-brand2.png'
+import imgL1Brand3 from '../../assets/image/png/l1-brand3.png'
+import imgL1Brand4 from '../../assets/image/png/l1-brand4.png'
+import imgL1Brand5 from '../../assets/image/png/l1-brand5.png'
 
 const TitleContainer = styled(Box)`
   position: relative;
   &:after {
-    content: "";
+    content: '';
     height: 1px;
     position: absolute;
     right: 0;
@@ -35,7 +35,7 @@ const TitleContainer = styled(Box)`
       width: 60%;
     }
   }
-`;
+`
 
 const Brand = styled(Box)`
   opacity: 0.7;
@@ -43,16 +43,16 @@ const Brand = styled(Box)`
   &:hover {
     opacity: 1;
   }
-`;
+`
 
 const Clients = () => (
   <>
     {/* <!-- Clients Brands Area --> */}
-    <Box pb={"30px"}>
+    <Box pb={'30px'}>
       <Container>
-        <TitleContainer mb={"40px"}>
+        <TitleContainer mb={'40px'}>
           <Text fontSize="18px" as="h4" className="">
-            Popular teams who use Omega for appoinments{" "}
+            Popular teams who use Omega for appoinments{' '}
           </Text>
         </TitleContainer>
       </Container>
@@ -81,6 +81,6 @@ const Clients = () => (
       </Container>
     </Box>
   </>
-);
+)
 
-export default Clients;
+export default Clients

@@ -1,12 +1,12 @@
-import React from "react";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Title, Section, Box, Text, Button } from "../../components/Core";
+import { Title, Section, Box, Text, Button } from '../../components/Core'
 
-import imgPhone from "../../assets/image/png/l7-mobile-2.png";
+import imgPhone from '../../assets/image/png/l7-mobile-2.png'
 
-const SectionStyled = styled(Section)``;
+const SectionStyled = styled(Section)``
 
 const Content3 = () => {
   return (
@@ -28,7 +28,7 @@ const Content3 = () => {
             <Col lg="6" md={9} className="order-lg-1">
               <div>
                 <Title>
-                  Improving your{" "}
+                  Improving your{' '}
                   <br className="d-none d-sm-block d-md-none d-xl-block" /> all
                   travel experience.
                 </Title>
@@ -46,7 +46,7 @@ const Content3 = () => {
         </Container>
       </SectionStyled>
     </>
-  );
-};
+  )
+}
 
-export default Content3;
+export default Content3

@@ -1,10 +1,10 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
 
-import { Box, Badge } from "../../components/Core";
+import { Box, Badge } from '../../components/Core'
 
-import imgB1 from "../../assets/image/jpeg/blog-details-img-1.jpg";
-import iconQuote from "../../assets/image/png/quote-icon.png";
+import imgB1 from '../../assets/image/jpeg/blog-details-img-1.jpg'
+import iconQuote from '../../assets/image/png/quote-icon.png'
 
 const Post = styled(Box)`
   overflow: hidden;
@@ -68,7 +68,7 @@ const Post = styled(Box)`
     margin-bottom: 2rem;
     display: block;
   }
-`;
+`
 
 const BadgePost = ({ children }) => (
   <Badge
@@ -82,14 +82,19 @@ const BadgePost = ({ children }) => (
   >
     {children}
   </Badge>
-);
+)
 
-const PostDetails = ({post}) => (
+const PostDetails = ({ post }) => (
   <>
     {/* <!-- Blog section --> */}
     <Post>
       <div>
-        <img className="pb-6" style={{borderRadius: "10px"}} src={post.heroImage.fluid.src} alt="" />
+        <img
+          className="pb-6"
+          style={{ borderRadius: '10px' }}
+          src={post.heroImage.fluid.src}
+          alt=""
+        />
       </div>
       <div
         dangerouslySetInnerHTML={{
@@ -97,14 +102,14 @@ const PostDetails = ({post}) => (
         }}
       />
     </Post>
-    {post.tags && post.tags.length > 0 &&
-    <Box className="d-flex" mt={4}>
-      {post.tags.map( tag => {
-        return <BadgePost>{tag}</BadgePost>
-      })}
-    </Box>
-    }
+    {post.tags && post.tags.length > 0 && (
+      <Box className="d-flex" mt={4}>
+        {post.tags.map((tag) => {
+          return <BadgePost>{tag}</BadgePost>
+        })}
+      </Box>
+    )}
   </>
-);
+)
 
-export default PostDetails;
+export default PostDetails

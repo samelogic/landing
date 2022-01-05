@@ -1,24 +1,24 @@
-import React from "react";
-import { Link } from "gatsby";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import { Link } from 'gatsby'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Title, Button, Box, Text, Input, Checkbox } from "../components/Core";
+import { Title, Button, Box, Text, Input, Checkbox } from '../components/Core'
 
-import PageWrapper from "../components/PageWrapper";
-import Logo from "../components/Logo";
-import { device } from "../utils";
+import PageWrapper from '../components/PageWrapper'
+import Logo from '../components/Logo'
+import { device } from '../utils'
 
 const BoxStyled = styled(Box)`
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-`;
+`
 
 const BoxInner = styled(Box)`
   margin-top: -65px;
   min-height: 100vh;
-`;
+`
 
 const FormStyled = styled.form`
   padding: 40px 30px;
@@ -29,12 +29,12 @@ const FormStyled = styled.form`
   border-radius: 10px;
   background-color: ${({ theme }) => theme.colors.light};
   width: 100%;
-`;
+`
 
 const AForgot = styled(Link)`
   color: ${({ theme }) => theme.colors.secondary} !important;
   text-decoration: none !important;
-`;
+`
 
 const SignUp = () => {
   return (
@@ -73,7 +73,7 @@ const SignUp = () => {
                       </Box>
                       <Box mb={3} className="text-left">
                         <Checkbox>
-                          I agree to the{" "}
+                          I agree to the{' '}
                           <AForgot to="/">Terms & Condition</AForgot>
                         </Checkbox>
                       </Box>
@@ -82,7 +82,7 @@ const SignUp = () => {
                         Get Started
                       </Button>
                       <Box mt={3}>
-                        Already have an account?{" "}
+                        Already have an account?{' '}
                         <AForgot to="/signin">Sign in</AForgot>
                       </Box>
                     </FormStyled>
@@ -94,6 +94,6 @@ const SignUp = () => {
         </BoxStyled>
       </PageWrapper>
     </>
-  );
-};
-export default SignUp;
+  )
+}
+export default SignUp

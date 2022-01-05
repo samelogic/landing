@@ -1,10 +1,10 @@
-import React from "react";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Title, Button, Section, Box, Text } from "../../components/Core";
-import { device } from "../../utils";
-import imgContentMobile from "../../assets/image/png/content-img1--mobile.webp";
+import { Title, Button, Section, Box, Text } from '../../components/Core'
+import { device } from '../../utils'
+import imgContentMobile from '../../assets/image/png/content-img1--mobile.webp'
 
 const ShapeCard = styled(Box)`
   width: 305px;
@@ -20,10 +20,10 @@ const ShapeCard = styled(Box)`
   @media ${device.md} {
     left: 0%;
   }
-`;
+`
 
 const Content1 = ({ description }) => {
-  if (!description) return <></>;
+  if (!description) return <></>
   return (
     <>
       {/* <!-- Content section 1 --> */}
@@ -65,7 +65,7 @@ const Content1 = ({ description }) => {
         </Container>
       </Section>
     </>
-  );
-};
+  )
+}
 
-export default Content1;
+export default Content1

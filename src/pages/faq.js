@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
+import React from 'react'
+import styled from 'styled-components'
+import { Container, Row, Col, Nav, Tab } from 'react-bootstrap'
 
-import PageWrapper from "../components/PageWrapper";
-import { Section, Title, Text, Box, Span } from "../components/Core";
+import PageWrapper from '../components/PageWrapper'
+import { Section, Title, Text, Box, Span } from '../components/Core'
 
 const NavStyled = styled(Nav)`
   border-radius: 10px;
@@ -19,7 +19,7 @@ const NavStyled = styled(Nav)`
       color: ${({ theme }) => theme.colors.secondary} !important;
     }
   }
-`;
+`
 
 const Faq = () => {
   return (
@@ -90,7 +90,7 @@ const Faq = () => {
                           </Text>
                         </Box>
                         <Box mb={4}>
-                          Didn’t find your answer?{" "}
+                          Didn’t find your answer?{' '}
                           <a href="/">
                             <Span color="primary">Contact us here</Span>
                           </a>
@@ -125,7 +125,7 @@ const Faq = () => {
                         </Box>
 
                         <Box mb={4}>
-                          Didn’t find your answer?{" "}
+                          Didn’t find your answer?{' '}
                           <a href="/">
                             <Span color="primary">Contact us here</Span>
                           </a>
@@ -160,7 +160,7 @@ const Faq = () => {
                         </Box>
 
                         <Box mb={4}>
-                          Didn’t find your answer?{" "}
+                          Didn’t find your answer?{' '}
                           <a href="/">
                             <Span color="primary">Contact us here</Span>
                           </a>
@@ -183,7 +183,7 @@ const Faq = () => {
                         </Box>
 
                         <Box mb={4}>
-                          Didn’t find your answer?{" "}
+                          Didn’t find your answer?{' '}
                           <a href="/">
                             <Span color="primary">Contact us here</Span>
                           </a>
@@ -206,7 +206,7 @@ const Faq = () => {
                         </Box>
 
                         <Box mb={4}>
-                          Didn’t find your answer?{" "}
+                          Didn’t find your answer?{' '}
                           <a href="/">
                             <Span color="primary">Contact us here</Span>
                           </a>
@@ -221,6 +221,6 @@ const Faq = () => {
         </Section>
       </PageWrapper>
     </>
-  );
-};
-export default Faq;
+  )
+}
+export default Faq

@@ -1,8 +1,8 @@
-import React from "react";
-import { Link } from "gatsby";
-import { rgba } from "polished";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import { Link } from 'gatsby'
+import { rgba } from 'polished'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
 
 import {
   Title,
@@ -12,13 +12,13 @@ import {
   Input,
   Checkbox,
   Span,
-} from "../components/Core";
+} from '../components/Core'
 
-import PageWrapper from "../components/PageWrapper";
-import Logo from "../components/Logo";
+import PageWrapper from '../components/PageWrapper'
+import Logo from '../components/Logo'
 
-import { device } from "../utils";
-import imgBg from "../assets/image/jpeg/forget-pass-bg.jpg";
+import { device } from '../utils'
+import imgBg from '../assets/image/jpeg/forget-pass-bg.jpg'
 
 const BoxStyled = styled(Box)`
   background-image: url(${imgBg});
@@ -29,12 +29,12 @@ const BoxStyled = styled(Box)`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-`;
+`
 
 const BoxInner = styled(Box)`
   margin-top: -65px;
   min-height: 100vh;
-`;
+`
 
 const FormStyled = styled.form`
   position: relative;
@@ -48,7 +48,7 @@ const FormStyled = styled.form`
   width: 100%;
   overflow: hidden;
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -58,7 +58,7 @@ const FormStyled = styled.form`
     z-index: 1;
   }
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -69,12 +69,12 @@ const FormStyled = styled.form`
     background-size: cover;
     background-attachment: fixed;
   }
-`;
+`
 
 const AForgot = styled(Link)`
   color: ${({ theme }) => theme.colors.warning} !important;
   text-decoration: none !important;
-`;
+`
 
 const ResetPassBG = () => {
   return (
@@ -119,7 +119,7 @@ const ResetPassBG = () => {
                         <Box mb={4} className="text-left">
                           <Checkbox>
                             <Span color="lightShade">
-                              I agree to the{" "}
+                              I agree to the{' '}
                               <AForgot to="/">Terms & Condition</AForgot>
                             </Span>
                           </Checkbox>
@@ -129,7 +129,7 @@ const ResetPassBG = () => {
                           Send Reset Link
                         </Button>
                         <Box mt={3} color="lightShade" className="text-center">
-                          Remember password?{" "}
+                          Remember password?{' '}
                           <AForgot to="/signin">Sign in</AForgot>
                         </Box>
                       </Box>
@@ -142,6 +142,6 @@ const ResetPassBG = () => {
         </BoxStyled>
       </PageWrapper>
     </>
-  );
-};
-export default ResetPassBG;
+  )
+}
+export default ResetPassBG

@@ -1,7 +1,7 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Title, Button, Section, Box, Text } from "../../components/Core";
+import { Title, Button, Section, Box, Text } from '../../components/Core'
 
 const Hero = () => {
   return (
@@ -55,7 +55,7 @@ const Hero = () => {
         </Container>
       </Section>
     </>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

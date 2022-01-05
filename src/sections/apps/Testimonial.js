@@ -1,11 +1,11 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Title, Section, Box, Text, A, Span } from "../../components/Core";
+import { Title, Section, Box, Text, A, Span } from '../../components/Core'
 
-import imgCustomer1 from "../../assets/image/jpeg/l1-customer1.jpg";
-import imgCustomer2 from "../../assets/image/jpeg/l1-customer2.jpg";
-import imgCustomer3 from "../../assets/image/jpeg/l1-customer3.jpg";
+import imgCustomer1 from '../../assets/image/jpeg/l1-customer1.jpg'
+import imgCustomer2 from '../../assets/image/jpeg/l1-customer2.jpg'
+import imgCustomer3 from '../../assets/image/jpeg/l1-customer3.jpg'
 
 const ContentCard = ({
   className,
@@ -44,7 +44,7 @@ const ContentCard = ({
       {children}
     </Text>
   </Box>
-);
+)
 
 const Testimonial = () => (
   <>
@@ -71,7 +71,7 @@ const Testimonial = () => (
               image={imgCustomer1}
             >
               OMG! I cannot believe that I have got a brand new landing page
-              after getting{" "}
+              after getting{' '}
               <A href="#">
                 <Span color="secondary"> @Omega</Span>
               </A>
@@ -86,7 +86,7 @@ const Testimonial = () => (
             >
               <A href="#">
                 <Span color="secondary"> @Omega</Span>
-              </A>{" "}
+              </A>{' '}
               is great for creating landing pages within minutes! It actually
               takes less time…
             </ContentCard>
@@ -97,10 +97,10 @@ const Testimonial = () => (
               company="Freelance Designer"
               image={imgCustomer3}
             >
-              Whenever I need to create a new landing page for clients,{" "}
+              Whenever I need to create a new landing page for clients,{' '}
               <A href="#">
                 <Span color="secondary"> @Omega</Span>
-              </A>{" "}
+              </A>{' '}
               is my solution…
             </ContentCard>
           </Col>
@@ -129,6 +129,6 @@ const Testimonial = () => (
       </Container>
     </Section>
   </>
-);
+)
 
-export default Testimonial;
+export default Testimonial

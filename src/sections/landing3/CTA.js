@@ -1,12 +1,12 @@
-import React from "react";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Title, Button, Section, Box } from "../../components/Core";
-import { device } from "../../utils";
+import { Title, Button, Section, Box } from '../../components/Core'
+import { device } from '../../utils'
 
-import imgBorderShape from "../../assets/image/png/cta-border-shape.png";
-import imgCTA from "../../assets/image/png/cta-shape.png";
+import imgBorderShape from '../../assets/image/png/cta-border-shape.png'
+import imgCTA from '../../assets/image/png/cta-shape.png'
 
 const ShapeBorder = styled(Box)`
   position: absolute;
@@ -20,13 +20,13 @@ const ShapeBorder = styled(Box)`
   @media ${device.xl} {
     right: -2%;
   }
-`;
+`
 
 const ShapeCTA = styled(Box)`
   position: absolute;
   bottom: 0;
   left: -5%;
-`;
+`
 
 const CTA = () => (
   <>
@@ -60,6 +60,6 @@ const CTA = () => (
       </Container>
     </Section>
   </>
-);
+)
 
-export default CTA;
+export default CTA

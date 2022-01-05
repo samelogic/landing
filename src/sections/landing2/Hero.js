@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
 
 import {
   Title,
@@ -9,13 +9,13 @@ import {
   Box,
   Text,
   InputGroup,
-} from "../../components/Core";
+} from '../../components/Core'
 
-import { device } from "../../utils";
+import { device } from '../../utils'
 
-import imgL2HeroOval1 from "../../assets/image/png/l2-hero-oval1.png";
-import imgL2HeroOval2 from "../../assets/image/png/l2-hero-oval2.png";
-import imgL2HeroBg from "../../assets/image/jpeg/l2-hero-bg.jpg";
+import imgL2HeroOval1 from '../../assets/image/png/l2-hero-oval1.png'
+import imgL2HeroOval2 from '../../assets/image/png/l2-hero-oval2.png'
+import imgL2HeroBg from '../../assets/image/jpeg/l2-hero-bg.jpg'
 
 const SectionStyled = styled(Section)`
   background: url(${imgL2HeroBg}) no-repeat;
@@ -25,7 +25,7 @@ const SectionStyled = styled(Section)`
   @media ${device.lg} {
     background-position: center;
   }
-`;
+`
 
 const ImageTop = styled(Box)`
   border: 10px solid transparent;
@@ -39,7 +39,7 @@ const ImageTop = styled(Box)`
   @media ${device.lg} {
     left: 2%;
   }
-`;
+`
 
 const ImageBottom = styled(Box)`
   position: absolute;
@@ -52,7 +52,7 @@ const ImageBottom = styled(Box)`
   @media ${device.xl} {
     right: -28%;
   }
-`;
+`
 
 const Hero = () => {
   return (
@@ -110,23 +110,21 @@ const Hero = () => {
                       placeholder="Email address"
                       border="none"
                       css={`
-                      
-                       @media${device.sm}{
-                        padding-right: 210px;
-                      }
+                        @media${device.sm} {
+                          padding-right: 210px;
+                        }
                       `}
                     />
                     <Button
                       css={`
-                      margin-top: 1rem;
-                      @media${device.sm}{
-                        margin-top: 0;
-                        position: absolute;
-                        top: 50%;
-                        right: 5px;
-                        transform: translateY(-50%);
-                      }
-
+                        margin-top: 1rem;
+                        @media${device.sm} {
+                          margin-top: 0;
+                          position: absolute;
+                          top: 50%;
+                          right: 5px;
+                          transform: translateY(-50%);
+                        }
                       `}
                     >
                       Get Started
@@ -139,7 +137,7 @@ const Hero = () => {
         </Container>
       </SectionStyled>
     </>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

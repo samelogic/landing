@@ -1,11 +1,11 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import PageWrapper from "../components/PageWrapper";
-import { Section, Title, Text } from "../components/Core";
+import PageWrapper from '../components/PageWrapper'
+import { Section, Title, Text } from '../components/Core'
 
-import PricingTable2 from "../sections/pricing/PricingTable2";
-import FAQ from "../sections/pricing/FAQ";
+import PricingTable2 from '../sections/pricing/PricingTable2'
+import FAQ from '../sections/pricing/FAQ'
 
 const Pricing2 = () => {
   return (
@@ -29,6 +29,6 @@ const Pricing2 = () => {
         <FAQ />
       </PageWrapper>
     </>
-  );
-};
-export default Pricing2;
+  )
+}
+export default Pricing2

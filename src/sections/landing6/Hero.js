@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
 
 import {
   Title,
@@ -9,16 +9,16 @@ import {
   Box,
   Text,
   InputGroup,
-} from "../../components/Core";
+} from '../../components/Core'
 
-import { device } from "../../utils";
+import { device } from '../../utils'
 
-import imgHero from "../../assets/image/png/l7-hero-image.png";
+import imgHero from '../../assets/image/png/l7-hero-image.png'
 
 const ImgRight = styled(Box)`
   @media ${device.sm} {
   }
-`;
+`
 
 const Hero = () => {
   return (
@@ -68,24 +68,22 @@ const Hero = () => {
                           icon={<i className="icon icon-email-84" />}
                           placeholder="Email address"
                           css={`
-                      
-                       @media${device.sm}{
-                        padding-right: 210px;
-                      }
-                      `}
+                            @media${device.sm} {
+                              padding-right: 210px;
+                            }
+                          `}
                         />
                         <Button
                           css={`
-                      margin-top: 1rem;
-                      @media${device.sm}{
-                        margin-top: 0;
-                        position: absolute;
-                        top: 50%;
-                        right: 5px;
-                        transform: translateY(-50%);
-                      }
-
-                      `}
+                            margin-top: 1rem;
+                            @media${device.sm} {
+                              margin-top: 0;
+                              position: absolute;
+                              top: 50%;
+                              right: 5px;
+                              transform: translateY(-50%);
+                            }
+                          `}
                         >
                           I want to join
                         </Button>
@@ -99,7 +97,7 @@ const Hero = () => {
         </Container>
       </Section>
     </>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

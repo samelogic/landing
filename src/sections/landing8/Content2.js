@@ -1,18 +1,18 @@
-import React from "react";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Title, Section, Box, Text } from "../../components/Core";
+import { Title, Section, Box, Text } from '../../components/Core'
 
-import imgContent1 from "../../assets/image/jpeg/l4-content-3-img-1.jpg";
-import imgContent2 from "../../assets/image/jpeg/l4-content-3-img-2.jpg";
+import imgContent1 from '../../assets/image/jpeg/l4-content-3-img-1.jpg'
+import imgContent2 from '../../assets/image/jpeg/l4-content-3-img-2.jpg'
 
 const ContentImg = styled(Box)`
   box-shadow: ${({ theme }) => `0 52px 54px ${theme.colors.shadow}`};
   border-radius: 10px;
   overflow: hidden;
   max-height: 515px;
-`;
+`
 
 const Content2 = () => (
   <>
@@ -45,6 +45,6 @@ const Content2 = () => (
       </Container>
     </Section>
   </>
-);
+)
 
-export default Content2;
+export default Content2

@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
 
 import {
   Title,
@@ -9,11 +9,11 @@ import {
   Box,
   Text,
   InputGroup,
-} from "../../components/Core";
-import { device } from "../../utils";
+} from '../../components/Core'
+import { device } from '../../utils'
 
-import imgCtaBG from "../../assets/image/jpeg/l2-cta-big.jpg";
-import imgOval from "../../assets/image/png/l2-cta-oval.png";
+import imgCtaBG from '../../assets/image/jpeg/l2-cta-big.jpg'
+import imgOval from '../../assets/image/png/l2-cta-oval.png'
 
 const ImageBottom = styled(Box)`
   border: 10px solid transparent;
@@ -30,7 +30,7 @@ const ImageBottom = styled(Box)`
     max-width: 100%;
     right: 15%;
   }
-`;
+`
 
 const CTA = () => (
   <>
@@ -98,6 +98,6 @@ const CTA = () => (
       </Container>
     </Section>
   </>
-);
+)
 
-export default CTA;
+export default CTA

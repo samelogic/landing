@@ -1,11 +1,11 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import PageWrapper from "../components/PageWrapper";
-import { Section, Title, Text } from "../components/Core";
+import PageWrapper from '../components/PageWrapper'
+import { Section, Title, Text } from '../components/Core'
 
-import BlogList from "../sections/blog/BlogListSidebar";
-import Sidebar from "../sections/blog/Sidebar";
+import BlogList from '../sections/blog/BlogListSidebar'
+import Sidebar from '../sections/blog/Sidebar'
 
 const BlogRightSidebar = () => {
   return (
@@ -39,6 +39,6 @@ const BlogRightSidebar = () => {
         </Section>
       </PageWrapper>
     </>
-  );
-};
-export default BlogRightSidebar;
+  )
+}
+export default BlogRightSidebar

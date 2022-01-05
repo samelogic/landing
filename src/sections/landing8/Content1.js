@@ -1,14 +1,14 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import { rgba } from "polished";
+import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
+import { rgba } from 'polished'
 
-import { Title, Section, Box, Text } from "../../components/Core";
-import { device } from "../../utils";
+import { Title, Section, Box, Text } from '../../components/Core'
+import { device } from '../../utils'
 
-import imgContent from "../../assets/image/png/l4-content-img.png";
+import imgContent from '../../assets/image/png/l4-content-img.png'
 
 const ContentCard = ({
-  color = "primary",
+  color = 'primary',
   className,
   iconName,
   title,
@@ -56,7 +56,7 @@ const ContentCard = ({
       <Text>{children}</Text>
     </div>
   </Box>
-);
+)
 
 const Content2 = () => (
   <>
@@ -116,6 +116,6 @@ const Content2 = () => (
       </Container>
     </Section>
   </>
-);
+)
 
-export default Content2;
+export default Content2

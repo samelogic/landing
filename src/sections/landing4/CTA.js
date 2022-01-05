@@ -1,7 +1,7 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Title, Button, Box, Text } from "../../components/Core";
+import { Title, Button, Box, Text } from '../../components/Core'
 
 const CTA = () => (
   <>
@@ -18,7 +18,7 @@ const CTA = () => (
               <div className="d-flex flex-column align-items-center pt-3">
                 <Button mb={2}>
                   <a
-                    style={{ color: "white !important" }}
+                    style={{ color: 'white !important' }}
                     href="https://app.samelogic.com"
                   >
                     Get Started
@@ -26,7 +26,7 @@ const CTA = () => (
                 </Button>
                 <Text
                   variant="small"
-                  fontSize={"14px"}
+                  fontSize={'14px'}
                   color="light"
                   opacity={0.7}
                 >
@@ -39,6 +39,6 @@ const CTA = () => (
       </Container>
     </Box>
   </>
-);
+)
 
-export default CTA;
+export default CTA

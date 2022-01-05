@@ -15,18 +15,18 @@ export const menuItems = [
   //   isExternal: false,
   // },
   {
-    name: "about",
-    label: "Our Mission",
+    name: 'about',
+    label: 'Our Mission',
     isExternal: false,
   },
   {
-    name: "blog",
-    label: "Blog",
+    name: 'blog',
+    label: 'Blog',
     isExternal: false,
   },
   {
-    name: "/docs",
-    label: "Documentation",
+    name: '/docs',
+    label: 'Documentation',
     isExternal: true,
   },
   // {
@@ -129,4 +129,4 @@ export const menuItems = [
   //   label: "Support",
   //   isExternal: true,
   // },
-];
+]

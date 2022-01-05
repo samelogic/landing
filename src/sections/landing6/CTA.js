@@ -1,21 +1,21 @@
-import React from "react";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Title, Section, Box, Text } from "../../components/Core";
+import { Title, Section, Box, Text } from '../../components/Core'
 
-import imgPlay from "../../assets/image/png/app-store.png";
-import imgAppStore from "../../assets/image/png/google-play.png";
+import imgPlay from '../../assets/image/png/app-store.png'
+import imgAppStore from '../../assets/image/png/google-play.png'
 
 const SectionStyled = styled(Section)`
   border-bottom: 1px solid #eae9f2;
-`;
+`
 
 const ButtonContainer = styled(Box)`
   margin-top: 35px;
   display: flex;
   justify-content: center;
-`;
+`
 
 const ButtonApp = styled.a`
   padding: 0 9px;
@@ -26,7 +26,7 @@ const ButtonApp = styled.a`
   &:hover {
     transform: translateY(-8px);
   }
-`;
+`
 
 const CTA = () => (
   <>
@@ -55,6 +55,6 @@ const CTA = () => (
       </Container>
     </SectionStyled>
   </>
-);
+)
 
-export default CTA;
+export default CTA

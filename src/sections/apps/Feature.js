@@ -1,12 +1,12 @@
-import React from "react";
-import styled from "styled-components";
-import { rgba, saturate, lighten } from "polished";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import styled from 'styled-components'
+import { rgba, saturate, lighten } from 'polished'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Title, Button, Section, Box, Text } from "../../components/Core";
+import { Title, Button, Section, Box, Text } from '../../components/Core'
 
-import imgL1FeatureOval from "../../assets/image/png/l1-feature-oval.png";
-import imgL1FeatureCurve from "../../assets/image/svg/l1-curve-feature.svg";
+import imgL1FeatureOval from '../../assets/image/png/l1-feature-oval.png'
+import imgL1FeatureCurve from '../../assets/image/svg/l1-curve-feature.svg'
 
 const SectionStyled = styled(Section)`
   background-image: ${({ theme }) => `radial-gradient(
@@ -14,13 +14,13 @@ const SectionStyled = styled(Section)`
     ${lighten(0.114, saturate(0.0911, theme.colors.ash))} 0%,
     ${theme.colors.ash} 100%
   );`};
-`;
+`
 
 const ShapeTopRight = styled(Box)`
   position: absolute;
   top: 0;
   right: 0px;
-`;
+`
 
 const ShapeBottmRight = styled(Box)`
   position: absolute;
@@ -30,10 +30,10 @@ const ShapeBottmRight = styled(Box)`
   img {
     min-width: 100%;
   }
-`;
+`
 
 const ContentCard = ({
-  color = "primary",
+  color = 'primary',
   className,
   iconName,
   title,
@@ -75,7 +75,7 @@ const ContentCard = ({
       {title}
     </Title>
   </Box>
-);
+)
 
 const Feature = ({ features }) => (
   <>
@@ -122,6 +122,6 @@ const Feature = ({ features }) => (
       </Container>
     </SectionStyled>
   </>
-);
+)
 
-export default Feature;
+export default Feature

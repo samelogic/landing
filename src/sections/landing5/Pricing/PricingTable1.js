@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import { Row, Col } from "react-bootstrap";
+import React from 'react'
+import styled from 'styled-components'
+import { Row, Col } from 'react-bootstrap'
 
-import { Text, Box, Button, InputGroup } from "../../../components/Core";
+import { Text, Box, Button, InputGroup } from '../../../components/Core'
 
 const PricingCard = styled.div`
   border-radius: 10px;
@@ -41,7 +41,7 @@ const PricingCard = styled.div`
     line-height: 56px;
     margin-bottom: 30px;
   }
-`;
+`
 
 const Pricing = () => {
   return (
@@ -52,7 +52,7 @@ const Pricing = () => {
             <span className="pre-title">Limited</span>
             <h2 className="title mb-4">Free</h2>
             <Text color="dark">
-              Get a free chapter of our<br className="d-none d-sm-block"></br>{" "}
+              Get a free chapter of our<br className="d-none d-sm-block"></br>{' '}
               book right now.
             </Text>
             <Box className="pt-4">
@@ -78,7 +78,7 @@ const Pricing = () => {
             <h2 className="title mb-2">$29</h2>
             <span className="post-title  mb-4">One time purchase</span>
             <Text color="dark">
-              Get the eBook version +<br className="d-none d-sm-block"></br>{" "}
+              Get the eBook version +<br className="d-none d-sm-block"></br>{' '}
               Audio version of the book.
             </Text>
             <Box className="mt-auto">
@@ -92,7 +92,7 @@ const Pricing = () => {
             <h2 className="title mb-2">$49</h2>
             <span className="post-title  mb-4">One time purchase</span>
             <Text color="dark">
-              Hardcover + eBook version +<br className="d-none d-sm-block"></br>{" "}
+              Hardcover + eBook version +<br className="d-none d-sm-block"></br>{' '}
               Audio version of the book.
             </Text>
             <Box className="mt-auto">
@@ -102,7 +102,7 @@ const Pricing = () => {
         </Col>
       </Row>
     </>
-  );
-};
+  )
+}
 
-export default Pricing;
+export default Pricing

@@ -1,13 +1,13 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import { rgba } from "polished";
-import styled from "styled-components";
+import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
+import { rgba } from 'polished'
+import styled from 'styled-components'
 
-import { Title, Section, Box, Text } from "../../components/Core";
-import { device } from "../../utils";
+import { Title, Section, Box, Text } from '../../components/Core'
+import { device } from '../../utils'
 
-import svgCurve from "../../assets/image/svg/l1-curve-content2.svg";
-import imgContentMobile from "../../assets/image/png/content-img2--mobile.webp";
+import svgCurve from '../../assets/image/svg/l1-curve-content2.svg'
+import imgContentMobile from '../../assets/image/png/content-img2--mobile.webp'
 
 const ShapeTop = styled(Box)`
   position: absolute;
@@ -16,7 +16,7 @@ const ShapeTop = styled(Box)`
   img {
     min-width: 100%;
   }
-`;
+`
 
 const ShapeCard = styled(Box)`
   width: 305px;
@@ -30,10 +30,10 @@ const ShapeCard = styled(Box)`
     transform: scale(1);
     left: -14%;
   }
-`;
+`
 
 const ContentCard = ({
-  color = "primary",
+  color = 'primary',
   className,
   iconName,
   title,
@@ -81,7 +81,7 @@ const ContentCard = ({
       <Text>{children}</Text>
     </div>
   </Box>
-);
+)
 
 const Content2 = () => (
   <>
@@ -153,7 +153,7 @@ const Content2 = () => (
               <div className="content-text pl-lg--50">
                 <div className="section-title">
                   <Title>
-                    It’s everything you’ll <br className="d-none d-sm-block" />{" "}
+                    It’s everything you’ll <br className="d-none d-sm-block" />{' '}
                     ever need.
                   </Title>
                   <Text mb={4}>
@@ -187,6 +187,6 @@ const Content2 = () => (
       </Container>
     </Section>
   </>
-);
+)
 
-export default Content2;
+export default Content2

@@ -1,14 +1,14 @@
-import React from "react";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Title, Button, Section, Box, Text, Input } from "../components/Core";
+import { Title, Button, Section, Box, Text, Input } from '../components/Core'
 
-import PageWrapper from "../components/PageWrapper";
+import PageWrapper from '../components/PageWrapper'
 
-import Hero from "../sections/common/Hero";
+import Hero from '../sections/common/Hero'
 
-const FormStyled = styled.form``;
+const FormStyled = styled.form``
 
 const Contact1 = () => {
   return (
@@ -107,6 +107,6 @@ const Contact1 = () => {
         </Section>
       </PageWrapper>
     </>
-  );
-};
-export default Contact1;
+  )
+}
+export default Contact1

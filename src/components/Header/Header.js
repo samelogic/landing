@@ -1,16 +1,16 @@
-import React, { useState, useContext } from "react";
-import styled from "styled-components";
-import { Container } from "react-bootstrap";
-import { useScrollPosition } from "@n8tb1t/use-scroll-position";
-import { Link } from "gatsby";
+import React, { useState, useContext } from 'react'
+import styled from 'styled-components'
+import { Container } from 'react-bootstrap'
+import { useScrollPosition } from '@n8tb1t/use-scroll-position'
+import { Link } from 'gatsby'
 
-import GlobalContext from "../../context/GlobalContext";
-import Offcanvas from "../Offcanvas";
-import { Button } from "../Core";
-import NestedMenu from "../NestedMenu";
-import { device } from "../../utils";
-import Logo from "../Logo";
-import { menuItems } from "./menuItems";
+import GlobalContext from '../../context/GlobalContext'
+import Offcanvas from '../Offcanvas'
+import { Button } from '../Core'
+import NestedMenu from '../NestedMenu'
+import { device } from '../../utils'
+import Logo from '../Logo'
+import { menuItems } from './menuItems'
 
 const SiteHeader = styled.header`
   padding: 10px 0 10px 0;
@@ -34,14 +34,14 @@ const SiteHeader = styled.header`
         dark ? theme.colors.dark : theme.colors.light};
     }
   }
-`;
+`
 
 const ToggleButton = styled.button`
   color: ${({ dark, theme }) =>
     dark ? theme.colors.lightShade : theme.colors.darkShade}!important;
   border-color: ${({ dark, theme }) =>
     dark ? theme.colors.lightShade : theme.colors.darkShade}!important;
-`;
+`
 
 const Menu = styled.ul`
   @media ${device.lg} {
@@ -84,7 +84,7 @@ const Menu = styled.ul`
       }
     }
   }
-`;
+`
 
 const MenuDropdown = styled.ul`
   list-style: none;
@@ -128,7 +128,7 @@ const MenuDropdown = styled.ul`
       &.dropdown-toggle::after {
         display: inline-block;
         vertical-align: 0.255em;
-        content: "";
+        content: '';
         border-top: 0.325em solid;
         border-right: 0.325em solid transparent;
         border-bottom: 0;
@@ -186,31 +186,31 @@ const MenuDropdown = styled.ul`
     left: auto;
     right: -90%;
   }
-`;
+`
 
 const Header = ({ isDark = false }) => {
-  const gContext = useContext(GlobalContext);
-  const [showScrolling, setShowScrolling] = useState(false);
-  const [showReveal, setShowReveal] = useState(false);
+  const gContext = useContext(GlobalContext)
+  const [showScrolling, setShowScrolling] = useState(false)
+  const [showReveal, setShowReveal] = useState(false)
 
   useScrollPosition(({ prevPos, currPos }) => {
     if (currPos.y < 0) {
-      setShowScrolling(true);
+      setShowScrolling(true)
     } else {
-      setShowScrolling(false);
+      setShowScrolling(false)
     }
     if (currPos.y < -300) {
-      setShowReveal(true);
+      setShowReveal(true)
     } else {
-      setShowReveal(false);
+      setShowReveal(false)
     }
-  });
+  })
 
   return (
     <>
       <SiteHeader
-        className={`sticky-header ${showScrolling ? "scrolling" : ""} ${
-          showReveal ? "reveal-header" : ""
+        className={`sticky-header ${showScrolling ? 'scrolling' : ''} ${
+          showReveal ? 'reveal-header' : ''
         }`}
         dark={isDark ? 1 : 0}
       >
@@ -231,7 +231,7 @@ const Header = ({ isDark = false }) => {
                       { label, isExternal = false, name, items, ...rest },
                       index
                     ) => {
-                      const hasSubItems = Array.isArray(items);
+                      const hasSubItems = Array.isArray(items)
                       return (
                         <React.Fragment key={name + index}>
                           {hasSubItems ? (
@@ -253,7 +253,7 @@ const Header = ({ isDark = false }) => {
                                 {items.map((subItem, indexSub) => {
                                   const hasInnerSubItems = Array.isArray(
                                     subItem.items
-                                  );
+                                  )
                                   return (
                                     <React.Fragment
                                       key={subItem.name + indexSub}
@@ -321,7 +321,7 @@ const Header = ({ isDark = false }) => {
                                         </li>
                                       )}
                                     </React.Fragment>
-                                  );
+                                  )
                                 })}
                               </MenuDropdown>
                             </li>
@@ -349,7 +349,7 @@ const Header = ({ isDark = false }) => {
                             </li>
                           )}
                         </React.Fragment>
-                      );
+                      )
                     }
                   )}
                 </Menu>
@@ -372,7 +372,7 @@ const Header = ({ isDark = false }) => {
             </div>
             <ToggleButton
               className={`navbar-toggler btn-close-off-canvas ml-3 ${
-                gContext.visibleOffCanvas ? "collapsed" : ""
+                gContext.visibleOffCanvas ? 'collapsed' : ''
               }`}
               type="button"
               data-toggle="collapse"
@@ -396,6 +396,6 @@ const Header = ({ isDark = false }) => {
         <NestedMenu menuItems={menuItems} />
       </Offcanvas>
     </>
-  );
-};
-export default Header;
+  )
+}
+export default Header

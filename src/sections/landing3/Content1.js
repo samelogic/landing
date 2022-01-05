@@ -1,22 +1,22 @@
-import React from "react";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Title, Section, Box, Text, Badge } from "../../components/Core";
+import { Title, Section, Box, Text, Badge } from '../../components/Core'
 
-import imgShape from "../../assets/image/png/content1-img-small.png";
-import imgContent from "../../assets/image/png/content1-img.png";
+import imgShape from '../../assets/image/png/content1-img-small.png'
+import imgContent from '../../assets/image/png/content1-img.png'
 
 const SectionStyled = styled(Section)`
   border-top: 1px solid #242427;
-`;
+`
 
 const ShapeBox = styled(Box)`
   position: absolute;
   top: -70px;
   left: -20px;
   z-index: 2;
-`;
+`
 
 const Content1 = () => (
   <>
@@ -77,6 +77,6 @@ const Content1 = () => (
       </Container>
     </SectionStyled>
   </>
-);
+)
 
-export default Content1;
+export default Content1

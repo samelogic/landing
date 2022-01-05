@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "gatsby";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import { Link } from 'gatsby'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
 
 import {
   Title,
@@ -10,11 +10,11 @@ import {
   Text,
   Input,
   Checkbox,
-} from "../../components/Core";
+} from '../../components/Core'
 
-import { device } from "../../utils";
+import { device } from '../../utils'
 
-import imgShape from "../../assets/image/svg/contact-shape.svg";
+import imgShape from '../../assets/image/svg/contact-shape.svg'
 
 const BoxStyled = styled(Box)`
   &::after {
@@ -22,12 +22,12 @@ const BoxStyled = styled(Box)`
     bottom: 0;
     left: 0;
     height: 49%;
-    content: "";
+    content: '';
     width: 100%;
     background: ${({ theme }) => theme.colors.secondary};
     z-index: 1;
   }
-`;
+`
 
 const Shape = styled(Box)`
   position: absolute;
@@ -38,7 +38,7 @@ const Shape = styled(Box)`
   @media ${device.lg} {
     bottom: 47%;
   }
-`;
+`
 
 const FormStyled = styled.form`
   padding: 40px 30px;
@@ -49,12 +49,12 @@ const FormStyled = styled.form`
   border-radius: 10px;
   background-color: #f7f7fb;
   width: 100%;
-`;
+`
 
 const AForgot = styled(Link)`
   color: ${({ theme }) => theme.colors.secondary} !important;
   text-decoration: none !important;
-`;
+`
 
 const Contact = () => (
   <>
@@ -112,6 +112,6 @@ const Contact = () => (
       </Container>
     </BoxStyled>
   </>
-);
+)
 
-export default Contact;
+export default Contact

@@ -1,13 +1,13 @@
-import React from "react";
-import styled from "styled-components";
-import { saturate, lighten } from "polished";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import styled from 'styled-components'
+import { saturate, lighten } from 'polished'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Title, Button, Section, Box, Text } from "../../components/Core";
+import { Title, Button, Section, Box, Text } from '../../components/Core'
 
-import { device } from "../../utils";
-import imgHeroTab from "../../assets/image/png/l5-hero-image.png";
-import Animated from "../../assets/image/svg/Animated.svg";
+import { device } from '../../utils'
+import imgHeroTab from '../../assets/image/png/l5-hero-image.png'
+import HeroImage from '../../assets/image/svg/Hero.svg'
 
 const SectionStyled = styled(Section)`
   background-image: ${({ theme }) => `radial-gradient(
@@ -15,7 +15,7 @@ const SectionStyled = styled(Section)`
     ${lighten(0.114, saturate(0.0911, theme.colors.ash))} 0%,
     ${theme.colors.ash} 100%
   );`};
-`;
+`
 
 const ImgRight = styled(Box)`
   position: relative;
@@ -28,7 +28,7 @@ const ImgRight = styled(Box)`
     left: auto;
     transform: translateX(25%);
   }
-`;
+`
 
 const Hero = () => {
   return (
@@ -41,7 +41,7 @@ const Hero = () => {
             <Col md="5" className="order-md-2 position-static">
               <ImgRight>
                 <img
-                  src={Animated}
+                  src={HeroImage}
                   alt=""
                   className="img-fluid"
                   data-aos="fade-left"
@@ -73,7 +73,7 @@ const Hero = () => {
 
                     <Text
                       variant="small"
-                      fontSize={"14px"}
+                      fontSize={'14px'}
                       color="light"
                       opacity={0.7}
                     >
@@ -87,7 +87,7 @@ const Hero = () => {
         </Container>
       </SectionStyled>
     </>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

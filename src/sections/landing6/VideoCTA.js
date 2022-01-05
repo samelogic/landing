@@ -1,12 +1,12 @@
-import React, { useContext } from "react";
-import styled from "styled-components";
+import React, { useContext } from 'react'
+import styled from 'styled-components'
 
-import { Box } from "../../components/Core";
+import { Box } from '../../components/Core'
 
-import GlobalContext from "../../context/GlobalContext";
+import GlobalContext from '../../context/GlobalContext'
 
-import { device } from "../../utils";
-import imgVideo from "../../assets/image/jpeg/video-bg.jpg";
+import { device } from '../../utils'
+import imgVideo from '../../assets/image/jpeg/video-bg.jpg'
 
 const IconButton = styled(Box)`
   cursor: pointer;
@@ -31,15 +31,15 @@ const IconButton = styled(Box)`
     width: 124px;
     height: 124px;
   }
-`;
+`
 
 const VideoCTA = () => {
-  const gContext = useContext(GlobalContext);
+  const gContext = useContext(GlobalContext)
 
   const openVideoModal = (e) => {
-    e.preventDefault();
-    gContext.toggleVideoModal();
-  };
+    e.preventDefault()
+    gContext.toggleVideoModal()
+  }
 
   return (
     <>
@@ -51,7 +51,7 @@ const VideoCTA = () => {
         </IconButton>
       </Box>
     </>
-  );
-};
+  )
+}
 
-export default VideoCTA;
+export default VideoCTA

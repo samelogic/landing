@@ -1,16 +1,16 @@
-import React from "react";
-import { Row, Col } from "react-bootstrap";
-import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
+import React from 'react'
+import { Row, Col } from 'react-bootstrap'
+import { FaAngleRight, FaAngleLeft } from 'react-icons/fa'
 
-import { Box } from "../../components/Core";
-import PostCard from "../../components/PostCard";
-import Pagination, { PageItem } from "../../components/Pagination";
+import { Box } from '../../components/Core'
+import PostCard from '../../components/PostCard'
+import Pagination, { PageItem } from '../../components/Pagination'
 
-import imgB1 from "../../assets/image/jpeg/blog-post--img-10.jpg";
-import imgB2 from "../../assets/image/jpeg/blog-post--img-7.jpg";
-import imgB3 from "../../assets/image/png/blog-post-list--img-2.png";
-import imgB4 from "../../assets/image/jpeg/blog-post--img-8.jpg";
-import imgB5 from "../../assets/image/jpeg/blog-post--img-9.jpg";
+import imgB1 from '../../assets/image/jpeg/blog-post--img-10.jpg'
+import imgB2 from '../../assets/image/jpeg/blog-post--img-7.jpg'
+import imgB3 from '../../assets/image/png/blog-post-list--img-2.png'
+import imgB4 from '../../assets/image/jpeg/blog-post--img-8.jpg'
+import imgB5 from '../../assets/image/jpeg/blog-post--img-9.jpg'
 
 const BlogList = () => (
   <>
@@ -90,6 +90,6 @@ const BlogList = () => (
       </Pagination>
     </Box>
   </>
-);
+)
 
-export default BlogList;
+export default BlogList

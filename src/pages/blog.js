@@ -1,25 +1,25 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import PageWrapper from "../components/PageWrapper";
-import { Section, Title, Text } from "../components/Core";
+import PageWrapper from '../components/PageWrapper'
+import { Section, Title, Text } from '../components/Core'
 
-import BlogList from "../sections/blog/BlogList";
-import { graphql } from "gatsby";
-import { get } from "lodash";
+import BlogList from '../sections/blog/BlogList'
+import { graphql } from 'gatsby'
+import { get } from 'lodash'
 
-import Seo from "../components/SEO";
-import SocialImage from "../assets/image/png/blog-social-share.png";
+import Seo from '../components/SEO'
+import SocialImage from '../assets/image/png/blog-social-share.png'
 
 const BlogRegular = ({ data }) => {
-  const siteTitle = get(data, "site.siteMetadata.blog.title");
-  const posts = data.allContentfulPost.edges.map(({ node }) => node);
+  const siteTitle = get(data, 'site.siteMetadata.blog.title')
+  const posts = data.allContentfulPost.edges.map(({ node }) => node)
   return (
     <>
       <Seo
         title={siteTitle}
         description={
-          "Tips and stories to help you on the path of becoming a better product leader."
+          'Tips and stories to help you on the path of becoming a better product leader.'
         }
         twitterCard="summary_large_image"
         meta={[
@@ -51,9 +51,9 @@ const BlogRegular = ({ data }) => {
         <BlogList posts={posts} />
       </PageWrapper>
     </>
-  );
-};
-export default BlogRegular;
+  )
+}
+export default BlogRegular
 
 export const pageQuery = graphql`
   query BlogIndexQuery {
@@ -86,4 +86,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

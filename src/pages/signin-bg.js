@@ -1,8 +1,8 @@
-import React from "react";
-import { Link } from "gatsby";
-import { rgba } from "polished";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import { Link } from 'gatsby'
+import { rgba } from 'polished'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
 
 import {
   Title,
@@ -12,13 +12,13 @@ import {
   Input,
   Checkbox,
   Span,
-} from "../components/Core";
+} from '../components/Core'
 
-import PageWrapper from "../components/PageWrapper";
-import Logo from "../components/Logo";
+import PageWrapper from '../components/PageWrapper'
+import Logo from '../components/Logo'
 
-import { device } from "../utils";
-import imgBg from "../assets/image/jpeg/sign-in-bg.jpg";
+import { device } from '../utils'
+import imgBg from '../assets/image/jpeg/sign-in-bg.jpg'
 
 const BoxStyled = styled(Box)`
   background-image: url(${imgBg});
@@ -32,18 +32,18 @@ const BoxStyled = styled(Box)`
   position: relative;
   &::after {
     position: absolute;
-    content: "";
+    content: '';
     width: 100%;
     height: 100%;
     background: #000;
     opacity: 0.6;
   }
-`;
+`
 
 const BoxInner = styled(Box)`
   margin-top: -65px;
   min-height: 100vh;
-`;
+`
 
 const FormStyled = styled.form`
   position: relative;
@@ -57,7 +57,7 @@ const FormStyled = styled.form`
   width: 100%;
   overflow: hidden;
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -67,7 +67,7 @@ const FormStyled = styled.form`
     z-index: 1;
   }
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -78,7 +78,7 @@ const FormStyled = styled.form`
     background-size: cover;
     background-attachment: fixed;
   }
-`;
+`
 
 const AForgot = styled(Link)`
   position: absolute;
@@ -90,7 +90,7 @@ const AForgot = styled(Link)`
   font-weight: 300;
   line-height: 28px;
   text-decoration: none !important;
-`;
+`
 
 const SignInBG = () => {
   return (
@@ -168,6 +168,6 @@ const SignInBG = () => {
         </BoxStyled>
       </PageWrapper>
     </>
-  );
-};
-export default SignInBG;
+  )
+}
+export default SignInBG
