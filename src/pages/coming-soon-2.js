@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
 
 import {
   Title,
@@ -9,23 +9,23 @@ import {
   Box,
   Text,
   InputGroup,
-} from "../components/Core";
+} from '../components/Core'
 
-import PageWrapper from "../components/PageWrapper";
-import { device, addDays } from "../utils";
-import Logo from "../components/Logo";
-import CountDown from "../components/CountDown";
+import PageWrapper from '../components/PageWrapper'
+import { device, addDays } from '../utils'
+import Logo from '../components/Logo'
+import CountDown from '../components/CountDown'
 
 const BoxStyled = styled(Box)`
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-`;
+`
 
 const Footer = styled(Box)`
   justify-content: flex-end;
-`;
+`
 
 const SocialList = styled.ul`
   display: flex;
@@ -52,7 +52,7 @@ const SocialList = styled.ul`
       text-decoration: none;
     }
   }
-`;
+`
 
 const ComingSoon2 = () => {
   return (
@@ -77,7 +77,7 @@ const ComingSoon2 = () => {
                   <Section>
                     <div>
                       <Title>
-                        We are coming with <br className="d-none d-md-block" />{" "}
+                        We are coming with <br className="d-none d-md-block" />{' '}
                         something big for you!
                       </Title>
                       <Text>
@@ -104,24 +104,22 @@ const ComingSoon2 = () => {
                             icon={<i className="icon icon-email-84" />}
                             placeholder="Email address"
                             css={`
-                      
-                       @media${device.sm}{
-                        padding-right: 210px;
-                      }
-                      `}
+                              @media${device.sm} {
+                                padding-right: 210px;
+                              }
+                            `}
                           />
                           <Button
                             css={`
-                      margin-top: 1rem;
-                      @media${device.sm}{
-                        margin-top: 0;
-                        position: absolute;
-                        top: 50%;
-                        right: 5px;
-                        transform: translateY(-50%);
-                      }
-
-                      `}
+                              margin-top: 1rem;
+                              @media${device.sm} {
+                                margin-top: 0;
+                                position: absolute;
+                                top: 50%;
+                                right: 5px;
+                                transform: translateY(-50%);
+                              }
+                            `}
                           >
                             Notify Me!
                           </Button>
@@ -163,6 +161,6 @@ const ComingSoon2 = () => {
         </BoxStyled>
       </PageWrapper>
     </>
-  );
-};
-export default ComingSoon2;
+  )
+}
+export default ComingSoon2

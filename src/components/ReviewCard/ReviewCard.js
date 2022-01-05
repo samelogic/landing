@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react'
 
-import { Title, Box, Text } from "../../components/Core";
+import { Title, Box, Text } from '../../components/Core'
 
-import img5Star from "../../assets/image/png/5star.png";
-import img4Star from "../../assets/image/png/4star.png";
+import img5Star from '../../assets/image/png/5star.png'
+import img4Star from '../../assets/image/png/4star.png'
 
-import imgR1 from "../../assets/image/jpeg/reviewer1.jpg";
+import imgR1 from '../../assets/image/jpeg/reviewer1.jpg'
 
 const ReviewCard = ({
   className,
@@ -18,7 +18,7 @@ const ReviewCard = ({
 }) => (
   <Box
     bg="light"
-    minHeight={["320px", null, `403px`]}
+    minHeight={['320px', null, `403px`]}
     border="1px solid"
     borderColor="border"
     p="35px"
@@ -55,6 +55,6 @@ const ReviewCard = ({
       </div>
     </Box>
   </Box>
-);
+)
 
-export default ReviewCard;
+export default ReviewCard

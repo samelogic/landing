@@ -1,12 +1,12 @@
-import React from "react";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Title, Section, Box, Text, Span } from "../../components/Core";
-import { device } from "../../utils";
-import imgAuthor from "../../assets/image/jpeg/author.jpg";
+import { Title, Section, Box, Text, Span } from '../../components/Core'
+import { device } from '../../utils'
+import imgAuthor from '../../assets/image/jpeg/author.jpg'
 
-const SectionStyled = styled(Section)``;
+const SectionStyled = styled(Section)``
 
 const Author = styled(Box)`
   min-width: 271px;
@@ -19,7 +19,7 @@ const Author = styled(Box)`
   @media ${device.lg} {
     margin-bottom: 0;
   }
-`;
+`
 
 const Fact = () => (
   <>
@@ -56,12 +56,12 @@ const Fact = () => (
                 Magazine, Awwwards and more.
               </Text>
               <Text variant="small" mt={4}>
-                {" "}
-                Reach me on{" "}
+                {' '}
+                Reach me on{' '}
                 <a href="/" target="_blank">
                   <Span color="secondary">Twitter</Span>
-                </a>{" "}
-                or{" "}
+                </a>{' '}
+                or{' '}
                 <a href="/" target="_blank">
                   <Span color="secondary">Email</Span>
                 </a>
@@ -73,6 +73,6 @@ const Fact = () => (
       </Container>
     </SectionStyled>
   </>
-);
+)
 
-export default Fact;
+export default Fact

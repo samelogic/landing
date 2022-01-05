@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react'
 
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Section, Box, Text } from "../../components/Core";
-import Rating from "../../components/Rating";
+import { Section, Box, Text } from '../../components/Core'
+import Rating from '../../components/Rating'
 
 const ContentCard = ({
   className,
@@ -40,7 +40,7 @@ const ContentCard = ({
       </div>
     </Box>
   </Box>
-);
+)
 
 const Reviews = () => {
   return (
@@ -66,7 +66,7 @@ const Reviews = () => {
         </Container>
       </Section>
     </>
-  );
-};
+  )
+}
 
-export default Reviews;
+export default Reviews

@@ -1,21 +1,14 @@
-import React, { useState, useContext } from "react";
-import styled from "styled-components";
+import React, { useState, useContext } from 'react'
+import styled from 'styled-components'
 
-import { Container, Row, Col, FormControl } from "react-bootstrap";
+import { Container, Row, Col, FormControl } from 'react-bootstrap'
 
-import {
-  Title,
-  Button,
-  Section,
-  Box,
-  Text,
-  Badge,
-} from "../../components/Core";
-import GlobalContext from "../../context/GlobalContext";
+import { Title, Button, Section, Box, Text, Badge } from '../../components/Core'
+import GlobalContext from '../../context/GlobalContext'
 
-import imgHero from "../../assets/image/png/landing4-hero-img.png";
+import imgHero from '../../assets/image/png/landing4-hero-img.png'
 
-const ImgRight = styled(Box)``;
+const ImgRight = styled(Box)``
 
 const BoxPrice = styled(Box)`
   border-radius: 10px;
@@ -26,7 +19,7 @@ const BoxPrice = styled(Box)`
   padding-bottom: 10px;
   max-width: 322px;
   min-width: 322px;
-`;
+`
 
 const ProductQty = styled(Box)`
   min-width: 90px;
@@ -47,7 +40,7 @@ const ProductQty = styled(Box)`
       border: none !important;
     }
   }
-`;
+`
 
 const BtnGroup = styled(Box)`
   display: flex;
@@ -70,23 +63,23 @@ const BtnGroup = styled(Box)`
       outline: none;
     }
   }
-`;
+`
 
 const Hero = () => {
-  const gContext = useContext(GlobalContext);
-  const [qty, setQty] = useState(1);
+  const gContext = useContext(GlobalContext)
+  const [qty, setQty] = useState(1)
 
   const handleIncQty = () => {
-    setQty(qty + 1);
-    gContext.incCartTotal();
-  };
+    setQty(qty + 1)
+    gContext.incCartTotal()
+  }
 
   const handleDecQty = () => {
     if (qty >= 1) {
-      setQty(qty - 1);
-      gContext.decCartTotal();
+      setQty(qty - 1)
+      gContext.decCartTotal()
     }
-  };
+  }
 
   return (
     <>
@@ -161,7 +154,7 @@ const Hero = () => {
         </Container>
       </Section>
     </>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

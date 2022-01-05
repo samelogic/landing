@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 import {
   CardSidebar,
@@ -8,9 +8,9 @@ import {
   Date,
   CatList,
   CatListItem,
-} from "../../components/Sidebar";
+} from '../../components/Sidebar'
 
-import InputSearch from "../../components/InputSearch";
+import InputSearch from '../../components/InputSearch'
 
 const Sidebar = () => {
   return (
@@ -84,6 +84,6 @@ const Sidebar = () => {
         </CatList>
       </CardSidebar> */}
     </>
-  );
-};
-export default Sidebar;
+  )
+}
+export default Sidebar

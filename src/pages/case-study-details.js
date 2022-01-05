@@ -1,13 +1,13 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import PageWrapper from "../components/PageWrapper";
-import { Section, Title, Text, Box } from "../components/Core";
+import PageWrapper from '../components/PageWrapper'
+import { Section, Title, Text, Box } from '../components/Core'
 
-import CaseList from "../sections/case-study/CaseList1";
-import CaseDetails from "../sections/case-study/CaseDetails";
-import CTA from "../sections/case-study/CTA";
-import imgBrand from "../assets/image/jpeg/case-card-brand-img-2--border.jpg";
+import CaseList from '../sections/case-study/CaseList1'
+import CaseDetails from '../sections/case-study/CaseDetails'
+import CTA from '../sections/case-study/CTA'
+import imgBrand from '../assets/image/jpeg/case-card-brand-img-2--border.jpg'
 
 const CaseStudyDetails = () => {
   return (
@@ -23,7 +23,7 @@ const CaseStudyDetails = () => {
                 </Box>
                 <Title variant="hero">Web app for Covet</Title>
                 <Text>
-                  Create custom landing pages with Omega that converts{" "}
+                  Create custom landing pages with Omega that converts{' '}
                   <br className="d-none d-md-block"></br> more visitors than any
                   website.
                 </Text>
@@ -36,6 +36,6 @@ const CaseStudyDetails = () => {
         <CTA />
       </PageWrapper>
     </>
-  );
-};
-export default CaseStudyDetails;
+  )
+}
+export default CaseStudyDetails

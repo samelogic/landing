@@ -1,10 +1,10 @@
-import React from "react";
-import { rgba } from "polished";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import { rgba } from 'polished'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import PageWrapper from "../components/PageWrapper";
-import { Title, Button, Box, Badge, List } from "../components/Core";
-import styled from "styled-components";
+import PageWrapper from '../components/PageWrapper'
+import { Title, Button, Box, Badge, List } from '../components/Core'
+import styled from 'styled-components'
 
 const BoxStyled = styled(Box)`
   .block-title {
@@ -21,7 +21,7 @@ const BoxStyled = styled(Box)`
     line-height: 28px;
     margin-bottom: 15px;
   }
-`;
+`
 
 const Location = styled.span`
   color: #8c97ac;
@@ -30,14 +30,14 @@ const Location = styled.span`
   margin-right: 5px;
   display: flex;
   align-items: center;
-`;
+`
 
 const BadgeStyled = styled(Badge)`
   background-color: ${({ theme, bg }) => rgba(theme.colors[bg], 0.15)};
   color: ${({ theme, bg }) => theme.colors[bg]};
   border: none;
   font-weight: 300;
-`;
+`
 
 const CareerDetails = () => {
   return (
@@ -48,7 +48,7 @@ const CareerDetails = () => {
           <Container>
             <Row className="justify-content-center">
               <Col lg="11" className="mb-4 mb-lg-5">
-                <Box pt={["40px", null, null, "75px"]}>
+                <Box pt={['40px', null, null, '75px']}>
                   <Box
                     maxWidth="275px"
                     mx="auto"
@@ -150,6 +150,6 @@ const CareerDetails = () => {
         </BoxStyled>
       </PageWrapper>
     </>
-  );
-};
-export default CareerDetails;
+  )
+}
+export default CareerDetails

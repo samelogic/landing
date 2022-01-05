@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
-import { rgba } from "polished";
+import React, { useState } from 'react'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
+import { rgba } from 'polished'
 
 import {
   Title,
@@ -11,13 +11,13 @@ import {
   Badge,
   Button,
   Switch,
-} from "../../components/Core";
-import { device } from "../../utils";
+} from '../../components/Core'
+import { device } from '../../utils'
 
 const SectionStyled = styled(Section)`
   position: relative;
   &::after {
-    content: "";
+    content: '';
     left: 0;
     bottom: 0;
     height: 30%;
@@ -25,7 +25,7 @@ const SectionStyled = styled(Section)`
     position: absolute;
     background: ${({ theme }) => theme.colors.dark}!important;
   }
-`;
+`
 
 const ULStyled = styled.ul`
   list-style: none;
@@ -51,8 +51,8 @@ const ULStyled = styled.ul`
     margin-bottom: 5px;
 
     &:before {
-      content: "\f00c";
-      font-family: "Font Awesome 5 Free";
+      content: '\f00c';
+      font-family: 'Font Awesome 5 Free';
       font-weight: 900;
       display: inline-block;
       font-size: 13px;
@@ -69,7 +69,7 @@ const ULStyled = styled.ul`
       margin-right: 13px;
     }
   }
-`;
+`
 
 const CardPricing = styled(Box)`
   box-shadow: ${({ theme }) =>
@@ -82,7 +82,7 @@ const CardPricing = styled(Box)`
     width: 100% !important;
     border-radius: 0 0 10px 10px !important;
   }
-`;
+`
 
 const TitleSmall = styled.h4`
   color: ${({ theme }) => theme.colors.secondary};
@@ -90,7 +90,7 @@ const TitleSmall = styled.h4`
   font-weight: 300;
   letter-spacing: -0.5px;
   line-height: 28px;
-`;
+`
 
 const Currency = styled.span`
   color: ${({ theme }) => theme.colors.dark};
@@ -99,7 +99,7 @@ const Currency = styled.span`
   letter-spacing: -0.52px;
   line-height: 1;
   margin-bottom: 5px;
-`;
+`
 
 const TimePer = styled.span`
   color: ${({ theme }) => theme.colors.dark};
@@ -108,10 +108,10 @@ const TimePer = styled.span`
   letter-spacing: -0.52px;
   line-height: 1;
   margin-bottom: 5px;
-`;
+`
 
 const Pricing = () => {
-  const [timeMonthly, setTimeMonthly] = useState(false);
+  const [timeMonthly, setTimeMonthly] = useState(false)
 
   return (
     <>
@@ -128,7 +128,7 @@ const Pricing = () => {
               <div className=" text-center">
                 <Title>Pricing &amp; Plans</Title>
                 <Text>
-                  Create custom landing pages with Omega that converts{" "}
+                  Create custom landing pages with Omega that converts{' '}
                   <br className="d-none d-md-block" /> more visitors than any
                   website.
                 </Text>
@@ -210,7 +210,7 @@ const Pricing = () => {
         </Container>
       </SectionStyled>
     </>
-  );
-};
+  )
+}
 
-export default Pricing;
+export default Pricing

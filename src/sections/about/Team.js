@@ -1,13 +1,13 @@
-import React from "react";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Title, Section, Box, Text } from "../../components/Core";
+import { Title, Section, Box, Text } from '../../components/Core'
 
-import imgU1 from "../../assets/image/svg/Dwayne.svg";
-import imgU2 from "../../assets/image/svg/Shawn.svg";
-import imgU3 from "../../assets/image/svg/Nic.svg";
-import imgU4 from "../../assets/image/svg/Steven.svg";
+import imgU1 from '../../assets/image/svg/Dwayne.svg'
+import imgU2 from '../../assets/image/svg/Shawn.svg'
+import imgU3 from '../../assets/image/svg/Nic.svg'
+import imgU4 from '../../assets/image/svg/Steven.svg'
 
 const CardImage = styled.div`
   max-width: 160px;
@@ -20,7 +20,7 @@ const CardImage = styled.div`
   display: inline-flex;
   align-items: center;
   margin-bottom: 29px;
-`;
+`
 
 const TeamCard = ({ userImg, title, children, ...rest }) => (
   <Box
@@ -43,7 +43,7 @@ const TeamCard = ({ userImg, title, children, ...rest }) => (
       </Text>
     </div>
   </Box>
-);
+)
 
 const Team = () => (
   <>
@@ -55,7 +55,8 @@ const Team = () => (
             <div className="">
               <Title>Meet the team</Title>
               <Text>
-                We're passionate about solving this problem. Want to chat with any of us? Reach us at firstname@samelogic.com 😊{" "}
+                We're passionate about solving this problem. Want to chat with
+                any of us? Reach us at firstname@samelogic.com 😊{' '}
               </Text>
             </div>
           </Col>
@@ -85,6 +86,6 @@ const Team = () => (
       </Container>
     </Section>
   </>
-);
+)
 
-export default Team;
+export default Team

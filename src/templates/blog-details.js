@@ -1,33 +1,33 @@
-import React from "react";
-import { graphql, Link } from "gatsby";
-import { Container, Row, Col } from "react-bootstrap";
-import { get } from "lodash";
+import React from 'react'
+import { graphql, Link } from 'gatsby'
+import { Container, Row, Col } from 'react-bootstrap'
+import { get } from 'lodash'
 
-import PageWrapper from "../components/PageWrapper";
-import { Section, Title, Text, Box } from "../components/Core";
+import PageWrapper from '../components/PageWrapper'
+import { Section, Title, Text, Box } from '../components/Core'
 
-import PostDetails from "../sections/blog/PostDetails";
-import Comments from "../sections/blog/Comments";
-import Sidebar from "../sections/blog/Sidebar";
-import Seo from "../components/SEO";
+import PostDetails from '../sections/blog/PostDetails'
+import Comments from '../sections/blog/Comments'
+import Sidebar from '../sections/blog/Sidebar'
+import Seo from '../components/SEO'
 
 const BlogDetails = ({ data }) => {
-  const siteTitle = get(data, "site.siteMetadata.blog.title");
-  const post = data.contentfulPost;
+  const siteTitle = get(data, 'site.siteMetadata.blog.title')
+  const post = data.contentfulPost
   return (
     <>
       <Seo
-        title={post.title + " | The Samelogic Blog"}
+        title={post.title + ' | The Samelogic Blog'}
         description={post.description.description}
         twitterCard="summary_large_image"
         meta={[
           {
             name: `twitter:image`,
-            content: "https:" + post.heroImage.file.url,
+            content: 'https:' + post.heroImage.file.url,
           },
           {
             name: `og:image`,
-            content: "https:" + post.heroImage.file.url,
+            content: 'https:' + post.heroImage.file.url,
           },
         ]}
       />
@@ -68,9 +68,9 @@ const BlogDetails = ({ data }) => {
         {/* <Comments /> */}
       </PageWrapper>
     </>
-  );
-};
-export default BlogDetails;
+  )
+}
+export default BlogDetails
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
@@ -103,4 +103,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

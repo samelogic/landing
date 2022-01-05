@@ -1,25 +1,25 @@
-import React from "react";
-import { Link } from "gatsby";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import { Link } from 'gatsby'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Title, Button, Box, Text, Input, Checkbox } from "../components/Core";
+import { Title, Button, Box, Text, Input, Checkbox } from '../components/Core'
 
-import PageWrapper from "../components/PageWrapper";
-import { device } from "../utils";
+import PageWrapper from '../components/PageWrapper'
+import { device } from '../utils'
 
-import Logo from "../components/Logo";
+import Logo from '../components/Logo'
 
 const BoxStyled = styled(Box)`
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-`;
+`
 
 const BoxInner = styled(Box)`
   margin-top: -65px;
   min-height: 100vh;
-`;
+`
 
 const FormStyled = styled.form`
   padding: 40px 30px;
@@ -30,7 +30,7 @@ const FormStyled = styled.form`
   border-radius: 10px;
   background-color: ${({ theme }) => theme.colors.light};
   width: 100%;
-`;
+`
 
 const AForgot = styled(Link)`
   position: absolute;
@@ -42,7 +42,7 @@ const AForgot = styled(Link)`
   font-weight: 300;
   line-height: 28px;
   text-decoration: none !important;
-`;
+`
 
 const SignIn = () => {
   return (
@@ -99,6 +99,6 @@ const SignIn = () => {
         </BoxStyled>
       </PageWrapper>
     </>
-  );
-};
-export default SignIn;
+  )
+}
+export default SignIn

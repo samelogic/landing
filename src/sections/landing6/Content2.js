@@ -1,15 +1,15 @@
-import React from "react";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Title, Section, Box, Text } from "../../components/Core";
+import { Title, Section, Box, Text } from '../../components/Core'
 
-import imgC1 from "../../assets/image/jpeg/l7-content2-image-1.jpg";
-import imgC2 from "../../assets/image/jpeg/l7-content2-image-2.jpg";
-import imgC3 from "../../assets/image/jpeg/l7-content2-image-3.jpg";
-import imgC4 from "../../assets/image/jpeg/l7-content2-image-4.jpg";
+import imgC1 from '../../assets/image/jpeg/l7-content2-image-1.jpg'
+import imgC2 from '../../assets/image/jpeg/l7-content2-image-2.jpg'
+import imgC3 from '../../assets/image/jpeg/l7-content2-image-3.jpg'
+import imgC4 from '../../assets/image/jpeg/l7-content2-image-4.jpg'
 
-const SectionStyled = styled(Section)``;
+const SectionStyled = styled(Section)``
 
 const SingleImage = styled(Box)`
   display: flex;
@@ -19,7 +19,7 @@ const SingleImage = styled(Box)`
     padding-right: 15px;
     border-radius: 8px;
   }
-`;
+`
 
 const Content2 = () => {
   return (
@@ -74,7 +74,7 @@ const Content2 = () => {
             <Col lg="6" md={9}>
               <div>
                 <Title>
-                  See the world &amp;{" "}
+                  See the world &amp;{' '}
                   <br className="d-none d-sm-block d-md-none d-xl-block" />
                   spend less always.
                 </Title>
@@ -89,7 +89,7 @@ const Content2 = () => {
         </Container>
       </SectionStyled>
     </>
-  );
-};
+  )
+}
 
-export default Content2;
+export default Content2

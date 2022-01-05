@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Title, Section, Box, Text } from "../../components/Core";
-import { device } from "../../utils";
+import { Title, Section, Box, Text } from '../../components/Core'
+import { device } from '../../utils'
 
 const SectionStyled = styled(Section)`
   background-color: #f7f7fb;
@@ -13,7 +13,7 @@ const SectionStyled = styled(Section)`
   @media ${device.md} {
     padding-bottom: 70px;
   }
-`;
+`
 
 const Fact = () => (
   <>
@@ -48,6 +48,6 @@ const Fact = () => (
       </Container>
     </SectionStyled>
   </>
-);
+)
 
-export default Fact;
+export default Fact

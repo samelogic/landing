@@ -1,17 +1,17 @@
-import React from "react";
-import { rgba } from "polished";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import { rgba } from 'polished'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Title, Button, Section, Box, Text } from "../../components/Core";
+import { Title, Button, Section, Box, Text } from '../../components/Core'
 
 const FeatureCard = ({
-  color = "primary",
+  color = 'primary',
   iconName,
   title,
   children,
   ...rest
 }) => (
-  <Box width={"100%"} bg="light" p="30px" borderRadius={10} {...rest}>
+  <Box width={'100%'} bg="light" p="30px" borderRadius={10} {...rest}>
     <div className="d-flex justify-content-between align-items-start">
       <Box
         size={69}
@@ -46,7 +46,7 @@ const FeatureCard = ({
       </div>
     </div>
   </Box>
-);
+)
 
 const Feature = () => (
   <>
@@ -133,6 +133,6 @@ const Feature = () => (
       </Container>
     </Section>
   </>
-);
+)
 
-export default Feature;
+export default Feature

@@ -1,16 +1,16 @@
-import React from "react";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Title, Section, Box, Text } from "../../components/Core";
+import { Title, Section, Box, Text } from '../../components/Core'
 
-import imgPhone from "../../assets/image/png/l7-mobile.png";
+import imgPhone from '../../assets/image/png/l7-mobile.png'
 
-const SectionStyled = styled(Section)``;
+const SectionStyled = styled(Section)``
 
 const WidgetContainer = styled(Box)`
   counter-reset: widget-counter;
-`;
+`
 
 const WidgetStyled = styled(Box)`
   padding-left: 70px;
@@ -34,9 +34,9 @@ const WidgetStyled = styled(Box)`
     font-weight: 700;
     letter-spacing: -0.75px;
   }
-`;
+`
 
-const Widget = ({ num = 1, title = "", children = "", ...rest }) => {
+const Widget = ({ num = 1, title = '', children = '', ...rest }) => {
   return (
     <WidgetStyled {...rest}>
       <Title variant="card" mb={2}>
@@ -44,8 +44,8 @@ const Widget = ({ num = 1, title = "", children = "", ...rest }) => {
       </Title>
       <Text variant="small">{children}</Text>
     </WidgetStyled>
-  );
-};
+  )
+}
 
 const Content1 = () => {
   return (
@@ -67,7 +67,7 @@ const Content1 = () => {
             <Col lg="6" md={9} className="order-lg-1">
               <div>
                 <Title>
-                  Fits everything on{" "}
+                  Fits everything on{' '}
                   <br className="d-none d-sm-block d-md-none d-xl-block" /> all
                   your devices.
                 </Title>
@@ -92,7 +92,7 @@ const Content1 = () => {
         </Container>
       </SectionStyled>
     </>
-  );
-};
+  )
+}
 
-export default Content1;
+export default Content1

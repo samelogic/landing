@@ -1,12 +1,12 @@
-import React from "react";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Title, Button, Section, Box, Text, Input } from "../components/Core";
+import { Title, Button, Section, Box, Text, Input } from '../components/Core'
 
-import PageWrapper from "../components/PageWrapper";
-import Logo from "../components/Logo";
-import imgBg from "../assets/image/jpeg/coming-soon-bg.jpg";
+import PageWrapper from '../components/PageWrapper'
+import Logo from '../components/Logo'
+import imgBg from '../assets/image/jpeg/coming-soon-bg.jpg'
 
 const BoxStyled = styled(Box)`
   background-image: url(${imgBg});
@@ -17,11 +17,11 @@ const BoxStyled = styled(Box)`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-`;
+`
 
 const Footer = styled(Box)`
   justify-content: flex-end;
-`;
+`
 
 const SocialList = styled.ul`
   display: flex;
@@ -48,7 +48,7 @@ const SocialList = styled.ul`
       text-decoration: none;
     }
   }
-`;
+`
 
 const ComingSoon = () => {
   return (
@@ -73,7 +73,7 @@ const ComingSoon = () => {
                   <Section>
                     <div>
                       <Title color="light">
-                        Get beautiful landing{" "}
+                        Get beautiful landing{' '}
                         <br className="d-none d-md-block" /> page templates for
                         free.
                       </Title>
@@ -140,6 +140,6 @@ const ComingSoon = () => {
         </BoxStyled>
       </PageWrapper>
     </>
-  );
-};
-export default ComingSoon;
+  )
+}
+export default ComingSoon

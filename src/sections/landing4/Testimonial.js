@@ -1,15 +1,15 @@
-import React from "react";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
-import Slider from "react-slick";
-import { rgba } from "polished";
+import React from 'react'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
+import Slider from 'react-slick'
+import { rgba } from 'polished'
 
-import { Title, Section, Box, Text } from "../../components/Core";
-import { device, breakpoints } from "../../utils";
+import { Title, Section, Box, Text } from '../../components/Core'
+import { device, breakpoints } from '../../utils'
 
-import imgCustomer1 from "../../assets/image/testimonial-yash.png";
-import imgCustomer2 from "../../assets/image/jpeg/testimonial-image-2.jpg";
-import imgQuote from "../../assets/image/png/quote-shape.png";
+import imgCustomer1 from '../../assets/image/testimonial-yash.png'
+import imgCustomer2 from '../../assets/image/jpeg/testimonial-image-2.jpg'
+import imgQuote from '../../assets/image/png/quote-shape.png'
 
 const SliderStyled = styled(Slider)`
   position: relative;
@@ -28,8 +28,8 @@ const SliderStyled = styled(Slider)`
     margin-top: -20px;
     &::before {
       position: absolute;
-      content: "";
-      font-family: "Font Awesome 5 Free";
+      content: '';
+      font-family: 'Font Awesome 5 Free';
       font-weight: 900;
       font-size: 20px;
       top: 50%;
@@ -42,7 +42,7 @@ const SliderStyled = styled(Slider)`
   .slick-arrow.slick-prev {
     left: 0;
     &:before {
-      content: "\f060";
+      content: '\f060';
     }
     @media ${device.md} {
       margin-left: 60px;
@@ -54,7 +54,7 @@ const SliderStyled = styled(Slider)`
     left: auto;
     transform: translate(50%, -50%);
     &:before {
-      content: "\f061";
+      content: '\f061';
     }
     @media ${device.md} {
       margin-right: 60px;
@@ -69,13 +69,13 @@ const SliderStyled = styled(Slider)`
       color: ${({ theme }) => theme.colors.secondary}!important;
     }
   }
-`;
+`
 
 const SliderItem = styled(Box)`
   &:focus {
     outline: none;
   }
-`;
+`
 
 const SliderCard = styled(Box)`
   border-radius: 10px;
@@ -96,7 +96,7 @@ const SliderCard = styled(Box)`
   @media ${device.lg} {
     margin: 60px 60px 100px 60px !important;
   }
-`;
+`
 
 const SliderImgContainer = styled(Box)`
   border-radius: 10px;
@@ -121,7 +121,7 @@ const SliderImgContainer = styled(Box)`
     max-width: 100%;
     width: auto;
   }
-`;
+`
 
 const SliderText = styled(Box)`
   text-align: center;
@@ -137,7 +137,7 @@ const SliderText = styled(Box)`
   @media ${device.lg} {
     padding: 30px 70px 20px;
   }
-`;
+`
 const SliderQuoteShape = styled(Box)`
   display: flex;
   justify-content: center;
@@ -147,7 +147,7 @@ const SliderQuoteShape = styled(Box)`
     padding-right: 30px;
     margin-bottom: 30px;
   }
-`;
+`
 
 const Testimonial = () => {
   const slickSettings = {
@@ -165,12 +165,12 @@ const Testimonial = () => {
         },
       },
     ],
-  };
+  }
 
   return (
     <>
       {/* <!-- testimonial section --> */}
-      <Section bg="#F7F7FB" pb={["50px!important"]}>
+      <Section bg="#F7F7FB" pb={['50px!important']}>
         <Container>
           <Row className="justify-content-center mb-4">
             <Col lg="12" md="12">
@@ -235,7 +235,7 @@ const Testimonial = () => {
         </Container>
       </Section>
     </>
-  );
-};
+  )
+}
 
-export default Testimonial;
+export default Testimonial

@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
 
 import {
   Title,
@@ -10,14 +10,14 @@ import {
   Text,
   Input,
   Select,
-} from "../../components/Core";
+} from '../../components/Core'
 
-import { device } from "../../utils";
+import { device } from '../../utils'
 
-import imgYellow from "../../assets/image/png/hero-shape-yellow.png";
-import imgForm from "../../assets/image/png/hero-shape-combined.png";
+import imgYellow from '../../assets/image/png/hero-shape-yellow.png'
+import imgForm from '../../assets/image/png/hero-shape-combined.png'
 
-const SectionStyled = styled(Section)``;
+const SectionStyled = styled(Section)``
 
 const ShapeYellow = styled(Box)`
   position: absolute;
@@ -25,7 +25,7 @@ const ShapeYellow = styled(Box)`
   transform: translateX(-63%) translateY(50%);
   bottom: 0;
   z-index: 1;
-`;
+`
 
 const FormStyled = styled.form`
   position: relative;
@@ -33,7 +33,7 @@ const FormStyled = styled.form`
   box-shadow: ${({ theme }) => `0 42px 54px ${theme.colors.dark}`};
   border-radius: 10px;
   background-color: ${({ theme }) => theme.colors.light};
-`;
+`
 
 const ShapeForm = styled(Box)`
   position: absolute;
@@ -54,21 +54,21 @@ const ShapeForm = styled(Box)`
     transform: scale(1.2);
     z-index: -1;
   }
-`;
+`
 
 const companySize = [
-  { value: "", label: "Company size", isDisabled: true },
-  { value: "sm", label: "Small" },
-  { value: "md", label: "Medium" },
-  { value: "lg", label: "Large" },
-];
+  { value: '', label: 'Company size', isDisabled: true },
+  { value: 'sm', label: 'Small' },
+  { value: 'md', label: 'Medium' },
+  { value: 'lg', label: 'Large' },
+]
 
 const budget = [
-  { value: "", label: "Yearly budget", isDisabled: true },
-  { value: "40000", label: ">$40000" },
-  { value: "30000", label: ">$30000" },
-  { value: "20000", label: ">$20000" },
-];
+  { value: '', label: 'Yearly budget', isDisabled: true },
+  { value: '40000', label: '>$40000' },
+  { value: '30000', label: '>$30000' },
+  { value: '20000', label: '>$20000' },
+]
 
 const Hero = () => {
   return (
@@ -136,7 +136,7 @@ const Hero = () => {
         </Container>
       </SectionStyled>
     </>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

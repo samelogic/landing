@@ -1,16 +1,16 @@
-import React from "react";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Title, Box, Text } from "../../components/Core";
+import { Title, Box, Text } from '../../components/Core'
 
-import iconLayout from "../../assets/image/png/icon-layout.png";
-import iconLayers from "../../assets/image/png/icon-layers.png";
-import iconResponsive from "../../assets/image/png/icon-responsive.png";
+import iconLayout from '../../assets/image/png/icon-layout.png'
+import iconLayers from '../../assets/image/png/icon-layers.png'
+import iconResponsive from '../../assets/image/png/icon-responsive.png'
 
 const BoxStyled = styled(Box)`
   border-bottom: 1px solid #eae9f2;
-`;
+`
 
 const FeatureCard = ({ iconImage, title, children, ...rest }) => (
   <Box {...rest} className="d-flex flex-column align-items-center">
@@ -24,11 +24,11 @@ const FeatureCard = ({ iconImage, title, children, ...rest }) => (
       <Text variant="small">{children}</Text>
     </Box>
   </Box>
-);
+)
 
 const Feature = () => (
   <>
-    <BoxStyled bg="#f6f6f8" pb={["50px!important"]}>
+    <BoxStyled bg="#f6f6f8" pb={['50px!important']}>
       <Container>
         <Row className="justify-content-center">
           <Col lg="4" className="mb-5 mb-lg-4">
@@ -53,6 +53,6 @@ const Feature = () => (
       </Container>
     </BoxStyled>
   </>
-);
+)
 
-export default Feature;
+export default Feature

@@ -1,7 +1,7 @@
-import React from "react";
-import { Container } from "react-bootstrap";
-import styled from "styled-components";
-import Logo from "../Logo";
+import React from 'react'
+import { Container } from 'react-bootstrap'
+import styled from 'styled-components'
+import Logo from '../Logo'
 
 const Overlay = styled.div`
   position: fixed;
@@ -19,7 +19,7 @@ const Overlay = styled.div`
     opacity: 0;
     visibility: hidden;
   }
-`;
+`
 
 const Drawer = styled.div`
   position: fixed;
@@ -42,28 +42,28 @@ const Drawer = styled.div`
     transform: initial !important;
     float: none !important;
   }
-`;
+`
 
 const LogoContainer = styled.div`
   font-weight: 600;
   font-size: 1.25rem;
-`;
+`
 
 const Offcanvas = ({ show, onHideOffcanvas, children, ...rest }) => {
-  if (typeof document !== "undefined") {
+  if (typeof document !== 'undefined') {
     if (show) {
-      document.querySelector("html").classList.add("has-offcanvas");
-      document.body.classList.add("has-offcanvas");
+      document.querySelector('html').classList.add('has-offcanvas')
+      document.body.classList.add('has-offcanvas')
     } else {
-      document.querySelector("html").classList.remove("has-offcanvas");
-      document.body.classList.remove("has-offcanvas");
+      document.querySelector('html').classList.remove('has-offcanvas')
+      document.body.classList.remove('has-offcanvas')
     }
   }
 
   return (
     <div {...rest}>
-      <Overlay className={show ? "" : "hidden"} onClick={onHideOffcanvas} />
-      <Drawer className={show ? "" : "hidden"}>
+      <Overlay className={show ? '' : 'hidden'} onClick={onHideOffcanvas} />
+      <Drawer className={show ? '' : 'hidden'}>
         <Container>
           <div className="p-3">
             <LogoContainer className="my-3">
@@ -74,7 +74,7 @@ const Offcanvas = ({ show, onHideOffcanvas, children, ...rest }) => {
         </Container>
       </Drawer>
     </div>
-  );
-};
+  )
+}
 
-export default Offcanvas;
+export default Offcanvas

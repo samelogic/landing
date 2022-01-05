@@ -1,8 +1,8 @@
-import React from "react";
-import { Link } from "gatsby";
-import { rgba } from "polished";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import { Link } from 'gatsby'
+import { rgba } from 'polished'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
 
 import {
   Title,
@@ -12,13 +12,13 @@ import {
   Input,
   Checkbox,
   Span,
-} from "../components/Core";
+} from '../components/Core'
 
-import PageWrapper from "../components/PageWrapper";
-import Logo from "../components/Logo";
+import PageWrapper from '../components/PageWrapper'
+import Logo from '../components/Logo'
 
-import { device } from "../utils";
-import imgBg from "../assets/image/jpeg/sign-up-bg.jpg";
+import { device } from '../utils'
+import imgBg from '../assets/image/jpeg/sign-up-bg.jpg'
 
 const BoxStyled = styled(Box)`
   background-image: url(${imgBg});
@@ -32,18 +32,18 @@ const BoxStyled = styled(Box)`
   position: relative;
   &::after {
     position: absolute;
-    content: "";
+    content: '';
     width: 100%;
     height: 100%;
     background: #000;
     opacity: 0.3;
   }
-`;
+`
 
 const BoxInner = styled(Box)`
   margin-top: -65px;
   min-height: 100vh;
-`;
+`
 
 const FormStyled = styled.form`
   position: relative;
@@ -57,7 +57,7 @@ const FormStyled = styled.form`
   width: 100%;
   overflow: hidden;
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -67,7 +67,7 @@ const FormStyled = styled.form`
     z-index: 1;
   }
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -78,12 +78,12 @@ const FormStyled = styled.form`
     background-size: cover;
     background-attachment: fixed;
   }
-`;
+`
 
 const AForgot = styled(Link)`
   color: ${({ theme }) => theme.colors.warning} !important;
   text-decoration: none !important;
-`;
+`
 
 const SignUpBG = () => {
   return (
@@ -135,7 +135,7 @@ const SignUpBG = () => {
                         <Box mb={4} className="text-left">
                           <Checkbox>
                             <Span color="lightShade">
-                              I agree to the{" "}
+                              I agree to the{' '}
                               <AForgot to="/">Terms & Condition</AForgot>
                             </Span>
                           </Checkbox>
@@ -145,7 +145,7 @@ const SignUpBG = () => {
                           Send Reset Link
                         </Button>
                         <Box mt={3} color="lightShade" className="text-center">
-                          Already have an account? {""}
+                          Already have an account? {''}
                           <AForgot to="/signin-bg">Sign in</AForgot>
                         </Box>
                       </Box>
@@ -158,6 +158,6 @@ const SignUpBG = () => {
         </BoxStyled>
       </PageWrapper>
     </>
-  );
-};
-export default SignUpBG;
+  )
+}
+export default SignUpBG

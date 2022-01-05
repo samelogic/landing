@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react'
 
-import PageWrapper from "../components/PageWrapper";
-import Hero from "../sections/common/Hero";
-import Feature from "../sections/pricing/Feature";
-import PricingTable1 from "../sections/pricing/PricingTable1";
-import FAQ from "../sections/pricing/FAQ";
+import PageWrapper from '../components/PageWrapper'
+import Hero from '../sections/common/Hero'
+import Feature from '../sections/pricing/Feature'
+import PricingTable1 from '../sections/pricing/PricingTable1'
+import FAQ from '../sections/pricing/FAQ'
 
 const Pricing1 = () => {
   return (
@@ -19,6 +19,6 @@ const Pricing1 = () => {
         <FAQ />
       </PageWrapper>
     </>
-  );
-};
-export default Pricing1;
+  )
+}
+export default Pricing1

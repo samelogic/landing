@@ -1,13 +1,13 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import styled from "styled-components";
+import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
+import styled from 'styled-components'
 
-import { Title, Section, Box, Text } from "../../components/Core";
-import { device } from "../../utils";
+import { Title, Section, Box, Text } from '../../components/Core'
+import { device } from '../../utils'
 
-import imgMobile from "../../assets/image/png/productroadmap.png";
-import icon3dModel from "../../assets/image/png/icon-3d-model.png";
-import iconLayout from "../../assets/image/png/icon-layot-25.png";
+import imgMobile from '../../assets/image/png/productroadmap.png'
+import icon3dModel from '../../assets/image/png/icon-3d-model.png'
+import iconLayout from '../../assets/image/png/icon-layot-25.png'
 
 const ContentCard = ({ iconImage, title, className, children, ...rest }) => (
   <Box
@@ -24,7 +24,7 @@ const ContentCard = ({ iconImage, title, className, children, ...rest }) => (
       <Text variant="small">{children}</Text>
     </Box>
   </Box>
-);
+)
 
 const ImgStyled = styled.img`
   // transform: rotate(10deg);
@@ -43,7 +43,7 @@ const ImgStyled = styled.img`
   @media ${device.xl} {
     margin-left: -100px;
   }
-`;
+`
 
 const Content2 = () => (
   <>
@@ -96,6 +96,6 @@ const Content2 = () => (
       </Container>
     </Section>
   </>
-);
+)
 
-export default Content2;
+export default Content2

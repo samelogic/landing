@@ -1,12 +1,12 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Title, Section, Box, Text, Span } from "../../components/Core";
-import ReviewCard from "../../components/ReviewCard";
+import { Title, Section, Box, Text, Span } from '../../components/Core'
+import ReviewCard from '../../components/ReviewCard'
 
-import imgR1 from "../../assets/image/jpeg/reviewer1.jpg";
-import imgR2 from "../../assets/image/jpeg/reviewer2.jpg";
-import imgR3 from "../../assets/image/jpeg/reviewer3.jpg";
+import imgR1 from '../../assets/image/jpeg/reviewer1.jpg'
+import imgR2 from '../../assets/image/jpeg/reviewer2.jpg'
+import imgR3 from '../../assets/image/jpeg/reviewer3.jpg'
 
 const Reviews = () => {
   return (
@@ -78,7 +78,7 @@ const Reviews = () => {
         </Container>
       </Section>
     </>
-  );
-};
+  )
+}
 
-export default Reviews;
+export default Reviews

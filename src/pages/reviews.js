@@ -1,19 +1,19 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import PageWrapper from "../components/PageWrapper";
-import { Section, Title, Text } from "../components/Core";
-import ReviewCard from "../components/ReviewCard";
+import PageWrapper from '../components/PageWrapper'
+import { Section, Title, Text } from '../components/Core'
+import ReviewCard from '../components/ReviewCard'
 
-import imgR1 from "../assets/image/jpeg/reviewer1.jpg";
-import imgR2 from "../assets/image/jpeg/reviewer2.jpg";
-import imgR3 from "../assets/image/jpeg/reviewer3.jpg";
-import imgR4 from "../assets/image/jpeg/reviewer4.jpg";
-import imgR5 from "../assets/image/jpeg/reviewer5.jpg";
-import imgR6 from "../assets/image/jpeg/reviewer6.jpg";
-import imgR7 from "../assets/image/jpeg/reviewer7.jpg";
-import imgR8 from "../assets/image/jpeg/reviewer8.jpg";
-import imgR9 from "../assets/image/jpeg/reviewer9.jpg";
+import imgR1 from '../assets/image/jpeg/reviewer1.jpg'
+import imgR2 from '../assets/image/jpeg/reviewer2.jpg'
+import imgR3 from '../assets/image/jpeg/reviewer3.jpg'
+import imgR4 from '../assets/image/jpeg/reviewer4.jpg'
+import imgR5 from '../assets/image/jpeg/reviewer5.jpg'
+import imgR6 from '../assets/image/jpeg/reviewer6.jpg'
+import imgR7 from '../assets/image/jpeg/reviewer7.jpg'
+import imgR8 from '../assets/image/jpeg/reviewer8.jpg'
+import imgR9 from '../assets/image/jpeg/reviewer9.jpg'
 
 const Reviews = () => {
   return (
@@ -26,7 +26,7 @@ const Reviews = () => {
               <Col lg="9">
                 <Title variant="hero">Reviews from readers</Title>
                 <Text>
-                  Create custom landing pages with Omega that converts{" "}
+                  Create custom landing pages with Omega that converts{' '}
                   <br className="d-none d-md-block"></br> more visitors than any
                   website.
                 </Text>
@@ -143,6 +143,6 @@ const Reviews = () => {
         </Section>
       </PageWrapper>
     </>
-  );
-};
-export default Reviews;
+  )
+}
+export default Reviews

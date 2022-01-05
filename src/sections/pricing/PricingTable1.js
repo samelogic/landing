@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import React, { useState } from 'react'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Title, Section, Box, Button } from "../../components/Core";
+import { Title, Section, Box, Button } from '../../components/Core'
 
 const PricingCard = styled.div`
   border-radius: 10px;
@@ -35,7 +35,7 @@ const PricingCard = styled.div`
     letter-spacing: -1.03px;
     line-height: 1;
   }
-`;
+`
 
 const ULStyled = styled.ul`
   color: #696871;
@@ -50,7 +50,7 @@ const ULStyled = styled.ul`
   li {
     margin-bottom: 14px;
   }
-`;
+`
 
 const ButtonGroup = styled.div`
   border-radius: 10px;
@@ -78,7 +78,7 @@ const ButtonGroup = styled.div`
       border-radius: 0 10px 10px 0;
     }
   }
-`;
+`
 
 const ButtonStyled = styled(Button)`
   width: 100%;
@@ -95,10 +95,10 @@ const ButtonStyled = styled(Button)`
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-`;
+`
 
 const Pricing = () => {
-  const [timeMonthly, setTimeMonthly] = useState(false);
+  const [timeMonthly, setTimeMonthly] = useState(false)
 
   return (
     <>
@@ -118,12 +118,12 @@ const Pricing = () => {
               <ButtonGroup className="mb-4 mt-3 mt-lg-0">
                 <span
                   role="button"
-                  className={`btn ${!timeMonthly ? "active" : ""}`}
+                  className={`btn ${!timeMonthly ? 'active' : ''}`}
                   onClick={() => {
-                    setTimeMonthly(false);
+                    setTimeMonthly(false)
                   }}
                   onKeyDown={() => {
-                    setTimeMonthly(false);
+                    setTimeMonthly(false)
                   }}
                   tabIndex={0}
                 >
@@ -131,12 +131,12 @@ const Pricing = () => {
                 </span>
                 <span
                   role="button"
-                  className={`btn ${timeMonthly ? "active" : ""}`}
+                  className={`btn ${timeMonthly ? 'active' : ''}`}
                   onClick={() => {
-                    setTimeMonthly(true);
+                    setTimeMonthly(true)
                   }}
                   onKeyDown={() => {
-                    setTimeMonthly(true);
+                    setTimeMonthly(true)
                   }}
                   tabIndex={0}
                 >
@@ -164,10 +164,10 @@ const Pricing = () => {
               <PricingCard>
                 <span className="small-title">Premium</span>
                 <h2 className="title mt-3 mb-4">
-                  ${timeMonthly ? "29" : "79"}
+                  ${timeMonthly ? '29' : '79'}
                   <span className="time">
-                    {" "}
-                    /{timeMonthly ? "month" : "year"}
+                    {' '}
+                    /{timeMonthly ? 'month' : 'year'}
                   </span>
                 </h2>
                 <ULStyled>
@@ -184,10 +184,10 @@ const Pricing = () => {
               <PricingCard>
                 <span className="small-title">Enterprise</span>
                 <h2 className="title mt-3 mb-4">
-                  ${timeMonthly ? "49" : "99"}
+                  ${timeMonthly ? '49' : '99'}
                   <span className="time">
-                    {" "}
-                    /{timeMonthly ? "month" : "year"}
+                    {' '}
+                    /{timeMonthly ? 'month' : 'year'}
                   </span>
                 </h2>
                 <ULStyled>
@@ -204,7 +204,7 @@ const Pricing = () => {
         </Container>
       </Section>
     </>
-  );
-};
+  )
+}
 
-export default Pricing;
+export default Pricing

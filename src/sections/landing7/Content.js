@@ -1,11 +1,11 @@
-import React from "react";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Title, Section, Box, Span } from "../../components/Core";
-import { device } from "../../utils";
+import { Title, Section, Box, Span } from '../../components/Core'
+import { device } from '../../utils'
 
-const SectionStyled = styled(Section)``;
+const SectionStyled = styled(Section)``
 
 const ContentWidget = styled(Box)`
   border-radius: 10px;
@@ -49,9 +49,9 @@ const ContentWidget = styled(Box)`
     transform: translateX(10px);
     opacity: 1;
   }
-`;
+`
 
-const ContentCard = ({ children = "" }) => {
+const ContentCard = ({ children = '' }) => {
   return (
     <ContentWidget>
       <div className="d-flex align-items-center">
@@ -62,8 +62,8 @@ const ContentCard = ({ children = "" }) => {
 
       <i className="fas fa-chevron-circle-right"></i>
     </ContentWidget>
-  );
-};
+  )
+}
 
 const Content = () => {
   return (
@@ -75,7 +75,7 @@ const Content = () => {
             <Col lg="10">
               <div className="text-center">
                 <Title color="light">
-                  Our expert team <Span color="secondary">helps to grow</Span>{" "}
+                  Our expert team <Span color="secondary">helps to grow</Span>{' '}
                   any business from around the world to get customers for their
                   services.
                 </Title>
@@ -152,7 +152,7 @@ const Content = () => {
         </Container>
       </SectionStyled>
     </>
-  );
-};
+  )
+}
 
-export default Content;
+export default Content

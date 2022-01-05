@@ -1,13 +1,13 @@
-import React from "react";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Title, Button, Section, Box, Text, Input } from "../components/Core";
+import { Title, Button, Section, Box, Text, Input } from '../components/Core'
 
-import PageWrapper from "../components/PageWrapper";
-import { device } from "../utils";
+import PageWrapper from '../components/PageWrapper'
+import { device } from '../utils'
 
-const FormStyled = styled.form``;
+const FormStyled = styled.form``
 
 const WidgetWrapper = styled(Box)`
   border-radius: 10px;
@@ -24,7 +24,7 @@ const WidgetWrapper = styled(Box)`
     padding-left: 150px;
     padding-right: 150px;
   }
-`;
+`
 
 const Contact2 = () => {
   return (
@@ -38,9 +38,9 @@ const Contact2 = () => {
                 <div className="banner-content">
                   <Title variant="hero">Contact us</Title>
                   <Text>
-                    Create custom landing pages with Omega that converts{" "}
+                    Create custom landing pages with Omega that converts{' '}
                     <br className="d-none d-md-block" /> more visitors than any
-                    website.{" "}
+                    website.{' '}
                   </Text>
                 </div>
               </Col>
@@ -182,6 +182,6 @@ const Contact2 = () => {
         </Section>
       </PageWrapper>
     </>
-  );
-};
-export default Contact2;
+  )
+}
+export default Contact2

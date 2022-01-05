@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react'
 
-import PageWrapper from "../components/PageWrapper";
-import Hero from "../sections/common/Hero";
-import Content from "../sections/career/Content";
-import Feature from "../sections/career/Feature";
-import Roles from "../sections/career/Roles";
+import PageWrapper from '../components/PageWrapper'
+import Hero from '../sections/common/Hero'
+import Content from '../sections/career/Content'
+import Feature from '../sections/career/Feature'
+import Roles from '../sections/career/Roles'
 
 const Career = () => {
   return (
@@ -19,6 +19,6 @@ const Career = () => {
         <Roles />
       </PageWrapper>
     </>
-  );
-};
-export default Career;
+  )
+}
+export default Career

@@ -1,18 +1,18 @@
-import React from "react";
-import styled from "styled-components";
-import { rgba } from "polished";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import styled from 'styled-components'
+import { rgba } from 'polished'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Title, Button, Section, Box, Text } from "../../components/Core";
+import { Title, Button, Section, Box, Text } from '../../components/Core'
 
-import imgL1FeatureOval from "../../assets/image/png/l1-feature-oval.png";
-import imgL1FeatureCurve from "../../assets/image/svg/l1-curve-feature.svg";
+import imgL1FeatureOval from '../../assets/image/png/l1-feature-oval.png'
+import imgL1FeatureCurve from '../../assets/image/svg/l1-curve-feature.svg'
 
 const ShapeTopRight = styled(Box)`
   position: absolute;
   top: 0;
   right: 0px;
-`;
+`
 
 const ShapeBottmRight = styled(Box)`
   position: absolute;
@@ -22,10 +22,10 @@ const ShapeBottmRight = styled(Box)`
   img {
     min-width: 100%;
   }
-`;
+`
 
 const FeatureCard = ({
-  color = "primary",
+  color = 'primary',
   iconName,
   title,
   children,
@@ -61,7 +61,7 @@ const FeatureCard = ({
       </Text>
     </div>
   </Box>
-);
+)
 
 const Feature = () => (
   <>
@@ -139,6 +139,6 @@ const Feature = () => (
       </Container>
     </Section>
   </>
-);
+)
 
-export default Feature;
+export default Feature

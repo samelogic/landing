@@ -1,13 +1,13 @@
-import React from "react";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Title, Button, Section, Box, Text, Input } from "../components/Core";
-import MapGoogle from "../components/MapGoogle";
+import { Title, Button, Section, Box, Text, Input } from '../components/Core'
+import MapGoogle from '../components/MapGoogle'
 
-import PageWrapper from "../components/PageWrapper";
+import PageWrapper from '../components/PageWrapper'
 
-const FormStyled = styled.form``;
+const FormStyled = styled.form``
 
 const Contact2 = () => {
   return (
@@ -21,9 +21,9 @@ const Contact2 = () => {
                 <div className="banner-content mb-5">
                   <Title variant="hero">Contact us</Title>
                   <Text>
-                    Create custom landing pages with Omega that converts{" "}
+                    Create custom landing pages with Omega that converts{' '}
                     <br className="d-none d-md-block" /> more visitors than any
-                    website.{" "}
+                    website.{' '}
                   </Text>
                 </div>
                 <div>
@@ -122,6 +122,6 @@ const Contact2 = () => {
         </Section>
       </PageWrapper>
     </>
-  );
-};
-export default Contact2;
+  )
+}
+export default Contact2

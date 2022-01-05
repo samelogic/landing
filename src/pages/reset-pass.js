@@ -1,25 +1,25 @@
-import React from "react";
-import { Link } from "gatsby";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import { Link } from 'gatsby'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Title, Button, Box, Text, Input } from "../components/Core";
+import { Title, Button, Box, Text, Input } from '../components/Core'
 
-import PageWrapper from "../components/PageWrapper";
-import { device } from "../utils";
+import PageWrapper from '../components/PageWrapper'
+import { device } from '../utils'
 
-import Logo from "../components/Logo";
+import Logo from '../components/Logo'
 
 const BoxStyled = styled(Box)`
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-`;
+`
 
 const BoxInner = styled(Box)`
   margin-top: -65px;
   min-height: 100vh;
-`;
+`
 
 const FormStyled = styled.form`
   padding: 40px 30px;
@@ -30,12 +30,12 @@ const FormStyled = styled.form`
   border-radius: 10px;
   background-color: ${({ theme }) => theme.colors.light};
   width: 100%;
-`;
+`
 
 const AForgot = styled(Link)`
   color: ${({ theme }) => theme.colors.secondary} !important;
   text-decoration: none !important;
-`;
+`
 
 const ResetPass = () => {
   return (
@@ -71,7 +71,7 @@ const ResetPass = () => {
                         Send Reset Link
                       </Button>
                       <Box mt={3}>
-                        Remember password?{" "}
+                        Remember password?{' '}
                         <AForgot to="/signin">Sign in</AForgot>
                       </Box>
                     </FormStyled>
@@ -83,6 +83,6 @@ const ResetPass = () => {
         </BoxStyled>
       </PageWrapper>
     </>
-  );
-};
-export default ResetPass;
+  )
+}
+export default ResetPass

@@ -1,12 +1,12 @@
-import React from "react";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Title, Button, Section, Box, Text } from "../../components/Core";
-import { device } from "../../utils";
+import { Title, Button, Section, Box, Text } from '../../components/Core'
+import { device } from '../../utils'
 
-import imgRounded from "../../assets/image/png/l2-content1-oval.png";
-import imgHalf from "../../assets/image/jpeg/l2-content1-bg.jpg";
+import imgRounded from '../../assets/image/png/l2-content1-oval.png'
+import imgHalf from '../../assets/image/jpeg/l2-content1-bg.jpg'
 
 const ImageHalfContainer = styled(Box)`
   position: static;
@@ -30,7 +30,7 @@ const ImageHalfContainer = styled(Box)`
     height: 100%;
     right: -370px;
   }
-`;
+`
 
 const ImageBottom = styled(Box)`
   border: 10px solid transparent;
@@ -55,7 +55,7 @@ const ImageBottom = styled(Box)`
     bottom: auto;
     max-width: 100%;
   }
-`;
+`
 
 const Content1 = () => (
   <>
@@ -70,7 +70,7 @@ const Content1 = () => (
             data-aos-once="true"
             data-aos-delay="500"
           >
-            <Section py={[5, null, null, "190px"]}>
+            <Section py={[5, null, null, '190px']}>
               <div className="omga-02__content-text section-title order-lg-1">
                 <Title>
                   50k+ users are <br className="d-none d-sm-block" />
@@ -105,6 +105,6 @@ const Content1 = () => (
       </Container>
     </div>
   </>
-);
+)
 
-export default Content1;
+export default Content1

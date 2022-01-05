@@ -1,11 +1,11 @@
-import React from "react";
-import styled from "styled-components";
-import { rgba } from "polished";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import styled from 'styled-components'
+import { rgba } from 'polished'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Title, Section, Text } from "../../components/Core";
-import { device } from "../../utils";
-import imgContent from "../../assets/image/png/l5-content-image.png";
+import { Title, Section, Text } from '../../components/Core'
+import { device } from '../../utils'
+import imgContent from '../../assets/image/png/l5-content-image.png'
 
 const ImgContainer = styled.div`
   margin-top: 50px;
@@ -22,7 +22,7 @@ const ImgContainer = styled.div`
   @media (min-width: 1400px) {
     transform: translate(15%, -50%);
   }
-`;
+`
 
 const ULStyled = styled.ul`
   list-style: none;
@@ -54,8 +54,8 @@ const ULStyled = styled.ul`
     margin-bottom: 5px;
 
     &:before {
-      content: "\f00c";
-      font-family: "Font Awesome 5 Free";
+      content: '\f00c';
+      font-family: 'Font Awesome 5 Free';
       font-weight: 900;
       display: inline-block;
       font-size: 13px;
@@ -72,7 +72,7 @@ const ULStyled = styled.ul`
       margin-right: 13px;
     }
   }
-`;
+`
 
 const Content1 = () => (
   <>
@@ -80,7 +80,7 @@ const Content1 = () => (
     <Section
       bg="#F7F7FB"
       className="position-relative"
-      py={["50px", null, "130px", null, "230px"]}
+      py={['50px', null, '130px', null, '230px']}
     >
       <Container>
         <Row className="align-items-center">
@@ -126,6 +126,6 @@ const Content1 = () => (
       </Container>
     </Section>
   </>
-);
+)
 
-export default Content1;
+export default Content1
