@@ -22,7 +22,22 @@ function validate(values) {
 }
 
 function submit(values) {
-  alert(JSON.stringify(values, null, 2));
+  fetch(`https://hooks.zapier.com/hooks/catch/8559174/b9bjx0j/`, {
+    method: "post",
+    //make sure to serialize your JSON body
+    body: JSON.stringify(values),
+  })
+    .then((response) => {
+      //do something awesome that makes the world a better place
+      alert("success");
+      console.log(response);
+    })
+    .catch((error) => {
+      alert("error");
+      console.log(error);
+    });
+
+  console.log(JSON.stringify(values, null, 2));
 }
 
 const EmailForm = () => {
