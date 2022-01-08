@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import {
   Title,
@@ -9,19 +9,39 @@ import {
   InputGroup,
 } from "../../components/Core";
 import { device } from "../../utils";
+import useForm from "./useForm";
+
+function validate(values) {
+  let errors = {};
+  if (!values.email) {
+    errors.email = "Email address is required";
+  } else if (!/\S+@\S+\.\S+/.test(values.email)) {
+    errors.email = "Email address is invalid";
+  }
+  return errors;
+}
+
+function submit(values) {
+  alert(JSON.stringify(values, null, 2));
+}
 
 const EmailForm = () => {
-  const onSubmit = () => {
-    alert("Form submitted");
-  };
+  const { handleChange, handleSubmit, values, errors } = useForm(
+    submit,
+    validate
+  );
 
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={handleSubmit}>
       <div className="position-relative">
         <InputGroup
           icon={<i className="icon icon-email-84" />}
           placeholder="Email address"
           border="none"
+          name="email"
+          type="email"
+          value={values.email || ""}
+          onChange={handleChange}
           css={`
             @media${device.sm} {
               padding-right: 210px;
@@ -43,6 +63,7 @@ const EmailForm = () => {
           Get Started
         </Button>
       </div>
+      {}
     </form>
   );
 };
