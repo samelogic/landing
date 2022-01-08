@@ -1,13 +1,15 @@
-import React from 'react'
-import styled from 'styled-components'
-import { saturate, lighten } from 'polished'
-import { Container, Row, Col } from 'react-bootstrap'
+import React from "react";
+import styled from "styled-components";
+import { saturate, lighten } from "polished";
+import { Container, Row, Col } from "react-bootstrap";
 
-import { Title, Button, Section, Box, Text } from '../../components/Core'
+import { Title, Button, Section, Box, Text } from "../../components/Core";
 
-import { device } from '../../utils'
-import imgHeroTab from '../../assets/image/png/l5-hero-image.png'
-import HeroImage from '../../assets/image/svg/Hero.svg'
+import { device } from "../../utils";
+import imgHeroTab from "../../assets/image/png/l5-hero-image.png";
+import HeroImage from "../../assets/image/svg/Hero.svg";
+
+import EmailForm from "../../components/EmailForm";
 
 const SectionStyled = styled(Section)`
   background-image: ${({ theme }) => `radial-gradient(
@@ -15,7 +17,7 @@ const SectionStyled = styled(Section)`
     ${lighten(0.114, saturate(0.0911, theme.colors.ash))} 0%,
     ${theme.colors.ash} 100%
   );`};
-`
+`;
 
 const ImgRight = styled(Box)`
   position: relative;
@@ -28,7 +30,7 @@ const ImgRight = styled(Box)`
     left: auto;
     transform: translateX(25%);
   }
-`
+`;
 
 const Hero = () => {
   return (
@@ -67,18 +69,7 @@ const Hero = () => {
                     or feature with <b>Painted Door Experiments.</b> 
                   </Text>
                   <div className="d-flex flex-column align-items-start pt-3">
-                    <a href="https://app.samelogic.com">
-                      <Button mb={2}>Get Started &nbsp;</Button>
-                    </a>
-
-                    <Text
-                      variant="small"
-                      fontSize={'14px'}
-                      color="light"
-                      opacity={0.7}
-                    >
-                      Join our Early Access program
-                    </Text>
+                    <EmailForm />
                   </div>
                 </Box>
               </div>
@@ -87,7 +78,7 @@ const Hero = () => {
         </Container>
       </SectionStyled>
     </>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
