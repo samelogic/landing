@@ -96,22 +96,25 @@ const ComingSoon = () => {
             <Container>
               <SocialList>
                 <li>
-                  <a href="/" target="_blank">
+                  <a href="https://twitter.com/samelogicAI" target="_blank">
                     <i className="fab fa-twitter"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="/" target="_blank">
+                  <a href="https://www.facebook.com/samelogic" target="_blank">
                     <i className="fab fa-facebook"></i>
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="/" target="_blank">
                     <i className="fab fa-google-plus-square"></i>
                   </a>
-                </li>
+                </li> */}
                 <li>
-                  <a href="/" target="_blank">
+                  <a
+                    href="https://www.linkedin.com/company/samelogic"
+                    target="_blank"
+                  >
                     <i className="fab fa-linkedin"></i>
                   </a>
                 </li>
