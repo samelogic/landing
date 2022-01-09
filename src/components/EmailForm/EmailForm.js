@@ -52,6 +52,7 @@ const EmailForm = () => {
           border="none"
           name="email"
           type="email"
+          required
           value={values.email || ""}
           onChange={handleChange}
           css={`
