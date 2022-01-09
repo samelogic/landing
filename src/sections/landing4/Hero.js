@@ -65,12 +65,20 @@ const Hero = () => {
                     Painted Door Experiments Without The Hassle!
                   </Title>
                   <Text mb={4} color="light" opacity={0.7}>
-                    Get the feedback you need to launch a successful new product
+                    Get the evidence you need to launch a successful new product
                     or feature with <b>Painted Door Experiments.</b> 
                   </Text>
-                  <div className="d-flex flex-column align-items-start pt-3">
+                  <div className="d-flex flex-column pt-3">
                     <EmailForm />
                   </div>
+                  <Text
+                    variant="small"
+                    fontSize={"14px"}
+                    color="light"
+                    opacity={0.7}
+                  >
+                    Request an Early Access Invite
+                  </Text>
                 </Box>
               </div>
             </Col>

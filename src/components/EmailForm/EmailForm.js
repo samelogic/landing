@@ -73,7 +73,7 @@ const EmailForm = () => {
             }
           `}
         >
-          Get Started
+          Request Invite
         </Button>
       </div>
       {}
