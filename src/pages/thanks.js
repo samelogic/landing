@@ -73,19 +73,17 @@ const ComingSoon = () => {
                   <Section>
                     <div>
                       <Title color="light">
-                        Get beautiful landing{" "}
-                        <br className="d-none d-md-block" /> page templates for
-                        free.
+                        Thanks for Joining Our Early Access Program
                       </Title>
-                      <Text color="lightShade">
+                      {/* <Text color="lightShade">
                         Create custom landing pages with Omega that converts
                         more visitors than any website. With lots of unique
                         blocks, you can easily build a page.
-                      </Text>
+                      </Text> */}
                     </div>
                     <div className="mt-5">
                       <Text color="lightShade">
-                        Stay tuned, early subscribers will receive goodies.
+                        Stay tuned, we will reach out to you soon.
                       </Text>
                     </div>
                   </Section>
