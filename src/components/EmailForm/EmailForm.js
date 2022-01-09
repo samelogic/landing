@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { navigate } from "gatsby";
 import PropTypes from "prop-types";
 import {
   Title,
@@ -28,16 +29,12 @@ function submit(values) {
     body: JSON.stringify(values),
   })
     .then((response) => {
-      //do something awesome that makes the world a better place
-      alert("success");
-      console.log(response);
+      navigate("/thanks");
     })
     .catch((error) => {
-      alert("error");
+      navigate("/thanks");
       console.log(error);
     });
-
-  console.log(JSON.stringify(values, null, 2));
 }
 
 const EmailForm = () => {
