@@ -32,7 +32,7 @@ const CTA = () => (
                   color="light"
                   opacity={0.7}
                 >
-                  Join our Early Access program
+                  Request an Early Access Invite
                 </Text>
               </div>
             </Box>
