@@ -4,7 +4,7 @@ const path = require("path");
 exports.onCreatePage = ({ page, actions }) => {
   const { createPage } = actions;
 
-  if (page.path.match(/sign|reset|coming/)) {
+  if (page.path.match(/sign|thanks|reset|coming/)) {
     page.context.layout = "bare";
     createPage(page);
   }
