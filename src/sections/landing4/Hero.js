@@ -62,11 +62,12 @@ const Hero = () => {
               >
                 <Box py={[null, null, null, 5]} pr={5} pt={[4, null]}>
                   <Title variant="hero" color="light">
-                    Painted Door Experiments Without The Hassle!
+                    Validate Your Ideas In-App
                   </Title>
                   <Text mb={4} color="light" opacity={0.7}>
                     Get the evidence you need to launch a successful new product
-                    or feature with <b>Painted Door Experiments.</b> 
+                    or feature using <b>Painted Door Experiments</b> and{" "}
+                    <b>Microsurveys.</b> 
                   </Text>
                   <div className="d-flex flex-column pt-3">
                     <EmailForm />
