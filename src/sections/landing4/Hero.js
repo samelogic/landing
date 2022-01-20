@@ -62,7 +62,7 @@ const Hero = () => {
               >
                 <Box py={[null, null, null, 5]} pr={5} pt={[4, null]}>
                   <Title variant="hero" color="light">
-                    Validate Your Ideas In-App
+                    Validate Your Product Ideas with Embedded Mockups
                   </Title>
                   <Text mb={4} color="light" opacity={0.7}>
                     Get the evidence you need to launch a successful new product
