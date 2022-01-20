@@ -24,7 +24,7 @@ function validate(values) {
 
 function setHeap(email) {
   if (window.heap !== undefined) {
-    window.heap.identify(email);
+    window.heap.addUserProperties({ Email: email });
   }
 }
 
