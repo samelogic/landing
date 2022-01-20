@@ -22,6 +22,12 @@ function validate(values) {
   return errors;
 }
 
+function setHeap(email) {
+  if (window.heap !== undefined) {
+    window.heap.identify(email);
+  }
+}
+
 function submit(values) {
   fetch(`https://hooks.zapier.com/hooks/catch/8559174/b9bjx0j/`, {
     method: "post",
@@ -29,6 +35,7 @@ function submit(values) {
     body: JSON.stringify(values),
   })
     .then((response) => {
+      setHeap(values.email);
       navigate("/thanks");
     })
     .catch((error) => {
