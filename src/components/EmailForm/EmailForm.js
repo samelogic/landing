@@ -44,7 +44,7 @@ const EmailForm = () => {
   );
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="email-subscribe">
       <div className="position-relative">
         <InputGroup
           icon={<i className="icon icon-email-84" />}
