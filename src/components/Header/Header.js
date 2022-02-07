@@ -356,7 +356,7 @@ const Header = ({ isDark = false }) => {
               </div>
             </div>
             <div className="header-btns ml-auto ml-lg-0 d-none d-md-block">
-              <a href="https://app.samelogic.com">
+              <a href="https://app.samelogic.com" className="cta-btn">
                 <Button
                   id="header-cta"
                   size="sm"

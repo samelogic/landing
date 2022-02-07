@@ -30,6 +30,7 @@ const CTA = () => (
               <div className="d-flex flex-column align-items-center pt-3">
                 <Button mb={2}>
                   <a
+                    className="cta-btn"
                     style={{ color: "white !important" }}
                     href="https://app.samelogic.com"
                   >

@@ -81,7 +81,7 @@ const Hero = () => {
                     Request an Early Access Invite
                   </Text> */}
                   <div className="d-flex flex-column align-items-start pt-3">
-                    <a href="https://app.samelogic.com">
+                    <a href="https://app.samelogic.com" className="cta-btn">
                       <Button mb={2}>Get Started &nbsp;</Button>
                     </a>
 
