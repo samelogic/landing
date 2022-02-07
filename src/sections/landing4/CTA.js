@@ -16,16 +16,8 @@ const CTA = () => (
               <Text mb={4} color="light" opacity={0.7}>
                 The better way to figure out what works for your users.
               </Text>
-              <div className="d-flex flex-column align-items-center pt-3">
+              {/* <div className="d-flex flex-column align-items-center pt-3">
                 <EmailForm />
-                {/* <Button mb={2}>
-                  <a
-                    style={{ color: "white !important" }}
-                    href="https://app.samelogic.com"
-                  >
-                    Get Started
-                  </a>
-                </Button> */}
                 <Text
                   variant="small"
                   fontSize={"14px"}
@@ -33,6 +25,25 @@ const CTA = () => (
                   opacity={0.7}
                 >
                   Request an Early Access Invite
+                </Text>
+              </div> */}{" "}
+              <div className="d-flex flex-column align-items-center pt-3">
+                <Button mb={2}>
+                  <a
+                    className="cta-btn"
+                    style={{ color: "white !important" }}
+                    href="https://app.samelogic.com"
+                  >
+                    Get Started
+                  </a>
+                </Button>
+                <Text
+                  variant="small"
+                  fontSize={"14px"}
+                  color="light"
+                  opacity={0.7}
+                >
+                  Join our Early Access program
                 </Text>
               </div>
             </Box>

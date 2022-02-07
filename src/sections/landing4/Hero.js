@@ -69,7 +69,7 @@ const Hero = () => {
                     or feature using <b>Painted Door Experiments</b> and{" "}
                     <b>Microsurveys.</b> 
                   </Text>
-                  <div className="d-flex flex-column pt-3">
+                  {/* <div className="d-flex flex-column pt-3">
                     <EmailForm />
                   </div>
                   <Text
@@ -79,7 +79,21 @@ const Hero = () => {
                     opacity={0.7}
                   >
                     Request an Early Access Invite
-                  </Text>
+                  </Text> */}
+                  <div className="d-flex flex-column align-items-start pt-3">
+                    <a href="https://app.samelogic.com" className="cta-btn">
+                      <Button mb={2}>Get Started &nbsp;</Button>
+                    </a>
+
+                    <Text
+                      variant="small"
+                      fontSize={"14px"}
+                      color="light"
+                      opacity={0.7}
+                    >
+                      Join our Early Access program
+                    </Text>
+                  </div>
                 </Box>
               </div>
             </Col>
