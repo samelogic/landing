@@ -356,7 +356,7 @@ const Header = ({ isDark = false }) => {
               </div>
             </div>
             <div className="header-btns ml-auto ml-lg-0 d-none d-md-block">
-              {/* <a href="https://app.samelogic.com">
+              <a href="https://app.samelogic.com">
                 <Button
                   id="header-cta"
                   size="sm"
@@ -368,7 +368,7 @@ const Header = ({ isDark = false }) => {
                 >
                   Get Started
                 </Button>
-              </a> */}
+              </a>
             </div>
             <ToggleButton
               className={`navbar-toggler btn-close-off-canvas ml-3 ${
