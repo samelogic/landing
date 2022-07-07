@@ -107,7 +107,7 @@ const Support = () => {
                       </Title>
                       <Text>
                         The founders can be directly reached at the following
-                        emails:
+                        numbers:
                       </Text>
                       <Text>Dwayne: +1-876-435-4470</Text>
                       <Text>Shawn: +1-650-235-6537</Text>
