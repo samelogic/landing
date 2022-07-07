@@ -150,24 +150,16 @@ const Footer = ({ isDark = true }) => {
                           <a href="/about">About</a>
                         </li>
                         <li>
-                          <a href="/about">Careers</a>
-                        </li>
-                        <li>
                           <a href="/privacy">Privacy Policy</a>
                         </li>
                         <li>
                           <a href="/terms">Terms of Service</a>
                         </li>
-                        {/* <li>
-                          <a href="/#" target="_blank">
-                            Freelancers
+                        <li>
+                          <a href="/support" target="_blank">
+                            Support
                           </a>
-                        </li> */}
-                        {/* <li>
-                          <a href="/#" target="_blank">
-                            Trainee
-                          </a>
-                        </li> */}
+                        </li>
                       </UlStyled>
                     </div>
                   </Col>

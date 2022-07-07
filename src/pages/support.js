@@ -57,8 +57,7 @@ const Support = () => {
                         Talk to Us Live!
                       </Title>
                       <Text>
-                        Use the drift icon at the bottom right of this page. Or
-                        click here.
+                        Use the drift icon at the bottom right of this page.
                       </Text>
                     </Box>
                   </Row>
