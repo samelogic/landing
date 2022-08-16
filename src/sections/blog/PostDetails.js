@@ -1,13 +1,12 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
-import { Box, Badge } from '../../components/Core'
+import { Box, Badge } from "../../components/Core";
 
-import imgB1 from '../../assets/image/jpeg/blog-details-img-1.jpg'
-import iconQuote from '../../assets/image/png/quote-icon.png'
+import imgB1 from "../../assets/image/jpeg/blog-details-img-1.jpg";
+import iconQuote from "../../assets/image/png/quote-icon.png";
 
 const Post = styled(Box)`
-  overflow: hidden;
   font-size: 1rem;
 
   h2,
@@ -37,10 +36,12 @@ const Post = styled(Box)`
   }
   ol li {
     list-style-type: decimal;
+    margin-left: 1.25rem;
   }
 
   ul li {
     list-style-type: disc;
+    margin-left: 1.25rem;
   }
 
   blockquote {
@@ -68,7 +69,7 @@ const Post = styled(Box)`
     margin-bottom: 2rem;
     display: block;
   }
-`
+`;
 
 const BadgePost = ({ children }) => (
   <Badge
@@ -82,7 +83,7 @@ const BadgePost = ({ children }) => (
   >
     {children}
   </Badge>
-)
+);
 
 const PostDetails = ({ post }) => (
   <>
@@ -91,7 +92,7 @@ const PostDetails = ({ post }) => (
       <div>
         <img
           className="pb-6"
-          style={{ borderRadius: '10px' }}
+          style={{ borderRadius: "10px" }}
           src={post.heroImage.fluid.src}
           alt=""
         />
@@ -105,11 +106,11 @@ const PostDetails = ({ post }) => (
     {post.tags && post.tags.length > 0 && (
       <Box className="d-flex" mt={4}>
         {post.tags.map((tag) => {
-          return <BadgePost>{tag}</BadgePost>
+          return <BadgePost>{tag}</BadgePost>;
         })}
       </Box>
     )}
   </>
-)
+);
 
-export default PostDetails
+export default PostDetails;
