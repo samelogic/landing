@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-import styled from 'styled-components'
-import { Container, Row, Col } from 'react-bootstrap'
+import React, { useState } from "react";
+import styled from "styled-components";
+import { Container, Row, Col } from "react-bootstrap";
 
-import { Title, Section, Box, Button } from '../../components/Core'
+import { Title, Section, Box, Button } from "../../components/Core";
 
 const PricingCard = styled.div`
   border-radius: 10px;
@@ -35,7 +35,7 @@ const PricingCard = styled.div`
     letter-spacing: -1.03px;
     line-height: 1;
   }
-`
+`;
 
 const ULStyled = styled.ul`
   color: #696871;
@@ -50,7 +50,7 @@ const ULStyled = styled.ul`
   li {
     margin-bottom: 14px;
   }
-`
+`;
 
 const ButtonGroup = styled.div`
   border-radius: 10px;
@@ -78,7 +78,7 @@ const ButtonGroup = styled.div`
       border-radius: 0 10px 10px 0;
     }
   }
-`
+`;
 
 const ButtonStyled = styled(Button)`
   width: 100%;
@@ -95,10 +95,10 @@ const ButtonStyled = styled(Button)`
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-`
+`;
 
 const Pricing = () => {
-  const [timeMonthly, setTimeMonthly] = useState(false)
+  const [timeMonthly, setTimeMonthly] = useState(false);
 
   return (
     <>
@@ -107,7 +107,7 @@ const Pricing = () => {
           <Row className="text-md-center text-lg-left mb-5">
             <Col lg="7" xl="6">
               <div className="">
-                <Title>Get the right plan for future product.</Title>
+                <Title>Get the right plan for your team.</Title>
               </div>
             </Col>
             <Col
@@ -115,15 +115,15 @@ const Pricing = () => {
               xl="6"
               className="d-flex justify-content-center justify-content-lg-end align-items-end"
             >
-              <ButtonGroup className="mb-4 mt-3 mt-lg-0">
+              {/* <ButtonGroup className="mb-4 mt-3 mt-lg-0">
                 <span
                   role="button"
-                  className={`btn ${!timeMonthly ? 'active' : ''}`}
+                  className={`btn ${!timeMonthly ? "active" : ""}`}
                   onClick={() => {
-                    setTimeMonthly(false)
+                    setTimeMonthly(false);
                   }}
                   onKeyDown={() => {
-                    setTimeMonthly(false)
+                    setTimeMonthly(false);
                   }}
                   tabIndex={0}
                 >
@@ -131,72 +131,69 @@ const Pricing = () => {
                 </span>
                 <span
                   role="button"
-                  className={`btn ${timeMonthly ? 'active' : ''}`}
+                  className={`btn ${timeMonthly ? "active" : ""}`}
                   onClick={() => {
-                    setTimeMonthly(true)
+                    setTimeMonthly(true);
                   }}
                   onKeyDown={() => {
-                    setTimeMonthly(true)
+                    setTimeMonthly(true);
                   }}
                   tabIndex={0}
                 >
                   Monthly
                 </span>
-              </ButtonGroup>
+              </ButtonGroup> */}
             </Col>
           </Row>
-          <Row className="justify-content-center">
+          <Row className="justify-content-center mb-4 pricing-row">
             <Col lg="4" md="6" sm="8" className="mt-4">
               <PricingCard>
                 <span className="small-title">Starter</span>
                 <h2 className="title mt-3 mb-4">Free</h2>
                 <ULStyled>
-                  <li>1 Website</li>
-                  <li>5 GB Hosting</li>
-                  <li>Limited Support</li>
+                  <li>2 Tests</li>
                 </ULStyled>
                 <Box className="mt-5">
-                  <ButtonStyled>Get Started</ButtonStyled>
+                  <a href="https://app.samelogic.com">
+                    <ButtonStyled>Get Started</ButtonStyled>
+                  </a>
                 </Box>
               </PricingCard>
             </Col>
             <Col lg="4" md="6" sm="8" className="mt-4">
               <PricingCard>
-                <span className="small-title">Premium</span>
+                <span className="small-title">Pro</span>
                 <h2 className="title mt-3 mb-4">
-                  ${timeMonthly ? '29' : '79'}
-                  <span className="time">
-                    {' '}
-                    /{timeMonthly ? 'month' : 'year'}
-                  </span>
+                  $149.00
+                  <span className="time">month</span>
                 </h2>
                 <ULStyled>
-                  <li>10 Website</li>
-                  <li>15 GB Hosting</li>
-                  <li>Premium Support</li>
+                  <li>8 Tests</li>
+                  <li>Integrations (Prod Pad, Launch Darkly, Amplitude)</li>
                 </ULStyled>
                 <Box className="mt-5">
-                  <ButtonStyled>Get Started</ButtonStyled>
+                  <a href="https://app.samelogic.com">
+                    <ButtonStyled>Get Started</ButtonStyled>
+                  </a>
                 </Box>
               </PricingCard>
             </Col>
             <Col lg="4" md="6" sm="8" className="mt-4">
               <PricingCard>
-                <span className="small-title">Enterprise</span>
+                <span className="small-title">Ultra</span>
                 <h2 className="title mt-3 mb-4">
-                  ${timeMonthly ? '49' : '99'}
-                  <span className="time">
-                    {' '}
-                    /{timeMonthly ? 'month' : 'year'}
-                  </span>
+                  $3k+
+                  <span className="time">month</span>
                 </h2>
                 <ULStyled>
-                  <li>Unlimited Website</li>
-                  <li>50 GB Hosting</li>
-                  <li>Premium Support</li>
+                  <li>Multiple Tests</li>
+                  <li>Custom Integrations</li>
+                  <li>Dedicated Support</li>
                 </ULStyled>
                 <Box className="mt-5">
-                  <ButtonStyled>Get Started</ButtonStyled>
+                  <a href="https://app.samelogic.com">
+                    <ButtonStyled>Get Started</ButtonStyled>
+                  </a>
                 </Box>
               </PricingCard>
             </Col>
@@ -204,7 +201,7 @@ const Pricing = () => {
         </Container>
       </Section>
     </>
-  )
-}
+  );
+};
 
-export default Pricing
+export default Pricing;
