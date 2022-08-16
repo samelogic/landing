@@ -34,6 +34,11 @@ const Post = styled(Box)`
     margin-bottom: 1.25rem;
     color: ${({ theme }) => theme.colors.heading} !important;
   }
+
+  a {
+    text-decoration: underline;
+  }
+
   ol li {
     list-style-type: decimal;
     margin-left: 1.25rem;
