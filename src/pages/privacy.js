@@ -125,7 +125,7 @@ const Privacy = () => {
                     <li>
                       Website refers to Samelogic, accessible from{' '}
                       <a href="">
-                        Samelogic | Product Experiments with Painted Doors
+                        Samelogic | Fast Product Critique, with Real Users
                       </a>
                     </li>
                     <li>

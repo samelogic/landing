@@ -366,7 +366,7 @@ const Header = ({ isDark = false }) => {
                     height: 45px !important;
                   `}
                 >
-                  Get Started
+                  Try for Free
                 </Button>
               </a>
             </div>

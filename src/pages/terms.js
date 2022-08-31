@@ -87,7 +87,7 @@ const Terms = () => {
                     <li>
                       Website refers to Samelogic, accessible from{' '}
                       <a href="">
-                        Samelogic | Product Experiments with Microsurveys
+                        Samelogic | Fast Product Critique, with Real Users
                       </a>
                     </li>
 
