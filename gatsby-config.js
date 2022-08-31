@@ -31,8 +31,8 @@ if (!spaceId || !accessToken) {
 
 module.exports = {
   siteMetadata: {
-    title: `Samelogic | Product Experiments with Painted Doors`,
-    description: `Embed Painted Door Experiments within your products to get feedback from your actual users to measure outcomes.`,
+    title: `Samelogic | Fast Product Critique, with Real Users`,
+    description: `Get the evidence you need to know which direction to take your product.`,
     siteUrl: `https://samelogic.com/`,
     social: {
       twitter: `samelogicai`,
