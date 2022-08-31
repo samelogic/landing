@@ -62,12 +62,10 @@ const Hero = () => {
               >
                 <Box py={[null, null, null, 5]} pr={5} pt={[4, null]}>
                   <Title variant="hero" color="light">
-                    Validate Your Product Ideas with Embedded Mockups
+                  Fast Product Critique, with Real Users
                   </Title>
                   <Text mb={4} color="light" opacity={0.7}>
-                    Get the evidence you need to launch a successful new product
-                    or feature using <b>Painted Door Experiments</b> and{" "}
-                    <b>Microsurveys.</b> 
+                     Get the evidence you need to know which direction to take your product. 
                   </Text>
                   {/* <div className="d-flex flex-column pt-3">
                     <EmailForm />
@@ -82,7 +80,7 @@ const Hero = () => {
                   </Text> */}
                   <div className="d-flex flex-column align-items-start pt-3">
                     <a href="https://app.samelogic.com" className="cta-btn">
-                      <Button mb={2}>Get Started &nbsp;</Button>
+                      <Button mb={2}>Try for Free &nbsp;</Button>
                     </a>
 
                     <Text
