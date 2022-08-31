@@ -146,53 +146,70 @@ const Pricing = () => {
             </Col>
           </Row>
           <Row className="justify-content-center mb-4 pricing-row">
+            
             <Col lg="4" md="6" sm="8" className="mt-4">
               <PricingCard>
                 <span className="small-title">Starter</span>
-                <h2 className="title mt-3 mb-4">Free</h2>
+                <h2 className="title mt-3 mb-4">$9.99<span className="time">/month</span></h2>
                 <ULStyled>
-                  <li>2 Tests</li>
+                  <li>5 Active Microsurveys</li>
+                  <li>Export Data to CSV</li>
+                  <li>Basic Support</li>
                 </ULStyled>
                 <Box className="mt-5">
-                  <a href="https://app.samelogic.com">
-                    <ButtonStyled>Get Started</ButtonStyled>
+                  <a href="https://buy.stripe.com/3cs6qMfcPb0wd4A28b">
+                    <ButtonStyled>Buy Now</ButtonStyled>
                   </a>
                 </Box>
               </PricingCard>
+              <br/>
+              Only Microsurveys come with this Plan. 
             </Col>
+
             <Col lg="4" md="6" sm="8" className="mt-4">
               <PricingCard>
                 <span className="small-title">Pro</span>
                 <h2 className="title mt-3 mb-4">
-                  $149.00
-                  <span className="time">month</span>
+                <span className="time"></span> $149
+                  <span className="time">/month</span>
                 </h2>
                 <ULStyled>
-                  <li>8 Tests</li>
-                  <li>Integrations (Prod Pad, Launch Darkly, Amplitude)</li>
+                  <li>25 Active Microsurveys</li>
+                  <li>10 In-Product Fake Doors</li>
+                  <li>Import Designs from Figma</li>
+                  <li>Import Ideas from ProdPad</li>
+                  <li>Integrate with LaunchDarkly</li>
+                  <li>Export Data to Amplitude</li>
+                  <li>Basic Support</li>
                 </ULStyled>
                 <Box className="mt-5">
-                  <a href="https://app.samelogic.com">
-                    <ButtonStyled>Get Started</ButtonStyled>
+                  <a href="https://buy.stripe.com/fZeaH21lZc4A3u0001">
+                    <ButtonStyled>Buy Now</ButtonStyled>
                   </a>
                 </Box>
               </PricingCard>
             </Col>
+
             <Col lg="4" md="6" sm="8" className="mt-4">
               <PricingCard>
                 <span className="small-title">Ultra</span>
                 <h2 className="title mt-3 mb-4">
-                  $3k+
-                  <span className="time">month</span>
+                  $2,999
+                  <span className="time">/month</span>
                 </h2>
                 <ULStyled>
-                  <li>Multiple Tests</li>
+                  <li>Unlimited Microsurveys**</li>
+                  <li>Unlimited In-Product Fake Doors**</li>
                   <li>Custom Integrations</li>
+                  <li>Import Designs from Figma</li>
+                  <li>Import Ideas from ProdPad</li>
+                  <li>Integrate with LaunchDarkly</li>
+                  <li>Export Data to Amplitude</li>
                   <li>Dedicated Support</li>
                 </ULStyled>
                 <Box className="mt-5">
-                  <a href="https://app.samelogic.com">
-                    <ButtonStyled>Get Started</ButtonStyled>
+                  <a href="https://buy.stripe.com/cN2cPac0Dd8E7KgeUW">
+                    <ButtonStyled>Buy Now</ButtonStyled>
                   </a>
                 </Box>
               </PricingCard>
