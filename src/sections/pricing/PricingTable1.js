@@ -107,7 +107,7 @@ const Pricing = () => {
           <Row className="text-md-center text-lg-left mb-5">
             <Col lg="7" xl="6">
               <div className="">
-                <Title>Get the right plan for your team.</Title>
+                <Title>Get the right plan for you and your team.</Title>
               </div>
             </Col>
             <Col

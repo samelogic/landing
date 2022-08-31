@@ -12,12 +12,12 @@ const Pricing1 = () => {
     <>
       <PageWrapper footerDark>
          <Hero title="Pricing">
-          Validate Your Product Ideas with Embedded Mockups.
+          Whatever your need may be, we have Plan that can help.
         </Hero>
         <PricingTable1 />
         {/* <PricingTable2/> */}
         <Feature />
-        <FAQ />
+        {/* <FAQ /> */}
       </PageWrapper>
     </>
   );

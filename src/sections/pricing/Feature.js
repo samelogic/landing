@@ -50,40 +50,48 @@ const Feature = () => (
       <Container>
         <Row className="mb-3 text-center">
           <Col lg="12">
-            <Title>Check all of our features</Title>
+            <Title>Confidently know what next to build.</Title>
           </Col>
         </Row>
         <Row className="align-items-center justify-content-center">
+
+        <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-5">
+            <FeatureCard
+              color="primary"
+              iconName="icon-energy-2"
+              title="Fast Validation"
+            >
+              Say bye-bye to the Build Trap. Know exactly what your users need before writing a single line of code.
+            </FeatureCard>
+          </Col>
+
           <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-5">
             <FeatureCard
               color="secondary"
-              iconName="icon-sidebar-2"
-              title="Fully Responsive"
+              iconName="icon-laptop-71"
+              title="Data Driven"
             >
-              With lots of unique blocks, you can easily build a page without
-              coding.
+              Get the evidence you need by easily testing what resonates best with your users.
             </FeatureCard>
           </Col>
 
           <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-5">
             <FeatureCard
               color="primary"
-              iconName="icon-layout-11"
-              title="Multiple Layouts"
+              iconName="icon-puzzle-10-2"
+              title="Integrated"
             >
-              With lots of unique blocks, you can easily build a page without
-              coding.
+              Our integrations with our partners ensure quick validation of your ideas.
             </FeatureCard>
           </Col>
 
           <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-5">
             <FeatureCard
-              color="secondary"
-              iconName="icon-airplane-2"
-              title="Faster Loading"
+              color="warning"
+              iconName="icon-roadmap"
+              title="Contextual"
             >
-              With lots of unique blocks, you can easily build a page without
-              coding.
+              Know what direction to go by deeply understanding what moves your users.
             </FeatureCard>
           </Col>
 
@@ -91,10 +99,9 @@ const Feature = () => (
             <FeatureCard
               color="primary"
               iconName="icon-voice-recognition-2"
-              title="Super Support"
+              title="Support"
             >
-              With lots of unique blocks, you can easily build a page without
-              coding.
+              We love candid conversations. Whatever the question may be, will give you the best possible answer.
             </FeatureCard>
           </Col>
           <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-5">
@@ -103,21 +110,11 @@ const Feature = () => (
               iconName="icon-bookmark-2-2"
               title="Rich Documentation"
             >
-              With lots of unique blocks, you can easily build a page without
-              coding.
+              If you'd love to understand how the Samelogic API and SDK works to become a Power User, you can.
             </FeatureCard>
           </Col>
 
-          <Col sm="6" md="5" lg="4" className="mt-3 mt-lg-5">
-            <FeatureCard
-              color="secondary"
-              iconName="icon-infinite"
-              title="Lifetime Updates"
-            >
-              With lots of unique blocks, you can easily build a page without
-              coding.
-            </FeatureCard>
-          </Col>
+         
         </Row>
       </Container>
     </Section>
