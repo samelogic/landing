@@ -27,8 +27,12 @@ const CaseStudyDetails = () => {
                 <Title variant="hero">
                   Send contextual user events to Amplitude
                 </Title>
+              </Col>
+            </Row>
 
-                <Box className="text-center" mx={6}>
+            <Row className="justify-content-center text-center">
+              <Col lg="6">
+                <Box className="text-center">
                   <Text>
                     Send your quantitative and qualitative user research events
                     to Amplitude. Dig deeper into the how and why are users
