@@ -5,10 +5,12 @@ import PageWrapper from "../../../components/PageWrapper";
 import { Section, Title, Text, Box, Button } from "../../../components/Core";
 import Seo from "../../../components/SEO";
 
-import CaseList from "../../../sections/case-study/CaseList1";
 import Video from "../components/Video";
 import CTA from "../../../sections/case-study/CTA";
 import imgBrand from "./logo.png";
+import Content1 from "../components/Content1";
+import Content2 from "../components/Content2";
+import Content3 from "../components/Content3";
 
 const CaseStudyDetails = () => {
   return (
@@ -62,7 +64,9 @@ const CaseStudyDetails = () => {
         <Section className="pb-6" borderBottom="1px solid #eae9f2;">
           <Video videoUrl="https://www.youtube.com/watch?v=n_qeKiMd-Fs" />
         </Section>
-        <CaseList />
+        <Content1 />
+        <Content2 />
+        <Content3 />
         <CTA />
       </PageWrapper>
     </>
