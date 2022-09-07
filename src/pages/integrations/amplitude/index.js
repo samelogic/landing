@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import PageWrapper from "../../../components/PageWrapper";
 import { Section, Title, Text, Box, Button } from "../../../components/Core";
+import Seo from "../../../components/SEO";
 
 import CaseList from "../../../sections/case-study/CaseList1";
 import Video from "../components/Video";
@@ -12,6 +13,8 @@ import imgBrand from "./logo.png";
 const CaseStudyDetails = () => {
   return (
     <>
+      {" "}
+      <Seo title="Amplitude and Samelogic Integration" />
       <PageWrapper footerDark>
         <Section className="pb-0">
           <div className="pt-5"></div>
