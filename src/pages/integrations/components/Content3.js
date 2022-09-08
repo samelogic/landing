@@ -27,18 +27,17 @@ const Content3 = () => {
             </Col>
             <Col lg="6" md={9} className="order-lg-1">
               <div>
-                <Title>
-                  Improving your{" "}
-                  <br className="d-none d-sm-block d-md-none d-xl-block" /> all
-                  travel experience.
-                </Title>
+                <Title>Deeply understand your user behavior</Title>
                 <Text>
-                  Create custom landing pages with Omega that converts more
-                  visitors than any website. With lots of unique blocks, you can
-                  easily build a page without coding.
+                  Enrich your evidence with additonal customer data to help you
+                  know if you should really build that idea and how to
+                  prioritize or even price it.
                 </Text>
+
                 <Box mt={4}>
-                  <Button>Get this app</Button>
+                  <a href="https://app.samelogic.com" className="cta-btn">
+                    <Button mb={2}>Try for Free &nbsp;</Button>
+                  </a>
                 </Box>
               </div>
             </Col>

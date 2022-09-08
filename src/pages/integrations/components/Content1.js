@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
 
-import { Title, Section, Box, Text } from "../../../components/Core";
+import { Title, Section, Box, Text, Button } from "../../../components/Core";
 
 import imgPhone from "../../../assets/image/png/l7-mobile.png";
 
@@ -66,26 +66,18 @@ const Content1 = () => {
             </Col>
             <Col lg="6" md={9} className="order-lg-1">
               <div>
-                <Title>
-                  Fits everything on{" "}
-                  <br className="d-none d-sm-block d-md-none d-xl-block" /> all
-                  your devices.
-                </Title>
+                <Title>Test your ideas early</Title>
                 <Text>
-                  Create custom landing pages with Omega that converts more
-                  visitors than any website. With lots of unique blocks, you can
-                  easily build a page without coding.
+                  Combine Samelogic's research data with Amplitude's
+                  quantitative data to understand what users are doing before
+                  and after participating in the experiment.
                 </Text>
-                <WidgetContainer mt={5}>
-                  <Widget title="Find your trip partner" mb={4}>
-                    With lots of unique blocks, you can easily build a page
-                    without coding. Build your next landing page quickly.
-                  </Widget>
-                  <Widget title="Plan trip with easy steps">
-                    With lots of unique blocks, you can easily build a page
-                    without coding. Build your next landing page quickly.
-                  </Widget>
-                </WidgetContainer>
+
+                <Box mt={4}>
+                  <a href="https://app.samelogic.com" className="cta-btn">
+                    <Button mb={2}>Try for Free &nbsp;</Button>
+                  </a>
+                </Box>
               </div>
             </Col>
           </Row>

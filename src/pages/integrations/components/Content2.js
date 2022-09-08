@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
 
-import { Title, Section, Box, Text } from "../../../components/Core";
+import { Title, Section, Box, Text, Button } from "../../../components/Core";
 
 import imgC2 from "../../../assets/image/jpeg/l7-content2-image-2.jpg";
 import imgC1 from "../../../assets/image/jpeg/l7-content2-image-1.jpg";
@@ -73,16 +73,18 @@ const Content2 = () => {
             </Col>
             <Col lg="6" md={9}>
               <div>
-                <Title>
-                  See the world &amp;{" "}
-                  <br className="d-none d-sm-block d-md-none d-xl-block" />
-                  spend less always.
-                </Title>
+                <Title>Measure the real impact of your idea</Title>
                 <Text>
-                  Create custom landing pages with Omega that converts more
-                  visitors than any website. With lots of unique blocks, you can
-                  easily build a page without coding.
+                  Since the experiment is done in the same environment as your
+                  users, the evidence will be of the highest unbiased quality
+                  when combined with real world events.
                 </Text>
+
+                <Box mt={4}>
+                  <a href="https://app.samelogic.com" className="cta-btn">
+                    <Button mb={2}>Try for Free &nbsp;</Button>
+                  </a>
+                </Box>
               </div>
             </Col>
           </Row>
