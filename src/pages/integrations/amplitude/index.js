@@ -6,7 +6,7 @@ import { Section, Title, Text, Box, Button } from "../../../components/Core";
 import Seo from "../../../components/SEO";
 
 import Video from "../components/Video";
-import CTA from "../../../sections/case-study/CTA";
+import CTA from "../../../sections/landing4/CTA";
 import imgBrand from "./logo.png";
 import Content1 from "../components/Content1";
 import Content2 from "../components/Content2";
