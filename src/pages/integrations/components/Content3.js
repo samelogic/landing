@@ -27,7 +27,7 @@ const Content3 = () => {
             </Col>
             <Col lg="6" md={9} className="order-lg-1">
               <div>
-                <Title>Deeply understand your user behavior</Title>
+                <Title>Deeply understand your research participants</Title>
                 <Text>
                   Enrich your evidence with additonal customer data to help you
                   know if you should really build that idea and how to

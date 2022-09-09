@@ -12,6 +12,8 @@ import Content1 from "../components/Content1";
 import Content2 from "../components/Content2";
 import Content3 from "../components/Content3";
 
+import AmplitudeImg1 from "./Amplitude-1.png";
+
 const CaseStudyDetails = () => {
   return (
     <>
@@ -64,7 +66,13 @@ const CaseStudyDetails = () => {
         <Section className="pb-6" borderBottom="1px solid #eae9f2;">
           <Video videoUrl="https://www.youtube.com/watch?v=n_qeKiMd-Fs" />
         </Section>
-        <Content1 />
+        <Content1
+          img={AmplitudeImg1}
+          title="Deeply understand your user behavior"
+          body="Combine Samelogic's research data with Amplitude's
+          quantitative data for a full user journey of what they are doing before
+          and after participating in the experiment."
+        />
         <Content2 />
         <Content3 />
         <CTA />
