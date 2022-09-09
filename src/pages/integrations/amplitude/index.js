@@ -13,6 +13,7 @@ import Content2 from "../components/Content2";
 import Content3 from "../components/Content3";
 
 import AmplitudeImg1 from "./Amplitude-1.png";
+import AmplitudeImg2 from "./Amplitude-2.png";
 
 const CaseStudyDetails = () => {
   return (
@@ -73,7 +74,12 @@ const CaseStudyDetails = () => {
           quantitative data for a full user journey of what they are doing before
           and after participating in the experiment."
         />
-        <Content2 />
+        <Content2
+          img={AmplitudeImg2}
+          title="Measure the real impact of your idea"
+          body="Dig into which category of users are gravitating towards your idea. 
+          Use this to help prioritize and feature price."
+        />
         <Content3 />
         <CTA />
       </PageWrapper>

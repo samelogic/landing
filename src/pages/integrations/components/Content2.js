@@ -21,7 +21,7 @@ const SingleImage = styled(Box)`
   }
 `;
 
-const Content2 = () => {
+const Content2 = ({ img, title, body }) => {
   return (
     <>
       {/* <!-- Content2 section --> */}
@@ -29,56 +29,19 @@ const Content2 = () => {
         <Container>
           <Row className="align-items-center">
             <Col lg="6" className="mb-4 mb-lg-0">
-              <Box className="d-flex">
-                <SingleImage>
-                  <img
-                    src={imgC1}
-                    alt=""
-                    className="img-fluid"
-                    data-aos="zoom-in"
-                    data-aos-duration="750"
-                    data-aos-once="true"
-                  />
-                  <img
-                    src={imgC2}
-                    alt=""
-                    className="img-fluid"
-                    data-aos="zoom-in"
-                    data-aos-duration="750"
-                    data-aos-delay="500"
-                    data-aos-once="true"
-                  />
-                </SingleImage>
-                <SingleImage>
-                  <img
-                    src={imgC3}
-                    alt=""
-                    className="img-fluid"
-                    data-aos="zoom-in"
-                    data-aos-duration="750"
-                    data-aos-delay="1000"
-                    data-aos-once="true"
-                  />
-                  <img
-                    src={imgC4}
-                    alt=""
-                    className="img-fluid"
-                    data-aos="zoom-in"
-                    data-aos-duration="750"
-                    data-aos-delay="1500"
-                    data-aos-once="true"
-                  />
-                </SingleImage>
-              </Box>
+              <div
+                data-aos="fade-left"
+                data-aos-duration="750"
+                data-aos-delay="500"
+                data-aos-once="true"
+              >
+                <img src={img} alt="" className="img-fluid" />
+              </div>
             </Col>
             <Col lg="6" md={9}>
               <div>
-                <Title>Measure the real impact of your idea</Title>
-                <Text>
-                  Since the experiment is done in the same environment as your
-                  users, the evidence will be of the highest unbiased quality
-                  when combined with real world events.
-                </Text>
+                <Title>{title}</Title>
+                <Text>{body}</Text>
 
                 <Box mt={4}>
                   <a href="https://app.samelogic.com" className="cta-btn">
