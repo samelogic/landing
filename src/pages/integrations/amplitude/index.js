@@ -76,11 +76,17 @@ const CaseStudyDetails = () => {
         />
         <Content2
           img={AmplitudeImg2}
-          title="Measure the real impact of your idea"
+          title="Prioritize ideas based on ROI"
           body="Dig into which category of users are gravitating towards your idea. 
-          Use this to help prioritize and feature price."
+           Ensure you are building the right idea for the right segment of users."
         />
-        <Content3 />
+        <Content1
+          img={AmplitudeImg1}
+          title="Deeply understand your user behavior"
+          body="Combine Samelogic's research data with Amplitude's
+          quantitative data for a full user journey of what they are doing before
+          and after participating in the experiment."
+        />
         <CTA />
       </PageWrapper>
     </>
