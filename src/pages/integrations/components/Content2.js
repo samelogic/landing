@@ -31,8 +31,8 @@ const Content2 = ({ img, title, body }) => {
             <Col lg="6" className="mb-4 mb-lg-0">
               <div
                 data-aos="fade-left"
-                data-aos-duration="750"
-                data-aos-delay="500"
+                data-aos-duration="450"
+                data-aos-delay="150"
                 data-aos-once="true"
               >
                 <img src={img} alt="" className="img-fluid" />
