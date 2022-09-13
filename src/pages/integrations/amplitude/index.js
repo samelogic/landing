@@ -48,7 +48,6 @@ const IntegrationDetails = ({ data }) => {
                 </Box>
                 <Title variant="hero">
                   Send contextual user events to Amplitude
-                  {JSON.stringify(data)}
                 </Title>
               </Col>
             </Row>
