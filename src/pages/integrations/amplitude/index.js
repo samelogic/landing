@@ -1,9 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { graphql } from "gatsby";
 
 import PageWrapper from "../../../components/PageWrapper";
 import { Section, Title, Text, Box, Button } from "../../../components/Core";
 import Seo from "../../../components/SEO";
+import { get } from "lodash";
 
 import Video from "../components/Video";
 import CTA from "../../../sections/landing4/CTA";
@@ -16,7 +18,8 @@ import AmplitudeImg2 from "./Amplitude-2.png";
 import AmplitudeImg3 from "./Amplitude-3.png";
 import AmplitudeOGImage from "./Amplitude-OG-Image.png";
 
-const CaseStudyDetails = () => {
+const IntegrationDetails = ({ data }) => {
+  const siteUrl = get(data, "site.siteMetadata.siteUrl");
   return (
     <>
       {" "}
@@ -26,11 +29,11 @@ const CaseStudyDetails = () => {
         meta={[
           {
             name: `twitter:image`,
-            content: AmplitudeOGImage,
+            content: siteUrl + AmplitudeOGImage,
           },
           {
             name: `og:image`,
-            content: AmplitudeOGImage,
+            content: siteUrl + AmplitudeOGImage,
           },
         ]}
       />
@@ -45,6 +48,7 @@ const CaseStudyDetails = () => {
                 </Box>
                 <Title variant="hero">
                   Send contextual user events to Amplitude
+                  {JSON.stringify(data)}
                 </Title>
               </Col>
             </Row>
@@ -105,4 +109,14 @@ const CaseStudyDetails = () => {
     </>
   );
 };
-export default CaseStudyDetails;
+export default IntegrationDetails;
+
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        siteUrl
+      }
+    }
+  }
+`;
