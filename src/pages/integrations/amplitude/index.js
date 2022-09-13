@@ -14,12 +14,16 @@ import Content2 from "../components/Content2";
 import AmplitudeImg1 from "./Amplitude-1.png";
 import AmplitudeImg2 from "./Amplitude-2.png";
 import AmplitudeImg3 from "./Amplitude-3.png";
+import AmplitudeOGImage from "./Amplitude-OG-Image.png";
 
 const CaseStudyDetails = () => {
   return (
     <>
       {" "}
-      <Seo title="Amplitude and Samelogic Integration" />
+      <Seo
+        title="Amplitude and Samelogic Integration"
+        image={AmplitudeOGImage}
+      />
       <PageWrapper footerDark>
         <Section className="pb-0">
           <div className="pt-5"></div>
