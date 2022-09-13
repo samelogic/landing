@@ -65,7 +65,7 @@ const CaseStudyDetails = () => {
         </Section>
 
         <Section className="pb-6" borderBottom="1px solid #eae9f2;">
-          <Video videoUrl="https://www.youtube.com/watch?v=n_qeKiMd-Fs" />
+          <Video videoUrl="https://youtu.be/HU1lxZfNSqM" />
         </Section>
         <Content1
           img={AmplitudeImg1}
