@@ -23,6 +23,7 @@ const CaseStudyDetails = () => {
       <Seo
         title="Amplitude and Samelogic Integration"
         image={AmplitudeOGImage}
+        twitterCard={AmplitudeOGImage}
       />
       <PageWrapper footerDark>
         <Section className="pb-0">
