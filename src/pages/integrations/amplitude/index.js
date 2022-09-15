@@ -32,11 +32,11 @@ const IntegrationDetails = ({ data }) => {
         twitterCard="summary_large_image"
         meta={[
           {
-            name: "twitter:image",
+            property: "twitter:image",
             content: siteUrl + AmplitudeOGImage,
           },
           {
-            name: "og:image",
+            property: "og:image",
             content: siteUrl + AmplitudeOGImage,
           },
         ]}

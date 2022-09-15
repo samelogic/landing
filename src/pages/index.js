@@ -30,7 +30,7 @@ const LandingPage4 = ({ data }) => {
             content: SocialImage,
           },
           {
-            name: "og:image",
+            property: "og:image",
             content: SocialImage,
           },
         ]}

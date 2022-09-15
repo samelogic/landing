@@ -28,8 +28,8 @@ const BlogDetails = ({ data }) => {
             content: heroSrc,
           },
           {
-            name: `og:image`,
-            content: "https:" + heroSrc,
+            property: `og:image`,
+            content: heroSrc,
           },
         ]}
       />
