@@ -1,10 +1,11 @@
-import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
-import { FaAngleRight, FaAngleLeft } from 'react-icons/fa'
+import React from "react";
+import { getSrc } from "gatsby-plugin-image";
+import { Container, Row, Col } from "react-bootstrap";
+import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 
-import { Section, Box } from '../../components/Core'
-import PostCard from '../../components/PostCard'
-import Pagination, { PageItem } from '../../components/Pagination'
+import { Section, Box } from "../../components/Core";
+import PostCard from "../../components/PostCard";
+import Pagination, { PageItem } from "../../components/Pagination";
 
 const BlogList = ({ posts }) => (
   <>
@@ -16,10 +17,10 @@ const BlogList = ({ posts }) => (
             return (
               <Col lg="4" key={post.slug} className="mb-5">
                 <PostCard
-                  img={post.heroImage.fluid.src}
+                  img={getSrc(post.heroImage)}
                   preTitle={post.createdAt}
                   title={post.title}
-                  href={'/blog/' + post.slug}
+                  href={"/blog/" + post.slug}
                   readMore
                 >
                   {/* <span
@@ -32,7 +33,7 @@ const BlogList = ({ posts }) => (
                   </span>
                 </PostCard>
               </Col>
-            )
+            );
           })}
         </Row>
         {/* <Box className="d-flex justify-content-center" mt={4}>
@@ -53,6 +54,6 @@ const BlogList = ({ posts }) => (
       </Container>
     </Section>
   </>
-)
+);
 
-export default BlogList
+export default BlogList;

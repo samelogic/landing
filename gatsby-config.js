@@ -2,33 +2,6 @@ require("dotenv").config({
   path: `.env`,
 });
 
-//#region Google Tag Manager Configurations
-const gtmConfig = {
-  id: process.env.GTM_ID,
-  includeInDevelopment: false,
-};
-
-//#endregion
-
-//#region Contentful Configuration
-const contentfulConfig = {
-  spaceId: process.env.CONTENTFUL_SPACE_ID,
-  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-};
-
-if (process.env.CONTENTFUL_HOST) {
-  contentfulConfig.host = process.env.CONTENTFUL_HOST;
-}
-
-const { spaceId, accessToken } = contentfulConfig;
-
-if (!spaceId || !accessToken) {
-  throw new Error(
-    "Contentful spaceId and the access token need to be provided."
-  );
-}
-//#endregion
-
 module.exports = {
   siteMetadata: {
     title: `Samelogic | Fast Product Critique, with Real Users`,
@@ -52,11 +25,18 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-source-contentful",
-      options: contentfulConfig,
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
     },
     {
       resolve: "gatsby-plugin-google-tagmanager",
-      options: gtmConfig,
+      options: {
+        id: process.env.GTM_ID,
+        includeInDevelopment: false,
+      },
     },
     {
       resolve: "gatsby-plugin-drift",

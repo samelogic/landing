@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { getSrc } from "gatsby-plugin-image";
 
 import { Box, Badge } from "../../components/Core";
 
@@ -98,7 +99,7 @@ const PostDetails = ({ post }) => (
         <img
           className="pb-6"
           style={{ borderRadius: "10px" }}
-          src={post.heroImage.fluid.src}
+          src={getSrc(post.heroImage)}
           alt=""
         />
       </div>

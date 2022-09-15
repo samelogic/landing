@@ -1,33 +1,35 @@
-import React from 'react'
-import { graphql, Link } from 'gatsby'
-import { Container, Row, Col } from 'react-bootstrap'
-import { get } from 'lodash'
+import React from "react";
+import { graphql, Link } from "gatsby";
+import { Container, Row, Col } from "react-bootstrap";
+import { get } from "lodash";
+import { getSrc } from "gatsby-plugin-image";
 
-import PageWrapper from '../components/PageWrapper'
-import { Section, Title, Text, Box } from '../components/Core'
+import PageWrapper from "../components/PageWrapper";
+import { Section, Title, Text, Box } from "../components/Core";
 
-import PostDetails from '../sections/blog/PostDetails'
-import Comments from '../sections/blog/Comments'
-import Sidebar from '../sections/blog/Sidebar'
-import Seo from '../components/SEO'
+import PostDetails from "../sections/blog/PostDetails";
+import Comments from "../sections/blog/Comments";
+import Sidebar from "../sections/blog/Sidebar";
+import Seo from "../components/SEO";
 
 const BlogDetails = ({ data }) => {
-  const siteTitle = get(data, 'site.siteMetadata.blog.title')
-  const post = data.contentfulPost
+  const siteTitle = get(data, "site.siteMetadata.blog.title");
+  const post = data.contentfulPost;
+  const heroSrc = getSrc(post.heroImage);
   return (
     <>
       <Seo
-        title={post.title + ' | The Samelogic Blog'}
+        title={post.title + " | The Samelogic Blog"}
         description={post.description.description}
         twitterCard="summary_large_image"
         meta={[
           {
             name: `twitter:image`,
-            content: 'https:' + post.heroImage.file.url,
+            content: heroSrc,
           },
           {
             name: `og:image`,
-            content: 'https:' + post.heroImage.file.url,
+            content: "https:" + heroSrc,
           },
         ]}
       />
@@ -68,9 +70,9 @@ const BlogDetails = ({ data }) => {
         {/* <Comments /> */}
       </PageWrapper>
     </>
-  )
-}
-export default BlogDetails
+  );
+};
+export default BlogDetails;
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
@@ -86,12 +88,7 @@ export const pageQuery = graphql`
       title
       createdAt(formatString: "MMMM Do, YYYY")
       heroImage {
-        fluid(maxWidth: 1180, background: "rgb:000000") {
-          ...GatsbyContentfulFluid_tracedSVG
-        }
-        file {
-          url
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
       description {
         description
@@ -103,4 +100,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
