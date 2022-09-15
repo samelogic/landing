@@ -146,31 +146,32 @@ const Pricing = () => {
             </Col>
           </Row>
           <Row className="justify-content-center mb-4 pricing-row">
-            
             <Col lg="4" md="6" sm="8" className="mt-4">
               <PricingCard>
                 <span className="small-title">Starter</span>
-                <h2 className="title mt-3 mb-4">$9.99<span className="time">/month</span></h2>
+                <h2 className="title mt-3 mb-4">
+                  $9.99<span className="time">/month</span>
+                </h2>
                 <ULStyled>
                   <li>5 Active Microsurveys</li>
                   <li>Export Data to CSV</li>
                   <li>Basic Support</li>
                 </ULStyled>
                 <Box className="mt-5">
-                  <a href="https://buy.stripe.com/3cs6qMfcPb0wd4A28b">
-                    <ButtonStyled>Buy Now</ButtonStyled>
-                  </a>
+                  <ButtonStyled href="https://buy.stripe.com/3cs6qMfcPb0wd4A28b">
+                    Buy Now
+                  </ButtonStyled>
                 </Box>
               </PricingCard>
-              <br/>
-              Only Microsurveys come with this Plan. 
+              <br />
+              Only Microsurveys come with this Plan.
             </Col>
 
             <Col lg="4" md="6" sm="8" className="mt-4">
               <PricingCard>
                 <span className="small-title">Pro</span>
                 <h2 className="title mt-3 mb-4">
-                <span className="time"></span> $149
+                  <span className="time"></span> $149
                   <span className="time">/month</span>
                 </h2>
                 <ULStyled>
@@ -183,9 +184,9 @@ const Pricing = () => {
                   <li>Basic Support</li>
                 </ULStyled>
                 <Box className="mt-5">
-                  <a href="https://buy.stripe.com/fZeaH21lZc4A3u0001">
-                    <ButtonStyled>Buy Now</ButtonStyled>
-                  </a>
+                  <ButtonStyled href="https://buy.stripe.com/fZeaH21lZc4A3u0001">
+                    Buy Now
+                  </ButtonStyled>
                 </Box>
               </PricingCard>
             </Col>
@@ -208,9 +209,9 @@ const Pricing = () => {
                   <li>Dedicated Support</li>
                 </ULStyled>
                 <Box className="mt-5">
-                  <a href="https://buy.stripe.com/cN2cPac0Dd8E7KgeUW">
-                    <ButtonStyled>Buy Now</ButtonStyled>
-                  </a>
+                  <ButtonStyled href="https://buy.stripe.com/cN2cPac0Dd8E7KgeUW">
+                    Buy Now
+                  </ButtonStyled>
                 </Box>
               </PricingCard>
             </Col>

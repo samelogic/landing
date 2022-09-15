@@ -6,7 +6,7 @@ import { Link } from "gatsby";
 
 import GlobalContext from "../../context/GlobalContext";
 import Offcanvas from "../Offcanvas";
-import { Button } from "../Core";
+import CTAButton from "../CTAButton";
 import NestedMenu from "../NestedMenu";
 import { device } from "../../utils";
 import Logo from "../Logo";
@@ -356,19 +356,15 @@ const Header = ({ isDark = false }) => {
               </div>
             </div>
             <div className="header-btns ms-auto ms-lg-0 d-none d-md-block">
-              <a href="https://app.samelogic.com" className="cta-btn">
-                <Button
-                  id="header-cta"
-                  size="sm"
-                  css={`
-                    font-size: 16px !important;
-                    min-width: 141px !important;
-                    height: 45px !important;
-                  `}
-                >
-                  Try for Free
-                </Button>
-              </a>
+              <CTAButton
+                id="header-cta"
+                size="sm"
+                css={`
+                  font-size: 16px !important;
+                  min-width: 141px !important;
+                  height: 45px !important;
+                `}
+              />
             </div>
             <ToggleButton
               className={`navbar-toggler btn-close-off-canvas ms-3 ${

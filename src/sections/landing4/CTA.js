@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
 import { Title, Button, Box, Text } from "../../components/Core";
+import CTAButton from "../../components/CTAButton";
 import EmailForm from "../../components/EmailForm";
 
 const CTA = () => (
@@ -28,15 +29,8 @@ const CTA = () => (
                 </Text>
               </div> */}{" "}
               <div className="d-flex flex-column align-items-center pt-3">
-                <Button mb={2}>
-                  <a
-                    className="cta-btn"
-                    style={{ color: "white !important" }}
-                    href="https://app.samelogic.com"
-                  >
-                    Get Started
-                  </a>
-                </Button>
+                <CTAButton mb={2} style={{ color: "white !important" }} />
+
                 <Text
                   variant="small"
                   fontSize={"14px"}
