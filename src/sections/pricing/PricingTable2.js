@@ -1,8 +1,8 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Container } from 'react-bootstrap'
+import React from "react";
+import styled from "styled-components";
+import { Container } from "react-bootstrap";
 
-import { Title, Section, Button } from '../../components/Core'
+import { Title, Section, Button } from "../../components/Core";
 
 const Table = styled.table`
   thead,
@@ -56,7 +56,7 @@ const Table = styled.table`
         }
       }
       &:before {
-        content: '';
+        content: "";
         background: #fff;
         height: 100%;
         top: 0;
@@ -66,7 +66,7 @@ const Table = styled.table`
       }
     }
   }
-`
+`;
 
 const ButtonSm = styled(Button)`
   width: 167px;
@@ -93,7 +93,7 @@ const ButtonSm = styled(Button)`
     background-color: ${({ theme }) => `${theme.colors.secondary}`} !important;
     color: #fff;
   }
-`
+`;
 
 const PricingTable2 = () => {
   return (
@@ -301,7 +301,7 @@ const PricingTable2 = () => {
                 <tr className="price-block-row">
                   <th scope="row" className="title-col sin-box"></th>
                   <td className="basic-col sin-box">
-                    <div className="mt-5 ml-3 pr-3">
+                    <div className="mt-5 ms-3 pr-3">
                       <Title variant="card">Free</Title>
                       <small className="d-block mb-4">
                         No credit card required
@@ -310,7 +310,7 @@ const PricingTable2 = () => {
                     </div>
                   </td>
                   <td className="basic-col sin-box">
-                    <div className="mt-5 ml-3 pr-3">
+                    <div className="mt-5 ms-3 pr-3">
                       <Title variant="card">$9/mo</Title>
                       <small className="d-block mb-4">
                         No credit card required
@@ -319,7 +319,7 @@ const PricingTable2 = () => {
                     </div>
                   </td>
                   <td className="basic-col sin-box">
-                    <div className="mt-5 ml-3 pr-3">
+                    <div className="mt-5 ms-3 pr-3">
                       <Title variant="card">$19/mo</Title>
                       <small className="d-block mb-4">
                         No credit card required
@@ -328,7 +328,7 @@ const PricingTable2 = () => {
                     </div>
                   </td>
                   <td className="basic-col sin-box">
-                    <div className="mt-5 ml-3 pr-3">
+                    <div className="mt-5 ms-3 pr-3">
                       <Title variant="card">$39/mo</Title>
                       <small className="d-block mb-4">
                         No credit card required
@@ -343,7 +343,7 @@ const PricingTable2 = () => {
         </Container>
       </Section>
     </>
-  )
-}
+  );
+};
 
-export default PricingTable2
+export default PricingTable2;

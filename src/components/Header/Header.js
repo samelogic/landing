@@ -221,7 +221,7 @@ const Header = ({ isDark = false }) => {
               <Logo white={isDark} />
             </div>
             <div className="collapse navbar-collapse">
-              <div className="navbar-nav ml-lg-auto mr-3">
+              <div className="navbar-nav ms-lg-auto mr-3">
                 <Menu
                   className="navbar-nav d-none d-lg-flex"
                   dark={isDark ? 1 : 0}
@@ -355,7 +355,7 @@ const Header = ({ isDark = false }) => {
                 </Menu>
               </div>
             </div>
-            <div className="header-btns ml-auto ml-lg-0 d-none d-md-block">
+            <div className="header-btns ms-auto ms-lg-0 d-none d-md-block">
               <a href="https://app.samelogic.com" className="cta-btn">
                 <Button
                   id="header-cta"
@@ -371,7 +371,7 @@ const Header = ({ isDark = false }) => {
               </a>
             </div>
             <ToggleButton
-              className={`navbar-toggler btn-close-off-canvas ml-3 ${
+              className={`navbar-toggler btn-close-off-canvas ms-3 ${
                 gContext.visibleOffCanvas ? "collapsed" : ""
               }`}
               type="button"

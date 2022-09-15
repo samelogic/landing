@@ -4,52 +4,52 @@ import React, {
   useLayoutEffect,
   useContext,
   useRef,
-} from 'react'
+} from "react";
 
-import styled, { ThemeProvider } from 'styled-components'
-import { Helmet } from 'react-helmet'
-import AOS from 'aos'
+import styled, { ThemeProvider } from "styled-components";
+import { Helmet } from "react-helmet";
+import AOS from "aos";
 
-import Header from '../Header'
-import Footer from '../Footer'
+import Header from "../Header";
+import Footer from "../Footer";
 
-import ModalVideo from '../ModalVideo'
+import ModalVideo from "../ModalVideo";
 
-import GlobalContext from '../../context/GlobalContext'
+import GlobalContext from "../../context/GlobalContext";
 
-import GlobalStyle from '../../utils/globalStyle'
+import GlobalStyle from "../../utils/globalStyle";
 
-import imgFavicon from '../../assets/favicon.png'
+import imgFavicon from "../../assets/favicon.png";
 
-import '../../assets/fonts/fontawesome-5/webfonts/fa-brands-400.ttf'
-import '../../assets/fonts/fontawesome-5/webfonts/fa-regular-400.ttf'
-import '../../assets/fonts/fontawesome-5/webfonts/fa-solid-900.ttf'
-import '../../assets/fonts/typography-font/Circular-Std-Book.ttf'
-import '../../assets/fonts/typography-font/CircularStd-Black.ttf'
-import '../../assets/fonts/typography-font/CircularStd-BlackItalic.ttf'
-import '../../assets/fonts/typography-font/CircularStd-Bold.ttf'
-import '../../assets/fonts/typography-font/CircularStd-BoldItalic.ttf'
-import '../../assets/fonts/typography-font/CircularStd-Book.ttf'
-import '../../assets/fonts/typography-font/CircularStd-BookItalic.ttf'
-import '../../assets/fonts/typography-font/CircularStd-Medium.ttf'
-import '../../assets/fonts/typography-font/CircularStd-MediumItalic.ttf'
+import "../../assets/fonts/fontawesome-5/webfonts/fa-brands-400.ttf";
+import "../../assets/fonts/fontawesome-5/webfonts/fa-regular-400.ttf";
+import "../../assets/fonts/fontawesome-5/webfonts/fa-solid-900.ttf";
+import "../../assets/fonts/typography-font/Circular-Std-Book.ttf";
+import "../../assets/fonts/typography-font/CircularStd-Black.ttf";
+import "../../assets/fonts/typography-font/CircularStd-BlackItalic.ttf";
+import "../../assets/fonts/typography-font/CircularStd-Bold.ttf";
+import "../../assets/fonts/typography-font/CircularStd-BoldItalic.ttf";
+import "../../assets/fonts/typography-font/CircularStd-Book.ttf";
+import "../../assets/fonts/typography-font/CircularStd-BookItalic.ttf";
+import "../../assets/fonts/typography-font/CircularStd-Medium.ttf";
+import "../../assets/fonts/typography-font/CircularStd-MediumItalic.ttf";
 
-import '../../assets/fonts/icon-font/fonts/avasta.ttf'
-import '../../assets/fonts/icon-font/css/style.css'
+import "../../assets/fonts/icon-font/fonts/avasta.ttf";
+import "../../assets/fonts/icon-font/css/style.css";
 
-import './bootstrap-custom.scss'
-import '../../../node_modules/slick-carousel/slick/slick.css'
-import '../../../node_modules/slick-carousel/slick/slick-theme.css'
-import '../../../node_modules/aos/dist/aos.css'
+import "./bootstrap-custom.scss";
+import "../../../node_modules/slick-carousel/slick/slick.css";
+import "../../../node_modules/slick-carousel/slick/slick-theme.css";
+import "../../../node_modules/aos/dist/aos.css";
 
-import '../../assets/fonts/icon-font/css/style.css'
-import '../../assets/fonts/typography-font/typo.css'
-import '../../assets/fonts/fontawesome-5/css/all.css'
+import "../../assets/fonts/icon-font/css/style.css";
+import "../../assets/fonts/typography-font/typo.css";
+import "../../assets/fonts/fontawesome-5/css/all.css";
 
-import { get, merge } from 'lodash'
+import { get, merge } from "lodash";
 
 // the full theme object
-import { theme as baseTheme } from '../../utils'
+import { theme as baseTheme } from "../../utils";
 
 const Loader = styled.div`
   position: fixed;
@@ -66,55 +66,55 @@ const Loader = styled.div`
     opacity: 0;
     visibility: hidden;
   }
-`
+`;
 
 // options for different color modes
-const modes = { light: 'light', dark: 'dark' }
+const modes = { light: "light", dark: "dark" };
 
 // merge the color mode with the base theme
 // to create a new theme object
 const getTheme = (mode) =>
   merge({}, baseTheme, {
     colors: get(baseTheme.colors.modes, mode, baseTheme.colors),
-  })
+  });
 
 const Layout = ({ children, pageContext }) => {
-  const gContext = useContext(GlobalContext)
+  const gContext = useContext(GlobalContext);
 
-  const [visibleLoader, setVisibleLoader] = useState(true)
+  const [visibleLoader, setVisibleLoader] = useState(true);
 
   useLayoutEffect(() => {
-    AOS.init()
-    setVisibleLoader(false)
-  }, [])
+    AOS.init();
+    setVisibleLoader(false);
+  }, []);
 
   // Navbar style based on scroll
-  const eleRef = useRef()
+  const eleRef = useRef();
 
   useEffect(() => {
     window.addEventListener(
-      'popstate',
+      "popstate",
       function (event) {
         // The popstate event is fired each time when the current history entry changes.
-        gContext.closeAbout()
-        gContext.closeContact()
-        gContext.closeOffcanvas()
+        gContext.closeAbout();
+        gContext.closeContact();
+        gContext.closeOffcanvas();
       },
       false
-    )
+    );
     window.addEventListener(
-      'pushState',
+      "pushState",
       function (event) {
         // The pushstate event is fired each time when the current history entry changes.
-        gContext.closeAbout()
-        gContext.closeContact()
-        gContext.closeOffcanvas()
+        gContext.closeAbout();
+        gContext.closeContact();
+        gContext.closeOffcanvas();
       },
       false
-    )
-  }, [gContext])
+    );
+  }, [gContext]);
 
-  if (pageContext.layout === 'bare') {
+  if (pageContext.layout === "bare") {
     return (
       <ThemeProvider
         theme={
@@ -126,7 +126,7 @@ const Layout = ({ children, pageContext }) => {
           <title>Samelogic | Fast Product Critique, with Real Users</title>
           <link rel="icon" type="image/png" href={imgFavicon} />
         </Helmet>
-        <Loader id="loading" className={visibleLoader ? '' : 'inActive'}>
+        <Loader id="loading" className={visibleLoader ? "" : "inActive"}>
           <div className="load-circle">
             <span className="one"></span>
           </div>
@@ -137,7 +137,7 @@ const Layout = ({ children, pageContext }) => {
 
         <ModalVideo />
       </ThemeProvider>
-    )
+    );
   }
 
   return (
@@ -152,7 +152,7 @@ const Layout = ({ children, pageContext }) => {
           <title>Samelogic | Fast Product Critique, with Real Users</title>
           <link rel="icon" type="image/png" href={imgFavicon} />
         </Helmet>
-        <Loader id="loading" className={visibleLoader ? '' : 'inActive'}>
+        <Loader id="loading" className={visibleLoader ? "" : "inActive"}>
           <div className="load-circle">
             <span className="one"></span>
           </div>
@@ -167,7 +167,7 @@ const Layout = ({ children, pageContext }) => {
         <ModalVideo />
       </ThemeProvider>
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
