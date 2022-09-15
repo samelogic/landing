@@ -26,6 +26,9 @@ const IntegrationDetails = ({ data }) => {
       {" "}
       <Seo
         title="Amplitude and Samelogic Integration"
+        description="Send your quantitative and qualitative user research events
+        to Amplitude. Dig deeper into the how and why are users
+        interacting with your feature test."
         twitterCard="summary_large_image"
         meta={[
           {
@@ -59,7 +62,7 @@ const IntegrationDetails = ({ data }) => {
                   <Text>
                     Send your quantitative and qualitative user research events
                     to Amplitude. Dig deeper into the how and why are users
-                    interacting with your concept-test.
+                    interacting with your feature test.
                   </Text>
                 </Box>
                 <Box className="text-center" mt={4}>
