@@ -10,6 +10,7 @@ import imgHeroTab from "../../assets/image/png/l5-hero-image.png";
 import HeroImage from "../../assets/image/svg/Hero.svg";
 
 import EmailForm from "../../components/EmailForm";
+import CTAButton from "../../components/CTAButton";
 
 const SectionStyled = styled(Section)`
   background-image: ${({ theme }) => `radial-gradient(
@@ -62,10 +63,11 @@ const Hero = () => {
               >
                 <Box py={[null, null, null, 5]} pr={5} pt={[4, null]}>
                   <Title variant="hero" color="light">
-                  Fast Product Critique, with Real Users
+                    Fast Product Critique, with Real Users
                   </Title>
                   <Text mb={4} color="light" opacity={0.7}>
-                     Get the evidence you need to know which direction to take your product. 
+                     Get the evidence you need to know which direction to take
+                    your product.
                   </Text>
                   {/* <div className="d-flex flex-column pt-3">
                     <EmailForm />
@@ -79,10 +81,7 @@ const Hero = () => {
                     Request an Early Access Invite
                   </Text> */}
                   <div className="d-flex flex-column align-items-start pt-3">
-                    <a href="https://app.samelogic.com" className="cta-btn">
-                      <Button mb={2}>Try for Free &nbsp;</Button>
-                    </a>
-
+                    <CTAButton mb={2} />
                     <Text
                       variant="small"
                       fontSize={"14px"}

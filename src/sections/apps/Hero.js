@@ -1,22 +1,30 @@
-import React, { useContext } from 'react'
-import styled from 'styled-components'
-import { Container, Row, Col } from 'react-bootstrap'
-import { rgba } from 'polished'
+import React, { useContext } from "react";
+import styled from "styled-components";
+import { Container, Row, Col } from "react-bootstrap";
+import { rgba } from "polished";
 
-import { Title, Button, Section, Box, Text, Badge } from '../../components/Core'
+import {
+  Title,
+  Button,
+  Section,
+  Box,
+  Text,
+  Badge,
+} from "../../components/Core";
+import CTAButton from "../../components/CTAButton";
 
-import GlobalContext from '../../context/GlobalContext'
+import GlobalContext from "../../context/GlobalContext";
 
-import { device } from '../../utils'
-import svgHeroShape from '../../assets/image/svg/hero-shape-svg.svg'
-import imgL1HeroPhone from '../../assets/image/png/landing1-hero-phone.png'
+import { device } from "../../utils";
+import svgHeroShape from "../../assets/image/svg/hero-shape-svg.svg";
+import imgL1HeroPhone from "../../assets/image/png/landing1-hero-phone.png";
 
 const ShapeTopLeft = styled.div`
   position: absolute;
   left: 0;
   top: 0;
   transform: translate(-50%, -50%);
-`
+`;
 
 const TopCard = styled(Box)`
   width: 305px;
@@ -30,7 +38,7 @@ const TopCard = styled(Box)`
   @media ${device.lg} {
     left: 2%;
   }
-`
+`;
 
 const BottomCard = styled(Box)`
   width: 305px;
@@ -47,7 +55,7 @@ const BottomCard = styled(Box)`
   @media ${device.xl} {
     right: -33%;
   }
-`
+`;
 
 const ImgRight = styled.img`
   max-width: 50%;
@@ -57,7 +65,7 @@ const ImgRight = styled.img`
   @media ${device.lg} {
     max-width: 100%;
   }
-`
+`;
 
 const BadgeStyled = styled(Badge)`
   background-color: ${({ theme, bg }) => rgba(theme.colors[bg], 0.15)};
@@ -65,15 +73,15 @@ const BadgeStyled = styled(Badge)`
   border: none;
   font-weight: 300;
   margin: 0 15px 10px 0;
-`
+`;
 
 const Hero = ({ name, introduction, categories }) => {
-  const gContext = useContext(GlobalContext)
+  const gContext = useContext(GlobalContext);
 
   const openVideoModal = (e) => {
-    e.preventDefault()
-    gContext.toggleVideoModal()
-  }
+    e.preventDefault();
+    gContext.toggleVideoModal();
+  };
 
   return (
     <>
@@ -115,9 +123,8 @@ const Hero = ({ name, introduction, categories }) => {
                   <Title variant="hero">{name}</Title>
                   <Text mb={4}>{introduction}</Text>
                   <div className="d-flex flex-column align-items-start">
-                    <a href="https://app.samelogic.com">
-                      <Button mb={3}>Get Started</Button>
-                    </a>
+                    <CTAButton mb={3} />
+
                     <a
                       href="https://samelogic.com/docs/steps/microsurveys"
                       className="text-decoration-none"
@@ -135,7 +142,7 @@ const Hero = ({ name, introduction, categories }) => {
         </Container>
       </Section>
     </>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

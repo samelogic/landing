@@ -4,6 +4,7 @@ import { graphql } from "gatsby";
 
 import PageWrapper from "../../../components/PageWrapper";
 import { Section, Title, Text, Box, Button } from "../../../components/Core";
+import CTAButton from "../../../components/CTAButton/CTAButton";
 import Seo from "../../../components/SEO";
 import { get } from "lodash";
 
@@ -62,9 +63,7 @@ const IntegrationDetails = ({ data }) => {
                   </Text>
                 </Box>
                 <Box className="text-center" mt={4}>
-                  <a href="https://app.samelogic.com" className="cta-btn">
-                    <Button mb={2}>Try for Free &nbsp;</Button>
-                  </a>
+                  <CTAButton />
                 </Box>
               </Col>
             </Row>

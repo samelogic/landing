@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
 
 import { Title, Section, Box, Text, Button } from "../../../components/Core";
+import CTAButton from "../../../components/CTAButton/CTAButton";
 
 const SectionStyled = styled(Section)``;
 
@@ -29,9 +30,7 @@ const Content1 = ({ img, title, body }) => {
                 <Text>{body}</Text>
 
                 <Box mt={4}>
-                  <a href="https://app.samelogic.com" className="cta-btn">
-                    <Button mb={2}>Try for Free &nbsp;</Button>
-                  </a>
+                  <CTAButton />
                 </Box>
               </div>
             </Col>

@@ -6,7 +6,7 @@ import { Link } from "gatsby";
 
 import GlobalContext from "../../context/GlobalContext";
 import Offcanvas from "../Offcanvas";
-import { Button } from "../Core";
+import CTAButton from "../CTAButton";
 import NestedMenu from "../NestedMenu";
 import { device } from "../../utils";
 import Logo from "../Logo";
@@ -221,7 +221,7 @@ const Header = ({ isDark = false }) => {
               <Logo white={isDark} />
             </div>
             <div className="collapse navbar-collapse">
-              <div className="navbar-nav ml-lg-auto mr-3">
+              <div className="navbar-nav ms-lg-auto mr-3">
                 <Menu
                   className="navbar-nav d-none d-lg-flex"
                   dark={isDark ? 1 : 0}
@@ -355,23 +355,19 @@ const Header = ({ isDark = false }) => {
                 </Menu>
               </div>
             </div>
-            <div className="header-btns ml-auto ml-lg-0 d-none d-md-block">
-              <a href="https://app.samelogic.com" className="cta-btn">
-                <Button
-                  id="header-cta"
-                  size="sm"
-                  css={`
-                    font-size: 16px !important;
-                    min-width: 141px !important;
-                    height: 45px !important;
-                  `}
-                >
-                  Try for Free
-                </Button>
-              </a>
+            <div className="header-btns ms-auto ms-lg-0 d-none d-md-block">
+              <CTAButton
+                id="header-cta"
+                size="sm"
+                css={`
+                  font-size: 16px !important;
+                  min-width: 141px !important;
+                  height: 45px !important;
+                `}
+              />
             </div>
             <ToggleButton
-              className={`navbar-toggler btn-close-off-canvas ml-3 ${
+              className={`navbar-toggler btn-close-off-canvas ms-3 ${
                 gContext.visibleOffCanvas ? "collapsed" : ""
               }`}
               type="button"
