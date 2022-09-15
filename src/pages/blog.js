@@ -28,7 +28,7 @@ const BlogRegular = ({ data }) => {
             content: SocialImage,
           },
           {
-            name: `og:image`,
+            name: "og:image",
             content: SocialImage,
           },
         ]}
