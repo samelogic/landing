@@ -28,9 +28,8 @@ const IntegrationDetails = ({ data }) => {
       {" "}
       <Seo
         title="Amplitude and Samelogic Integration"
-        description="Send your quantitative and qualitative user research events
-        to Amplitude. Dig deeper into the how and why are users
-        interacting with your feature test."
+        description="Import mock from your design system. Place it in your live product. 
+        Collect and send the conversion rate and survey feedback to Amplitude. No code needed."
         twitterCard="summary_large_image"
         meta={[
           {
@@ -46,9 +45,9 @@ const IntegrationDetails = ({ data }) => {
       <PageWrapper footerDark>
         <Hero
           img={imgBrand}
-          title="Send contextual user events to Amplitude"
-          body="Send your quantitative and qualitative user research events to Amplitude. 
-          Dig deeper into the how and why are users interacting with your feature test."
+          title="Send Concept Testing analytics to Amplitude"
+          body="Import mock from your design system. Place it in your live product. 
+          Collect and send the conversion rate and survey feedback to Amplitude. No code needed."
         />
 
         <Video videoUrl="https://youtu.be/HU1lxZfNSqM" />
