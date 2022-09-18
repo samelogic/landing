@@ -13,8 +13,8 @@ import CTA from "../../../sections/landing4/CTA";
 import imgBrand from "./logo.png";
 
 import Hero from "../components/Hero";
-import Content1 from "../components/Content1";
-import Content2 from "../components/Content2";
+import ContentLeftCopy from "../components/ContentLeftCopy";
+import ContentRightCopy from "../components/ContentRightCopy";
 
 import AmplitudeImg1 from "./Amplitude-1.png";
 import AmplitudeImg2 from "./Amplitude-2.png";
@@ -53,20 +53,20 @@ const IntegrationDetails = ({ data }) => {
 
         <Video videoUrl="https://youtu.be/HU1lxZfNSqM" />
 
-        <Content1
+        <ContentLeftCopy
           img={AmplitudeImg1}
           title="Deeply understand your user behavior"
           body="Combine Samelogic's research data with Amplitude's
           quantitative data for a full user journey of what they are doing before
           and after participating in the experiment."
         />
-        <Content2
+        <ContentRightCopy
           img={AmplitudeImg2}
           title="Prioritize ideas based on ROI"
           body="Dig into which category of users are gravitating towards your idea. 
            Ensure you are building the right idea for the right segment of users."
         />
-        <Content1
+        <ContentLeftCopy
           img={AmplitudeImg3}
           title="Evidence-based decision making"
           body="Quickly run intent and demand tests for new features. Make decisions with

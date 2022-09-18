@@ -3,20 +3,35 @@ import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
 
 import { Title, Section, Box, Text, Button } from "../../../components/Core";
-import CTAButton from "../../../components/CTAButton/CTAButton";
+import CTAButton from "../../../components/CTAButton";
+
+import imgC2 from "../../../assets/image/jpeg/l7-content2-image-2.jpg";
+import imgC1 from "../../../assets/image/jpeg/l7-content2-image-1.jpg";
+import imgC3 from "../../../assets/image/jpeg/l7-content2-image-3.jpg";
+import imgC4 from "../../../assets/image/jpeg/l7-content2-image-4.jpg";
 
 const SectionStyled = styled(Section)``;
 
-const Content1 = ({ img, title, body }) => {
+const SingleImage = styled(Box)`
+  display: flex;
+  flex-direction: column;
+  img {
+    padding-bottom: 15px;
+    padding-right: 15px;
+    border-radius: 8px;
+  }
+`;
+
+const ContentRightCopy = ({ img, title, body }) => {
   return (
     <>
-      {/* <!-- Content1 section --> */}
-      <SectionStyled>
+      {/* <!-- Content2 section --> */}
+      <SectionStyled pt="0!important">
         <Container>
           <Row className="align-items-center">
-            <Col lg="6" className="mb-4 mb-lg-0 pl-lg-5 order-lg-2">
+            <Col lg="6" className="mb-4 mb-lg-0">
               <div
-                data-aos="fade-right"
+                data-aos="fade-left"
                 data-aos-duration="450"
                 data-aos-delay="150"
                 data-aos-once="true"
@@ -24,13 +39,13 @@ const Content1 = ({ img, title, body }) => {
                 <img src={img} alt="" className="img-fluid" />
               </div>
             </Col>
-            <Col lg="6" md={9} className="order-lg-1">
+            <Col lg="6" md={9}>
               <div>
                 <Title>{title}</Title>
                 <Text>{body}</Text>
 
                 <Box mt={4}>
-                  <CTAButton />
+                  <CTAButton mb={2} />
                 </Box>
               </div>
             </Col>
@@ -41,4 +56,4 @@ const Content1 = ({ img, title, body }) => {
   );
 };
 
-export default Content1;
+export default ContentRightCopy;
