@@ -89,6 +89,15 @@ const Hero = ({ img, title, body }) => {
                   <Text mb={4}>{body}</Text>
 
                   <CTAButton mb={2} />
+                  <a
+                    href="https://samelogic.com/blog/10-advantages-of-using-painted-door-tests"
+                    className="text-decoration-none what-is-concept-test"
+                  >
+                    <Box color="secondary">
+                      <i className="icon icon-triangle-right-17-2"></i> What is
+                      a Concept Test?
+                    </Box>
+                  </a>
                 </Box>
               </div>
             </Col>
