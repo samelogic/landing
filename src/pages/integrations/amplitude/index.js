@@ -44,7 +44,12 @@ const IntegrationDetails = ({ data }) => {
         ]}
       />
       <PageWrapper footerDark>
-        <Hero img={imgBrand} />
+        <Hero
+          img={imgBrand}
+          title="Send contextual user events to Amplitude"
+          body="Send your quantitative and qualitative user research events to Amplitude. 
+          Dig deeper into the how and why are users interacting with your feature test."
+        />
 
         <Video videoUrl="https://youtu.be/HU1lxZfNSqM" />
 
