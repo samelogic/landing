@@ -91,6 +91,7 @@ const Hero = ({ img, title, body }) => {
                   <CTAButton mb={2} />
                   <a
                     href="https://samelogic.com/blog/10-advantages-of-using-painted-door-tests"
+                    target="_blank"
                     className="text-decoration-none what-is-concept-test"
                   >
                     <Box color="secondary">
