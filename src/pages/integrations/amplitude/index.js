@@ -47,8 +47,9 @@ const IntegrationDetails = ({ data }) => {
           img={imgBrand}
           title="Send Concept Testing analytics to Amplitude"
           body="Import components from your design system. 
-          Place it in your live product to see who interacts with it. 
-          Measure the conversion rate with survey feedback and send to Amplitude. No code needed."
+          Place it in your live product to see who really wants it. 
+          Send the conversion rate and feedback to Amplitude.
+          Skip the code and engineers."
         />
 
         <Video videoUrl="https://youtu.be/HU1lxZfNSqM" />
