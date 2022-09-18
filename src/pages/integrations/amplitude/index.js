@@ -46,8 +46,9 @@ const IntegrationDetails = ({ data }) => {
         <Hero
           img={imgBrand}
           title="Send Concept Testing analytics to Amplitude"
-          body="Import mock from your design system. Place it in your live product. 
-          Collect and send the conversion rate and survey feedback to Amplitude. No code needed."
+          body="Import components from your design system. 
+          Place it in your live product to see who interacts with it. 
+          Measure the conversion rate with survey feedback and send to Amplitude. No code needed."
         />
 
         <Video videoUrl="https://youtu.be/HU1lxZfNSqM" />
