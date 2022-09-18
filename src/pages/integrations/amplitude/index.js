@@ -70,7 +70,7 @@ const IntegrationDetails = ({ data }) => {
           img={AmplitudeImg3}
           title="Evidence-based decision making"
           body="Quickly run intent and demand tests for new features. Make decisions with
-          as much data presented simply."
+          as much data presented simply. Know who wants what and why."
         />
         <CTA />
       </PageWrapper>
