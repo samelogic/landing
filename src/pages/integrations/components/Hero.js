@@ -1,47 +1,38 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
+import { rgba } from "polished";
 import { Container, Row, Col } from "react-bootstrap";
 
-import { Title, Button, Section, Box, Text } from "../../../components/Core";
+import {
+  Title,
+  Button,
+  Section,
+  Box,
+  Text,
+  Span,
+} from "../../../components/Core";
 import CTAButton from "../../../components/CTAButton";
 
 import { device } from "../../../utils";
 
-const ShapeTopLeft = styled.div`
-  position: absolute;
-  left: 0;
-  top: 0;
-  transform: translate(-50%, -50%);
-`;
+const ULStyled = styled.ol`
+  margin: 0;
+  padding-top: 0;
+  padding-left: 0;
+  list-style: inside decimal;
 
-const TopCard = styled(Box)`
-  width: 305px;
-  box-shadow: ${({ theme }) => `0 32px 34px ${theme.colors.shadow}`};
-  position: absolute;
-  top: 14%;
-  left: 0;
-  @media ${device.md} {
-    left: -13%;
-  }
-  @media ${device.lg} {
-    left: 2%;
-  }
-`;
-
-const BottomCard = styled(Box)`
-  width: 305px;
-  box-shadow: ${({ theme }) => `0 32px 34px ${theme.colors.shadow}`};
-  position: absolute;
-  bottom: 12%;
-  right: 0;
-  @media ${device.md} {
-    right: -13%;
-  }
-  @media ${device.lg} {
-    right: -5%;
-  }
-  @media ${device.xl} {
-    right: -33%;
+  li {
+    &:nth-child(odd) {
+      @media ${device.sm} {
+        margin-right: 40px;
+      }
+    }
+    color: #19191b;
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing: -0.66px;
+    line-height: 50px;
+    margin-bottom: 5px;
   }
 `;
 
@@ -55,7 +46,22 @@ const ImgRight = styled.img`
   }
 `;
 
-const Hero = ({ img, title, body }) => {
+const Body = ({ body, bodyList }) => {
+  if (bodyList) {
+    return (
+      <ULStyled>
+        {bodyList.map((val, i) => (
+          <li key={i}>{val}</li>
+        ))}
+      </ULStyled>
+    );
+  }
+  if (body) {
+    return <Text>{body}</Text>;
+  }
+};
+
+const Hero = ({ img, title, body, bodyList }) => {
   return (
     <>
       {/* <!-- Hero Area --> */}
@@ -86,19 +92,20 @@ const Hero = ({ img, title, body }) => {
               >
                 <Box py={[null, null, null, 5]} pr={5} pt={[4, null]}>
                   <Title variant="hero">{title}</Title>
-                  <Text mb={4}>{body}</Text>
-
+                  <Box mb={4}>
+                    <Body body={body} bodyList={bodyList} />
+                  </Box>
                   <CTAButton mb={2} />
-                  <a
-                    href="https://samelogic.com/blog/10-advantages-of-using-painted-door-tests"
-                    target="_blank"
-                    className="text-decoration-none what-is-concept-test"
-                  >
-                    <Box color="secondary">
-                      <i className="icon icon-triangle-right-17-2"></i> What is
-                      a Concept Test?
-                    </Box>
-                  </a>
+
+                  <Text fontSize={"18px"} color="ash" fontWeight={500}>
+                    Also called Painted Doors or Fake Doors{" "}
+                    <a
+                      href="https://samelogic.com/blog/10-advantages-of-using-painted-door-tests"
+                      target="blank"
+                    >
+                      <Span color="secondary">Learn more</Span>
+                    </a>
+                  </Text>
                 </Box>
               </div>
             </Col>

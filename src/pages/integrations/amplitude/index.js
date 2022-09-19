@@ -50,6 +50,12 @@ const IntegrationDetails = ({ data }) => {
           Place it in your live product to see who really wants it. 
           Send the conversion rate and feedback to Amplitude.
           Skip the code and engineers."
+          bodyList={[
+            "Import components from your design system",
+            "Drag and drop it anywhere in your real product",
+            "Measure the conversion rate and feedback from real users",
+            "Skip the engineers, validate an idea in hours, not weeks",
+          ]}
         />
 
         <Video videoUrl="https://youtu.be/HU1lxZfNSqM" />
