@@ -53,7 +53,7 @@ const IntegrationDetails = ({ data }) => {
           subTitle="Skip the engineers, validate an idea in hours, not weeks"
           bodyList={[
             "Import components from your design system",
-            "Drag and drop it anywhere in your real product",
+            "Drag and drop it anywhere in your website",
             "Measure the conversion rate and feedback from real users",
           ]}
         />
