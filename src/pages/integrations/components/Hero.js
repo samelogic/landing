@@ -61,7 +61,7 @@ const Body = ({ body, bodyList }) => {
   }
 };
 
-const Hero = ({ img, title, body, bodyList }) => {
+const Hero = ({ img, title, subTitle, body, bodyList }) => {
   return (
     <>
       {/* <!-- Hero Area --> */}
@@ -91,6 +91,7 @@ const Hero = ({ img, title, body, bodyList }) => {
                 data-aos-delay="500"
               >
                 <Box py={[null, null, null, 5]} pr={5} pt={[4, null]}>
+                  <Text mb={4}>{subTitle}</Text>
                   <Title variant="hero">{title}</Title>
                   <Box mb={4}>
                     <Body body={body} bodyList={bodyList} />
