@@ -10,7 +10,7 @@ import { get } from "lodash";
 
 import Video from "../components/Video";
 import CTA from "../../../sections/landing4/CTA";
-import imgBrand from "./logo.png";
+import imgBrand from "./Integrations Hero.png";
 
 import Hero from "../components/Hero";
 import ContentLeftCopy from "../components/ContentLeftCopy";
@@ -50,11 +50,11 @@ const IntegrationDetails = ({ data }) => {
           Place it in your live product to see who really wants it. 
           Send the conversion rate and feedback to Amplitude.
           Skip the code and engineers."
-          subTitle="Skip the engineers, validate an idea in hours, not weeks"
+          subTitle="Skip the engineers. Validate your idea in hours, not weeks"
           bodyList={[
-            "Import components from your design system",
-            "Drag and drop it anywhere in your website",
-            "Measure the conversion rate and feedback from real users",
+            "Import components from your design mockups",
+            "Drag and drop it anywhere on your website",
+            "Measure conversion rates and get feedback from real users!",
           ]}
         />
 
