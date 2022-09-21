@@ -59,22 +59,25 @@ const IntegrationDetails = ({ data }) => {
 
         <ContentLeftCopy
           img={AmplitudeImg1}
-          title="Deeply understand your user behavior"
-          body="Combine Samelogic's research data with Amplitude's
-          quantitative data for a full user journey of what they are doing before
-          and after participating in the experiment."
+          title="Fake Door Test using your design system"
+          body="Literally drag figma components unto your website. 
+          Setup who sees the test.
+          We will take care of the analytics and surveys.
+          Don't wait on UX or Engineers to implement your test!"
         />
         <ContentRightCopy
           img={AmplitudeImg2}
-          title="Prioritize ideas based on ROI"
-          body="Dig into which category of users are gravitating towards your idea. 
-           Ensure you are building the right idea for the right segment of users."
+          title="Real environment with real users"
+          body="Get unbiased analytics and feedback. 
+          Your users using pretotyped features inside your product is the best testing grounds."
         />
         <ContentLeftCopy
           img={AmplitudeImg3}
-          title="Evidence-based decision making"
-          body="Quickly run intent and demand tests for new features. Make decisions with
-          as much data presented simply. Know who wants what and why."
+          title="Who is doing what"
+          body="
+          Powerful combination of qual and quant, such as conversion funnel and user feedback.
+          Send these events to your analytics tool for further investigation.
+          Understand who really wants the feature and why!"
         />
         <CTA />
       </PageWrapper>
