@@ -98,6 +98,9 @@ export const pageQuery = graphql`
           html
         }
       }
+      ctaTitle
+      ctaBody
+      ctaButton
     }
   }
 `;

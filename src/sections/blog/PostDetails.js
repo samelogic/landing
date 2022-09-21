@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { getSrc } from "gatsby-plugin-image";
 
 import { Box, Badge } from "../../components/Core";
+import BlogCTA from "../../sections/blog/BlogCTA";
 
 import imgB1 from "../../assets/image/jpeg/blog-details-img-1.jpg";
 import iconQuote from "../../assets/image/png/quote-icon.png";
@@ -108,6 +109,7 @@ const PostDetails = ({ post }) => (
           __html: post.content.childMarkdownRemark.html,
         }}
       />
+      <BlogCTA title={post.ctaTitle} body={post.ctaBody} cta={post.ctaButton} />
     </Post>
     {post.tags && post.tags.length > 0 && (
       <Box className="d-flex" mt={4}>
