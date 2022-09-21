@@ -46,15 +46,11 @@ const IntegrationDetails = ({ data }) => {
         <Hero
           img={imgBrand}
           title="Send Concept Testing analytics to Amplitude"
-          body="Import components from your design system. 
-          Place it in your live product to see who really wants it. 
-          Send the conversion rate and feedback to Amplitude.
-          Skip the code and engineers."
           subTitle="Skip the engineers. Validate your idea in hours, not weeks"
           bodyList={[
             "Import components from your design mockups",
             "Drag and drop it anywhere on your website",
-            "Measure conversion rates and get feedback from real users!",
+            "Get real-time analytics and feedback from real users!",
           ]}
         />
 
