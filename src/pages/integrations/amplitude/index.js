@@ -10,7 +10,7 @@ import { get } from "lodash";
 
 import Video from "../components/Video";
 import CTA from "../../../sections/landing4/CTA";
-import imgBrand from "./Integrations Hero.png";
+import imgBrand from "./Integrations Hero Output.png";
 
 import Hero from "../components/Hero";
 import ContentLeftCopy from "../components/ContentLeftCopy";
