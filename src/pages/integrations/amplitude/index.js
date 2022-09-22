@@ -20,6 +20,7 @@ import AmplitudeImg1 from "./Amplitude-1.png";
 import AmplitudeImg2 from "./Amplitude-2.png";
 import AmplitudeImg3 from "./Amplitude-3.png";
 import AmplitudeOGImage from "./Amplitude-OG-Image.png";
+import AmplitudeTwitterImage from "./Amplitude-Twitter-Image.png";
 
 const IntegrationDetails = ({ data }) => {
   const siteUrl = get(data, "site.siteMetadata.siteUrl");
@@ -34,7 +35,7 @@ const IntegrationDetails = ({ data }) => {
         meta={[
           {
             property: "twitter:image",
-            content: siteUrl + AmplitudeOGImage,
+            content: siteUrl + AmplitudeTwitterImage,
           },
           {
             property: "og:image",
