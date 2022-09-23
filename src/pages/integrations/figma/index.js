@@ -16,7 +16,7 @@ import Hero from "../components/Hero";
 import ContentLeftCopy from "../components/ContentLeftCopy";
 import ContentRightCopy from "../components/ContentRightCopy";
 
-import AmplitudeImg1 from "./Amplitude-1.png";
+import Img1 from "./1.png";
 import AmplitudeImg2 from "./Amplitude-2.png";
 import AmplitudeImg3 from "./Amplitude-3.png";
 import AmplitudeOGImage from "./Amplitude-OG-Image.png";
@@ -58,7 +58,7 @@ const IntegrationDetails = ({ data }) => {
         <Video videoUrl="https://youtu.be/HU1lxZfNSqM" />
 
         <ContentLeftCopy
-          img={AmplitudeImg1}
+          img={Img1}
           title="Fake Door Test using your design system"
           body="Literally drag figma components unto your website. 
           Setup who sees the test.
