@@ -55,7 +55,7 @@ const IntegrationDetails = ({ data }) => {
           ]}
         />
 
-        <Video videoUrl="https://youtu.be/HU1lxZfNSqM" />
+        <Video videoUrl="https://youtu.be/SoQVWgY4mc4" />
 
         <ContentLeftCopy
           img={Img1}
