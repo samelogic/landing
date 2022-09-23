@@ -35,11 +35,11 @@ const IntegrationDetails = ({ data }) => {
         meta={[
           {
             property: "twitter:image",
-            content: siteUrl + AmplitudeOGImage,
+            content: siteUrl + imgBrand,
           },
           {
             property: "og:image",
-            content: siteUrl + AmplitudeOGImage,
+            content: siteUrl + imgBrand,
           },
         ]}
       />
