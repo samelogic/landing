@@ -51,7 +51,8 @@ const IntegrationDetails = ({ data }) => {
           bodyList={[
             "Import components from your design mockups",
             "Drag and drop it anywhere on your website",
-            "Get real-time analytics and feedback from real users!",
+            "Get unbiased analytics and feedback from real users",
+            "Know who is interacting with your idea and why!",
           ]}
         />
 
