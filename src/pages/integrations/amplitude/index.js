@@ -69,7 +69,7 @@ const IntegrationDetails = ({ data }) => {
         <ContentRightCopy
           img={Img2}
           title="Real users, real environment"
-          body="Stay in product, get unibased evidence. Accurately target by user attributes such as plan, role or behaviors.
+          body="Stay in product, get unbased evidence. Accurately target by user attributes such as plan, role or behaviors.
           Import your cohorts from LaunchDarkly, Amplitude and others.
           "
         />
