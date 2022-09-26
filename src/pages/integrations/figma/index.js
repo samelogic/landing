@@ -17,7 +17,7 @@ import ContentLeftCopy from "../components/ContentLeftCopy";
 import ContentRightCopy from "../components/ContentRightCopy";
 
 import Img1 from "./1.png";
-import AmplitudeImg2 from "./Amplitude-2.png";
+import Img2 from "./2.png";
 import AmplitudeImg3 from "./Amplitude-3.png";
 import AmplitudeOGImage from "./Amplitude-OG-Image.png";
 
@@ -67,10 +67,10 @@ const IntegrationDetails = ({ data }) => {
           Don't wait on UX or Engineers to implement your test!"
         />
         <ContentRightCopy
-          img={AmplitudeImg2}
-          title="Real environment with real users"
-          body="Get unbiased analytics and feedback. 
-          Your users using pretotyped features inside your product is the best testing grounds."
+          img={Img2}
+          title="Show to the right users"
+          body="Accurately target by user attributes such as plan, role or behaviors.
+          Import your cohorts from LaunchDarkly, Amplitude and others."
         />
         <ContentLeftCopy
           img={AmplitudeImg3}
