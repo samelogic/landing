@@ -47,13 +47,13 @@ const IntegrationDetails = ({ data }) => {
       <PageWrapper footerDark>
         <Hero
           img={imgBrand}
-          title="Concept Testing with Figma"
-          subTitle="Skip the engineers. Validate your idea in hours, not weeks"
+          slogan="Concept Testing with Figma"
+          title="Skip the Engineers"
+          subTitle="Validate your idea in hours, not weeks!"
           bodyList={[
             "Import components from your design mockups",
             "Drag and drop it anywhere on your website",
             "Get unbiased analytics and feedback from real users",
-            "Know who is interacting with your idea and why!",
           ]}
         />
 

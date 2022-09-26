@@ -61,13 +61,10 @@ const Body = ({ body, bodyList }) => {
   }
 };
 
-const Hero = ({ img, title, subTitle, body, bodyList }) => {
+const Hero = ({ img, title, subTitle, body, slogan, bodyList }) => {
   return (
     <>
-      {/* <!-- Hero Area --> */}
       <Section>
-        <div className="pt-5"></div>
-
         <Container>
           <Row className="justify-content-center align-items-center">
             <Col lg="5" md="8" sm="9" className="order-lg-2">
@@ -91,20 +88,23 @@ const Hero = ({ img, title, subTitle, body, bodyList }) => {
                 data-aos-delay="500"
               >
                 <Box py={[null, null, null, 5]} pr={5} pt={[4, null]}>
-                  <Text mb={4}>{subTitle}</Text>
-                  <Title variant="hero">{title}</Title>
                   <Box mb={4}>
+                    <h2>{slogan}</h2>
+                  </Box>
+                  <Title variant="hero">{title}</Title>
+                  <h3>{subTitle}</h3>
+                  <Box mb={4} mt={4}>
                     <Body body={body} bodyList={bodyList} />
                   </Box>
                   <CTAButton mb={2} />
 
                   <Text fontSize={"18px"} color="ash" fontWeight={500}>
-                    Also called Painted Doors or Fake Doors{" "}
+                    Learn more about{" "}
                     <a
                       href="https://samelogic.com/blog/10-advantages-of-using-painted-door-tests"
                       target="blank"
                     >
-                      <Span color="secondary">Learn more</Span>
+                      <Span color="secondary">Fake Door Testing</Span>
                     </a>
                   </Text>
                 </Box>
