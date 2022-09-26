@@ -18,6 +18,7 @@ import ContentRightCopy from "../components/ContentRightCopy";
 
 import Img1 from "./1.png";
 import Img2 from "./2.png";
+import AmplitudeImg2 from "./Amplitude-2.png";
 import AmplitudeImg3 from "./Amplitude-3.png";
 import AmplitudeOGImage from "./Amplitude-OG-Image.png";
 
@@ -79,6 +80,12 @@ const IntegrationDetails = ({ data }) => {
           Powerful combination of qual and quant, such as conversion funnel and user feedback.
           Send these events to your analytics tool for further investigation.
           Understand who really wants the feature and why!"
+        />
+        <ContentRightCopy
+          img={AmplitudeImg2}
+          title="Prioritize ideas based on ROI"
+          body="Dig into which category of users are gravitating towards your idea. 
+           Ensure you are building the right idea for the right segment of users."
         />
         <CTA />
       </PageWrapper>

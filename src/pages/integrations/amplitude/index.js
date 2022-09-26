@@ -17,6 +17,7 @@ import ContentLeftCopy from "../components/ContentLeftCopy";
 import ContentRightCopy from "../components/ContentRightCopy";
 
 import AmplitudeImg1 from "./Amplitude-1.png";
+import Img2 from "./2.png";
 import AmplitudeImg2 from "./Amplitude-2.png";
 import AmplitudeImg3 from "./Amplitude-3.png";
 import AmplitudeOGImage from "./Amplitude-OG-Image.png";
@@ -66,16 +67,22 @@ const IntegrationDetails = ({ data }) => {
           and after participating in the experiment."
         />
         <ContentRightCopy
-          img={AmplitudeImg2}
-          title="Prioritize ideas based on ROI"
-          body="Dig into which category of users are gravitating towards your idea. 
-           Ensure you are building the right idea for the right segment of users."
+          img={Img2}
+          title="Show to the right users"
+          body="Accurately target by user attributes such as plan, role or behaviors.
+          Import your cohorts from LaunchDarkly, Amplitude and others."
         />
         <ContentLeftCopy
           img={AmplitudeImg3}
           title="Evidence-based decision making"
           body="Quickly run intent and demand tests for new features. Make decisions with
           as much data presented simply. Know who wants what and why."
+        />
+        <ContentRightCopy
+          img={AmplitudeImg2}
+          title="Prioritize ideas based on ROI"
+          body="Dig into which category of users are gravitating towards your idea. 
+           Ensure you are building the right idea for the right segment of users."
         />
         <CTA />
       </PageWrapper>
