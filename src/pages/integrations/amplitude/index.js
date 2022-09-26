@@ -21,7 +21,6 @@ import Img2 from "./2.png";
 import AmplitudeImg2 from "./Amplitude-2.png";
 import AmplitudeImg3 from "./Amplitude-3.png";
 import social from "./social.png";
-import AmplitudeTwitterImage from "./Amplitude-Twitter-Image.png";
 
 const IntegrationDetails = ({ data }) => {
   const siteUrl = get(data, "site.siteMetadata.siteUrl");
