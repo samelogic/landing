@@ -37,10 +37,7 @@ const ULStyled = styled.ol`
 `;
 
 const ImgRight = styled.img`
-  max-width: 50%;
-  @media ${device.sm} {
-    max-width: 60%;
-  }
+  max-width: 90%;
   @media ${device.lg} {
     max-width: 100%;
   }
@@ -67,7 +64,7 @@ const Hero = ({ img, title, subTitle, body, slogan, bodyList }) => {
       <Section>
         <Container>
           <Row className="justify-content-center align-items-center">
-            <Col lg="5" md="8" sm="9" className="order-lg-2">
+            <Col lg="5" md="8" sm="12" className="order-lg-2">
               <div className="text-center text-lg-right position-relative">
                 <div
                   className="img-main"
