@@ -28,7 +28,7 @@ const IntegrationDetails = ({ data }) => {
     <>
       {" "}
       <Seo
-        title="Amplitude and Samelogic Integration"
+        title="Send Concept Testing analytics to Amplitude"
         description="Import mock from your design system. Place it in your live product. 
         Collect and send the conversion rate and survey feedback to Amplitude. No code needed."
         twitterCard="summary_large_image"

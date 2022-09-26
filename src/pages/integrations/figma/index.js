@@ -30,7 +30,7 @@ const IntegrationDetails = ({ data }) => {
     <>
       {" "}
       <Seo
-        title="Figma and Samelogic Integration"
+        title="Figma Concept Testing with Samelogic"
         description={body}
         twitterCard="summary_large_image"
         meta={[
