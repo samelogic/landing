@@ -44,6 +44,7 @@ const IntegrationDetails = ({ data }) => {
         ]}
       />
       <PageWrapper footerDark>
+        <Video videoUrl="https://youtu.be/HU1lxZfNSqM" />
         <Hero
           img={imgBrand}
           slogan="Send Concept Testing analytics to Amplitude"
@@ -55,8 +56,6 @@ const IntegrationDetails = ({ data }) => {
             "Get unbiased analytics and feedback from real users",
           ]}
         />
-
-        <Video videoUrl="https://youtu.be/HU1lxZfNSqM" />
 
         <ContentLeftCopy
           img={AmplitudeImg1}
