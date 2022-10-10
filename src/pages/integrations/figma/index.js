@@ -46,6 +46,7 @@ const IntegrationDetails = ({ data }) => {
       />
       <PageWrapper footerDark>
         <Video videoUrl="https://youtu.be/wcjfqy8UTqM" />
+
         <Hero
           img={imgBrand}
           slogan="Concept Testing with Figma"
