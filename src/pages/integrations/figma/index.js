@@ -42,8 +42,6 @@ const IntegrationDetails = ({ data }) => {
         ]}
       />
       <PageWrapper footerDark>
-        <Video videoUrl="https://youtu.be/wcjfqy8UTqM" />
-
         <Hero
           img={imgBrand}
           slogan="Concept Testing with Figma"
@@ -55,6 +53,8 @@ const IntegrationDetails = ({ data }) => {
             "Get unbiased analytics and feedback from real users",
           ]}
         />
+
+        <Video videoUrl="https://youtu.be/wcjfqy8UTqM" />
 
         <ContentLeftCopy
           img={Img1}
