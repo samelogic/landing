@@ -17,12 +17,15 @@ const CaseStudy = () => {
           <Container>
             <Row className="justify-content-center text-center">
               <Col lg="6">
-                <Title variant="hero">Integrations</Title>
-                <Text>Page will update soon.</Text>
+                <Title variant="hero">Podcasts</Title>
+                <Text>Creating our podcast pages soon!</Text>
               </Col>
             </Row>
           </Container>
         </Section>
+        <CaseList />
+        <CaseList2 />
+        <CaseList />
         <CTA />
       </PageWrapper>
     </>
