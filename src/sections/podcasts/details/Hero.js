@@ -13,11 +13,9 @@ import {
 } from "../../../components/Core";
 import GlobalContext from "../../../context/GlobalContext";
 
-import imgHero from "../../../assets/image/png/landing4-hero-img.png";
-
 const ImgRight = styled(Box)``;
 
-const Hero = ({ date, title, subtitle, spotifyId }) => {
+const Hero = ({ date, title, subtitle, spotifyId, heroImage }) => {
   return (
     <>
       {/* <!-- Hero Area --> */}
@@ -34,7 +32,7 @@ const Hero = ({ date, title, subtitle, spotifyId }) => {
               data-aos-once="true"
             >
               <ImgRight>
-                <img src={imgHero} alt="" className="img-fluid" />
+                <img src={heroImage} alt="" className="img-fluid" />
               </ImgRight>
             </Col>
             <Col lg="7">
