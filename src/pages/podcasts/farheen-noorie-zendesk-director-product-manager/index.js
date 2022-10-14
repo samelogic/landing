@@ -8,7 +8,11 @@ import imgHero from "../../../assets/image/png/landing4-hero-img.png";
 import social from "./social.png";
 
 const LandingPage2 = ({ data }) => {
-  const title = "Growth and Monetization at Zendesk";
+  const title =
+    "#28: Farheen Noorie, Director of Product Management Growth and Monetization at Zendesk";
+  const subtitle =
+    "We spoke with Farheen about her background in engineering and what it was like transitioning over to Product Management. Check out this exciting episode below.";
+
   const body =
     "Farheen has a background in engineering and worked at PayPal for many years before moving into Product Management at Zendesk. She currently leads Buying Experience, which is a part of the broader Growth and Monetization team. She is interested in anything related to growth and revenue drivers for a product, KPIs that matter vs. not, and solving complex business and technical problems. She is also interested in learning the guitar but has been procrastinating for over a year now.";
 
@@ -35,7 +39,7 @@ const LandingPage2 = ({ data }) => {
         <Hero
           date="Oct 14, 2022"
           title={title}
-          subtitle="Episode #28: Farheen Noorie, Director of Product Management"
+          subtitle={subtitle}
           spotifyId="7zpJnMFaBNzWZsNHXKYCJ7"
           heroImage={imgHero}
         />

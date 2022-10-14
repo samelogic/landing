@@ -19,7 +19,7 @@ const Hero = ({ date, title, subtitle, spotifyId, heroImage }) => {
   return (
     <>
       {/* <!-- Hero Area --> */}
-      <Section bg="secondary" className="position-relative">
+      <Section bg="#2DA8F2" className="position-relative">
         <div className="pt-5"></div>
         <Container>
           <Row className="align-items-center position-relative">
