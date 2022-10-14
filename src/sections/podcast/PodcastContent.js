@@ -92,7 +92,7 @@ const BadgePost = ({ children }) => (
   </Badge>
 );
 
-const PodcastDetails = ({ post }) => (
+const PodcastDetails = ({ podcast }) => (
   <>
     {/* <!-- Blog section --> */}
     <Post>
@@ -100,14 +100,13 @@ const PodcastDetails = ({ post }) => (
         <img
           className="pb-6"
           style={{ borderRadius: "10px" }}
-          // src={getSrc(post.heroImage)}
-          src={post.heroImage}
+          src={getSrc(podcast.heroImage)}
           alt=""
         />
       </div>
       <div
         dangerouslySetInnerHTML={{
-          __html: post.content.childMarkdownRemark.html,
+          __html: podcast.content.childMarkdownRemark.html,
         }}
       />
     </Post>

@@ -14,12 +14,21 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
   return new Promise((resolve, reject) => {
+    const podcastDetails = path.resolve("./src/templates/podcast-details.js");
     const blogPost = path.resolve("./src/templates/blog-details.js");
     resolve(
       graphql(
         `
           {
             allContentfulPost {
+              edges {
+                node {
+                  title
+                  slug
+                }
+              }
+            }
+            allContentfulPodcast {
               edges {
                 node {
                   title
@@ -42,6 +51,17 @@ exports.createPages = ({ graphql, actions }) => {
             component: blogPost,
             context: {
               slug: post.node.slug,
+            },
+          });
+        });
+
+        const podcasts = result.data.allContentfulPodcast.edges;
+        podcasts.forEach((podcast, index) => {
+          createPage({
+            path: `/podcast/${podcast.node.slug}/`,
+            component: podcastDetails,
+            context: {
+              slug: podcast.node.slug,
             },
           });
         });
