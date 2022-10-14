@@ -6,10 +6,9 @@ import { getSrc } from "gatsby-plugin-image";
 
 import PageWrapper from "../components/PageWrapper";
 import { Section, Title, Text, Box } from "../components/Core";
+import CTA from "../sections/landing4/CTA";
 
-import PodcastContent from "../sections/podcast/PodcastContent";
-import Comments from "../sections/blog/Comments";
-import Sidebar from "../sections/blog/Sidebar";
+import Sidebar from "../sections/podcast/Sidebar";
 import Seo from "../components/SEO";
 import styled from "styled-components";
 
@@ -134,7 +133,7 @@ const PodcastDetails = ({ data }) => {
                       alt=""
                     />
                   </div>
-                  <div>{podcast.subTitle.subTitle}</div>
+                  <div className="pb-3">{podcast.subTitle.subTitle}</div>
                   <div
                     dangerouslySetInnerHTML={{
                       __html: podcast.content.childMarkdownRemark.html,
@@ -148,7 +147,7 @@ const PodcastDetails = ({ data }) => {
             </Row>
           </Container>
         </Section>
-        {/* <Comments /> */}
+        <CTA />
       </PageWrapper>
     </>
   );
