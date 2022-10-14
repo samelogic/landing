@@ -38,7 +38,7 @@ const LandingPage2 = ({ data }) => {
           date="Oct 14, 2022"
           title={title}
           subtitle={subtitle}
-          spotifyId="7zpJnMFaBNzWZsNHXKYCJ7"
+          spotifyId="4smpLfFOKQruKHWIEaUmYu"
           heroImage={imgHero}
         />
         <CTA />
