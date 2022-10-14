@@ -17,20 +17,7 @@ import imgHero from "../../../assets/image/png/landing4-hero-img.png";
 
 const ImgRight = styled(Box)``;
 
-const BoxPrice = styled(Box)`
-  border-radius: 10px;
-  background-color: #6565e9;
-  padding-left: 25px;
-  padding-right: 20px;
-  padding-top: 13px;
-  padding-bottom: 10px;
-  max-width: 322px;
-  min-width: 322px;
-`;
-
-const Hero = () => {
-  const gContext = useContext(GlobalContext);
-
+const Hero = ({ date, title, subtitle, spotifyId }) => {
   return (
     <>
       {/* <!-- Hero Area --> */}
@@ -58,20 +45,16 @@ const Hero = () => {
                 data-aos-once="true"
               >
                 <Box pt={[4, null, null, 0]}>
-                  <Title color="light">
-                    Enjoy every single
-                    <br className="d-none d-sm-block" />
-                    beat on headphone!
-                  </Title>
-                  <Text color="lightShade">
-                    For iPhone, iPad, and Android users, be sure your product’s
-                    firmware is up to date through the Bose connect app.
+                  <Text color="lightShade" variant="small" mt={2}>
+                    {date}
                   </Text>
+                  <Title color="light">{title}</Title>
+                  <Text color="lightShade">{subtitle}</Text>
 
                   <Box my={4}>
                     <iframe
                       style={{ borderRadius: 12 }}
-                      src="https://open.spotify.com/embed/episode/7zpJnMFaBNzWZsNHXKYCJ7?utm_source=generator&theme=0"
+                      src={`https://open.spotify.com/embed/episode/${spotifyId}?utm_source=generator&theme=0`}
                       width="100%"
                       height={152}
                       frameBorder={0}
