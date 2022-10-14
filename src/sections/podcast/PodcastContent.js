@@ -3,9 +3,6 @@ import styled from "styled-components";
 import { getSrc } from "gatsby-plugin-image";
 
 import { Box, Badge } from "../../components/Core";
-import BlogCTA from "../blog/BlogCTA";
-
-import imgB1 from "../../assets/image/jpeg/blog-details-img-1.jpg";
 import iconQuote from "../../assets/image/png/quote-icon.png";
 
 const Post = styled(Box)`
@@ -92,24 +89,26 @@ const BadgePost = ({ children }) => (
   </Badge>
 );
 
-const PodcastContent = ({ podcast }) => {
-  console.log(podcast);
-  return (
-    <>
-      {/* <!-- Blog section --> */}
-      <Post>
-        <div>
-          <img className="pb-6" style={{ borderRadius: "10px" }} alt="" />
-        </div>
-        <div>{podcast.subTitle.subTitle}</div>
-        <div
-          dangerouslySetInnerHTML={{
-            __html: podcast.content.childMarkdownRemark.html,
-          }}
+const PodcastContent = ({ podcast }) => (
+  <>
+    {/* <!-- Blog section --> */}
+    <Post>
+      <div>
+        <img
+          className="pb-6"
+          style={{ borderRadius: "10px" }}
+          src={getSrc(podcast.heroImage)}
+          alt=""
         />
-      </Post>
-    </>
-  );
-};
+      </div>
+      <div>{podcast.subTitle.subTitle}</div>
+      <div
+        dangerouslySetInnerHTML={{
+          __html: podcast.content.childMarkdownRemark.html,
+        }}
+      />
+    </Post>
+  </>
+);
 
 export default PodcastContent;
