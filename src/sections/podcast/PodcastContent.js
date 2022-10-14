@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { getSrc } from "gatsby-plugin-image";
 
-import { Box, Badge } from "../../components/Core";
+import { Box } from "../../components/Core";
 import iconQuote from "../../assets/image/png/quote-icon.png";
 
 const Post = styled(Box)`
@@ -74,20 +74,6 @@ const Post = styled(Box)`
     display: block;
   }
 `;
-
-const BadgePost = ({ children }) => (
-  <Badge
-    mr={3}
-    mb={3}
-    bg="#eae9f2"
-    color="#696871"
-    fontSize="16px"
-    px={3}
-    py={2}
-  >
-    {children}
-  </Badge>
-);
 
 const PodcastContent = ({ podcast }) => (
   <>
