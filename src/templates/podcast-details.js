@@ -42,7 +42,7 @@ const PodcastDetails = ({ data }) => {
               <Col lg="12">
                 <Title variant="hero">{podcast.title}</Title>
                 <Box className="d-flex justify-content-center">
-                  <Text mr={3}>{podcast.subTitle.subTitle}</Text>
+                  <Text mr={3}>{podcast.published}</Text>
                 </Box>
               </Col>
             </Row>
@@ -79,6 +79,7 @@ export const pageQuery = graphql`
     }
     contentfulPodcast(slug: { eq: $slug }) {
       title
+      published(formatString: "MMMM Do, YYYY")
       subTitle {
         subTitle
       }

@@ -92,25 +92,24 @@ const BadgePost = ({ children }) => (
   </Badge>
 );
 
-const PodcastDetails = ({ podcast }) => (
-  <>
-    {/* <!-- Blog section --> */}
-    <Post>
-      <div>
-        <img
-          className="pb-6"
-          style={{ borderRadius: "10px" }}
-          src={getSrc(podcast.heroImage)}
-          alt=""
+const PodcastContent = ({ podcast }) => {
+  console.log(podcast);
+  return (
+    <>
+      {/* <!-- Blog section --> */}
+      <Post>
+        <div>
+          <img className="pb-6" style={{ borderRadius: "10px" }} alt="" />
+        </div>
+        <div>{podcast.subTitle.subTitle}</div>
+        <div
+          dangerouslySetInnerHTML={{
+            __html: podcast.content.childMarkdownRemark.html,
+          }}
         />
-      </div>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: podcast.content.childMarkdownRemark.html,
-        }}
-      />
-    </Post>
-  </>
-);
+      </Post>
+    </>
+  );
+};
 
-export default PodcastDetails;
+export default PodcastContent;
