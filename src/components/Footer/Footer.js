@@ -129,11 +129,9 @@ const Footer = ({ isDark = true }) => {
                         <li>
                           <a href="/blog">Blog</a>
                         </li>
-                        {/* <li>
-                          <a href="/#" target="_blank">
-                            Tech stories
-                          </a>
-                        </li> */}
+                        <li>
+                          <a href="/podcast">Podcast</a>
+                        </li>
                       </UlStyled>
                     </div>
                   </Col>
