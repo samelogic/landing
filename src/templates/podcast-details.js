@@ -133,7 +133,7 @@ const PodcastDetails = ({ data }) => {
                       alt=""
                     />
                   </div>
-                  <div className="pb-3">{podcast.subTitle.subTitle}</div>
+                  <div className="pb-3">{podcast.description.description}</div>
                   <div
                     dangerouslySetInnerHTML={{
                       __html: podcast.content.childMarkdownRemark.html,
