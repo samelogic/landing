@@ -167,9 +167,6 @@ export const pageQuery = graphql`
     contentfulPodcast(slug: { eq: $slug }) {
       title
       published(formatString: "MMMM Do, YYYY")
-      subTitle {
-        subTitle
-      }
       description {
         childMarkdownRemark {
           html
