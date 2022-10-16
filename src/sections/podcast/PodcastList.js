@@ -18,6 +18,7 @@ const PodcastList = ({ posts }) => (
               <Col lg="4" key={post.slug} className="mb-5">
                 <PostCard
                   img={getSrc(post.heroImage)}
+                  preTitle={post.published}
                   title={post.title}
                   href={"/podcast/" + post.slug}
                   readMore

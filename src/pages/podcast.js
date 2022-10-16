@@ -69,6 +69,7 @@ export const pageQuery = graphql`
       edges {
         node {
           title
+          published(formatString: "MMMM Do, YYYY")
           slug
           createdAt(formatString: "MMMM Do, YYYY")
           heroImage {

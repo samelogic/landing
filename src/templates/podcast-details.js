@@ -85,7 +85,6 @@ const Post = styled(Box)`
 `;
 
 const PodcastDetails = ({ data }) => {
-  const siteTitle = get(data, "site.siteMetadata.blog.title");
   const podcast = data.contentfulPodcast;
   console.log(podcast);
   const heroSrc = getSrc(podcast.heroImage);
@@ -168,6 +167,7 @@ export const pageQuery = graphql`
       title
       published(formatString: "MMMM Do, YYYY")
       description {
+        description
         childMarkdownRemark {
           html
           excerpt
