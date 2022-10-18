@@ -115,46 +115,18 @@ const Pricing = () => {
               xl="6"
               className="d-flex justify-content-center justify-content-lg-end align-items-end"
             >
-              {/* <ButtonGroup className="mb-4 mt-3 mt-lg-0">
-                <span
-                  role="button"
-                  className={`btn ${!timeMonthly ? "active" : ""}`}
-                  onClick={() => {
-                    setTimeMonthly(false);
-                  }}
-                  onKeyDown={() => {
-                    setTimeMonthly(false);
-                  }}
-                  tabIndex={0}
-                >
-                  Yearly
-                </span>
-                <span
-                  role="button"
-                  className={`btn ${timeMonthly ? "active" : ""}`}
-                  onClick={() => {
-                    setTimeMonthly(true);
-                  }}
-                  onKeyDown={() => {
-                    setTimeMonthly(true);
-                  }}
-                  tabIndex={0}
-                >
-                  Monthly
-                </span>
-              </ButtonGroup> */}
+              We don't win if you don't win! If your tests fails, we don't
+              charge.
             </Col>
           </Row>
           <Row className="justify-content-center mb-4 pricing-row">
             <Col lg="4" md="6" sm="8" className="mt-4">
               <PricingCard>
                 <span className="small-title">Starter</span>
-                <h2 className="title mt-3 mb-4">
-                  $9.99<span className="time">/month</span>
-                </h2>
+                <h2 className="title mt-3 mb-4">Free</h2>
                 <ULStyled>
-                  <li>5 Active Microsurveys</li>
-                  <li>Export Data to CSV</li>
+                  <li>Up to 10 tests</li>
+                  <li>Up to 5 survey responses per test</li>
                   <li>Basic Support</li>
                 </ULStyled>
                 <Box className="mt-5">
@@ -163,24 +135,19 @@ const Pricing = () => {
                   </ButtonStyled>
                 </Box>
               </PricingCard>
-              <br />
-              Only Microsurveys come with this Plan.
             </Col>
 
             <Col lg="4" md="6" sm="8" className="mt-4">
               <PricingCard>
                 <span className="small-title">Pro</span>
                 <h2 className="title mt-3 mb-4">
-                  <span className="time"></span> $149
+                  <span className="time"></span> $49
                   <span className="time">/month</span>
                 </h2>
                 <ULStyled>
-                  <li>25 Active Microsurveys</li>
-                  <li>10 In-Product Fake Doors</li>
-                  <li>Import Designs from Figma</li>
-                  <li>Import Ideas from ProdPad</li>
-                  <li>Integrate with LaunchDarkly</li>
-                  <li>Export Data to Amplitude</li>
+                  <li>Up to 20 tests</li>
+                  <li>Up to 25 survey responses</li>
+                  <li>Audience/Segmentation</li>
                   <li>Basic Support</li>
                 </ULStyled>
                 <Box className="mt-5">
@@ -199,13 +166,9 @@ const Pricing = () => {
                   <span className="time">/month</span>
                 </h2>
                 <ULStyled>
-                  <li>Unlimited Microsurveys**</li>
-                  <li>Unlimited In-Product Fake Doors**</li>
+                  <li>Unlimited tests</li>
+                  <li>Unlimited survey responses</li>
                   <li>Custom Integrations</li>
-                  <li>Import Designs from Figma</li>
-                  <li>Import Ideas from ProdPad</li>
-                  <li>Integrate with LaunchDarkly</li>
-                  <li>Export Data to Amplitude</li>
                   <li>Dedicated Support</li>
                 </ULStyled>
                 <Box className="mt-5">
