@@ -114,10 +114,7 @@ const Pricing = () => {
               lg="5"
               xl="6"
               className="d-flex justify-content-center justify-content-lg-end align-items-end"
-            >
-              We don't win if you don't win! If your tests fails, we don't
-              charge.
-            </Col>
+            ></Col>
           </Row>
           <Row className="justify-content-center mb-4 pricing-row">
             <Col lg="4" md="6" sm="8" className="mt-4">
