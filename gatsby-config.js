@@ -13,6 +13,9 @@ module.exports = {
     blog: {
       title: `Samelogic Blog`,
     },
+    podcast: {
+      title: `Samelogic Podcast`,
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

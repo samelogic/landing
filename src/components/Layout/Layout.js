@@ -149,7 +149,7 @@ const Layout = ({ children, pageContext }) => {
       >
         <GlobalStyle />
         <Helmet>
-          <title>Samelogic | Fast Product Critique, with Real Users</title>
+          <title>Samelogic: In Product Fake Door Concept Testing</title>
           <link rel="icon" type="image/png" href={imgFavicon} />
         </Helmet>
         <Loader id="loading" className={visibleLoader ? "" : "inActive"}>

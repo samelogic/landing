@@ -12,7 +12,7 @@ import Seo from "../components/SEO";
 import SocialImage from "../assets/image/png/blog-social-share.png";
 
 const PodcastRegular = ({ data }) => {
-  const siteTitle = get(data, "site.siteMetadata.blog.title");
+  const siteTitle = get(data, "site.siteMetadata.podcast.title");
   const posts = data.allContentfulPodcast.edges.map(({ node }) => node);
   return (
     <>
@@ -60,7 +60,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        blog {
+        podcast {
           title
         }
       }
