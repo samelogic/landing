@@ -20,14 +20,9 @@ const PodcastList = ({ posts }) => (
                   img={getSrc(post.heroImage)}
                   preTitle={post.published}
                   title={post.title}
-                  href={"/podcast/" + post.slug}
+                  href={`/podcast/${post.slug}/`}
                   readMore
                 >
-                  {/* <span
-                    dangerouslySetInnerHTML={{
-                      __html: post.description.childMarkdownRemark.excerpt,
-                    }}
-                  /> */}
                   <span>
                     <p>{post.description.description}</p>
                   </span>

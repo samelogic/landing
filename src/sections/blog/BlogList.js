@@ -20,7 +20,7 @@ const BlogList = ({ posts }) => (
                   img={getSrc(post.heroImage)}
                   preTitle={post.createdAt}
                   title={post.title}
-                  href={"/blog/" + post.slug}
+                  href={`/blog/${post.slug}/`}
                   readMore
                 >
                   {/* <span
