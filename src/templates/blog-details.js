@@ -13,13 +13,12 @@ import Sidebar from "../sections/blog/Sidebar";
 import Seo from "../components/SEO";
 
 const BlogDetails = ({ data }) => {
-  const siteTitle = get(data, "site.siteMetadata.blog.title");
   const post = data.contentfulPost;
   const heroSrc = getSrc(post.heroImage);
   return (
     <>
       <Seo
-        title={post.title + " | The Samelogic Blog"}
+        title={post.title}
         description={post.description.description}
         twitterCard="summary_large_image"
         meta={[
