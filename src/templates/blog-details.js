@@ -1,20 +1,19 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
 import { Container, Row, Col } from "react-bootstrap";
-import { get } from "lodash";
 import { getSrc } from "gatsby-plugin-image";
 
 import PageWrapper from "../components/PageWrapper";
 import { Section, Title, Text, Box } from "../components/Core";
 
 import PostDetails from "../sections/blog/PostDetails";
-import Comments from "../sections/blog/Comments";
 import Sidebar from "../sections/blog/Sidebar";
 import Seo from "../components/SEO";
 
 const BlogDetails = ({ data }) => {
   const post = data.contentfulPost;
   const heroSrc = getSrc(post.heroImage);
+
   return (
     <>
       <Seo
@@ -43,12 +42,6 @@ const BlogDetails = ({ data }) => {
                   <Text mr={3}>
                     <Link to="/">{post.createdAt}</Link>
                   </Text>
-                  {/* <Text mr={3}>
-                    <Link to="/">Technology</Link>
-                  </Text>
-                  <Text>
-                    <Link to="/">David Jones</Link>
-                  </Text> */}
                 </Box>
               </Col>
             </Row>
@@ -91,6 +84,18 @@ export const pageQuery = graphql`
       }
       description {
         description
+      }
+      body {
+        raw
+        references {
+          ... on ContentfulAsset {
+            contentful_id
+            title
+            description
+            gatsbyImageData(width: 1000)
+            __typename
+          }
+        }
       }
       content {
         childMarkdownRemark {

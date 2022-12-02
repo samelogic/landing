@@ -4,8 +4,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import PageWrapper from "../../components/PageWrapper";
 import { Section, Title, Text } from "../../components/Core";
 
-import CaseList from "../../sections/case-study/CaseList1";
-import CaseList2 from "../../sections/case-study/CaseList2";
 import CTA from "../../sections/case-study/CTA";
 
 const CaseStudy = () => {

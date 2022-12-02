@@ -5,11 +5,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Title, Section, Box, Text, Button } from "../../../components/Core";
 import CTAButton from "../../../components/CTAButton";
 
-import imgC2 from "../../../assets/image/jpeg/l7-content2-image-2.jpg";
-import imgC1 from "../../../assets/image/jpeg/l7-content2-image-1.jpg";
-import imgC3 from "../../../assets/image/jpeg/l7-content2-image-3.jpg";
-import imgC4 from "../../../assets/image/jpeg/l7-content2-image-4.jpg";
-
 const SectionStyled = styled(Section)``;
 
 const SingleImage = styled(Box)`

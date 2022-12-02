@@ -2,10 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { getSrc } from "gatsby-plugin-image";
 
-import { Box, Badge } from "../../components/Core";
+import { Box, Badge, ContentfulRichText } from "../../components/Core";
 import BlogCTA from "../../sections/blog/BlogCTA";
 
-import imgB1 from "../../assets/image/jpeg/blog-details-img-1.jpg";
 import iconQuote from "../../assets/image/png/quote-icon.png";
 
 const Post = styled(Box)`
@@ -104,11 +103,7 @@ const PostDetails = ({ post }) => (
           alt=""
         />
       </div>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: post.content.childMarkdownRemark.html,
-        }}
-      />
+      <ContentfulRichText richText={post.body} />
       <BlogCTA title={post.ctaTitle} body={post.ctaBody} cta={post.ctaButton} />
     </Post>
     {post.tags && post.tags.length > 0 && (

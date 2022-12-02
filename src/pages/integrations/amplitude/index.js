@@ -1,10 +1,8 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+
 import { graphql } from "gatsby";
 
 import PageWrapper from "../../../components/PageWrapper";
-import { Section, Title, Text, Box, Button } from "../../../components/Core";
-import CTAButton from "../../../components/CTAButton/CTAButton";
 import Seo from "../../../components/SEO";
 import { get } from "lodash";
 
