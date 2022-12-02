@@ -27,7 +27,7 @@ const options = {
     ),
     [BLOCKS.HEADING_1]: (node, children) => <h2>{children}</h2>,
     [BLOCKS.HEADING_2]: (node, children) => {
-      return <h2>{createJumpLink(children)}</h2>;
+      return <h2>{children}</h2>;
     },
     [BLOCKS.HEADING_3]: (node, children) => <h3>{children}</h3>,
     [BLOCKS.HEADING_4]: (node, children) => <h4>{children}</h4>,
