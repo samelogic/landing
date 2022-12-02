@@ -1,13 +1,7 @@
 import React from "react";
-import styled from "styled-components";
-import slugify from "@sindresorhus/slugify";
 import { INLINES, BLOCKS, MARKS } from "@contentful/rich-text-types";
 import { renderRichText } from "gatsby-source-contentful/rich-text";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-
-const createJumpLink = (children) => {
-  return <a href={`#${slugify(children[0])}`}>{children}</a>;
-};
 
 const options = {
   renderMark: {
@@ -35,10 +29,10 @@ const options = {
     [BLOCKS.HEADING_2]: (node, children) => {
       return <h2>{createJumpLink(children)}</h2>;
     },
-    [BLOCKS.HEADING_3]: (node, children) => <h3>{createJumpLink(children)}</h3>,
-    [BLOCKS.HEADING_4]: (node, children) => <h4>{createJumpLink(children)}</h4>,
-    [BLOCKS.HEADING_5]: (node, children) => <h5>{createJumpLink(children)}</h5>,
-    [BLOCKS.HEADING_6]: (node, children) => <h6>{createJumpLink(children)}</h6>,
+    [BLOCKS.HEADING_3]: (node, children) => <h3>{children}</h3>,
+    [BLOCKS.HEADING_4]: (node, children) => <h4>{children}</h4>,
+    [BLOCKS.HEADING_5]: (node, children) => <h5>{children}</h5>,
+    [BLOCKS.HEADING_6]: (node, children) => <h6>{children}</h6>,
 
     [BLOCKS.OL_LIST]: (node, children) => <ol>{children}</ol>,
     [BLOCKS.UL_LIST]: (node, children) => <ul>{children}</ul>,
