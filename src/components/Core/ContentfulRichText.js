@@ -45,7 +45,7 @@ const options = {
 
     [BLOCKS.LIST_ITEM]: (node, children) => <li>{children}</li>,
     [BLOCKS.PARAGRAPH]: (node, children) => {
-      if (node.content[0].value === "") {
+      if (node.content.length < 1 || node.content[0].value === "") {
         return <br />;
       } else {
         return <p>{children}</p>;
