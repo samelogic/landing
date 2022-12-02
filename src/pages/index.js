@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 import Hero from "../sections/landing4/Hero";
 import Feature from "../sections/landing4/Feature";
 import Clients from "../sections/landing4/Clients";
-import Mockups from "../sections/landing4/Mockups";
+import What from "../sections/landing4/What";
 import TestIdeas from "../sections/landing4/TestIdeas";
 import Feedback from "../sections/landing4/Feedback";
 import Science from "../sections/landing4/Science";
@@ -38,7 +38,7 @@ const LandingPage4 = ({ data }) => {
       <PageWrapper headerDark footerDark>
         <Hero />
         {/* <Feature /> */}
-        <Mockups />
+        <What />
         <Participate />
         <TestIdeas />
         <Science />
