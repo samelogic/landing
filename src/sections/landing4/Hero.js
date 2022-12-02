@@ -63,15 +63,18 @@ const Hero = () => {
               >
                 <Box py={[null, null, null, 5]} pr={5} pt={[4, null]}>
                   <Title variant="hero" color="light">
-                    Fast Product Critique, with Real Users
+                    Fake Doors, Real Results
                   </Title>
                   <Text mb={4} color="light" opacity={0.7}>
-                     Get the evidence you need to know which direction to take
-                    your product.
+                     Real-Time Concept Testing with Samelogic
                   </Text>
-                  {/* <div className="d-flex flex-column pt-3">
-                    <EmailForm />
-                  </div>
+                  <Text variant="small" mb={4} color="light">
+                    Have a new feature idea? Samelogic is the world’s first
+                    build-your-own concept testing tool using the painted door
+                    testing (or “fake door”) method. Save valuable time and
+                    money by testing your product or feature before building it.
+                  </Text>
+                  {/* 
                   <Text
                     variant="small"
                     fontSize={"14px"}
@@ -82,14 +85,14 @@ const Hero = () => {
                   </Text> */}
                   <div className="d-flex flex-column align-items-start pt-3">
                     <CTAButton mb={2} />
-                    <Text
+                    {/* <Text
                       variant="small"
                       fontSize={"14px"}
                       color="light"
                       opacity={0.7}
                     >
                       Join our Early Access program
-                    </Text>
+                    </Text> */}
                   </div>
                 </Box>
               </div>
