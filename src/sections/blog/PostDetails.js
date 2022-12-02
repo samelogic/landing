@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { GatsbyImage, getImage, getSrc } from "gatsby-plugin-image";
+import { getSrc } from "gatsby-plugin-image";
 
 import { Box, Badge, ContentfulRichText } from "../../components/Core";
 import BlogCTA from "../../sections/blog/BlogCTA";
