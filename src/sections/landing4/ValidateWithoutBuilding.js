@@ -78,7 +78,6 @@ const Content1 = () => (
   <>
     {/* <!-- Content section 1 --> */}
     <Section
-      bg="#F7F7FB"
       className="position-relative"
       py={["50px", null, "130px", null, "230px"]}
     >

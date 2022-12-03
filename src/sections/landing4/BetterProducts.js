@@ -99,7 +99,7 @@ const ULStyled = styled.ul`
 const Content2 = () => (
   <>
     {/* <!-- Content section 2 --> */}
-    <Section>
+    <Section bg="#F7F7FB">
       <Container>
         <Row className="align-items-center">
           <Col lg="6" className="mb-4 mb-lg-0">
