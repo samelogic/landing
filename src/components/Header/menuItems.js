@@ -32,7 +32,7 @@ export const menuItems = [
         label: "Microsurveys",
       },
       {
-        name: "fake-door-tests-artificial-intelligence",
+        name: "feature-validation-artificial-intelligence",
         label: "Samelogic AI",
       },
       {

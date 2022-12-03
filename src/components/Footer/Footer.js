@@ -97,7 +97,9 @@ const Footer = ({ isDark = true }) => {
                           <a href="/microsurveys/">Microsurveys</a>
                         </li>
                         <li>
-                          <a href="/artificial-intelligence/">Samelogic AI</a>
+                          <a href="/feature-validation-artificial-intelligence/">
+                            Samelogic AI
+                          </a>
                         </li>
                       </UlStyled>
                     </div>
