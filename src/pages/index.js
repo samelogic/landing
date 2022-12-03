@@ -4,7 +4,7 @@ import Hero from "../sections/landing4/Hero";
 import Feature from "../sections/landing4/Feature";
 import Clients from "../sections/landing4/Clients";
 import What from "../sections/landing4/What";
-import TestIdeas from "../sections/landing4/TestIdeas";
+import Segmentation from "../sections/landing4/Segmentation";
 import Feedback from "../sections/landing4/Feedback";
 import Science from "../sections/landing4/Science";
 import Participate from "../sections/landing4/Participate";
@@ -41,8 +41,8 @@ const LandingPage4 = ({ data }) => {
         <What />
         <Participate />
         <Fact />
+        <Segmentation />
         <Science />
-        <TestIdeas />
         <Feedback />
         <Testimonial />
         {/* <Clients /> */}
