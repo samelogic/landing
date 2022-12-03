@@ -6,6 +6,7 @@ import Clients from "../sections/landing4/Clients";
 import What from "../sections/landing4/What";
 import Segmentation from "../sections/landing4/Segmentation";
 import ValidateWithoutBuilding from "../sections/landing4/ValidateWithoutBuilding";
+import Why from "../sections/landing4/Why";
 import Science from "../sections/landing4/Science";
 import Participate from "../sections/landing4/Participate";
 import BetterProducts from "../sections/landing4/BetterProducts";
@@ -45,6 +46,7 @@ const LandingPage4 = ({ data }) => {
         <Segmentation />
         <BetterProducts />
         <ValidateWithoutBuilding />
+        <Why />
         <Testimonial />
         {/* <Clients /> */}
         {/* <Pricing /> */}
