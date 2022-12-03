@@ -1,0 +1,83 @@
+import React from "react";
+import styled from "styled-components";
+import { rgba } from "polished";
+import { Container, Row, Col } from "react-bootstrap";
+
+import { Title, Section, Text } from "../../components/Core";
+import { device } from "../../utils";
+import imgContent from "../../assets/image/png/l5-content-image.png";
+
+const ImgContainer = styled.div`
+  margin-top: 50px;
+  @media ${device.lg} {
+    margin-top: 0px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(55%, -50%);
+  }
+  @media ${device.xl} {
+    transform: translate(40%, -50%);
+  }
+  @media (min-width: 1400px) {
+    transform: translate(15%, -50%);
+  }
+`;
+
+const Content1 = () => (
+  <>
+    {/* <!-- Content section 1 --> */}
+    <Section
+      bg="#F7F7FB"
+      className="position-relative"
+      py={["50px", null, "130px", null, "230px"]}
+    >
+      <Container>
+        <Row className="align-items-center">
+          <Col lg="6" className=" position-static order-lg-2">
+            <ImgContainer className=" pl-lg-5">
+              <img
+                src={imgContent}
+                alt=""
+                className="img-fluid"
+                data-aos="fade-left"
+                data-aos-duration="750"
+                data-aos-once="true"
+                // css={`
+                //   box-shadow: ${({ theme }) =>
+                //     `0 12px 84px ${theme.colors.shadow}`};
+                //   border-radius: 10px;
+                // `}
+              />
+            </ImgContainer>
+          </Col>
+          <Col lg="6" className="order-lg-1 mt-5 mt-lg-0">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="750"
+              data-aos-once="true"
+            >
+              <div>
+                <Title>Fake Doors, Real Data</Title>
+                <Text mb={4}>The painted door testing principle</Text>
+
+                <Text>
+                  There is nothing worse than building a product that your users
+                  don’t want. That’s where Samelogic comes in. <br /> <br />
+                  The painted door test is a proven method of concept testing
+                  based on the idea of theoretically painting a fake door to
+                  gauge user interest instead of building one. Why spend time
+                  and money on materials to build a door with no guarantee that
+                  anyone will open it, when you can paint a fake door and see
+                  how many people attempt to open it?{" "}
+                </Text>
+              </div>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </Section>
+  </>
+);
+
+export default Content1;

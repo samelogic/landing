@@ -15,7 +15,8 @@ const CTA = () => (
             <Box className="text-center">
               <Title color="light">Get Evidence, Build Confidently</Title>
               <Text mb={4} color="light" opacity={0.7}>
-                The better way to figure out what works for your users.
+                The better way to figure out what works for your users. Set up
+                your first painted door test today.
               </Text>
               {/* <div className="d-flex flex-column align-items-center pt-3">
                 <EmailForm />
@@ -30,15 +31,6 @@ const CTA = () => (
               </div> */}{" "}
               <div className="d-flex flex-column align-items-center pt-3">
                 <CTAButton mb={2} style={{ color: "white !important" }} />
-
-                <Text
-                  variant="small"
-                  fontSize={"14px"}
-                  color="light"
-                  opacity={0.7}
-                >
-                  Join our Early Access program
-                </Text>
               </div>
             </Box>
           </Col>

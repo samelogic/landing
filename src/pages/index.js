@@ -1,18 +1,14 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Hero from "../sections/landing4/Hero";
-import Feature from "../sections/landing4/Feature";
-import Clients from "../sections/landing4/Clients";
-import What from "../sections/landing4/What";
+import Principle from "../sections/landing4/Principle";
 import Segmentation from "../sections/landing4/Segmentation";
 import ValidateWithoutBuilding from "../sections/landing4/ValidateWithoutBuilding";
 import Why from "../sections/landing4/Why";
-import Science from "../sections/landing4/Science";
 import Participate from "../sections/landing4/Participate";
 import BetterProducts from "../sections/landing4/BetterProducts";
-import Testimonial from "../sections/landing4/Testimonial";
+import What from "../sections/landing4/What";
 import Fact from "../sections/landing4/Fact";
-import Pricing from "../sections/landing4/Pricing";
 import Faq from "../sections/landing4/Faq";
 import CTA from "../sections/landing4/CTA";
 import PageWrapper from "../components/PageWrapper";
@@ -39,18 +35,14 @@ const LandingPage4 = ({ data }) => {
       />
       <PageWrapper headerDark footerDark>
         <Hero />
-        {/* <Feature /> */}
-        <What />
+        <Principle />
         <Participate />
         <Fact />
         <Segmentation />
         <BetterProducts />
         <ValidateWithoutBuilding />
         <Why />
-        <Testimonial />
-        {/* <Clients /> */}
-        {/* <Pricing /> */}
-        <Faq />
+        <What />
         <CTA />
       </PageWrapper>
     </>

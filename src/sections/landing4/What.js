@@ -1,133 +1,223 @@
 import React from "react";
 import styled from "styled-components";
-import { rgba } from "polished";
 import { Container, Row, Col } from "react-bootstrap";
+import Slider from "react-slick";
+import { rgba } from "polished";
 
-import { Title, Section, Text } from "../../components/Core";
-import { device } from "../../utils";
-import imgContent from "../../assets/image/png/l5-content-image.png";
+import { Title, Section, Box, Text } from "../../components/Core";
+import { device, breakpoints } from "../../utils";
 
-const ImgContainer = styled.div`
-  margin-top: 50px;
-  @media ${device.lg} {
-    margin-top: 0px;
+import imgCustomer1 from "../../assets/image/testimonial-yash.png";
+import imgCustomer2 from "../../assets/image/jpeg/testimonial-image-2.jpg";
+import imgQuote from "../../assets/image/png/quote-shape.png";
+
+const SliderStyled = styled(Slider)`
+  position: relative;
+  .slick-arrow {
     position: absolute;
     top: 50%;
-    right: 0;
-    transform: translate(55%, -50%);
-  }
-  @media ${device.xl} {
-    transform: translate(40%, -50%);
-  }
-  @media (min-width: 1400px) {
-    transform: translate(15%, -50%);
-  }
-`;
-
-const ULStyled = styled.ul`
-  list-style: none;
-  margin: 0;
-  padding-top: 15px;
-  padding-left: 0;
-
-  @media ${device.sm} {
-    padding-top: 35px;
+    font-size: 0;
+    height: 65px;
     display: flex;
-    flex-wrap: wrap;
-  }
-  @media ${device.lg} {
-    justify-content: space-between;
-  }
-
-  li {
-    &:nth-child(odd) {
-      @media ${device.sm} {
-        margin-right: 40px;
-      }
-    }
-    color: #19191b;
-    font-size: 21px;
-    font-weight: 500;
-    letter-spacing: -0.66px;
-    line-height: 50px;
-    display: flex;
-    margin-bottom: 5px;
-
-    &:before {
-      content: "\f00c";
+    width: 65px;
+    background: ${({ theme }) => theme.colors.secondary};
+    transition: 0.4s;
+    border-radius: 500px;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    margin-top: -20px;
+    &::before {
+      position: absolute;
+      content: "";
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
-      display: inline-block;
-      font-size: 13px;
-      width: 30px;
-      height: 30px;
-      background-color: ${({ theme }) => rgba(theme.colors.secondary, 0.1)};
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 500px;
-      color: ${({ theme }) => theme.colors.secondary};
-      position: relative;
-      top: 9px;
-      margin-right: 13px;
+      font-size: 20px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      transition: 0.4s;
+    }
+  }
+  .slick-arrow.slick-prev {
+    left: 0;
+    &:before {
+      content: "\f060";
+    }
+    @media ${device.md} {
+      margin-left: 60px;
+    }
+  }
+
+  .slick-arrow.slick-next {
+    right: 0;
+    left: auto;
+    transform: translate(50%, -50%);
+    &:before {
+      content: "\f061";
+    }
+    @media ${device.md} {
+      margin-right: 60px;
+    }
+  }
+
+  .slick-arrow:hover,
+  .slick-arrow:focus {
+    background: ${({ theme }) => theme.colors.light}!important;
+    color: ${({ theme }) => theme.colors.secondary}!important;
+    &:before {
+      color: ${({ theme }) => theme.colors.secondary}!important;
     }
   }
 `;
 
-const Content1 = () => (
-  <>
-    {/* <!-- Content section 1 --> */}
-    <Section
-      bg="#F7F7FB"
-      className="position-relative"
-      py={["50px", null, "130px", null, "230px"]}
-    >
-      <Container>
-        <Row className="align-items-center">
-          <Col lg="6" className=" position-static order-lg-2">
-            <ImgContainer className=" pl-lg-5">
-              <img
-                src={imgContent}
-                alt=""
-                className="img-fluid"
-                data-aos="fade-left"
-                data-aos-duration="750"
-                data-aos-once="true"
-                // css={`
-                //   box-shadow: ${({ theme }) =>
-                //     `0 12px 84px ${theme.colors.shadow}`};
-                //   border-radius: 10px;
-                // `}
-              />
-            </ImgContainer>
-          </Col>
-          <Col lg="6" className="order-lg-1 mt-5 mt-lg-0">
-            <div
-              data-aos="fade-right"
-              data-aos-duration="750"
-              data-aos-once="true"
-            >
-              <div>
-                <Title>Fake Doors, Real Data</Title>
-                <Text mb={4}>The painted door testing principle</Text>
+const SliderItem = styled(Box)`
+  &:focus {
+    outline: none;
+  }
+`;
 
+const SliderCard = styled(Box)`
+  border-radius: 10px;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: ${({ theme }) =>
+    `0 52px 54px ${rgba(theme.colors.shadow, 0.125)}`};
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  @media ${device.sm} {
+    padding: 35px 35px 20px 35px;
+  }
+  @media ${device.md} {
+    padding: 10px;
+    flex-direction: row;
+  }
+  @media ${device.lg} {
+    margin: 60px 60px 100px 60px !important;
+  }
+`;
+
+const SliderImgContainer = styled(Box)`
+  border-radius: 10px;
+  overflow: hidden;
+
+  padding: 0 30px;
+
+  @media ${device.sm} {
+    min-width: 315px;
+    padding: 0;
+  }
+  @media ${device.md} {
+  }
+
+  img {
+    margin: 0 auto;
+    max-width: unset;
+    width: 100%;
+  }
+
+  @media ${device.sm} {
+    max-width: 100%;
+    width: auto;
+  }
+`;
+
+const SliderText = styled(Box)`
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: auto;
+  padding: 50px 30px 0px;
+  @media ${device.md} {
+    padding: 20px 50px 20px;
+  }
+  @media ${device.lg} {
+    padding: 30px 70px 20px;
+  }
+`;
+const SliderQuoteShape = styled(Box)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  @media ${device.md} {
+    padding-right: 30px;
+    margin-bottom: 30px;
+  }
+`;
+
+const Testimonial = () => {
+  const slickSettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: breakpoints.lg,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
+  };
+
+  return (
+    <>
+      {/* <!-- testimonial section --> */}
+      <Section bg="#F7F7FB" pb={["50px!important"]}>
+        <Container>
+          <Row className="justify-content-center mb-4">
+            <Col lg="12" md="12">
+              <div className="text-center">
+                <Title>What can Painted Doors be used to Test?</Title>
                 <Text>
-                  There is nothing worse than building a product that your users
-                  don’t want. That’s where Samelogic comes in. <br /> <br />
-                  The painted door test is a proven method of concept testing
-                  based on the idea of theoretically painting a fake door to
-                  gauge user interest instead of building one. Why spend time
-                  and money on materials to build a door with no guarantee that
-                  anyone will open it, when you can paint a fake door and see
-                  how many people attempt to open it?{" "}
+                  “If you build it, they will come,” is a popular adage that
+                  doesn’t always hold true in product management. When it comes
+                  to feature concept testing, Painted Doors are perfect for
+                  testing almost any mockup idea you have with real users. Do
+                  you have a specific Use Case that you’d need a template for?{" "}
+                  <b>Let's Chat!</b>
                 </Text>
               </div>
-            </div>
-          </Col>
-        </Row>
-      </Container>
-    </Section>
-  </>
-);
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col lg="12" xl="11">
+              <SliderStyled {...slickSettings}>
+                <SliderItem>
+                  <SliderCard>
+                    <SliderImgContainer>
+                      <img src={imgCustomer1} alt="" />
+                    </SliderImgContainer>
+                    <SliderText>
+                      <SliderQuoteShape>
+                        <img src={imgQuote} alt="" className="img-fluid" />
+                      </SliderQuoteShape>
+                      <Text color="dark" my={2}>
+                        If we had Samelogic in the early days of building
+                        Pinterest, we would have gotten to where we needed to be
+                        a lot <b>faster</b>.
+                      </Text>
+                      <Title variant="card" mb={0} mt={3}>
+                        Yash Nelapati
+                      </Title>
+                      <Text variant="small">Founding Engineer @ Pinterest</Text>
+                    </SliderText>
+                  </SliderCard>
+                </SliderItem>
+              </SliderStyled>
+            </Col>
+          </Row>
+        </Container>
+      </Section>
+    </>
+  );
+};
 
-export default Content1;
+export default Testimonial;
