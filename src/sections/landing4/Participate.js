@@ -1,14 +1,14 @@
-import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
-import styled from 'styled-components'
-import { rgba } from 'polished'
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import styled from "styled-components";
+import { rgba } from "polished";
 
-import { Title, Section, Box, Text } from '../../components/Core'
-import { device } from '../../utils'
+import { Title, Section, Box, Text } from "../../components/Core";
+import { device } from "../../utils";
 
-import imgMobile from '../../assets/image/png/productroadmap.png'
-import icon3dModel from '../../assets/image/png/icon-3d-model.png'
-import iconLayout from '../../assets/image/png/icon-layot-25.png'
+import imgMobile from "../../assets/image/png/productroadmap.png";
+import icon3dModel from "../../assets/image/png/icon-3d-model.png";
+import iconLayout from "../../assets/image/png/icon-layot-25.png";
 
 const ContentCard = ({ iconImage, title, className, children, ...rest }) => (
   <Box
@@ -25,7 +25,7 @@ const ContentCard = ({ iconImage, title, className, children, ...rest }) => (
       <Text variant="small">{children}</Text>
     </Box>
   </Box>
-)
+);
 
 const ImgStyled = styled.img`
   // transform: rotate(10deg);
@@ -44,7 +44,7 @@ const ImgStyled = styled.img`
   @media ${device.xl} {
     margin-left: -100px;
   }
-`
+`;
 
 const ULStyled = styled.ul`
   list-style: none;
@@ -76,8 +76,8 @@ const ULStyled = styled.ul`
     margin-bottom: 5px;
 
     &:before {
-      content: '\f00c';
-      font-family: 'Font Awesome 5 Free';
+      content: "\f00c";
+      font-family: "Font Awesome 5 Free";
       font-weight: 900;
       display: inline-block;
       font-size: 13px;
@@ -94,7 +94,7 @@ const ULStyled = styled.ul`
       margin-right: 13px;
     }
   }
-`
+`;
 
 const Content2 = () => (
   <>
@@ -115,12 +115,22 @@ const Content2 = () => (
           </Col>
           <Col lg="6" md="9">
             <Box className="pt-5 pt-lg-0">
-              <Title>Decide Which Users Can Participate.</Title>
+              <Title>Fake Doors, Real Analytics</Title>
+              <Text mb={4}>
+                Painted doors are non-functional but visual features that are
+                placed in products to measure user interest, such as conversion
+                rates and other forms of feedback. Samelogic offers painted
+                doors that you can create and implement on your website in
+                minutes.{" "}
+              </Text>
 
               <Box mt={4} pt={3}>
                 <ULStyled>
-                  <li>Segment users based on how you see fit.</li>
-                  <li>Allow users to enroll themselves in the experiment.</li>
+                  <li>
+                    Generate or upload your mockups and place them on your
+                    website with our easy drag-and-drop interface
+                  </li>
+                  <li>Customize your in-app survey questions and design.</li>
                   <li>
                     Confidently display your Painted Door to the correct sample
                     population.
@@ -133,6 +143,6 @@ const Content2 = () => (
       </Container>
     </Section>
   </>
-)
+);
 
-export default Content2
+export default Content2;

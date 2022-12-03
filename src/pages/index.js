@@ -40,12 +40,12 @@ const LandingPage4 = ({ data }) => {
         {/* <Feature /> */}
         <What />
         <Participate />
-        <TestIdeas />
+        <Fact />
         <Science />
+        <TestIdeas />
         <Feedback />
         <Testimonial />
         {/* <Clients /> */}
-        <Fact />
         {/* <Pricing /> */}
         <Faq />
         <CTA />
