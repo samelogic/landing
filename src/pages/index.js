@@ -8,6 +8,7 @@ import Segmentation from "../sections/landing4/Segmentation";
 import Feedback from "../sections/landing4/Feedback";
 import Science from "../sections/landing4/Science";
 import Participate from "../sections/landing4/Participate";
+import BetterProducts from "../sections/landing4/BetterProducts";
 import Testimonial from "../sections/landing4/Testimonial";
 import Fact from "../sections/landing4/Fact";
 import Pricing from "../sections/landing4/Pricing";
@@ -42,7 +43,7 @@ const LandingPage4 = ({ data }) => {
         <Participate />
         <Fact />
         <Segmentation />
-        <Science />
+        <BetterProducts />
         <Feedback />
         <Testimonial />
         {/* <Clients /> */}
