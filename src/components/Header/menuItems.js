@@ -20,13 +20,43 @@ export const menuItems = [
     isExternal: false,
   },
   {
-    name: "integrations",
-    label: "Integrations",
+    name: "product",
+    label: "Product",
     items: [
-      { name: "integrations/figma", label: "Figma" },
-      { name: "integrations/amplitude", label: "Amplitude" },
+      {
+        name: "integrations",
+        label: "Integrations",
+        items: [
+          { name: "integrations/figma", label: "Figma" },
+          { name: "integrations/amplitude", label: "Amplitude" },
+        ],
+      },
     ],
   },
+  {
+    name: "solutions",
+    label: "Solutions",
+    items: [
+      {
+        name: "byusecase",
+        label: "By Use Case",
+        items: [
+          { name: "user-researchers", label: "Idea Validation" },
+          { name: "user-researchers", label: "Pretotyping" },
+          { name: "product-managers", label: "Roadmap Prioritization" },
+        ],
+      },
+      {
+        name: "byrole",
+        label: "By Role",
+        items: [
+          { name: "user-researchers", label: "User Researchers" },
+          { name: "product-managers", label: "Product Managers" },
+        ],
+      },
+    ],
+  },
+
   {
     name: "blog",
     label: "Blog",
