@@ -24,6 +24,18 @@ export const menuItems = [
     label: "Product",
     items: [
       {
+        name: "fake-door-tests",
+        label: "Fake Door Testing",
+      },
+      {
+        name: "microsurveys",
+        label: "Microsurveys",
+      },
+      {
+        name: "fake-door-tests-artificial-intelligence",
+        label: "Samelogic AI",
+      },
+      {
         name: "integrations",
         label: "Integrations",
         items: [

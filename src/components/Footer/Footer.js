@@ -91,10 +91,13 @@ const Footer = ({ isDark = true }) => {
                       </TitleStyled>
                       <UlStyled color={isDark ? "lightShade" : "darkShade"}>
                         <li>
-                          <a href="/about/">Painted Doors</a>
+                          <a href="/fake-door-tests/">Fake Door Testing</a>
                         </li>
                         <li>
-                          <a href="/about/">Integrations</a>
+                          <a href="/microsurveys/">Microsurveys</a>
+                        </li>
+                        <li>
+                          <a href="/artificial-intelligence/">Samelogic AI</a>
                         </li>
                       </UlStyled>
                     </div>
