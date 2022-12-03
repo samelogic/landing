@@ -5,7 +5,7 @@ import Feature from "../sections/landing4/Feature";
 import Clients from "../sections/landing4/Clients";
 import What from "../sections/landing4/What";
 import Segmentation from "../sections/landing4/Segmentation";
-import Feedback from "../sections/landing4/Feedback";
+import ValidateWithoutBuilding from "../sections/landing4/ValidateWithoutBuilding";
 import Science from "../sections/landing4/Science";
 import Participate from "../sections/landing4/Participate";
 import BetterProducts from "../sections/landing4/BetterProducts";
@@ -44,7 +44,7 @@ const LandingPage4 = ({ data }) => {
         <Fact />
         <Segmentation />
         <BetterProducts />
-        <Feedback />
+        <ValidateWithoutBuilding />
         <Testimonial />
         {/* <Clients /> */}
         {/* <Pricing /> */}
