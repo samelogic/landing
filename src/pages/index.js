@@ -13,7 +13,7 @@ import Faq from "../sections/landing4/Faq";
 import CTA from "../sections/landing4/CTA";
 import PageWrapper from "../components/PageWrapper";
 import Seo from "../components/SEO";
-import SocialImage from "../assets/image/png/home-social-share.png";
+import SocialImage from "../assets/image/png/social.png";
 
 const LandingPage4 = ({ data }) => {
   return (
