@@ -1,11 +1,8 @@
 import React from "react";
-import styled from "styled-components";
-import { rgba } from "polished";
 import { Container, Row, Col } from "react-bootstrap";
 
 import { Title, Section, Text } from "../../components/Core";
-import { device } from "../../utils";
-import imgContent from "../../assets/image/png/report.png";
+import imgContent from "../../assets/image/png/drag-drop.png";
 
 const Content1 = () => (
   <>

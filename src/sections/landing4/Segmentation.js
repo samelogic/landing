@@ -5,24 +5,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import { Title, Section, Text } from "../../components/Core";
 import { device } from "../../utils";
-import imgContent from "../../assets/image/png/l5-content-image.png";
-
-const ImgContainer = styled.div`
-  margin-top: 50px;
-  @media ${device.lg} {
-    margin-top: 0px;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(55%, -50%);
-  }
-  @media ${device.xl} {
-    transform: translate(40%, -50%);
-  }
-  @media (min-width: 1400px) {
-    transform: translate(15%, -50%);
-  }
-`;
+import imgContent from "../../assets/image/png/segmentation.png";
 
 const ULStyled = styled.ul`
   list-style: none;
@@ -83,45 +66,32 @@ const Segmentation = () => (
     >
       <Container>
         <Row className="align-items-center">
-          <Col lg="6" className=" position-static order-lg-2">
-            <ImgContainer className=" pl-lg-5">
-              <img
-                src={imgContent}
-                alt=""
-                className="img-fluid"
-                data-aos="fade-left"
-                data-aos-duration="750"
-                data-aos-once="true"
-                // css={`
-                //   box-shadow: ${({ theme }) =>
-                //     `0 12px 84px ${theme.colors.shadow}`};
-                //   border-radius: 10px;
-                // `}
-              />
-            </ImgContainer>
-          </Col>
-          <Col lg="6" className="order-lg-1 mt-5 mt-lg-0">
+          <Col lg="6" className=" mb-4 mb-lg-0 pl-lg-5 order-lg-2">
             <div
-              data-aos="fade-right"
-              data-aos-duration="750"
+              data-aos="fade-left"
+              data-aos-duration="450"
+              data-aos-delay="150"
               data-aos-once="true"
             >
-              <div>
-                <Title>Fake Doors, Real Users</Title>
-                <Text mb={4}></Text>
+              <img src={imgContent} alt="Audience" className="img-fluid" />
+            </div>
+          </Col>
+          <Col lg="6" md="9" className="order-lg-1">
+            <div>
+              <Title>Fake Doors, Real Users</Title>
+              <Text mb={4}></Text>
 
-                <ULStyled>
-                  <li>
-                    Users can elect to participate in your experiment - either
-                    way, you get results.
-                  </li>
-                  <li>
-                    Segment users and display your painted door to a sample
-                    population.
-                  </li>
-                  <li>Get real-time analytics from your painted door test.</li>
-                </ULStyled>
-              </div>
+              <ULStyled>
+                <li>
+                  Users can elect to participate in your experiment - either
+                  way, you get results.
+                </li>
+                <li>
+                  Segment users and display your painted door to a sample
+                  population.
+                </li>
+                <li>Get real-time analytics from your painted door test.</li>
+              </ULStyled>
             </div>
           </Col>
         </Row>

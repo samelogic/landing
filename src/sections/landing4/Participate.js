@@ -6,26 +6,7 @@ import { rgba } from "polished";
 import { Title, Section, Box, Text } from "../../components/Core";
 import { device } from "../../utils";
 
-import imgMobile from "../../assets/image/png/productroadmap.png";
-import icon3dModel from "../../assets/image/png/icon-3d-model.png";
-import iconLayout from "../../assets/image/png/icon-layot-25.png";
-
-const ContentCard = ({ iconImage, title, className, children, ...rest }) => (
-  <Box
-    {...rest}
-    className={`d-flex align-items-start justify-content-start ${className}`}
-  >
-    <Box mr={4}>
-      <img src={iconImage} alt="" />
-    </Box>
-    <Box>
-      <Title variant="card" fontSize="24px" mb={3}>
-        {title}
-      </Title>
-      <Text variant="small">{children}</Text>
-    </Box>
-  </Box>
-);
+import image from "../../assets/image/png/report.png";
 
 const ImgStyled = styled.img`
   // transform: rotate(10deg);
@@ -110,7 +91,7 @@ const Content2 = () => (
               data-aos-delay="200"
               data-aos-once="true"
             >
-              <ImgStyled src={imgMobile} alt="" className="img-fluid" />
+              <ImgStyled src={image} alt="" className="img-fluid" />
             </div>
           </Col>
           <Col lg="6" md="9">
