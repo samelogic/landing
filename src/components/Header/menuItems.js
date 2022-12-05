@@ -14,11 +14,11 @@ export const menuItems = [
   //   label: "Use Cases",
   //   isExternal: false,
   // },
-  {
-    name: "about",
-    label: "Our Mission",
-    isExternal: false,
-  },
+  // {
+  //   name: "about",
+  //   label: "Our Mission",
+  //   isExternal: false,
+  // },
   {
     name: "product",
     label: "Product",
