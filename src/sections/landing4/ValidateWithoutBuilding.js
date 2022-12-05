@@ -3,10 +3,27 @@ import styled from "styled-components";
 import { rgba } from "polished";
 import { Container, Row, Col } from "react-bootstrap";
 
-import { Title, Section, Text } from "../../components/Core";
+import { Title, Section, Box, Text } from "../../components/Core";
 import { device } from "../../utils";
 import imgContent from "../../assets/image/png/feedback.png";
-
+const ImgStyled = styled.img`
+  // transform: rotate(10deg);
+  // box-shadow: ${({ theme }) => `0 52px 54px ${theme.colors.shadow}`};
+  border-radius: 0px;
+  max-width: 70%;
+  @media ${device.sm} {
+    max-width: 50%;
+  }
+  @media ${device.md} {
+    max-width: 33%;
+  }
+  @media ${device.lg} {
+    max-width: 100%;
+  }
+  @media ${device.xl} {
+    margin-left: -100px;
+  }
+`;
 const ULStyled = styled.ul`
   list-style: none;
   margin: 0;
@@ -66,27 +83,19 @@ const Content1 = () => (
     >
       <Container>
         <Row className="align-items-center">
-          <Col lg="6" className=" mb-4 mb-lg-0 pl-lg-5 order-lg-2">
+          <Col lg="6" className="mb-4 mb-lg-0">
             <div
-              data-aos="fade-left"
-              data-aos-duration="450"
-              data-aos-delay="150"
+              className="pl-5"
+              data-aos="fade-right"
+              data-aos-duration="750"
+              data-aos-delay="200"
               data-aos-once="true"
             >
-              <img
-                src={imgContent}
-                alt=""
-                className="img-fluid"
-                // css={`
-                //   box-shadow: ${({ theme }) =>
-                //     `0 12px 84px ${theme.colors.shadow}`};
-                //   border-radius: 10px;
-                // `}
-              />
+              <ImgStyled src={imgContent} alt="" className="img-fluid" />
             </div>
           </Col>
-          <Col lg="6" md="9" className="order-lg-1">
-            <div>
+          <Col lg="6" md="9">
+            <Box className="pt-5 pt-lg-0">
               <Title>
                 The #1 Way to Validate Your Idea Without Building Anything
               </Title>
@@ -104,7 +113,7 @@ const Content1 = () => (
                   integrations.
                 </li>
               </ULStyled>
-            </div>
+            </Box>
           </Col>
         </Row>
       </Container>
