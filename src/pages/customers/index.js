@@ -41,9 +41,9 @@ const CaseStudy = ({ data }) => {
               <Col lg="6">
                 <Title variant="hero">Customer Stories</Title>
                 <Text>
-                  Learn how some of the best product teams use Samelogic's Fake
-                  Door Testing Platform to reduce their product discovery and
-                  research costs.
+                  Learn how some of the best product teams use Samelogic's
+                  Fake-Door Concept Testing Platform to reduce their product
+                  discovery and research costs.
                 </Text>
               </Col>
             </Row>
