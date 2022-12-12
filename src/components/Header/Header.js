@@ -44,6 +44,10 @@ const ToggleButton = styled.button`
 `;
 
 const Menu = styled.ul`
+  a {
+    text-decoration: none !important;
+  }
+
   @media ${device.lg} {
     display: flex;
     justify-content: flex-end;

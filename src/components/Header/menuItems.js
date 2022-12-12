@@ -70,6 +70,10 @@ export const menuItems = [
   },
 
   {
+    name: "customers",
+    label: "Customers",
+  },
+  {
     name: "blog",
     label: "Blog",
     isExternal: false,
