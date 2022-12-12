@@ -24,18 +24,19 @@ const CaseDetails = () => (
         <Row>
           <Col lg="12" xl="10" className="offset-xl-1">
             <Box>
-              <Text className="mb-2">
+              <Text variant="small" className="mb-2">
                 <b>🤔 Problem: </b> How a B2C web platform can validate the real
                 demand of their feature ideas without investing in product
                 discovery and delivery.
               </Text>
-              <Text className="mb-2">
+              <Text variant="small" className="mb-2">
                 <b>🧪 Solution: </b>By adding Samelogic into their tech-stack to
                 quickly conduct in-product fake door concept testing.
               </Text>
-              <Text className="mb-2">
-                <b>📈 Outcome: </b>Within 2 days the feature got a 10%
-                click-through-rate and positive survey responses.
+              <Text variant="small" className="mb-2">
+                <b>📈 Outcome: </b>Feature was moved to development after 2 days
+                of testing, which received a 7-10% click-through-rate with
+                positive survey responses.
               </Text>
             </Box>
           </Col>
@@ -51,20 +52,18 @@ const CaseDetails = () => (
               <img src={imgCase3} alt="" className="img-fluid" />
             </Box>
           </Col>
-        </Row>
+        </Row> */}
         <Row className="mt-5">
           <Col lg="12" xl="10" className="offset-xl-1 pt-4">
-            <Box pb={['40px', null, '65px']}>
+            <Box pb={["40px", null, "65px"]}>
               <Title variant="card" mb="18px">
-                Solutions
+                The Story
               </Title>
               <Text variant="small" mb={3}>
-                A Senior Data Engineer provides technical and delivery
-                leadership for a team of developers working on data integration
-                and processing projects. This role will work with stakeholders
-                and other developers to design and implement.
+                Giftme offers digital gift cards that can be redeemed at many
+                stores across Jamaica.
               </Text>
-              <List>
+              {/* <List>
                 <li>
                   This role will work with stakeholders and other developers to
                   design and implement.
@@ -81,9 +80,9 @@ const CaseDetails = () => (
                   adding more than 100 people to the business, which grows year
                   on year, since 2017.
                 </li>
-              </List>
+              </List> */}
             </Box>
-            <Box pb={['40px', null, '65px']}>
+            {/* <Box pb={["40px", null, "65px"]}>
               <Title variant="card" mb="18px">
                 Learnings
               </Title>
@@ -95,12 +94,17 @@ const CaseDetails = () => (
                 solutions for the business in a way that balances quality, cost,
                 time and maintainability.
               </Text>
-            </Box>
+            </Box> */}
             <Box>
-              <Button>Check live website</Button>
+              <a
+                href="https://shopgiftme.com/store"
+                style={{ textDecoration: "none" }}
+              >
+                <Button>View the evidence</Button>
+              </a>
             </Box>
           </Col>
-        </Row> */}
+        </Row>
       </Container>
     </Section>
   </>
