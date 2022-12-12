@@ -23,30 +23,19 @@ const CaseDetails = () => (
 
         <Row>
           <Col lg="12" xl="10" className="offset-xl-1">
-            <Box pb={["40px", null, "65px"]}>
-              <Title variant="card" mb="18px">
-                Client Brief
-              </Title>
-              <Text variant="small">
-                A Senior Data Engineer provides technical and delivery
-                leadership for a team of developers working on data integration
-                and processing projects. This role will work with stakeholders
-                and other developers to design and implement technical data
-                solutions for the business in a way that balances quality, cost,
-                time and maintainability.
+            <Box>
+              <Text className="mb-2">
+                <b>🤔 Problem: </b> How a B2C web platform can validate the real
+                demand of their feature ideas without investing in product
+                discovery and delivery.
               </Text>
-            </Box>
-            <Box pb={["40px", null, "65px"]}>
-              <Title variant="card" mb="18px">
-                Client Brief
-              </Title>
-              <Text variant="small">
-                A Senior Data Engineer provides technical and delivery
-                leadership for a team of developers working on data integration
-                and processing projects. This role will work with stakeholders
-                and other developers to design and implement technical data
-                solutions for the business in a way that balances quality, cost,
-                time and maintainability.
+              <Text className="mb-2">
+                <b>🧪 Solution: </b>By adding Samelogic into their tech-stack to
+                quickly conduct in-product fake door concept testing.
+              </Text>
+              <Text className="mb-2">
+                <b>📈 Outcome: </b>Within 2 days the feature got a 10%
+                click-through-rate and positive survey responses.
               </Text>
             </Box>
           </Col>
