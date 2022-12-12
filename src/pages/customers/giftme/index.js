@@ -47,7 +47,7 @@ const CaseStudyDetails = () => {
                 </Title>
                 <Text>
                   How Giftme's product team validated and gathered user feedback
-                  on new a feature idea within two days, using no engineering
+                  on a new feature idea within two days, using no engineering
                   effort.
                 </Text>
               </Col>
