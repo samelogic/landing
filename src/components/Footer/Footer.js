@@ -18,6 +18,7 @@ const UlStyled = styled.ul`
   li {
     line-height: 2.25;
     a {
+      text-decoration: none !important;
       color: ${({ theme, color }) => theme.colors[color]} !important;
       &:hover {
         text-decoration: none;
