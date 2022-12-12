@@ -1,8 +1,8 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Link } from 'gatsby'
-import { Title, Box, Text, Span } from '../Core'
-import { device } from '../../utils'
+import React from "react";
+import styled from "styled-components";
+import { Link } from "gatsby";
+import { Title, Box, Text, Span } from "../Core";
+import { device } from "../../utils";
 
 const Card = styled(Box)`
   border-radius: 10px 10px;
@@ -13,7 +13,7 @@ const Card = styled(Box)`
   &:hover {
     box-shadow: ${({ theme }) => `0 52px 54px ${theme.colors.shadow}`};
   }
-`
+`;
 
 const ImageContainerHorizontal = styled(Box)`
   overflow: hidden;
@@ -32,7 +32,7 @@ const ImageContainerHorizontal = styled(Box)`
     min-width: 350px;
     max-width: 350px;
   }
-`
+`;
 
 const BrandImage = styled(Box)`
   position: absolute;
@@ -41,18 +41,18 @@ const BrandImage = styled(Box)`
   border-radius: 8px;
   border: 1px solid #eae9f2;
   overflow: hidden;
-`
+`;
 
 const CardText = styled(Box)`
   padding: 30px;
-`
+`;
 
 const TitleStyled = styled(Title)`
   transition: 0.3s;
   &:hover {
     color: ${({ theme }) => theme.colors.secondary};
   }
-`
+`;
 
 const PostCard = ({
   horizontal = false,
@@ -62,11 +62,11 @@ const PostCard = ({
   title,
   children,
   readMore,
-  href = '/',
+  href = "/",
   ...rest
 }) => (
   <Card
-    className={horizontal ? 'd-flex flex-column flex-md-row' : ''}
+    className={horizontal ? "d-flex flex-column flex-md-row" : ""}
     {...rest}
   >
     {horizontal ? (
@@ -117,6 +117,6 @@ const PostCard = ({
       )}
     </CardText>
   </Card>
-)
+);
 
-export default PostCard
+export default PostCard;

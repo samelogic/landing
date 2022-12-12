@@ -12,12 +12,11 @@ import Seo from "../components/SEO";
 import SocialImage from "../assets/image/png/blog-social-share.png";
 
 const PodcastRegular = ({ data }) => {
-  const siteTitle = get(data, "site.siteMetadata.podcast.title");
   const posts = data.allContentfulPodcast.edges.map(({ node }) => node);
   return (
     <>
       <Seo
-        title={siteTitle}
+        title="Podcasts"
         description={
           "Tips and stories to help you on the path of becoming a better product leader."
         }

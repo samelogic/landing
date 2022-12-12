@@ -1,29 +1,29 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Container, Row, Col } from 'react-bootstrap'
+import React from "react";
+import styled from "styled-components";
+import { Container, Row, Col } from "react-bootstrap";
 
-import { Section, Box, Title, Text, Button, List } from '../../components/Core'
+import { Section, Box, Title, Text, Button, List } from "../../components/Core";
 
-import imgCase1 from '../../assets/image/jpeg/case-details--details.jpg'
-import imgCase2 from '../../assets/image/jpeg/case-details-half-single.jpg'
-import imgCase3 from '../../assets/image/jpeg/case-details-half-single-2.jpg'
+import imgCase1 from "../../assets/image/jpeg/case-details--details.jpg";
+import imgCase2 from "../../assets/image/jpeg/case-details-half-single.jpg";
+import imgCase3 from "../../assets/image/jpeg/case-details-half-single-2.jpg";
 
 const ImgContainer = styled(Box)`
   border-radius: 10px;
   overflow: hidden;
-`
+`;
 
 const CaseDetails = () => (
   <>
     <Section className="position-relative" borderBottom="1px solid #eae9f2;">
       <Container>
-        <ImgContainer className="text-center" pb={['50px', null, '75px']}>
+        <ImgContainer className="text-center" pb={["50px", null, "75px"]}>
           <img src={imgCase1} alt="" className="img-fluid" />
         </ImgContainer>
 
         <Row>
           <Col lg="12" xl="10" className="offset-xl-1">
-            <Box pb={['40px', null, '65px']}>
+            <Box pb={["40px", null, "65px"]}>
               <Title variant="card" mb="18px">
                 Client Brief
               </Title>
@@ -36,7 +36,7 @@ const CaseDetails = () => (
                 time and maintainability.
               </Text>
             </Box>
-            <Box pb={['40px', null, '65px']}>
+            <Box pb={["40px", null, "65px"]}>
               <Title variant="card" mb="18px">
                 Client Brief
               </Title>
@@ -51,7 +51,7 @@ const CaseDetails = () => (
             </Box>
           </Col>
         </Row>
-        <Row>
+        {/* <Row>
           <Col lg="6" className="mb-lg-0 mb-30">
             <Box>
               <img src={imgCase2} alt="" className="img-fluid" />
@@ -111,10 +111,10 @@ const CaseDetails = () => (
               <Button>Check live website</Button>
             </Box>
           </Col>
-        </Row>
+        </Row> */}
       </Container>
     </Section>
   </>
-)
+);
 
-export default CaseDetails
+export default CaseDetails;

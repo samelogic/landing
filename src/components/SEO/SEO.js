@@ -32,6 +32,8 @@ const Seo = ({ description, lang, meta, title, twitterCard }) => {
     `
   );
 
+  const newTitle = !!title ? `${title} | Samelogic` : "Samelogic";
+
   const metaDescription = description || site.siteMetadata.description;
 
   return (
@@ -39,7 +41,7 @@ const Seo = ({ description, lang, meta, title, twitterCard }) => {
       htmlAttributes={{
         lang,
       }}
-      title={title}
+      title={newTitle}
       meta={[
         {
           name: `description`,
