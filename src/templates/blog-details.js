@@ -99,7 +99,7 @@ export const pageQuery = graphql`
       author {
         name
         photo {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(width: 100, placeholder: BLURRED)
         }
       }
       createdAt(formatString: "MMMM Do, YYYY")
