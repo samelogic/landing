@@ -48,7 +48,9 @@ const BlogDetails = ({ data }) => {
                           src={getSrc(post.author.photo)}
                           alt=""
                         />
-                        {post.author.name}
+                        <a href={post.author.url} target="_blank">
+                          {post.author.name}
+                        </a>
                       </Text>
                     </>
                   ) : null}
