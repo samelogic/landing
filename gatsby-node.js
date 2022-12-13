@@ -1,5 +1,9 @@
 const Promise = require("bluebird");
 const path = require("path");
+const {
+  documentToPlainTextString,
+} = require("@contentful/rich-text-plain-text-renderer");
+const words = require("lodash/words");
 
 exports.onCreatePage = ({ page, actions }) => {
   const { createPage } = actions;
@@ -68,4 +72,30 @@ exports.createPages = ({ graphql, actions }) => {
       })
     );
   });
+};
+
+exports.onCreateNode = ({ node, actions }) => {
+  const { createNodeField } = actions;
+
+  const timeToRead = (content) => {
+    let TTR;
+    // Change the WPM amount (240) below to higher number if your readers are faster
+    // or lower if your readers are slower
+    const avgWPM = 240;
+    const wordCount = words(content).length;
+    TTR = Math.round(wordCount / avgWPM);
+    if (TTR === 0) {
+      TTR = 1;
+    }
+    return TTR;
+  };
+
+  // Change the "ContentfulBlogArticle" below to match your Content Type
+  if (node.internal.type === "ContentfulPost") {
+    // Match the "bodyContent" below to match the name of your rich text field
+    const data = JSON.parse(node.body.raw);
+    const allText = documentToPlainTextString(data);
+    const timeToReadValue = timeToRead(allText);
+    createNodeField({ node, name: "timeToRead", value: timeToReadValue });
+  }
 };

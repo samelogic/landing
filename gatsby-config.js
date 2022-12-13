@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Samelogic: In Product Fake Door Concept Testing`,
+    title: `Samelogic | The continuous concept testing platform`,
     description: `Get the evidence you need to know which direction to take your product with your real users.`,
     siteUrl: `https://samelogic.com/`,
     social: {
@@ -25,7 +25,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
-    "gatsby-plugin-readingtime-contentful",
+    // "gatsby-plugin-readingtime-contentful",
     "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-source-contentful",

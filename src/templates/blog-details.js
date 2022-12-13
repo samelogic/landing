@@ -40,7 +40,7 @@ const BlogDetails = ({ data }) => {
                 <Title variant="hero">{post.title}</Title>
                 <Box className="d-flex justify-content-center">
                   <Text mr={3}>
-                    <Link to="/">{post.createdAt}</Link>
+                    {post.createdAt} | {post.fields.timeToRead} min read
                   </Text>
                 </Box>
               </Col>
@@ -97,10 +97,8 @@ export const pageQuery = graphql`
           }
         }
       }
-      content {
-        childMarkdownRemark {
-          html
-        }
+      fields {
+        timeToRead
       }
       ctaTitle
       ctaBody
