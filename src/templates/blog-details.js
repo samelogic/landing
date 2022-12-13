@@ -78,6 +78,12 @@ export const pageQuery = graphql`
     }
     contentfulPost(slug: { eq: $slug }) {
       title
+      author {
+        name
+        photo {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
       createdAt(formatString: "MMMM Do, YYYY")
       heroImage {
         gatsbyImageData(layout: FULL_WIDTH)
