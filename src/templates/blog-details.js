@@ -68,11 +68,11 @@ const BlogDetails = ({ data }) => {
         <Section className="pb-8 pt-2">
           <Container>
             <Row>
-              <Col lg="4" className="">
-                <Sidebar post={post} />
-              </Col>
               <Col lg="8" className="mb-5">
                 <PostDetails post={post} />
+              </Col>
+              <Col lg="4" className="">
+                <Sidebar post={post} />
               </Col>
             </Row>
           </Container>
