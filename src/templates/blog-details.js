@@ -9,6 +9,7 @@ import { Section, Title, Text, Box } from "../components/Core";
 import PostDetails from "../sections/blog/PostDetails";
 import Sidebar from "../sections/blog/Sidebar";
 import Seo from "../components/SEO";
+import { Portal } from "react-is";
 
 const BlogDetails = ({ data }) => {
   const post = data.contentfulPost;
@@ -37,10 +38,25 @@ const BlogDetails = ({ data }) => {
           <Container>
             <Row className="justify-content-center text-center">
               <Col lg="12">
+                <Box className="d-flex justify-content-center my-3">
+                  {post.author ? (
+                    <>
+                      <Text>
+                        <img
+                          width="50px"
+                          style={{ borderRadius: "25px", marginRight: "10px" }}
+                          src={getSrc(post.author.photo)}
+                          alt=""
+                        />
+                        {post.author.name}
+                      </Text>
+                    </>
+                  ) : null}
+                </Box>
                 <Title variant="hero">{post.title}</Title>
                 <Box className="d-flex justify-content-center">
-                  <Text mr={3}>
-                    {post.createdAt} | {post.fields.timeToRead} min read
+                  <Text mr={3} variant="small">
+                    {post.fields.timeToRead} min read
                   </Text>
                 </Box>
               </Col>
