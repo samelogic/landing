@@ -13,6 +13,7 @@ import Switch from "./Switch";
 import Span from "./Span";
 import List from "./List";
 import ContentfulRichText from "./ContentfulRichText";
+import ContentfulTableOfContents from "./ContentfulTableOfContents";
 
 export {
   Box,
@@ -30,4 +31,5 @@ export {
   Span,
   List,
   ContentfulRichText,
+  ContentfulTableOfContents,
 };

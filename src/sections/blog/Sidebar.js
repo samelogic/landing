@@ -1,24 +1,14 @@
-import React from 'react'
+import React from "react";
 
-import {
-  CardSidebar,
-  Block,
-  TitleSidebar,
-  TitlePost,
-  Date,
-  CatList,
-  CatListItem,
-} from '../../components/Sidebar'
+import { CardSidebar } from "../../components/Sidebar";
 
-import InputSearch from '../../components/InputSearch'
+import { ContentfulTableOfContents } from "../../components/Core";
 
-const Sidebar = () => {
+const Sidebar = ({ post }) => {
   return (
     <>
       <CardSidebar p="15px" pl="20px">
-        <form>
-          <InputSearch />
-        </form>
+        <ContentfulTableOfContents richText={post.body} />
       </CardSidebar>
       {/* <CardSidebar>
         <TitleSidebar>Recent Posts</TitleSidebar>
@@ -84,6 +74,6 @@ const Sidebar = () => {
         </CatList>
       </CardSidebar> */}
     </>
-  )
-}
-export default Sidebar
+  );
+};
+export default Sidebar;
