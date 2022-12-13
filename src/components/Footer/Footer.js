@@ -105,7 +105,7 @@ const Footer = ({ isDark = true }) => {
                       </UlStyled>
                     </div>
                   </Col>
-                  <Col xs="6" lg="3">
+                  {/* <Col xs="6" lg="3">
                     <div className="mb-5 mb-lg-4">
                       <TitleStyled
                         variant="card"
@@ -119,7 +119,7 @@ const Footer = ({ isDark = true }) => {
                         </li>
                       </UlStyled>
                     </div>
-                  </Col>
+                  </Col> */}
                   <Col xs="6" lg="3">
                     <div className="mb-5 mb-lg-4">
                       <TitleStyled
