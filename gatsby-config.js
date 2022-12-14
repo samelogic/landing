@@ -25,7 +25,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
-    // "gatsby-plugin-readingtime-contentful",
+    "gatsby-plugin-mantine",
     "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-source-contentful",
