@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import { Container, Row, Col } from "react-bootstrap";
 import { getSrc } from "gatsby-plugin-image";
 
@@ -9,7 +9,6 @@ import { Section, Title, Text, Box } from "../components/Core";
 import PostDetails from "../sections/blog/PostDetails";
 import Sidebar from "../sections/blog/Sidebar";
 import Seo from "../components/SEO";
-import { Portal } from "react-is";
 
 const BlogDetails = ({ data }) => {
   const post = data.contentfulPost;
@@ -101,6 +100,7 @@ export const pageQuery = graphql`
         photo {
           gatsbyImageData(width: 100, placeholder: BLURRED)
         }
+        url
       }
       createdAt(formatString: "MMMM Do, YYYY")
       heroImage {
