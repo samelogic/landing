@@ -34,7 +34,9 @@ const ContentfulTableOfContents = ({ richText }) => {
 
   return (
     <div style={{ color: "#eee" }}>
-      <h3 style={{ color: "white" }}>Table of Contents</h3>
+      <h3 style={{ color: "white" }} className="mb-4">
+        Table of Contents
+      </h3>
       <ul>{documentToReactComponents(document, options)}</ul>
     </div>
   );

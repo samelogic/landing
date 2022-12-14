@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Samelogic | The continuous concept testing platform`,
+    title: `The continuous concept testing platform`,
     description: `Get the evidence you need to know which direction to take your product with your real users.`,
     siteUrl: `https://samelogic.com/`,
     social: {

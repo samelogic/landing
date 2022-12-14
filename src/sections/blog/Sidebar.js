@@ -7,7 +7,15 @@ import { ContentfulTableOfContents } from "../../components/Core";
 const Sidebar = ({ post }) => {
   return (
     <>
-      <CardSidebar p="15px" pl="20px">
+      <CardSidebar
+        p="15px"
+        pl="20px"
+        style={{
+          position: "sticky",
+          top: "2rem",
+          alignSelf: "start",
+        }}
+      >
         <ContentfulTableOfContents richText={post.body} />
       </CardSidebar>
       {/* <CardSidebar>

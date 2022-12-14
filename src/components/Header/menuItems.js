@@ -54,7 +54,7 @@ export const menuItems = [
         label: "By Use Case",
         items: [
           { name: "user-researchers", label: "Idea Validation" },
-          { name: "user-researchers", label: "Pretotyping" },
+          // { name: "user-researchers", label: "Pretotyping" },
           { name: "product-managers", label: "Roadmap Prioritization" },
         ],
       },
