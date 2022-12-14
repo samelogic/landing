@@ -126,12 +126,12 @@ const Hero = ({ name, introduction, categories }) => {
                     <CTAButton mb={3} />
 
                     <a
-                      href="https://samelogic.com/docs/steps/microsurveys"
+                      href="https://app.samelogic.com/"
                       className="text-decoration-none"
                     >
                       <Box color="secondary">
                         <i className="icon icon-triangle-right-17-2"></i> View
-                        the documentation
+                        the app
                       </Box>
                     </a>
                   </div>
